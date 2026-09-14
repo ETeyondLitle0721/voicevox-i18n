@@ -7,6 +7,18 @@
     transitionHide="jump-down"
     class="setting-dialog transparent-backdrop"
   >
+    <QDialog v-model="localeReloadDialogOpened">
+      <QCard class="locale-reload-dialog">
+        <QCardSection>
+          <div class="text-h6">言語を変更しました</div>
+          <div class="q-mt-sm">新しい表示言語を適用するため、今すぐ画面を再読み込みしますか？</div>
+        </QCardSection>
+        <QCardActions align="right">
+          <QBtn flat label="いいえ" autofocus @click="localeReloadDialogOpened = false" />
+          <QBtn flat label="はい" @click="reloadForLocaleChange" />
+        </QCardActions>
+      </QCard>
+    </QDialog>
     <QLayout container view="hHh Lpr fFf" class="bg-background">
       <QPageContainer class="root">
         <QHeader class="q-pa-sm">
@@ -34,7 +46,7 @@
                 <h5 class="headline">言語</h5>
                 <SelectCell
                   title="表示言語"
-                  description="アプリの表示言語を手動で変更できます。変更後、アプリを再読み込みします。"
+                  description="アプリの表示言語を手動で変更できます。変更後、画面を再読み込みするか選択できます。"
                   :modelValue="currentLocale"
                   :options="localeOptions"
                   @update:modelValue="changeLocale"
@@ -546,16 +558,16 @@ import { isProduction } from "@/helpers/platform";
 import { ExhaustiveError } from "@/type/utility";
 
 type SamplingRateOption = EngineSettingType["outputSamplingRate"];
-type VoicevoxLocale = "ja" | "en-US" | "zh-Hans-CN";
+type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW";
 
 const LOCALE_STORAGE_KEY = "voicevox.locale";
-const LOCALE_VALUES = new Set<VoicevoxLocale>(["ja", "en-US", "zh-Hans-CN"]);
+const LOCALE_VALUES = new Set<VoicevoxLocale>(["ja-JP", "en-US", "zh-CN", "zh-TW"]);
 
 const getCurrentLocale = (): VoicevoxLocale => {
   const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
   return storedLocale && LOCALE_VALUES.has(storedLocale as VoicevoxLocale)
     ? (storedLocale as VoicevoxLocale)
-    : "ja";
+    : "ja-JP";
 };
 
 const dialogOpened = defineModel<boolean>("dialogOpened");
@@ -564,10 +576,12 @@ const store = useStore();
 const { warn } = createLogger("SettingDialog");
 
 const currentLocale = ref<VoicevoxLocale>(getCurrentLocale());
+const localeReloadDialogOpened = ref(false);
 const localeOptions = [
-  { label: "日本語", value: "ja" },
+  { label: "日本語", value: "ja-JP" },
   { label: "English", value: "en-US" },
-  { label: "简体中文", value: "zh-Hans-CN" },
+  { label: "大陆简体", value: "zh-CN" },
+  { label: "台灣正體", value: "zh-TW" },
 ];
 const changeLocale = (value: string | undefined) => {
   if (!LOCALE_VALUES.has(value as VoicevoxLocale)) return;
@@ -576,6 +590,10 @@ const changeLocale = (value: string | undefined) => {
 
   localStorage.setItem(LOCALE_STORAGE_KEY, locale);
   currentLocale.value = locale;
+  localeReloadDialogOpened.value = true;
+};
+const reloadForLocaleChange = () => {
+  localeReloadDialogOpened.value = false;
   window.location.reload();
 };
 
@@ -971,6 +989,11 @@ const renderEngineNameLabel = (engineId: EngineId) => {
 @use "@/styles/v2/colors" as colors-v2;
 @use "@/styles/v2/variables" as vars;
 @use "@/styles/v2/mixin" as mixin;
+
+.locale-reload-dialog {
+  min-width: 320px;
+  max-width: 480px;
+}
 
 .container {
   position: absolute;

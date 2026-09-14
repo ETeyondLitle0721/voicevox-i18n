@@ -1,0 +1,11 @@
+{
+  "タイトル": "Title",
+  "見出し": "Heading",
+  "# 見出し1 文章文章文章 ## 見出し2 文章文章文章": "# Heading 1\nText text text\n## Heading 2\nText text text",
+  "拒否": "Decline",
+  "承諾": "Accept",
+  "開いている": "Open",
+  "承諾ボタンを押す": "Press the Accept button",
+  "拒否ボタンを押す": "Press the Decline button",
+  "閉じている": "Closed"
+}

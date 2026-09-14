@@ -1,0 +1,20 @@
+{
+  "プロジェクトファイルが新しいバージョンのVOICEVOXで作成されています": "The project file was created with a newer version of VOICEVOX.",
+  "このプロジェクトファイルは新しいバージョンのVOICEVOXで作成されたため、一部の機能が正しく動作しない可能性があります。読み込みを続行しますか？": "This project file was created with a newer version of VOICEVOX, so some features may not work correctly. Continue loading?",
+  "いいえ": "No",
+  "はい": "Yes",
+  "プロジェクトファイルの選択": "Select Project File",
+  "プロジェクトをロードすると現在のプロジェクトは破棄されます。": "Loading a project will discard the current project.",
+  "エラーが発生しました。": "An error occurred.",
+  "プロジェクトファイルが見つかりませんでした。ファイルが移動、または削除された可能性があります。": "The project file could not be found. It may have been moved or deleted.",
+  "ファイルフォーマットが正しくありません。": "The file format is invalid.",
+  "エラー": "Error",
+  "プロジェクトファイルの読み込みに失敗しました。 {0}": "Failed to load the project file. {0}",
+  "保存": "Save",
+  "編集中のプロジェクトが {0} に切り替わりました。": "The project being edited has been switched to {0}.",
+  "プロジェクトの変更が保存されていません。": "Project changes have not been saved.",
+  "プロジェクトを保存しますか？": "Save the project?",
+  "キャンセル": "Cancel",
+  "破棄する": "Discard",
+  "保存する": "Save"
+}

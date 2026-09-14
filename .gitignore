@@ -143,6 +143,7 @@ rulesync.local.jsonc
 app.asar
 *.zip
 build
-dist
+dist*
 dist_electron
 dist_raw
+vv-engine/

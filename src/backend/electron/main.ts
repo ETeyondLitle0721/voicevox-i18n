@@ -45,7 +45,11 @@ if (isDevelopment && !isTest) {
 }
 
 ipcMain.on("__GET_PREFERRED_SYSTEM_LANGUAGES__", (event) => {
-  event.returnValue = app.getPreferredSystemLanguages();
+  const languages = app.getPreferredSystemLanguages();
+
+  console.log("[i18n][main] system languages =", languages);
+
+  event.returnValue = languages;
 });
 
 let suffix = "";

@@ -1,6 +1,6 @@
 import type { App } from "vue";
 
-export type VoicevoxLocale = "ja" | "en-US" | "zh-Hans-CN";
+export type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW";
 
 export type LocaleCatalog = Record<string, Record<string, string>>;
 export type LocaleCatalogs = Record<VoicevoxLocale, LocaleCatalog>;
@@ -26,12 +26,19 @@ const LOCALE_STORAGE_KEY = "voicevox.locale";
 
 const detectLocale = (languages: readonly string[]): VoicevoxLocale => {
   for (const raw of languages) {
-    const language = raw.toLowerCase();
-    if (language === "ja" || language.startsWith("ja-")) return "ja";
-    if (language === "zh" || language.startsWith("zh-")) return "zh-Hans-CN";
+    const language = raw.toLowerCase().replaceAll("_", "-");
+
+    if (language === "ja" || language.startsWith("ja-")) return "ja-JP";
     if (language === "en" || language.startsWith("en-")) return "en-US";
+    if (language === "zh-hans" || language.startsWith("zh-hans-")) {
+      return "zh-CN";
+    }
+    if (language === "zh-hant" || language.startsWith("zh-hant-")) {
+      return "zh-TW";
+    }
   }
-  return "en-US";
+
+  return "ja-JP";
 };
 
 const getPreferredSystemLanguages = (): readonly string[] => {
@@ -51,9 +58,10 @@ const resolveLocale = (): VoicevoxLocale => {
     try {
       const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
       if (
-        storedLocale === "ja" ||
+        storedLocale === "ja-JP" ||
         storedLocale === "en-US" ||
-        storedLocale === "zh-Hans-CN"
+        storedLocale === "zh-CN" ||
+        storedLocale === "zh-TW"
       ) {
         return storedLocale;
       }
@@ -63,6 +71,11 @@ const resolveLocale = (): VoicevoxLocale => {
   }
 
   const preferredSystemLanguages = getPreferredSystemLanguages();
+
+  console.log(
+    `Detected preferred system languages: ${preferredSystemLanguages.join(", ")}`,
+  );
+
   if (preferredSystemLanguages.length) {
     const detectedLocale = detectLocale(preferredSystemLanguages);
 
@@ -77,7 +90,7 @@ const resolveLocale = (): VoicevoxLocale => {
     return detectedLocale;
   }
 
-  return "ja";
+  return "ja-JP";
 };
 
 const interpolate = (template: string, values: readonly unknown[]): string =>
@@ -123,20 +136,20 @@ export function createRuntime(catalogs: LocaleCatalogs) {
   return runtime;
 }
 
-export function installVoicevoxI18n(
+export type VoicevoxI18nRuntime = ReturnType<typeof createRuntime>;
+
+export function installVoicevoxI18nRuntime(
   app: App,
-  catalogs: LocaleCatalogs,
+  runtime: VoicevoxI18nRuntime,
 ): void {
-  const runtime = createRuntime(catalogs);
   globalThis.__VOICEVOX_I18N__ = runtime;
   app.config.globalProperties.$vvI18nText = runtime.text;
   app.config.globalProperties.$vvI18nTemplate = runtime.template;
 }
 
-// Used by the generated virtual module.
-export function installVoicevoxI18nPlugin(
+export function installVoicevoxI18n(
   app: App,
   catalogs: LocaleCatalogs,
 ): void {
-  installVoicevoxI18n(app, catalogs);
+  installVoicevoxI18nRuntime(app, createRuntime(catalogs));
 }

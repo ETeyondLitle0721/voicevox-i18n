@@ -147,8 +147,6 @@ class MainWindowManager {
 
     await this.load({});
 
-    if (this.isDevelopment && !this.isTest) win.webContents.openDevTools();
-
     win.webContents.on("before-input-event", (event, input) => {
       const isF12 = input.key === "F12";
       const isDevToolsShortcut =

@@ -115,8 +115,6 @@ class WelcomeWindowManager {
     this._win = win;
 
     await this.load();
-
-    if (this.isDevelopment && !this.isTest) win.webContents.openDevTools();
   }
 
   public async load() {

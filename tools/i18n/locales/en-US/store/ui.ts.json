@@ -1,0 +1,5 @@
+{
+  "Vuexが準備できませんでした": "Vuex could not be initialized",
+  "テキスト欄が選択されていません": "No text field selected",
+  "音声を書き出したいテキスト欄を選択してください。": "Select a text field to export audio."
+}

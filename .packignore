@@ -39,5 +39,5 @@ pnpm-lock.yaml
 pnpm-workspace.yaml
 rulesync.jsonc
 tsconfig.json
-vite.config.ts
 _typos.toml
+vv-engine/

@@ -1,0 +1,6 @@
+{
+  "書き出しファイル名パターン": "Export Filename Pattern",
+  "「$キャラ$」のようなタグを使って書き出すファイル名をカスタマイズできます。": "You can customize export filenames using tags such as \"$Character$\".",
+  "ファイル名パターン": "Filename Pattern",
+  "デフォルトにリセット": "Reset to Default"
+}

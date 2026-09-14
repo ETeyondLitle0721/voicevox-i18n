@@ -49,6 +49,7 @@
     "postinstall:download-scripts": "tsx tools/download7z.ts && tsx tools/downloadTypos.ts",
     "postuninstall": "electron-builder install-app-deps",
     "i18n:extract": "tsx tools/i18n/extract.ts",
+    "build:test": "cross-env VITE_TARGET=browser vite build",
     "electron:build:asar": "pnpm run electron:build:compile && tsx tools/i18n/packAsar.ts",
     "electron:pack:asar": "tsx tools/i18n/packAsar.ts",
     "etpack": "node ./pack.js"

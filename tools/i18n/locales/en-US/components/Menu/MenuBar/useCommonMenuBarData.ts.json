@@ -1,0 +1,23 @@
+{
+  "最近使ったプロジェクトはありません": "No recent projects",
+  "新規プロジェクト": "New Project",
+  "プロジェクトを上書き保存": "Save Project",
+  "プロジェクトを名前を付けて保存": "Save Project As",
+  "プロジェクトの複製を保存": "Save Project Copy",
+  "プロジェクトを読み込む": "Load Project",
+  "全画面表示を切り替え": "Toggle Fullscreen",
+  "拡大": "Zoom In",
+  "縮小": "Zoom Out",
+  "拡大率のリセット": "Reset Zoom",
+  "最近使ったプロジェクト": "Recent Projects",
+  "元に戻す": "Undo",
+  "やり直す": "Redo",
+  "すべて選択": "Select All",
+  "キー割り当て": "Key Bindings",
+  "ツールバーのカスタマイズ": "Customize Toolbar",
+  "キャラクター＆スタイルの管理": "Manage Characters & Styles",
+  "キャラクター並び替え・試聴": "Reorder & Preview Characters",
+  "デフォルトスタイル": "Default Style",
+  "読み方＆アクセント辞書": "Pronunciation & Accent Dictionary",
+  "オプション": "Options"
+}

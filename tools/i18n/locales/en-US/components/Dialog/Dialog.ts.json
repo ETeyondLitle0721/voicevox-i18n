@@ -1,0 +1,15 @@
+{
+  "閉じる": "Close",
+  "キャンセル": "Cancel",
+  "音声": "Audio",
+  "テキスト": "Text",
+  "プロジェクト": "Project",
+  "labファイル": "LAB file",
+  "{0}を書き出しました": "Exported {0}",
+  "テキストの書き出しに失敗しました。": "Failed to export text.",
+  "書き込みエラーによって失敗しました。空き容量があることや、書き込み権限があることをご確認ください。": "The operation failed due to a write error. Please make sure there is enough free space and that you have write permission.",
+  "何らかの理由で書き出しに失敗しました。ログを参照してください。": "Export failed for an unknown reason. Please check the logs.",
+  "エンジンのエラーによって失敗しました。エンジンの再起動をお試しください。": "Export failed due to an engine error. Please try restarting the engine.",
+  "書き出しに失敗しました。": "Export failed.",
+  "今後このメッセージを表示しない": "Do not show this message again"
+}

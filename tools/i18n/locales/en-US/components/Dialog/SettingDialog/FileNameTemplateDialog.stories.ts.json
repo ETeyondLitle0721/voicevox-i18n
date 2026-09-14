@@ -1,0 +1,23 @@
+{
+  "開いている": "Open",
+  "ファイル名パターン": "Filename Pattern",
+  "無効な入力：空欄": "Invalid input: blank",
+  "何か入力してください": "Please enter something",
+  "無効な入力：禁じられた文字": "Invalid input: forbidden character",
+  "$連番$/": "$Sequence$/",
+  "無効な入力：不明なタグ": "Invalid input: unknown tag",
+  "$連番$$テスト$": "$Sequence$$Test$",
+  "不正なタグが存在するか、$が単体で含まれています": "An invalid tag exists, or a standalone $ is included",
+  "無効な入力：閉じられていないタグ": "Invalid input: unclosed tag",
+  "$連番$$": "$Sequence$$",
+  "無効な入力：連番がない": "Invalid input: missing sequence tag",
+  "$連番$は必須です": "$Sequence$ is required",
+  "確定ボタンを押す": "Press the Confirm button",
+  "$連番$": "$Sequence$",
+  "確定": "Confirm",
+  "無効な入力だと確定ボタンが押せない": "The Confirm button cannot be pressed with invalid input",
+  "無効な入力": "Invalid input",
+  "キャンセルボタンを押す": "Press the Cancel button",
+  "キャンセル": "Cancel",
+  "閉じている": "Closed"
+}
