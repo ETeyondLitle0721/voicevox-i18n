@@ -1,13 +1,15 @@
 {
-  "stage": "Tier 1 MVP",
+  "stage": "Tier 1 localization MVP — 5 locales",
   "locales": [
     "en-US",
     "zh-CN",
-    "zh-TW"
+    "zh-TW",
+    "zh-HK",
+    "ko-KR"
   ],
   "vue_sfc_count": 134,
   "translated_scopes": 45,
-  "translated_entries": 172,
+  "translated_entries": 352,
   "scope_examples": [
     "src/welcome/components/WelcomeHeader.vue",
     "src/welcome/components/EngineCard.vue",

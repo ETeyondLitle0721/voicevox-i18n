@@ -4,7 +4,7 @@
 This snapshot adds build-time localization for Tier 1 UI surfaces: menus, buttons, dialogs,
 error/startup messages, settings, project management, import/export and shortcut-related UI.
 
-Locales: English (`en-US`) and Simplified Chinese (`zh-CN`).
+Locales: English (`en-US`), Simplified Chinese (`zh-CN`), Traditional Chinese (`zh-TW`), Hong Kong Traditional Chinese (`zh-HK`), and Korean (`ko-KR`).
 
 ## Design
 - Original Vue/TS source files remain unchanged on disk by the transform.
@@ -18,7 +18,7 @@ Locales: English (`en-US`) and Simplified Chinese (`zh-CN`).
 - Missing entries always fall back to the original Japanese source.
 - Runtime locale is selected from the persisted `localStorage` key `voicevox.locale` when valid.
   On first launch, Electron's `app.getPreferredSystemLanguages()` result is detected and persisted so later launches keep the initial locale.
-  `zh-*` maps to `zh-CN`; `en-*` maps to `en-US`; other locales fall back to English.
+  `zh-Hans` maps to `zh-CN`; `zh-Hant-HK`/`zh-HK` maps to `zh-HK`; `zh-Hant` maps to `zh-TW`; `en-*` maps to `en-US`; `ko-*` maps to `ko-KR`; other locales fall back to Japanese.
 - Locale catalogs are split by source module under `tools/i18n/locales/<locale>/`.
 
 ## Build integration

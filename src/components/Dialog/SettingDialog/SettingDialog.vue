@@ -558,10 +558,10 @@ import { isProduction } from "@/helpers/platform";
 import { ExhaustiveError } from "@/type/utility";
 
 type SamplingRateOption = EngineSettingType["outputSamplingRate"];
-type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW";
+type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR";
 
 const LOCALE_STORAGE_KEY = "voicevox.locale";
-const LOCALE_VALUES = new Set<VoicevoxLocale>(["ja-JP", "en-US", "zh-CN", "zh-TW"]);
+const LOCALE_VALUES = new Set<VoicevoxLocale>(["ja-JP", "en-US", "zh-CN", "zh-TW", "zh-HK", "ko-KR"]);
 
 const getCurrentLocale = (): VoicevoxLocale => {
   const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
@@ -582,6 +582,8 @@ const localeOptions = [
   { label: "English", value: "en-US" },
   { label: "大陆简体", value: "zh-CN" },
   { label: "台灣正體", value: "zh-TW" },
+  { label: "香港繁體", value: "zh-HK" },
+  { label: "한국어", value: "ko-KR" },
 ];
 const changeLocale = (value: string | undefined) => {
   if (!LOCALE_VALUES.has(value as VoicevoxLocale)) return;

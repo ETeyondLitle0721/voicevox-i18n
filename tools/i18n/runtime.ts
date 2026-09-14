@@ -1,6 +1,6 @@
 import type { App } from "vue";
 
-export type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW";
+export type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR";
 
 export type LocaleCatalog = Record<string, Record<string, string>>;
 export type LocaleCatalogs = Record<VoicevoxLocale, LocaleCatalog>;
@@ -33,9 +33,13 @@ const detectLocale = (languages: readonly string[]): VoicevoxLocale => {
     if (language === "zh-hans" || language.startsWith("zh-hans-")) {
       return "zh-CN";
     }
+    if (language === "zh-hant-hk" || language.startsWith("zh-hant-hk-") || language === "zh-hk" || language.startsWith("zh-hk-")) {
+      return "zh-HK";
+    }
     if (language === "zh-hant" || language.startsWith("zh-hant-")) {
       return "zh-TW";
     }
+    if (language === "ko" || language.startsWith("ko-")) return "ko-KR";
   }
 
   return "ja-JP";
@@ -61,7 +65,9 @@ const resolveLocale = (): VoicevoxLocale => {
         storedLocale === "ja-JP" ||
         storedLocale === "en-US" ||
         storedLocale === "zh-CN" ||
-        storedLocale === "zh-TW"
+        storedLocale === "zh-TW" ||
+        storedLocale === "zh-HK" ||
+        storedLocale === "ko-KR"
       ) {
         return storedLocale;
       }

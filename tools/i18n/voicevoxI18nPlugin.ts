@@ -12,7 +12,7 @@ import {
 } from "@vue/compiler-dom";
 import type { Plugin } from "vite";
 
-type Locale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW";
+type Locale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR";
 type Catalog = Record<string, Record<string, string>>;
 type Catalogs = Record<Locale, Catalog>;
 
@@ -22,7 +22,7 @@ type Replacement = {
   value: string;
 };
 
-const SOURCE_LOCALES: readonly Exclude<Locale, "ja-JP">[] = ["en-US", "zh-CN", "zh-TW"];
+const SOURCE_LOCALES: readonly Exclude<Locale, "ja-JP">[] = ["en-US", "zh-CN", "zh-TW", "zh-HK", "ko-KR"];
 
 const STATIC_UI_ATTRS = new Set([
   "label",
@@ -127,6 +127,8 @@ function loadCatalogs(root: string): Catalogs {
     "en-US": loadCatalog(path.join(root, "en-US")),
     "zh-CN": loadCatalog(path.join(root, "zh-CN")),
     "zh-TW": loadCatalog(path.join(root, "zh-TW")),
+    "zh-HK": loadCatalog(path.join(root, "zh-HK")),
+    "ko-KR": loadCatalog(path.join(root, "ko-KR")),
   };
 }
 
@@ -599,6 +601,8 @@ export function voicevoxI18n(): Plugin {
     "en-US": {},
     "zh-CN": {},
     "zh-TW": {},
+    "zh-HK": {},
+    "ko-KR": {},
   };
 
   return {
