@@ -104,6 +104,27 @@ describe("voicevox i18n Vite plugin", () => {
     );
   });
 
+
+
+  it("rewrites translated strings inside Vue script setup blocks", async () => {
+    const plugin = createPlugin();
+    const source = `
+      <template><div /></template>
+      <script setup lang="ts">
+      const label = "生成中です...";
+      </script>
+    `;
+
+    const transformed = await plugin.transform?.(
+      source,
+      `${projectRoot}/src/components/ProgressView.vue`,
+    );
+
+    expect(transformed).toContain(
+      'globalThis.__VOICEVOX_I18N__?.text("components/ProgressView.vue", "生成中です...")',
+    );
+  });
+
   it("keeps the original source as the fallback for a translated TypeScript literal", async () => {
     const plugin = createPlugin();
     const source = `const label = "エラー";`;

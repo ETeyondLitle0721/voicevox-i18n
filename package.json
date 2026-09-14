@@ -49,6 +49,8 @@
     "postinstall:download-scripts": "tsx tools/download7z.ts && tsx tools/downloadTypos.ts",
     "postuninstall": "electron-builder install-app-deps",
     "i18n:extract": "tsx tools/i18n/extract.ts",
+    "i18n:audit": "tsx tools/i18n/audit.ts --strict",
+    "i18n:audit:components": "tsx tools/i18n/audit.ts --components-only",
     "build:test": "cross-env VITE_TARGET=browser vite build",
     "electron:build:asar": "pnpm run electron:build:compile && tsx tools/i18n/packAsar.ts",
     "electron:pack:asar": "tsx tools/i18n/packAsar.ts",

@@ -366,6 +366,39 @@ function rewriteVue(
     }
   }
 
+  for (const script of [
+    parsed.descriptor.script,
+    parsed.descriptor.scriptSetup,
+  ]) {
+    if (!script?.content) {
+      continue;
+    }
+
+    const rewrittenScript = rewriteTypeScript(
+      script.content,
+      id,
+      projectRoot,
+      catalogs,
+    );
+
+    if (rewrittenScript === script.content) {
+      continue;
+    }
+
+    const contentOffset = code.indexOf(script.content, script.loc.start.offset);
+    if (contentOffset < 0) {
+      throw new Error(
+        `voicevox-i18n: failed to locate script content in ${scope}`,
+      );
+    }
+
+    replacements.push({
+      start: contentOffset,
+      end: contentOffset + script.content.length,
+      value: rewrittenScript,
+    });
+  }
+
   return applyReplacements(code, replacements);
 }
 

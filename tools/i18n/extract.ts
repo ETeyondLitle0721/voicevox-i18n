@@ -68,106 +68,116 @@ function collectVueTextRun(
 function extractVue(file: string, projectRoot: string): MessageCandidate[] {
   const code = fs.readFileSync(file, "utf-8");
   const parsed = parseSfc(code, { filename: file });
-  const template = parsed.descriptor.template;
-  if (!template) return [];
-
-  const ast: RootNode = baseParse(template.content);
   const scope = scopeFromFile(file, projectRoot);
   const result: MessageCandidate[] = [];
 
-  const visit = (node: ElementNode): void => {
-    for (const prop of node.props) {
-      if (
-        prop.type === 6 &&
-        ["label", "title", "placeholder", "aria-label", "alt", "description"].includes(
-          prop.name,
-        ) &&
-        prop.value?.content &&
-        JAPANESE_RE.test(prop.value.content)
-      ) {
-        result.push({
-          scope,
-          key: normalizeKey(prop.value.content),
-          kind: "vue-attribute",
-        });
-      }
-    }
+  const template = parsed.descriptor.template;
+  if (template) {
+    const ast: RootNode = baseParse(template.content);
 
-    const children = node.children;
-
-    for (let i = 0; i < children.length; i += 1) {
-      const child = children[i];
-
-      if (child.type === 2 || child.type === 5) {
-        const run: (TextNode | InterpolationNode)[] = [];
-        let j = i;
-
-        while (
-          j < children.length &&
-          (children[j].type === 2 || children[j].type === 5)
+    const visit = (node: ElementNode): void => {
+      for (const prop of node.props) {
+        if (
+          prop.type === 6 &&
+          ["label", "title", "placeholder", "aria-label", "alt", "description"].includes(
+            prop.name,
+          ) &&
+          prop.value?.content &&
+          JAPANESE_RE.test(prop.value.content)
         ) {
-          run.push(children[j] as TextNode | InterpolationNode);
-          j += 1;
+          result.push({
+            scope,
+            key: normalizeKey(prop.value.content),
+            kind: "vue-attribute",
+          });
         }
-
-        const hasInterpolation = run.some((node) => node.type === 5);
-        const { source, hasJapaneseText } = collectVueTextRun(
-          run,
-          template.content,
-        );
-
-        if (hasInterpolation) {
-          if (hasJapaneseText) {
-            result.push({
-              scope,
-              key: normalizeKey(source),
-              kind: "vue-template",
-            });
-          }
-        } else {
-          const text = run[0];
-          if (
-            text?.type === 2 &&
-            text.content.trim() &&
-            JAPANESE_RE.test(text.content)
-          ) {
-            result.push({
-              scope,
-              key: normalizeKey(text.content),
-              kind: "vue-text",
-            });
-          }
-        }
-
-        i = j - 1;
-        continue;
       }
 
+      const children = node.children;
+
+      for (let i = 0; i < children.length; i += 1) {
+        const child = children[i];
+
+        if (child.type === 2 || child.type === 5) {
+          const run: (TextNode | InterpolationNode)[] = [];
+          let j = i;
+
+          while (
+            j < children.length &&
+            (children[j].type === 2 || children[j].type === 5)
+          ) {
+            run.push(children[j] as TextNode | InterpolationNode);
+            j += 1;
+          }
+
+          const hasInterpolation = run.some((node) => node.type === 5);
+          const { source, hasJapaneseText } = collectVueTextRun(
+            run,
+            template.content,
+          );
+
+          if (hasInterpolation) {
+            if (hasJapaneseText) {
+              result.push({
+                scope,
+                key: normalizeKey(source),
+                kind: "vue-template",
+              });
+            }
+          } else {
+            const text = run[0];
+            if (
+              text?.type === 2 &&
+              text.content.trim() &&
+              JAPANESE_RE.test(text.content)
+            ) {
+              result.push({
+                scope,
+                key: normalizeKey(text.content),
+                kind: "vue-text",
+              });
+            }
+          }
+
+          i = j - 1;
+          continue;
+        }
+
+        if (child.type === 1) {
+          visit(child);
+        }
+      }
+    };
+
+    for (const child of ast.children) {
       if (child.type === 1) {
         visit(child);
       }
     }
-  };
+  }
 
-  for (const child of ast.children) {
-    if (child.type === 1) {
-      visit(child);
-    }
+  for (const script of parsed.descriptor.script ? [parsed.descriptor.script] : []) {
+    result.push(...extractTsCode(script.content, scope));
+  }
+
+  for (const script of parsed.descriptor.scriptSetup ? [parsed.descriptor.scriptSetup] : []) {
+    result.push(...extractTsCode(script.content, scope));
   }
 
   return result;
 }
 
-function extractTs(file: string, projectRoot: string): MessageCandidate[] {
-  const code = fs.readFileSync(file, "utf-8");
+function extractTsCode(
+  code: string,
+  scope: string,
+): MessageCandidate[] {
   const sourceFile = ts.createSourceFile(
-    file,
+    scope,
     code,
     ts.ScriptTarget.Latest,
     true,
     ts.ScriptKind.TS,
   );
-  const scope = scopeFromFile(file, projectRoot);
   const result: MessageCandidate[] = [];
 
   const visit = (node: ts.Node): void => {
@@ -210,6 +220,12 @@ function extractTs(file: string, projectRoot: string): MessageCandidate[] {
 
   visit(sourceFile);
   return result;
+}
+
+function extractTs(file: string, projectRoot: string): MessageCandidate[] {
+  const code = fs.readFileSync(file, "utf-8");
+  const scope = scopeFromFile(file, projectRoot);
+  return extractTsCode(code, scope);
 }
 
 export function extractCandidates(projectRoot = process.cwd()): MessageCandidate[] {
