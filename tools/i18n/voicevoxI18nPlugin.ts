@@ -33,7 +33,6 @@ const STATIC_UI_ATTRS = new Set([
   "alt",
 ]);
 
-const JAPANESE_RE = /[ぁ-ゖァ-ヺ一-龯]/u;
 const VIRTUAL_RUNTIME_PUBLIC_ID = "virtual:voicevox-i18n/runtime";
 const VIRTUAL_RUNTIME_ID = `\0${VIRTUAL_RUNTIME_PUBLIC_ID}`;
 
@@ -233,6 +232,21 @@ function collectVueTextRun(
   return { "source": source.trim(), quasis, expressions };
 }
 
+function parseAttributeBindingLiteral(
+  expression: string,
+): { value: string; start: number; end: number } | undefined {
+  const match = expression.match(/^(['"])([\s\S]*?)\1$/u);
+  if (!match) {
+    const template = expression.match(/^`([\s\S]*)`$/u);
+    if (!template || template[1].includes("${")) {
+      return undefined;
+    }
+    return { value: template[1], start: 1, end: expression.length - 1 };
+  }
+
+  return { value: match[2], start: 1, end: expression.length - 1 };
+}
+
 function rewriteVue(
   code: string,
   id: string,
@@ -241,128 +255,162 @@ function rewriteVue(
 ): string {
   const parsed = parseSfc(code, { filename: id });
   const template = parsed.descriptor.template;
-
-  if (!template) {
-    return code;
-  }
-
-  const root: RootNode = baseParse(template.content);
   const scope = scopeFromId(id, projectRoot);
   const replacements: Replacement[] = [];
-  const templateContent = template.content;
-  const templateContentRelativeOffset = template.loc.source.indexOf(
-    templateContent,
-  );
-  if (templateContentRelativeOffset < 0) {
-    throw new Error(
-      `voicevox-i18n: failed to locate template content in ${scope}`,
+
+  if (template) {
+    const root: RootNode = baseParse(template.content);
+    const templateContent = template.content;
+    const templateContentRelativeOffset = template.loc.source.indexOf(
+      templateContent,
     );
-  }
-  const templateContentOffset =
-    template.loc.start.offset + templateContentRelativeOffset;
-
-  const visitElement = (node: ElementNode): void => {
-    for (const prop of node.props) {
-      if (
-        prop.type === NodeTypes.ATTRIBUTE &&
-        STATIC_UI_ATTRS.has(prop.name) &&
-        prop.value?.content &&
-        JAPANESE_RE.test(prop.value.content) &&
-        findTranslation(catalogs, scope, prop.value.content)
-      ) {
-        replacements.push(
-          replacement(
-            templateContentOffset,
-            prop.loc.start.offset,
-            prop.loc.end.offset,
-            `:${prop.name}='$vvI18nText(${escapeJsString(scope)}, ${escapeJsString(prop.value.content.trim())})'`,
-          ),
-        );
-      }
+    if (templateContentRelativeOffset < 0) {
+      throw new Error(
+        `voicevox-i18n: failed to locate template content in ${scope}`,
+      );
     }
+    const templateContentOffset =
+      template.loc.start.offset + templateContentRelativeOffset;
 
-    const children = node.children;
-    for (let i = 0; i < children.length; i += 1) {
-      const child = children[i];
-
-      if (
-        child.type === NodeTypes.TEXT ||
-        child.type === NodeTypes.INTERPOLATION
-      ) {
-        const run: (TextNode | InterpolationNode)[] = [];
-        let j = i;
-
-        while (
-          j < children.length &&
-          (children[j].type === NodeTypes.TEXT ||
-            children[j].type === NodeTypes.INTERPOLATION)
+    const visitElement = (node: ElementNode): void => {
+      for (const prop of node.props) {
+        if (
+          prop.type === NodeTypes.ATTRIBUTE &&
+          STATIC_UI_ATTRS.has(prop.name) &&
+          prop.value?.content &&
+          findTranslation(catalogs, scope, prop.value.content)
         ) {
-          run.push(children[j] as TextNode | InterpolationNode);
-          j += 1;
+          replacements.push(
+            replacement(
+              templateContentOffset,
+              prop.loc.start.offset,
+              prop.loc.end.offset,
+              `:${prop.name}='$vvI18nText(${escapeJsString(scope)}, ${escapeJsString(prop.value.content.trim())})'`,
+            ),
+          );
         }
 
-        const hasInterpolation = run.some(
-          (item) => item.type === NodeTypes.INTERPOLATION,
-        );
-        const hasJapaneseText = run.some(
-          (item) =>
-            item.type === NodeTypes.TEXT && JAPANESE_RE.test(item.content),
-        );
+        // For bound UI attributes such as :label="'日本語'" or
+        // :aria-label="`日本語`", keep the binding and localize only the
+        // Japanese string expression. Dynamic values are intentionally left
+        // untouched.
+        if (prop.type === NodeTypes.DIRECTIVE && prop.arg) {
+          const argName =
+            prop.arg.type === NodeTypes.SIMPLE_EXPRESSION && !prop.arg.isDynamic
+              ? prop.arg.content
+              : undefined;
 
-        if (hasInterpolation && hasJapaneseText) {
-          const { source, quasis, expressions } = collectVueTextRun(
-            run,
-            templateContent,
+          if (argName && STATIC_UI_ATTRS.has(argName) && prop.exp) {
+            const expression = prop.exp.content.trim();
+            const literal = parseAttributeBindingLiteral(expression);
+
+            if (literal) {
+              const source = literal.value.trim();
+              if (
+                findTranslation(catalogs, scope, source)
+              ) {
+                replacements.push(
+                  replacement(
+                    templateContentOffset,
+                    prop.loc.start.offset,
+                    prop.loc.end.offset,
+                    `:${argName}='$vvI18nText(${escapeJsString(scope)}, ${escapeJsString(source)})'`,
+                  ),
+                );
+              }
+            }
+          }
+        }
+      }
+
+      const children = node.children;
+      for (let i = 0; i < children.length; i += 1) {
+        const child = children[i];
+
+        if (
+          child.type === NodeTypes.TEXT ||
+          child.type === NodeTypes.INTERPOLATION
+        ) {
+          const run: (TextNode | InterpolationNode)[] = [];
+          let j = i;
+
+          while (
+            j < children.length &&
+            (children[j].type === NodeTypes.TEXT ||
+              children[j].type === NodeTypes.INTERPOLATION)
+          ) {
+            run.push(children[j] as TextNode | InterpolationNode);
+            j += 1;
+          }
+
+          const hasInterpolation = run.some(
+            (item) => item.type === NodeTypes.INTERPOLATION,
+          );
+          const hasJapaneseText = run.some(
+            (item) =>
+              item.type === NodeTypes.TEXT
           );
 
-          if (findTranslation(catalogs, scope, source)) {
-            replacements.push(
-              replacement(
-                templateContentOffset,
-                run[0].loc.start.offset,
-                run.at(-1)?.loc.end.offset ?? run[0].loc.end.offset,
-                `{{ $vvI18nTemplate(${escapeJsString(scope)}, [${quasis
-                  .map(escapeJsString)
-                  .join(", ")}], [${expressions.join(", ")}]) }}`,
-              ),
+          if (hasInterpolation && hasJapaneseText) {
+            const { source, quasis, expressions } = collectVueTextRun(
+              run,
+              templateContent,
             );
-          }
-        } else {
-          for (const item of run) {
-            if (item.type !== NodeTypes.TEXT || !JAPANESE_RE.test(item.content)) {
-              continue;
-            }
 
-            const source = item.content.trim();
-            const range = getTrimmedTextRange(item.content);
-            if (range.end <= range.start || !findTranslation(catalogs, scope, source)) {
-              continue;
+            if (findTranslation(catalogs, scope, source)) {
+              replacements.push(
+                replacement(
+                  templateContentOffset,
+                  run[0].loc.start.offset,
+                  run.at(-1)?.loc.end.offset ?? run[0].loc.end.offset,
+                  `{{ $vvI18nTemplate(${escapeJsString(scope)}, [${quasis
+                    .map(escapeJsString)
+                    .join(", ")}], [${expressions.join(", ")}]) }}`,
+                ),
+              );
             }
+          } else {
+            for (const item of run) {
+              if (
+                item.type !== NodeTypes.TEXT
+              ) {
+                continue;
+              }
 
-            replacements.push(
-              replacement(
-                templateContentOffset,
-                item.loc.start.offset + range.start,
-                item.loc.start.offset + range.end,
-                `{{ $vvI18nText(${escapeJsString(scope)}, ${escapeJsString(source)}) }}`,
-              ),
-            );
+              const source = item.content.trim();
+              const range = getTrimmedTextRange(item.content);
+              if (
+                range.end <= range.start ||
+                !findTranslation(catalogs, scope, source)
+              ) {
+                continue;
+              }
+
+              replacements.push(
+                replacement(
+                  templateContentOffset,
+                  item.loc.start.offset + range.start,
+                  item.loc.start.offset + range.end,
+                  `{{ $vvI18nText(${escapeJsString(scope)}, ${escapeJsString(source)}) }}`,
+                ),
+              );
+            }
           }
+
+          i = j - 1;
+          continue;
         }
 
-        i = j - 1;
-        continue;
+        if (child.type === NodeTypes.ELEMENT) {
+          visitElement(child);
+        }
       }
+    };
 
+    for (const child of root.children) {
       if (child.type === NodeTypes.ELEMENT) {
         visitElement(child);
       }
-    }
-  };
-
-  for (const child of root.children) {
-    if (child.type === NodeTypes.ELEMENT) {
-      visitElement(child);
     }
   }
 
@@ -533,7 +581,6 @@ function rewriteTypeScript(
       );
 
       if (
-        JAPANESE_RE.test(source) &&
         findTranslation(catalogs, scope, source)
       ) {
         const raw = node.getText(sourceFile);
@@ -561,7 +608,6 @@ function rewriteTypeScript(
       const source = node.text;
 
       if (
-        JAPANESE_RE.test(source) &&
         findTranslation(catalogs, scope, source) &&
         shouldRewriteStringLiteral(node)
       ) {

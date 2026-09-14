@@ -5,6 +5,17 @@ export type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "
 export type LocaleCatalog = Record<string, Record<string, string>>;
 export type LocaleCatalogs = Record<VoicevoxLocale, LocaleCatalog>;
 
+declare module "vue" {
+  interface ComponentCustomProperties {
+    $vvI18nText: (scope: string, source: string) => string;
+    $vvI18nTemplate: (
+      scope: string,
+      quasis: readonly string[],
+      values: readonly unknown[],
+    ) => string;
+  }
+}
+
 declare global {
   // eslint-disable-next-line no-var
   var __VOICEVOX_I18N__: {

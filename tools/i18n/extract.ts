@@ -65,6 +65,17 @@ function collectVueTextRun(
   };
 }
 
+function parseAttributeBindingLiteral(
+  expression: string,
+): string | undefined {
+  const match = expression.match(/^(['"])([\s\S]*?)\1$/u);
+  if (match) return match[2];
+
+  const template = expression.match(/^`([\s\S]*)`$/u);
+  if (!template || template[1].includes("${")) return undefined;
+  return template[1];
+}
+
 function extractVue(file: string, projectRoot: string): MessageCandidate[] {
   const code = fs.readFileSync(file, "utf-8");
   const parsed = parseSfc(code, { filename: file });
@@ -90,6 +101,25 @@ function extractVue(file: string, projectRoot: string): MessageCandidate[] {
             key: normalizeKey(prop.value.content),
             kind: "vue-attribute",
           });
+        }
+
+        if (prop.type === 7 && prop.arg?.type === 4 && prop.exp) {
+          const argName = prop.arg.content;
+          const expression = prop.exp.content.trim();
+          const boundValue =
+            ["label", "title", "placeholder", "aria-label", "alt", "description"].includes(
+              argName,
+            ) && !prop.arg.isDynamic
+              ? parseAttributeBindingLiteral(expression)
+              : undefined;
+
+          if (boundValue && JAPANESE_RE.test(boundValue)) {
+            result.push({
+              scope,
+              key: normalizeKey(boundValue),
+              kind: "vue-attribute",
+            });
+          }
         }
       }
 

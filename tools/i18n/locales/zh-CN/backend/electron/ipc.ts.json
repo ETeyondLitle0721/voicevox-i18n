@@ -1,0 +1,3 @@
+{
+  "不正なURLからのIPCメッセージを検出しました。senderUrl: {0}": "检测到来自非法 URL 的 IPC 消息。senderUrl：{0}"
+}

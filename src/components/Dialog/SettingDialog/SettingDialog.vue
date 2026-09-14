@@ -138,20 +138,28 @@
                   description="音声再生中の、詳細調整欄の自動スクロールのモードを選べます。"
                   :options="[
                     {
-                      label: '連続',
+                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', '連続'),
                       value: 'CONTINUOUSLY',
-                      description: '現在の再生位置を真ん中に表示します。',
+                      description: $vvI18nText(
+                        'components/Dialog/SettingDialog/SettingDialog.vue',
+                        '現在の再生位置を真ん中に表示します。',
+                      ),
                     },
                     {
-                      label: 'ページめくり',
+                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'ページめくり'),
                       value: 'PAGE',
-                      description:
+                      description: $vvI18nText(
+                        'components/Dialog/SettingDialog/SettingDialog.vue',
                         '現在の再生位置が表示範囲外にある場合にスクロールします。',
+                      ),
                     },
                     {
-                      label: 'オフ',
+                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'オフ'),
                       value: 'OFF',
-                      description: '自動でスクロールしません。',
+                      description: $vvI18nText(
+                        'components/Dialog/SettingDialog/SettingDialog.vue',
+                        '自動でスクロールしません。',
+                      ),
                     },
                   ]"
                 />
@@ -161,19 +169,28 @@
                   :modelValue="splitTextWhenPaste"
                   :options="[
                     {
-                      label: '句点と改行',
+                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', '句点と改行'),
                       value: 'PERIOD_AND_NEW_LINE',
-                      description: '句点と改行を基にテキストを分割します。',
+                      description: $vvI18nText(
+                        'components/Dialog/SettingDialog/SettingDialog.vue',
+                        '句点と改行を基にテキストを分割します。',
+                      ),
                     },
                     {
-                      label: '改行',
+                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', '改行'),
                       value: 'NEW_LINE',
-                      description: '改行のみを基にテキストを分割します。',
+                      description: $vvI18nText(
+                        'components/Dialog/SettingDialog/SettingDialog.vue',
+                        '改行のみを基にテキストを分割します。',
+                      ),
                     },
                     {
-                      label: 'オフ',
+                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'オフ'),
                       value: 'OFF',
-                      description: '分割を行いません。',
+                      description: $vvI18nText(
+                        'components/Dialog/SettingDialog/SettingDialog.vue',
+                        '分割を行いません。',
+                      ),
                     },
                   ]"
                   @update:modelValue="
@@ -314,16 +331,22 @@
                   "
                 />
                 <ToggleCell
-                  title="txtファイルを書き出し"
-                  description="ONの場合、音声書き出しの際にテキストがtxtファイルとして書き出されます。"
+                  :title="$vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'txtファイルを書き出し')"
+                  :description="$vvI18nText(
+                    'components/Dialog/SettingDialog/SettingDialog.vue',
+                    'ONの場合、音声書き出しの際にテキストがtxtファイルとして書き出されます。',
+                  )"
                   :modelValue="savingSetting.exportText"
                   @update:modelValue="
                     handleSavingSettingChange('exportText', $event)
                   "
                 />
                 <ToggleCell
-                  title="labファイルを書き出し"
-                  description="ONの場合、音声書き出しの際にリップシンク用のlabファイルが書き出されます。"
+                  :title="$vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'labファイルを書き出し')"
+                  :description="$vvI18nText(
+                    'components/Dialog/SettingDialog/SettingDialog.vue',
+                    'ONの場合、音声書き出しの際にリップシンク用のlabファイルが書き出されます。',
+                  )"
                   :modelValue="savingSetting.exportLab"
                   @update:modelValue="
                     handleSavingSettingChange('exportLab', $event)

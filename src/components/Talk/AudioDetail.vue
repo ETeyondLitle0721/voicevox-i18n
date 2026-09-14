@@ -7,17 +7,29 @@
       <div class="side">
         <div class="detail-selector">
           <QTabs v-model="selectedDetail" dense vertical class="text-display">
-            <QTab name="accent" label="ｱｸｾﾝﾄ" />
+            <QTab
+              name="accent"
+              :label="$vvI18nText(
+                'components/Talk/AudioDetail.vue',
+                'ｱｸｾﾝﾄ',
+              )"
+            />
             <QTab
               name="pitch"
-              label="ｲﾝﾄﾈｰｼｮﾝ"
+              :label="$vvI18nText(
+                'components/Talk/AudioDetail.vue',
+                'ｲﾝﾄﾈｰｼｮﾝ',
+              )"
               :disable="
                 !(supportedFeatures && supportedFeatures.adjustMoraPitch)
               "
             />
             <QTab
               name="length"
-              label="長さ"
+              :label="$vvI18nText(
+                'components/Talk/AudioDetail.vue',
+                '長さ',
+              )"
               :disable="
                 !(supportedFeatures && supportedFeatures.adjustPhonemeLength)
               "

@@ -1,7 +1,12 @@
 {
   "やり直す": "Redo",
   "エンジンの再起動をお試しください。": "Please try restarting the engine.",
+  "テキスト読み込み": "Import Text",
+  "プロジェクト保存": "Save Project",
   "元に戻す": "Undo",
+  "全部書き出し": "Export All Audio",
   "再生に失敗しました": "Failed to play.",
-  "連続再生/停止": "Play / Stop continuously"
+  "連続再生/停止": "Play / Stop continuously",
+  "選択音声を書き出し": "Export Selected Audio",
+  "音声を繋げて書き出し": "Export Connected Audio"
 }

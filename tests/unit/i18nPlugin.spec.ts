@@ -106,6 +106,36 @@ describe("voicevox i18n Vite plugin", () => {
 
 
 
+
+  it("rewrites translated static string bindings for label and aria-label", async () => {
+    const plugin = createPlugin();
+    const source = `<template><q-btn :label="'閉じる'" :aria-label="'閉じる'" /></template>`;
+    const transformed = await plugin.transform?.(
+      source,
+      `${projectRoot}/src/components/Dialog/SaveAllResultDialog.vue`,
+    );
+
+    expect(transformed).toContain(
+      `:label='$vvI18nText(\"components/Dialog/SaveAllResultDialog.vue\", \"閉じる\")'`,
+    );
+    expect(transformed).toContain(
+      `:aria-label='$vvI18nText(\"components/Dialog/SaveAllResultDialog.vue\", \"閉じる\")'`,
+    );
+  });
+
+  it("rewrites script setup even when the Vue SFC has no template", async () => {
+    const plugin = createPlugin();
+    const source = `<script setup lang="ts">const label = "生成中です...";</script>`;
+    const transformed = await plugin.transform?.(
+      source,
+      `${projectRoot}/src/components/ProgressView.vue`,
+    );
+
+    expect(transformed).toContain(
+      'globalThis.__VOICEVOX_I18N__?.text("components/ProgressView.vue", "生成中です...")',
+    );
+  });
+
   it("rewrites translated strings inside Vue script setup blocks", async () => {
     const plugin = createPlugin();
     const source = `
