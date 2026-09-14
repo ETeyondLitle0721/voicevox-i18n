@@ -98,6 +98,9 @@ importers:
         specifier: 4.4.3
         version: 4.4.3
     devDependencies:
+      '@electron/asar':
+        specifier: 4.3.0
+        version: 4.3.0
       '@eslint/eslintrc':
         specifier: 3.3.5
         version: 3.3.5
@@ -336,6 +339,11 @@ packages:
   '@electron/asar@3.4.1':
     resolution: {integrity: sha512-i4/rNPRS84t0vSRa2HorerGRXWyF4vThfHesw0dmcWHp+cspK743UanA0suA5Q5y8kzY2y6YKrvbIUn69BCAiA==}
     engines: {node: '>=10.12.0'}
+    hasBin: true
+
+  '@electron/asar@4.3.0':
+    resolution: {integrity: sha512-k/FFC/NQoTykGBi/Ga4L4KorsAKDdkK0LfNVG90eUG6vPVpJaL3iR9V1ZLbzBAF3QpojK5DcaGOdQOheKZv4JQ==}
+    engines: {node: '>=22.12.0'}
     hasBin: true
 
   '@electron/fuses@1.8.0':
@@ -2510,9 +2518,6 @@ packages:
   boolean@3.2.0:
     resolution: {integrity: sha512-d0II/GO9uf9lfUHH2BQsjxzRJZBdsjgsBiW4BvhWk/3qoKwQFjIDVN19PfX8F2D/r9PCMTtLWjYVCFrpeYUzsw==}
     deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
-
-  brace-expansion@1.1.12:
-    resolution: {integrity: sha512-9T9UjW3r0UW5c1Q7GTwllptXwhvYmEzFhzMfZ9H7FQWt+uZePjZPjBP/W1ZEyZ1twGWom5/56TF4lPcqjnDHcg==}
 
   brace-expansion@1.1.13:
     resolution: {integrity: sha512-9ZLprWS6EENmhEOpjCYW2c8VkmOvckIJZfkr7rBW6dObmfgJ/L1GpSYW5Hpo9lDz4D1+n0Ckz8rU7FwHDQiG/w==}
@@ -6304,6 +6309,11 @@ snapshots:
       glob: 7.2.3
       minimatch: 3.1.5
 
+  '@electron/asar@4.3.0':
+    dependencies:
+      glob: 13.0.6
+      minimatch: 10.2.5
+
   '@electron/fuses@1.8.0':
     dependencies:
       chalk: 4.1.2
@@ -8433,11 +8443,6 @@ snapshots:
 
   boolean@3.2.0:
     optional: true
-
-  brace-expansion@1.1.12:
-    dependencies:
-      balanced-match: 1.0.2
-      concat-map: 0.0.1
 
   brace-expansion@1.1.13:
     dependencies:
@@ -10662,7 +10667,7 @@ snapshots:
 
   minimatch@3.1.2:
     dependencies:
-      brace-expansion: 1.1.12
+      brace-expansion: 1.1.13
 
   minimatch@3.1.5:
     dependencies:

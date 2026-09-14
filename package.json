@@ -1,6 +1,6 @@
 {
   "name": "voicevox",
-  "version": "999.999.999",
+  "version": "0.25.2",
   "author": "Hiroshiba Kazuyuki",
   "private": true,
   "main": "./dist/main.js",
@@ -50,7 +50,8 @@
     "postuninstall": "electron-builder install-app-deps",
     "i18n:extract": "tsx tools/i18n/extract.ts",
     "electron:build:asar": "pnpm run electron:build:compile && tsx tools/i18n/packAsar.ts",
-    "electron:pack:asar": "tsx tools/i18n/packAsar.ts"
+    "electron:pack:asar": "tsx tools/i18n/packAsar.ts",
+    "etpack": "node ./pack.js"
   },
   "dependencies": {
     "@gtm-support/vue-gtm": "3.2.0",
@@ -84,6 +85,7 @@
     "zod": "4.4.3"
   },
   "devDependencies": {
+    "@electron/asar": "4.3.0",
     "@eslint/eslintrc": "3.3.5",
     "@eslint/js": "10.0.1",
     "@openapitools/openapi-generator-cli": "2.32.0",

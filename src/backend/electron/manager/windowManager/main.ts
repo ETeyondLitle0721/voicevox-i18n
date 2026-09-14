@@ -148,6 +148,21 @@ class MainWindowManager {
     await this.load({});
 
     if (this.isDevelopment && !this.isTest) win.webContents.openDevTools();
+
+    win.webContents.on("before-input-event", (event, input) => {
+      const isF12 = input.key === "F12";
+      const isDevToolsShortcut =
+        input.control && input.shift && input.key.toLowerCase() === "i";
+
+      if (isF12 || isDevToolsShortcut) {
+        event.preventDefault();
+        if (win.webContents.isDevToolsOpened()) {
+          win.webContents.closeDevTools();
+        } else {
+          win.webContents.openDevTools({ mode: "detach" });
+        }
+      }
+    });
   }
 
   /**

@@ -17,6 +17,8 @@ declare global {
     readonly [welcomeSandboxKey]: WelcomeSandbox;
   }
 
+  var __VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__: readonly string[] | undefined;
+
   interface Navigator {
     // navigator.userAgentDataを認識してくれないため
     userAgentData: {

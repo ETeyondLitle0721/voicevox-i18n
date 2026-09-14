@@ -9,8 +9,8 @@ source changes:
 - Lookup keys are normalized with `trim()` + internal whitespace collapsing.
 - Missing translations always fall back to the original Japanese source.
 - Runtime locale is selected from the persisted `localStorage` key `voicevox.locale` when valid.
-  On first launch, `navigator.languages` is detected, normalized, and persisted so later launches keep the
-  initial locale; `zh-*` maps to `zh-CN`, `en-*` to `en`, and everything else to `en`.
+  On first launch, Electron's `app.getPreferredSystemLanguages()` result is detected, normalized, and persisted so later launches keep the
+  initial locale; `zh-*` maps to `zh-Hans-CN`, `en-*` to `en-US`, and everything else to `en-US`.
 - English and Simplified Chinese catalogs are provided for the first Tier 1 surface.
 
 The source tree is not modified by the compiler; generated transforms exist only in Vite's module graph.

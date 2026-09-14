@@ -6,12 +6,12 @@ import path from "node:path";
 const root = path.resolve(import.meta.dirname, "../..");
 const distDir = path.join(root, "dist");
 const packageJson = path.join(root, "package.json");
-const output = path.join(root, "dist_electron", "app.asar");
+const output = path.join(root, "app.asar");
 
 async function main() {
   const stageDir = await mkdtemp(path.join(os.tmpdir(), "voicevox-i18n-asar-"));
   try {
-    await cp(distDir, stageDir, { recursive: true });
+    await cp(distDir, path.join(stageDir, "dist"), { recursive: true });
     await cp(packageJson, path.join(stageDir, "package.json"));
     await rm(path.dirname(output), { recursive: true, force: true });
     await mkdir(path.dirname(output), { recursive: true });

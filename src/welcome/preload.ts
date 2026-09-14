@@ -12,6 +12,10 @@ import {
 } from "@/backend/electron/transferableResultHelper";
 import type { EngineId } from "@/type/preload";
 
+globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ipcRenderer.sendSync(
+  "__GET_PREFERRED_SYSTEM_LANGUAGES__",
+) as string[];
+
 type WelcomeIpcRendererInvoke = {
   [K in keyof WelcomeIpcIHData]: (
     ...args: WelcomeIpcIHData[K]["args"]

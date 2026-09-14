@@ -10,6 +10,10 @@ import {
 } from "./backendApiLoader";
 import type { ConfigType, EngineId, Sandbox } from "@/type/preload";
 
+globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ipcRenderer.sendSync(
+  "__GET_PREFERRED_SYSTEM_LANGUAGES__",
+) as string[];
+
 const ipcRendererInvokeProxy = new Proxy(
   {},
   {

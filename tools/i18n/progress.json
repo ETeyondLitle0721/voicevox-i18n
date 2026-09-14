@@ -1,8 +1,8 @@
 {
   "stage": "Tier 1 MVP",
   "locales": [
-    "en",
-    "zh-CN"
+    "en-US",
+    "zh-Hans-CN"
   ],
   "vue_sfc_count": 134,
   "translated_scopes": 45,

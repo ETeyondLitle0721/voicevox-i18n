@@ -9,7 +9,14 @@ type Catalog = Record<string, Record<string, string>>;
 type Catalogs = Record<string, Catalog>;
 
 const JP = /[ぁ-ゖァ-ヺ一-龯]/u;
-const STATIC_UI_ATTRS = new Set(["label", "title", "placeholder", "aria-label", "alt"]);
+const STATIC_UI_ATTRS = new Set([
+  "label",
+  "title",
+  "description",
+  "placeholder",
+  "aria-label",
+  "alt",
+]);
 
 const normalizeKey = (source: string): string =>
   source.trim().replace(/\s+/gu, " ");
@@ -45,8 +52,8 @@ function loadCatalog(localeDir: string): Catalog {
 function loadCatalogs(root: string): Catalogs {
   return {
     ja: loadCatalog(path.join(root, "ja")),
-    en: loadCatalog(path.join(root, "en")),
-    "zh-CN": loadCatalog(path.join(root, "zh-CN")),
+    "en-US": loadCatalog(path.join(root, "en-US")),
+    "zh-Hans-CN": loadCatalog(path.join(root, "zh-Hans-CN")),
   };
 }
 
@@ -60,7 +67,7 @@ function scopeFromId(id: string, projectRoot: string): string {
 
 function hasTranslation(
   catalogs: Catalogs,
-  locale: "en" | "zh-CN",
+  locale: "en-US" | "zh-Hans-CN",
   scope: string,
   source: string,
 ): boolean {
@@ -72,8 +79,8 @@ function hasAnyTranslation(
   scope: string,
   source: string,
 ): boolean {
-  return hasTranslation(catalogs, "en", scope, source) ||
-    hasTranslation(catalogs, "zh-CN", scope, source);
+  return hasTranslation(catalogs, "en-US", scope, source) ||
+    hasTranslation(catalogs, "zh-Hans-CN", scope, source);
 }
 
 function rewriteVue(
@@ -264,15 +271,25 @@ function rewriteTypeScript(
 function createRuntimeModule(catalogs: Catalogs): string {
   const json = JSON.stringify(catalogs);
   return `
+const LOCALE_STORAGE_KEY = "voicevox.locale";
 const normalizeKey = (source) => source.trim().replace(/\\s+/gu, " ");
 const detectLocale = (languages) => {
   for (const raw of languages) {
     const language = raw.toLowerCase();
     if (language === "ja" || language.startsWith("ja-")) return "ja";
-    if (language === "zh" || language.startsWith("zh-")) return "zh-CN";
-    if (language === "en" || language.startsWith("en-")) return "en";
+    if (language === "zh" || language.startsWith("zh-")) return "zh-Hans-CN";
+    if (language === "en" || language.startsWith("en-")) return "en-US";
   }
   return "en";
+};
+const getPreferredSystemLanguages = () => {
+  if (globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__?.length) {
+    return globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__;
+  }
+  if (typeof navigator !== "undefined") {
+    return navigator.language ? [navigator.language] : [];
+  }
+  return [];
 };
 const resolveLocale = () => {
   if (typeof localStorage !== "undefined") {
@@ -280,8 +297,8 @@ const resolveLocale = () => {
       const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
       if (
         storedLocale === "ja" ||
-        storedLocale === "en" ||
-        storedLocale === "zh-CN"
+        storedLocale === "en-US" ||
+        storedLocale === "zh-Hans-CN"
       ) {
         return storedLocale;
       }
@@ -290,11 +307,9 @@ const resolveLocale = () => {
     }
   }
 
-  if (typeof navigator !== "undefined") {
-    const languages = navigator.languages?.length
-      ? navigator.languages
-      : [navigator.language];
-    const detectedLocale = detectLocale(languages);
+  const preferredSystemLanguages = getPreferredSystemLanguages();
+  if (preferredSystemLanguages.length) {
+    const detectedLocale = detectLocale(preferredSystemLanguages);
 
     if (typeof localStorage !== "undefined") {
       try {

@@ -1,6 +1,6 @@
 import type { App } from "vue";
 
-export type VoicevoxLocale = "ja" | "en" | "zh-CN";
+export type VoicevoxLocale = "ja" | "en-US" | "zh-Hans-CN";
 
 export type LocaleCatalog = Record<string, Record<string, string>>;
 export type LocaleCatalogs = Record<VoicevoxLocale, LocaleCatalog>;
@@ -28,10 +28,22 @@ const detectLocale = (languages: readonly string[]): VoicevoxLocale => {
   for (const raw of languages) {
     const language = raw.toLowerCase();
     if (language === "ja" || language.startsWith("ja-")) return "ja";
-    if (language === "zh" || language.startsWith("zh-")) return "zh-CN";
-    if (language === "en" || language.startsWith("en-")) return "en";
+    if (language === "zh" || language.startsWith("zh-")) return "zh-Hans-CN";
+    if (language === "en" || language.startsWith("en-")) return "en-US";
   }
-  return "en";
+  return "en-US";
+};
+
+const getPreferredSystemLanguages = (): readonly string[] => {
+  if (globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__?.length) {
+    return globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__;
+  }
+
+  if (typeof navigator !== "undefined") {
+    return navigator.language ? [navigator.language] : [];
+  }
+
+  return [];
 };
 
 const resolveLocale = (): VoicevoxLocale => {
@@ -40,8 +52,8 @@ const resolveLocale = (): VoicevoxLocale => {
       const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
       if (
         storedLocale === "ja" ||
-        storedLocale === "en" ||
-        storedLocale === "zh-CN"
+        storedLocale === "en-US" ||
+        storedLocale === "zh-Hans-CN"
       ) {
         return storedLocale;
       }
@@ -50,10 +62,9 @@ const resolveLocale = (): VoicevoxLocale => {
     }
   }
 
-  if (typeof navigator !== "undefined") {
-    const detectedLocale = detectLocale(
-      navigator.languages?.length ? navigator.languages : [navigator.language],
-    );
+  const preferredSystemLanguages = getPreferredSystemLanguages();
+  if (preferredSystemLanguages.length) {
+    const detectedLocale = detectLocale(preferredSystemLanguages);
 
     if (typeof localStorage !== "undefined") {
       try {

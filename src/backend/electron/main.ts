@@ -1,7 +1,16 @@
 import path from "node:path";
 import fs from "node:fs";
 import { pathToFileURL } from "node:url";
-import { app, dialog, Menu, net, protocol, session, shell } from "electron";
+import {
+  app,
+  dialog,
+  ipcMain,
+  Menu,
+  net,
+  protocol,
+  session,
+  shell,
+} from "electron";
 import electronLog from "electron-log/main";
 import dayjs from "dayjs";
 import { initializeEngineInfoManager } from "./manager/engineInfoManager";
@@ -34,6 +43,10 @@ type SingleInstanceLockData = {
 if (isDevelopment && !isTest) {
   app.commandLine.appendSwitch("remote-debugging-port", "9222");
 }
+
+ipcMain.on("__GET_PREFERRED_SYSTEM_LANGUAGES__", (event) => {
+  event.returnValue = app.getPreferredSystemLanguages();
+});
 
 let suffix = "";
 if (isTest) {
