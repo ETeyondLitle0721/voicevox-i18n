@@ -10,6 +10,7 @@ import { quasar } from "@quasar/vite-plugin";
 import { playwright as playwrightProvider } from "@vitest/browser-playwright";
 import { z } from "zod";
 import { storybookTest } from "@storybook/addon-vitest/vitest-plugin";
+import { voicevoxI18n } from "./tools/i18n/voicevoxI18nPlugin.js";
 import {
   checkSuspiciousImports,
   type CheckSuspiciousImportsOptions,
@@ -117,6 +118,7 @@ export default defineConfig((options) => {
       },
     },
     plugins: [
+      voicevoxI18n(),
       vue(),
       quasar({ autoImportComponentCase: "pascal" }),
       isElectron && [

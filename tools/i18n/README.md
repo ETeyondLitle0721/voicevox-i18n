@@ -1,0 +1,16 @@
+# VOICEVOX build-time localization MVP
+
+This directory implements the first localization stage without requiring application
+source changes:
+
+- Vue SFC text nodes and selected UI attributes are transformed during the Vite build.
+- Selected UI-facing TypeScript string literals/template strings are transformed during the Vite build.
+- Translation lookup is scoped by the source file path.
+- Lookup keys are normalized with `trim()` + internal whitespace collapsing.
+- Missing translations always fall back to the original Japanese source.
+- Runtime locale is selected from the persisted `localStorage` key `voicevox.locale` when valid.
+  On first launch, `navigator.languages` is detected, normalized, and persisted so later launches keep the
+  initial locale; `zh-*` maps to `zh-CN`, `en-*` to `en`, and everything else to `en`.
+- English and Simplified Chinese catalogs are provided for the first Tier 1 surface.
+
+The source tree is not modified by the compiler; generated transforms exist only in Vite's module graph.

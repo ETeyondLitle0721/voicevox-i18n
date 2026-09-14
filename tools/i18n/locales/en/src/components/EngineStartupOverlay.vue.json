@@ -1,0 +1,6 @@
+{
+  "Q&Aを見る": "View Q&A",
+  "エンジンの起動に失敗しました。エンジンの再起動をお試しください。": "Failed to start the engine. Please try restarting the engine.",
+  "エンジン起動に時間がかかっています。": "The engine is taking longer than expected to start.",
+  "マルチエンジンをオフにして再読み込みする": "Disable multi-engine and reload"
+}

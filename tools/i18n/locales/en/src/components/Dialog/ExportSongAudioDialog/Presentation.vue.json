@@ -1,0 +1,11 @@
+{
+  "キャンセル": "Cancel",
+  "モノラルで書き出し": "Export as Mono",
+  "書き出し方法": "Export Method",
+  "書き出す": "Export",
+  "適用するトラックパラメーター": "Track Parameters to Apply",
+  "音声のサンプリングレート": "Audio Sample Rate",
+  "音声のビット深度": "Audio Bit Depth",
+  "音声書き出し": "Audio Export",
+  "音量を制限する": "Limit Volume"
+}

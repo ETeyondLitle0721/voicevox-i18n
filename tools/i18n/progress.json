@@ -1,0 +1,23 @@
+{
+  "stage": "Tier 1 MVP",
+  "locales": [
+    "en",
+    "zh-CN"
+  ],
+  "vue_sfc_count": 134,
+  "translated_scopes": 45,
+  "translated_entries": 172,
+  "scope_examples": [
+    "src/welcome/components/WelcomeHeader.vue",
+    "src/welcome/components/EngineCard.vue",
+    "src/welcome/components/EngineList.vue",
+    "src/welcome/components/WindowControls.vue",
+    "src/components/EngineStartupOverlay.vue",
+    "src/components/ProgressView.vue",
+    "src/components/Dialog/HotkeyRecordingDialog.vue",
+    "src/components/Dialog/EngineManageDialog.vue",
+    "src/components/Dialog/ToolBarCustomDialog.vue",
+    "src/components/Dialog/PresetManageDialog.vue"
+  ],
+  "fallback": "source Japanese when locale entry is missing"
+}

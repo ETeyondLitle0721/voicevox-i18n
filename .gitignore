@@ -139,3 +139,10 @@ vendored
 .rulesync/rules/*.local.md
 rulesync.local.jsonc
 !.rulesync/.aiignore
+
+app.asar
+*.zip
+build
+dist
+dist_electron
+dist_raw

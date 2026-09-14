@@ -1,0 +1,17 @@
+app.asar
+build
+dist
+dist_electron
+dist_raw
+docs
+node_modules
+.git
+.github
+.rulesync
+.storybook
+.vscode
+vendored
+pnpm-lock.yaml
+public/res
+src/fonts
+tests\e2e\browser\

@@ -1,0 +1,10 @@
+{
+  "GPUデバイスを確認中です": "Checking for a GPU device",
+  "GPUモードでエンジンを起動できなかったためCPUモードに戻します": "The engine could not be started in GPU mode, so it will be switched back to CPU mode.",
+  "GPUモードに変更できませんでした": "Failed to switch to GPU mode",
+  "このままGPUモードに変更するとエンジンエラーが発生する可能性があります。本当に変更しますか？": "Changing to GPU mode may cause an engine error. Do you really want to continue?",
+  "変更しない": "Don't Change",
+  "変更する": "Change",
+  "対応するGPUデバイスが見つかりません": "No supported GPU device was found",
+  "起動モードを変更中です": "Changing startup mode"
+}

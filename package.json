@@ -5,12 +5,6 @@
   "private": true,
   "main": "./dist/main.js",
   "type": "module",
-  "engines": {
-    "node": ">=24.11.1 <25"
-  },
-  "volta": {
-    "node": "24.11.1"
-  },
   "packageManager": "pnpm@10.28.2",
   "scripts": {
     "// --- lint ---": "",
@@ -53,13 +47,17 @@
     "postinstall": "pnpm run postinstall:packages && pnpm run postinstall:download-scripts",
     "postinstall:packages": "install-electron && electron-builder install-app-deps && playwright install chromium",
     "postinstall:download-scripts": "tsx tools/download7z.ts && tsx tools/downloadTypos.ts",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "i18n:extract": "tsx tools/i18n/extract.ts",
+    "electron:build:asar": "pnpm run electron:build:compile && tsx tools/i18n/packAsar.ts",
+    "electron:pack:asar": "tsx tools/i18n/packAsar.ts"
   },
   "dependencies": {
     "@gtm-support/vue-gtm": "3.2.0",
     "@quasar/extras": "1.18.0",
     "@sevenc-nanashi/utaformatix-ts": "jsr:0.4.0",
     "@std/path": "jsr:1.1.4",
+    "archiver": "8.0.0",
     "async-lock": "1.4.1",
     "dayjs": "1.11.20",
     "electron-log": "5.4.4",
@@ -68,6 +66,7 @@
     "fast-array-diff": "1.1.0",
     "fast-base64": "0.1.8",
     "hotkeys-js": "4.0.4",
+    "ignore": "7.0.8",
     "immer": "11.1.8",
     "kuromoji": "github:VOICEVOX/kuromoji.js#0.0.1",
     "markdown-it": "14.1.1",
@@ -109,6 +108,8 @@
     "@vitest/eslint-plugin": "1.6.17",
     "@vitest/ui": "4.1.6",
     "@voicevox/eslint-plugin": "file:eslint-plugin",
+    "@vue/compiler-dom": "3.5.34",
+    "@vue/compiler-sfc": "3.5.34",
     "@vue/eslint-config-prettier": "10.2.0",
     "@vue/eslint-config-typescript": "14.7.0",
     "@vue/test-utils": "2.4.10",
