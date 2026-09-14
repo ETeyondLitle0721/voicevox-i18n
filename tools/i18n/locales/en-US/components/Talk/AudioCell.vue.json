@@ -1,0 +1,11 @@
+{
+  "コピー": "Copy",
+  "コンテキストメニューアイテムの取得に失敗しました。": "Failed to get context menu items.",
+  "予期せぬタイプエラーです。": "Unexpected type error.",
+  "全選択": "Select all",
+  "切り取り": "Cut",
+  "文章が長いと正常に動作しない可能性があります。 句読点の位置で文章を分割してください。": "Long text may not work correctly. Please split the text at punctuation.",
+  "次に選択するaudioKeyが見付かりませんでした（unreachable）": "The next audioKey to select was not found (unreachable)",
+  "読みを変えずに適用": "Apply without changing the reading",
+  "貼り付け": "Paste"
+}

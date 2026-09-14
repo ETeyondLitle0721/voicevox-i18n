@@ -1,5 +1,16 @@
 {
+  "selectedPageにはPageItem型の値を指定してください。": "selectedPage must be a value of type PageItem.",
+  "お問い合わせ": "Contact us",
+  "よくあるご質問": "FAQ",
+  "アップデート情報": "Update information",
+  "ソフトウェアの利用規約": "Software Terms of Use",
   "ヘルプ / {0}{1}": "Help / {0}{1}",
+  "ヘルプを閉じる": "Close Help",
+  "ライセンス情報": "License Information",
   "ログフォルダを開く": "Open Log Folder",
-  "ヘルプを閉じる": "Close Help"
+  "使い方": "How to use",
+  "利用規約": "Terms of Use",
+  "環境変数VITE_LATEST_UPDATE_INFOS_URLが設定されていません。.envに記載してください。": "The environment variable VITE_LATEST_UPDATE_INFOS_URL is not set. Please add it to .env.",
+  "開発コミュニティ": "Developer community",
+  "音声ライブラリの利用規約": "Voice Library Terms of Use"
 }

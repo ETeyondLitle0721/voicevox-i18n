@@ -1,0 +1,10 @@
+{
+  "テンポ変化を削除": "Delete tempo change",
+  "テンポ変化を挿入": "Insert tempo change",
+  "テンポ変化を編集": "Edit tempo change",
+  "テンポ：{0}": "Tempo: {0}",
+  "拍子変化を削除": "Delete time-signature change",
+  "拍子変化を挿入": "Insert time-signature change",
+  "拍子変化を編集": "Edit time-signature change",
+  "拍子：{0}/{1}": "Time signature: {0}/{1}"
+}

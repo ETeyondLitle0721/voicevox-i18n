@@ -1,6 +1,13 @@
 {
-  "書き出しファイル名パターン": "Export Filename Pattern",
+  "${0}$は必須です": "${0}$ is required.",
   "「$キャラ$」のようなタグを使って書き出すファイル名をカスタマイズできます。": "You can customize export filenames using tags such as \"$Character$\".",
+  "デフォルトにリセット": "Reset to Default",
   "ファイル名パターン": "Filename Pattern",
-  "デフォルトにリセット": "Reset to Default"
+  "不正なタグが存在するか、$が単体で含まれています": "An invalid tag exists, or a standalone $ is included",
+  "何か入力してください": "Please enter something",
+  "使用できない文字が含まれています：「{0}」": "Contains unsupported characters: \"{0}\"",
+  "書き出しファイル名パターン": "Export Filename Pattern",
+  "出力例：{0}": "Output example: {0}",
+  "キャンセル": "Cancel",
+  "確定": "Confirm"
 }

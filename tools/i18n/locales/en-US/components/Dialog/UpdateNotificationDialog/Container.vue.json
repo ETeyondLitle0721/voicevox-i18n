@@ -1,0 +1,4 @@
+{
+  "skipUpdateVersionが不正です: {0}": "Invalid skipUpdateVersion: {0}",
+  "環境変数VITE_LATEST_UPDATE_INFOS_URLが設定されていません。.envに記載してください。": "The environment variable VITE_LATEST_UPDATE_INFOS_URL is not set. Please add it to .env."
+}

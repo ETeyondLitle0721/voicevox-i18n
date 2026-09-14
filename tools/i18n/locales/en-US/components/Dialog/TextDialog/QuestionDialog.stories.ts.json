@@ -1,13 +1,13 @@
 {
+  "Aを押す": "Press A",
+  "persistent: falseで背景を押すとキャンセル扱いになる": "With persistent: false, clicking the background cancels",
+  "persistent: trueで背景を押してもキャンセル扱いにならない": "With persistent: true, clicking the background does not cancel",
+  "キャンセル": "Cancel",
   "タイトル": "Title",
   "メッセージ": "Message",
-  "開いている": "Open",
-  "開いている：複数行": "Open: multiline",
   "メッセージ 複数行": "Message\nMultiline",
+  "閉じている": "Closed",
+  "開いている": "Open",
   "開いている：ボタン色を変える": "Open: change button color",
-  "Aを押す": "Press A",
-  "persistent: trueで背景を押してもキャンセル扱いにならない": "With persistent: true, clicking the background does not cancel",
-  "persistent: falseで背景を押すとキャンセル扱いになる": "With persistent: false, clicking the background cancels",
-  "キャンセル": "Cancel",
-  "閉じている": "Closed"
+  "開いている：複数行": "Open: multiline"
 }

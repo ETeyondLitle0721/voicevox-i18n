@@ -1,7 +1,24 @@
 {
-  "新しい単語の追加": "Add New Word",
-  "単語の編集": "Edit Word",
+  "エンジンの再起動をお試しください。": "Please try restarting the engine.",
+  "ガ'": "ガ'",
   "単語": "Word",
+  "単語の編集": "Edit Word",
   "単語は全角と半角は区別しません。": "Full-width and half-width characters are treated the same.",
-  "単語は必須です。": "A word is required."
+  "単語は必須です。": "A word is required.",
+  "新しい単語の追加": "Add New Word",
+  "生成に失敗しました": "Failed to generate.",
+  "読み": "Reading",
+  "読みは必須です。": "A reading is required.",
+  "ひらがなとカタカナ以外の文字が入力されています。": "Characters other than hiragana and katakana have been entered.",
+  "アクセント調整": "Accent Adjustment",
+  "語尾のアクセントを考慮するため、「が」が自動で挿入されます。": "\"が\" is automatically inserted to account for the accent at the end of a word.",
+  "単語優先度": "Word Priority",
+  "単語を登録しても反映されない場合は優先度を高くしてください。": "If a registered word is not reflected, increase its priority.",
+  "高くしすぎると意図しない箇所にも反映されることがあります。": "Setting the priority too high may cause the word to be applied in unintended places.",
+  "低い": "Low",
+  "標準": "Normal",
+  "高い": "High",
+  "リセット": "Reset",
+  "追加": "Add",
+  "読みに使える文字はひらがなとカタカナのみです。": "Only hiragana and katakana can be used for the reading."
 }

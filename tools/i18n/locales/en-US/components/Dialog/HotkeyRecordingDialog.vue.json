@@ -1,3 +1,7 @@
 {
-  "ショートカットキーを入力してください": "Enter a shortcut key"
+  "ショートカットキーを入力してください": "Enter a shortcut key",
+  "ショートカットキーが次の操作と重複しています": "This shortcut key conflicts with the following action",
+  "キャンセル": "Cancel",
+  "ショートカットキーを未割り当てにする": "Unassign Shortcut Key",
+  "上書きする": "Overwrite"
 }

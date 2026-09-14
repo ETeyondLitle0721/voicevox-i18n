@@ -1,5 +1,18 @@
 {
+  "プリセット \"{0}\" を削除します。": "Delete preset \"{0}\".",
   "プリセットの管理": "Manage Presets",
+  "プリセットを削除しますか？": "Delete the preset?",
   "プリセット一覧": "Preset List",
-  "削除": "Delete"
+  "削除": "Delete",
+  "削除する": "Delete",
+  "抑揚": "Intonation",
+  "終了無音": "End silence",
+  "話速": "Speech speed",
+  "開始無音": "Start silence",
+  "間の長さ": "Pause length",
+  "音量": "Volume",
+  "音高": "Pitch",
+  "プリセット名": "Preset Name",
+  "モーフィング": "Morphing",
+  "割合": "Ratio"
 }

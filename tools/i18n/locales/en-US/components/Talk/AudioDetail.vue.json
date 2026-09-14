@@ -1,0 +1,16 @@
+{
+  "+ ホイール: ±0.01": "+ Wheel: ±0.01",
+  "+ ホイール: 一括調整": "+ Wheel: Batch adjustment",
+  "エンジンの再起動をお試しください。": "Please try restarting the engine.",
+  "スライダーを微調整できます。": "Fine-tune the slider.",
+  "ホイール: ±0.1": "Wheel: ±0.1",
+  "マウスホイールを使って": "Use the mouse wheel",
+  "全体のイントネーションをリセット": "Reset overall intonation",
+  "再生/停止": "Play / Stop",
+  "再生に失敗しました": "Failed to play.",
+  "選択中のアクセント句のイントネーションをリセット": "Reset the intonation of the selected accent phrase",
+  "長さ": "Length",
+  "長さ欄を表示": "Show length field",
+  "ｱｸｾﾝﾄ欄を表示": "Show accent field",
+  "ｲﾝﾄﾈｰｼｮﾝ欄を表示": "Show intonation field"
+}

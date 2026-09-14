@@ -1,4 +1,11 @@
 {
+  "{0}のショートカットキーをデフォルトに戻します。": "Restore the shortcut key for {0} to its default.",
+  "デフォルトに戻しますか？": "Restore defaults?",
+  "デフォルトに戻す": "Restore Defaults",
+  "未割り当て": "Unassigned",
+  "検索": "Search",
   "設定 / キー割り当て": "Settings / Key Bindings",
-  "検索": "Search"
+  "（読み取り専用）": "(Read-only)",
+  "操作": "Operation",
+  "ショートカットキー": "Shortcut Key"
 }

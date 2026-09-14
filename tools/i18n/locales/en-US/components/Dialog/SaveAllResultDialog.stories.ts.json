@@ -1,11 +1,11 @@
 {
-  "書き込み権限がありません": "No write permission",
-  "エンジンの応答がありません": "No response from the engine",
-  "開いている": "Open",
-  "閉じるボタンを押す": "Press the Close button",
-  "閉じる": "Close",
   "エラー１つだけ": "One error only",
+  "エンジンの応答がありません": "No response from the engine",
   "ディスク容量が不足しています": "Insufficient disk space",
   "成功とエラーが混在している": "Successes and errors are mixed",
-  "閉じている": "Closed"
+  "書き込み権限がありません": "No write permission",
+  "閉じている": "Closed",
+  "閉じる": "Close",
+  "閉じるボタンを押す": "Press the Close button",
+  "開いている": "Open"
 }

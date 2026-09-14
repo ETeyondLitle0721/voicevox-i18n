@@ -1,0 +1,7 @@
+{
+  "ア": "A",
+  "削除": "Delete",
+  "イ段とウ段以外の音は無声化できません": "Only sounds in the i and u rows can be devoiced",
+  "読みの変更はアクセント項目でのみ、": "Reading can only be changed in the Accent section,",
+  "無声化はイントネーション項目でのみ操作できます": "Devoicing can only be adjusted in the Intonation section"
+}

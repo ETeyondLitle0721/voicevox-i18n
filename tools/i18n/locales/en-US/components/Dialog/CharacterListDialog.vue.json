@@ -1,7 +1,9 @@
 {
-  "完了": "Done",
+  "キャラクターが見つかりません: {0}": "Character not found: {0}",
   "キャラクター一覧": "Character List",
   "サンプル音声": "Sample Voices",
+  "ソング": "Song",
   "トーク": "Talk",
-  "ソング": "Song"
+  "完了": "Done",
+  "キャラクター並び替え": "Reorder Characters"
 }
