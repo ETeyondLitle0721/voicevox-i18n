@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <locales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="schema.xsd">
 
@@ -39,7 +40,7 @@
         <zh-TW source="ja-JP">
             <name>台灣正體</name>
             <version>1.1.0</version>
-
+            
             <contributors>
                 <person name="OpenAI ChatGPT" type="ai" />
                 <person name="Google Gemini" type="ai" />
@@ -68,7 +69,7 @@
                 <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com" />
             </contributors>
         </ko-KR>
-        
+
         <vi-VN source="ja-JP">
             <name>Tiếng Việt</name>
             <version>1.0.0</version>
@@ -77,7 +78,7 @@
                 <person name="OpenAI ChatGPT" type="ai" />
             </contributors>
         </vi-VN>
-        
+
         <th-TH source="ja-JP">
             <name>ไทย</name>
             <version>1.0.0</version>
@@ -87,7 +88,6 @@
             </contributors>
         </th-TH>
     </languages>
-
     <translates>
         <item id="#0001">
             <match type="contains">
@@ -98,7 +98,11 @@
             </match>
 
             <translate>
+                <en-US content="Migration processing is required. {0} =&gt; {1}" />
                 <zh-CN content="需要执行迁移处理。{0} =&gt; {1}" />
+                <zh-TW content="需要執行迁移處理。{0} =&gt; {1}" />
+                <zh-HK content="需要執行迁移處理。{0} =&gt; {1}" />
+                <ko-KR content="마이그레이션 처리가 필요합니다. {0} =&gt; {1}" />
                 <vi-VN content="マイグレーション処理が必要です。{0} =&gt; {1}" />
                 <th-TH content="マイグレーション処理が必要です。{0} =&gt; {1}" />
             </translate>
@@ -110,7 +114,11 @@
             </match>
 
             <translate>
+                <en-US content="Configuration file not found" />
                 <zh-CN content="找不到配置文件" />
+                <zh-TW content="找不到設定檔" />
+                <zh-HK content="找不到設定檔" />
+                <ko-KR content="설정 파일을 찾을 수 없습니다" />
                 <vi-VN content="設定ファイルが見つかりません" />
                 <th-TH content="設定ファイルが見つかりません" />
             </translate>
@@ -123,7 +131,11 @@
             </match>
 
             <translate>
+                <en-US content="File not found: {0}" />
                 <zh-CN content="找不到文件：{0}" />
+                <zh-TW content="找不到檔案：{0}" />
+                <zh-HK content="找不到檔案：{0}" />
+                <ko-KR content="파일을 찾을 수 없습니다: {0}" />
                 <vi-VN content="ファイルが見つかりません: {0}" />
                 <th-TH content="ファイルが見つかりません: {0}" />
             </translate>
@@ -136,7 +148,11 @@
             </match>
 
             <translate>
+                <en-US content="Permission to access the folder is not available. Folder name: {0}" />
                 <zh-CN content="没有访问文件夹的权限。尝试访问的文件夹名称：{0}" />
+                <zh-TW content="沒有访問資料夾的權限。尝试访問的資料夾名稱：{0}" />
+                <zh-HK content="沒有访問資料夾的權限。尝试访問的資料夾名稱：{0}" />
+                <ko-KR content="폴더에 액세스할 권한이 없습니다. 액세스하려는 폴더 이름: {0}" />
                 <vi-VN content="フォルダへのアクセス許可がありません。アクセスしようとしたフォルダ名: {0}" />
                 <th-TH content="フォルダへのアクセス許可がありません。アクセスしようとしたフォルダ名: {0}" />
             </translate>
@@ -148,7 +164,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Permission to access the folder is not available. Permission is required to read and write files." />
                 <zh-CN content="没有访问文件夹的权限。读写文件需要相应的访问权限。" />
+                <zh-TW content="沒有访問資料夾的權限。讀寫檔案需要相應的访問權限。" />
+                <zh-HK content="沒有访問資料夾的權限。讀寫檔案需要相應的访問權限。" />
+                <ko-KR content="폴더에 액세스할 권한이 없습니다. 파일을 읽고 쓰려면 권한이 필요합니다." />
                 <vi-VN content="フォルダへのアクセス許可がありません。ファイルの読み書きのためにアクセス許可が必要です。" />
                 <th-TH content="フォルダへのアクセス許可がありません。ファイルの読み書きのためにアクセス許可が必要です。" />
             </translate>
@@ -161,7 +182,11 @@
             </match>
 
             <translate>
+                <en-US content="This is not a pseudo path: {0}" />
                 <zh-CN content="不是虚拟路径：{0}" />
+                <zh-TW content="不是虚拟路徑：{0}" />
+                <zh-HK content="不是虚拟路徑：{0}" />
+                <ko-KR content="의사 경로가 아닙니다: {0}" />
                 <vi-VN content="疑似パスではありません: {0}" />
                 <th-TH content="疑似パスではありません: {0}" />
             </translate>
@@ -173,7 +198,11 @@
             </match>
 
             <translate>
+                <en-US content="Export text after concatenating it" />
                 <zh-CN content="テキストを繋げて書き出す" />
+                <zh-TW content="テキストを繋げて書き出す" />
+                <zh-HK content="テキストを繋げて書き出す" />
+                <ko-KR content="텍스트를 이어 붙여 내보내기" />
                 <vi-VN content="テキストを繋げて書き出す" />
                 <th-TH content="テキストを繋げて書き出す" />
             </translate>
@@ -185,7 +214,11 @@
             </match>
 
             <translate>
+                <en-US content="Load text" />
                 <zh-CN content="テキストを読み込む" />
+                <zh-TW content="テキストを読み込む" />
+                <zh-HK content="テキストを読み込む" />
+                <ko-KR content="텍스트 불러오기" />
                 <vi-VN content="テキストを読み込む" />
                 <th-TH content="テキストを読み込む" />
             </translate>
@@ -197,7 +230,11 @@
             </match>
 
             <translate>
+                <en-US content="Load text" />
                 <zh-CN content="テキスト読み込む" />
+                <zh-TW content="テキスト読み込む" />
+                <zh-HK content="テキスト読み込む" />
+                <ko-KR content="텍스트 불러오기" />
                 <vi-VN content="テキスト読み込む" />
                 <th-TH content="テキスト読み込む" />
             </translate>
@@ -209,7 +246,11 @@
             </match>
 
             <translate>
+                <en-US content="Load project" />
                 <zh-CN content="プロジェクトを読み込む" />
+                <zh-TW content="プロジェクトを読み込む" />
+                <zh-HK content="プロジェクトを読み込む" />
+                <ko-KR content="프로젝트 불러오기" />
                 <vi-VN content="プロジェクトを読み込む" />
                 <th-TH content="プロジェクトを読み込む" />
             </translate>
@@ -221,7 +262,11 @@
             </match>
 
             <translate>
+                <en-US content="Project loading" />
                 <zh-CN content="プロジェクト読み込み" />
+                <zh-TW content="プロジェクト読み込み" />
+                <zh-HK content="プロジェクト読み込み" />
+                <ko-KR content="프로젝트 불러오기" />
                 <vi-VN content="プロジェクト読み込み" />
                 <th-TH content="プロジェクト読み込み" />
             </translate>
@@ -233,7 +278,11 @@
             </match>
 
             <translate>
+                <en-US content="Export only one" />
                 <zh-CN content="一つだけ書き出し" />
+                <zh-TW content="一つだけ書き出し" />
+                <zh-HK content="一つだけ書き出し" />
+                <ko-KR content="하나만 내보내기" />
                 <vi-VN content="一つだけ書き出し" />
                 <th-TH content="一つだけ書き出し" />
             </translate>
@@ -245,7 +294,11 @@
             </match>
 
             <translate>
+                <en-US content="Export selected audio" />
                 <zh-CN content="選択音声を書き出し" />
+                <zh-TW content="選択音聲を書き出し" />
+                <zh-HK content="選択音聲を書き出し" />
+                <ko-KR content="선택한 음성을 내보내기" />
                 <vi-VN content="選択音声を書き出し" />
                 <th-TH content="選択音声を書き出し" />
             </translate>
@@ -258,7 +311,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to load {0}. This engine will be removed." />
                 <zh-CN content="无法加载 {0}。此引擎将被删除。" />
+                <zh-TW content="無法載入 {0}。此引擎將被刪除。" />
+                <zh-HK content="無法載入 {0}。此引擎將被刪除。" />
+                <ko-KR content="{0}을(를) 불러오지 못했습니다. 이 엔진은 삭제됩니다." />
                 <vi-VN content="{0}を読み込めませんでした。このエンジンは削除されます。" />
                 <th-TH content="{0}を読み込めませんでした。このエンジンは削除されます。" />
             </translate>
@@ -270,7 +327,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to load the engine." />
                 <zh-CN content="加载引擎失败。" />
+                <zh-TW content="載入引擎失败。" />
+                <zh-HK content="載入引擎失败。" />
+                <ko-KR content="엔진을 불러오지 못했습니다." />
                 <vi-VN content="エンジンの読み込みに失敗しました。" />
                 <th-TH content="エンジンの読み込みに失敗しました。" />
             </translate>
@@ -283,7 +344,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to start {0}" />
                 <zh-CN content="启动 {0} 失败" />
+                <zh-TW content="啟動 {0} 失败" />
+                <zh-HK content="啟動 {0} 失败" />
+                <ko-KR content="{0}을(를) 시작하지 못했습니다" />
                 <vi-VN content="{0} の起動に失敗しました" />
                 <th-TH content="{0} の起動に失敗しました" />
             </translate>
@@ -296,7 +361,11 @@
             </match>
 
             <translate>
+                <en-US content="{0} terminated abnormally. Please restart the engine." />
                 <zh-CN content="{0} 异常退出。请重新启动引擎。" />
+                <zh-TW content="{0} 异常退出。請重新啟動引擎。" />
+                <zh-HK content="{0} 异常退出。請重新啟動引擎。" />
+                <ko-KR content="{0}이(가) 비정상적으로 종료되었습니다. 엔진을 다시 시작하세요." />
                 <vi-VN content="{0}が異常終了しました。エンジンを再起動してください。" />
                 <th-TH content="{0}が異常終了しました。エンジンを再起動してください。" />
             </translate>
@@ -309,7 +378,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="No available port was found to replace port {0}. Please restart the PC." />
                 <zh-CN content="没有找到可用端口来替代 {0} 号端口。请重新启动电脑。" />
+                <zh-TW content="沒有找到可用連接埠來替代 {0} 号連接埠。請重新啟動電腦。" />
+                <zh-HK content="沒有找到可用連接埠來替代 {0} 号連接埠。請重新啟動電腦。" />
+                <ko-KR content="{0}번 포트를 대신할 사용 가능한 포트를 찾을 수 없습니다. PC를 다시 시작하세요." />
                 <vi-VN content="{0}番ポートの代わりに利用可能なポートが見つかりませんでした。PCを再起動してください。" />
                 <th-TH content="{0}番ポートの代わりに利用可能なポートが見つかりませんでした。PCを再起動してください。" />
             </translate>
@@ -321,7 +395,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="The speech synthesis engine terminated abnormally. Please restart the engine." />
                 <zh-CN content="语音合成引擎异常退出。请重新启动引擎。" />
+                <zh-TW content="語音合成引擎异常退出。請重新啟動引擎。" />
+                <zh-HK content="語音合成引擎异常退出。請重新啟動引擎。" />
+                <ko-KR content="음성 합성 엔진이 비정상적으로 종료되었습니다. 엔진을 다시 시작하세요." />
                 <vi-VN content="音声合成エンジンが異常終了しました。エンジンを再起動してください。" />
                 <th-TH content="音声合成エンジンが異常終了しました。エンジンを再起動してください。" />
             </translate>
@@ -333,7 +412,11 @@
             </match>
 
             <translate>
+                <en-US content="Change save location" />
                 <zh-CN content="更改保存位置" />
+                <zh-TW content="更改儲存位置" />
+                <zh-HK content="更改儲存位置" />
+                <ko-KR content="저장 위치 변경" />
                 <vi-VN content="保存場所を変更" />
                 <th-TH content="保存場所を変更" />
             </translate>
@@ -347,7 +430,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="The specified save destination may be automatically deleted by {0}. Saving to another location is recommended." />
                 <zh-CN content="指定的保存位置可能会被 {0} 自动删除。建议保存到其他位置。" />
+                <zh-TW content="指定的儲存位置可能會被 {0} 自動刪除。建議儲存到其他位置。" />
+                <zh-HK content="指定的儲存位置可能會被 {0} 自動刪除。建議儲存到其他位置。" />
+                <ko-KR content="지정한 저장 위치는 {0}에 의해 자동으로 삭제될 수 있습니다. 다른 위치에 저장하는 것을 권장합니다." />
                 <vi-VN content="指定された保存先は{0}により自動的に削除される可能性があります。 他の場所に保存することをおすすめします。" />
                 <th-TH content="指定された保存先は{0}により自動的に削除される可能性があります。 他の場所に保存することをおすすめします。" />
             </translate>
@@ -359,7 +447,11 @@
             </match>
 
             <translate>
+                <en-US content="Ignore and save" />
                 <zh-CN content="忽略并保存" />
+                <zh-TW content="忽略並儲存" />
+                <zh-HK content="忽略並儲存" />
+                <ko-KR content="무시하고 저장" />
                 <vi-VN content="無視して保存" />
                 <th-TH content="無視して保存" />
             </translate>
@@ -371,7 +463,11 @@
             </match>
 
             <translate>
+                <en-US content="Warning" />
                 <zh-CN content="警告" />
+                <zh-TW content="警告" />
+                <zh-HK content="警告" />
+                <ko-KR content="경고" />
                 <vi-VN content="警告" />
                 <th-TH content="警告" />
             </translate>
@@ -383,7 +479,11 @@
             </match>
 
             <translate>
+                <en-US content="Engine not found." />
                 <zh-CN content="找不到引擎。" />
+                <zh-TW content="找不到引擎。" />
+                <zh-HK content="找不到引擎。" />
+                <ko-KR content="엔진을 찾을 수 없습니다." />
                 <vi-VN content="エンジンが見つかりませんでした。" />
                 <th-TH content="エンジンが見つかりませんでした。" />
             </translate>
@@ -398,7 +498,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Failed to remove the engine. Please manually delete the engine folder. {0} Error details: {1}" />
                 <zh-CN content="删除引擎失败。请手动删除引擎文件夹。{0} 错误内容：{1}" />
+                <zh-TW content="刪除引擎失败。請手動刪除引擎資料夾。{0} 錯誤內容：{1}" />
+                <zh-HK content="刪除引擎失败。請手動刪除引擎資料夾。{0} 錯誤內容：{1}" />
+                <ko-KR content="엔진을 삭제하지 못했습니다. 엔진 폴더를 수동으로 삭제하세요. {0} 오류 내용: {1}" />
                 <vi-VN content="エンジンの削除に失敗しました。エンジンのフォルダを手動で削除してください。 {0} エラー内容: {1}" />
                 <th-TH content="エンジンの削除に失敗しました。エンジンのフォルダを手動で削除してください。 {0} エラー内容: {1}" />
             </translate>
@@ -415,7 +520,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Failed to add the engine. Please manually move the engine folder. {0} -&gt; {1} Error details: {2}" />
                 <zh-CN content="添加引擎失败。请手动移动引擎文件夹。{0} -&gt; {1} 错误内容：{2}" />
+                <zh-TW content="新增引擎失败。請手動移動引擎資料夾。{0} -&gt; {1} 錯誤內容：{2}" />
+                <zh-HK content="新增引擎失败。請手動移動引擎資料夾。{0} -&gt; {1} 錯誤內容：{2}" />
+                <ko-KR content="엔진을 추가하지 못했습니다. 엔진 폴더를 수동으로 이동하세요. {0} -&gt; {1} 오류 내용: {2}" />
                 <vi-VN content="エンジンの追加に失敗しました。エンジンのフォルダを手動で移動してください。 {0} -&gt; {1} エラー内容: {2}" />
                 <th-TH content="エンジンの追加に失敗しました。エンジンのフォルダを手動で移動してください。 {0} -&gt; {1} エラー内容: {2}" />
             </translate>
@@ -427,7 +537,11 @@
             </match>
 
             <translate>
+                <en-US content="Engine removal error" />
                 <zh-CN content="引擎删除错误" />
+                <zh-TW content="引擎刪除錯誤" />
+                <zh-HK content="引擎刪除錯誤" />
+                <ko-KR content="엔진 삭제 오류" />
                 <vi-VN content="エンジン削除エラー" />
                 <th-TH content="エンジン削除エラー" />
             </translate>
@@ -439,7 +553,11 @@
             </match>
 
             <translate>
+                <en-US content="Engine addition error" />
                 <zh-CN content="引擎添加错误" />
+                <zh-TW content="引擎新增錯誤" />
+                <zh-HK content="引擎新增錯誤" />
+                <ko-KR content="엔진 추가 오류" />
                 <vi-VN content="エンジン追加エラー" />
                 <th-TH content="エンジン追加エラー" />
             </translate>
@@ -451,7 +569,11 @@
             </match>
 
             <translate>
+                <en-US content="Engine setup" />
                 <zh-CN content="引擎设置" />
+                <zh-TW content="引擎設定" />
+                <zh-HK content="引擎設定" />
+                <ko-KR content="엔진 설정" />
                 <vi-VN content="エンジンのセットアップ" />
                 <th-TH content="エンジンのセットアップ" />
             </translate>
@@ -463,7 +585,11 @@
             </match>
 
             <translate>
+                <en-US content="Engine management" />
                 <zh-CN content="引擎管理" />
+                <zh-TW content="引擎管理" />
+                <zh-HK content="引擎管理" />
+                <ko-KR content="엔진 관리" />
                 <vi-VN content="エンジンの管理" />
                 <th-TH content="エンジンの管理" />
             </translate>
@@ -475,7 +601,11 @@
             </match>
 
             <translate>
+                <en-US content="Open folder" />
                 <zh-CN content="打开文件夹" />
+                <zh-TW content="打開資料夾" />
+                <zh-HK content="打開資料夾" />
+                <ko-KR content="폴더 열기" />
                 <vi-VN content="フォルダを開く" />
                 <th-TH content="フォルダを開く" />
             </translate>
@@ -487,7 +617,11 @@
             </match>
 
             <translate>
+                <en-US content="Turn on multi-engine and reload" />
                 <zh-CN content="启用多引擎并重新加载" />
+                <zh-TW content="啟用多引擎並重新載入" />
+                <zh-HK content="啟用多引擎並重新載入" />
+                <ko-KR content="멀티 엔진을 켜고 다시 불러오기" />
                 <vi-VN content="マルチエンジンをオンにして再読み込み" />
                 <th-TH content="マルチエンジンをオンにして再読み込み" />
             </translate>
@@ -499,7 +633,11 @@
             </match>
 
             <translate>
+                <en-US content="Restart all engines" />
                 <zh-CN content="重新启动所有引擎" />
+                <zh-TW content="重新啟動所有引擎" />
+                <zh-HK content="重新啟動所有引擎" />
+                <ko-KR content="모든 엔진 다시 시작" />
                 <vi-VN content="全てのエンジンを再起動" />
                 <th-TH content="全てのエンジンを再起動" />
             </translate>
@@ -511,7 +649,11 @@
             </match>
 
             <translate>
+                <en-US content="Restart" />
                 <zh-CN content="重新启动" />
+                <zh-TW content="重新啟動" />
+                <zh-HK content="重新啟動" />
+                <ko-KR content="다시 시작" />
                 <vi-VN content="再起動" />
                 <th-TH content="再起動" />
             </translate>
@@ -523,7 +665,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to confirm saving" />
                 <zh-CN content="确认保存状态失败" />
+                <zh-TW content="確認儲存状態失败" />
+                <zh-HK content="確認儲存状態失败" />
+                <ko-KR content="저장 확인에 실패했습니다" />
                 <vi-VN content="保存の確認に失敗しました" />
                 <th-TH content="保存の確認に失敗しました" />
             </translate>
@@ -535,7 +681,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="There is unsaved data that will be lost when you exit. Do you want to exit?" />
                 <zh-CN content="存在未保存的数据，退出后将会丢失。确定要退出吗？" />
+                <zh-TW content="存在未儲存的數據，退出後將會丢失。確定要退出吗？" />
+                <zh-HK content="存在未儲存的數據，退出後將會丢失。確定要退出吗？" />
+                <ko-KR content="저장되지 않은 데이터가 있으며 종료하면 사라집니다. 종료하시겠습니까?" />
                 <vi-VN content="未保存のデータがある場合、終了すると失われます。終了しますか？" />
                 <th-TH content="未保存のデータがある場合、終了すると失われます。終了しますか？" />
             </translate>
@@ -547,7 +698,11 @@
             </match>
 
             <translate>
+                <en-US content="Don't exit" />
                 <zh-CN content="不退出" />
+                <zh-TW content="不退出" />
+                <zh-HK content="不退出" />
+                <ko-KR content="종료하지 않기" />
                 <vi-VN content="終了しない" />
                 <th-TH content="終了しない" />
             </translate>
@@ -559,7 +714,11 @@
             </match>
 
             <translate>
+                <en-US content="Exit" />
                 <zh-CN content="退出" />
+                <zh-TW content="退出" />
+                <zh-HK content="退出" />
+                <ko-KR content="종료" />
                 <vi-VN content="終了する" />
                 <th-TH content="終了する" />
             </translate>
@@ -571,7 +730,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="VVPP file loaded. Reloading is required for the changes to take effect. Reload now?" />
                 <zh-CN content="已加载 VVPP 文件。需要重新加载才能应用更改。现在重新加载吗？" />
+                <zh-TW content="已載入 VVPP 檔案。需要重新載入才能應用更改。现在重新載入吗？" />
+                <zh-HK content="已載入 VVPP 檔案。需要重新載入才能應用更改。现在重新載入吗？" />
+                <ko-KR content="VVPP 파일을 불러왔습니다. 변경 사항을 적용하려면 다시 불러와야 합니다. 지금 다시 불러오시겠습니까?" />
                 <vi-VN content="VVPPファイルを読み込みました。反映には再読み込みが必要です。今すぐ再読み込みしますか？" />
                 <th-TH content="VVPPファイルを読み込みました。反映には再読み込みが必要です。今すぐ再読み込みしますか？" />
             </translate>
@@ -584,7 +748,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to uninstall {0}." />
                 <zh-CN content="无法卸载 {0}。" />
+                <zh-TW content="無法卸載 {0}。" />
+                <zh-HK content="無法卸載 {0}。" />
+                <ko-KR content="{0}을(를) 제거하지 못했습니다." />
                 <vi-VN content="{0} をアンインストールできませんでした。" />
                 <th-TH content="{0} をアンインストールできませんでした。" />
             </translate>
@@ -597,7 +765,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to install {0}." />
                 <zh-CN content="无法安装 {0}。" />
+                <zh-TW content="無法安裝 {0}。" />
+                <zh-HK content="無法安裝 {0}。" />
+                <ko-KR content="{0}을(를) 설치하지 못했습니다." />
                 <vi-VN content="{0} をインストールできませんでした。" />
                 <th-TH content="{0} をインストールできませんでした。" />
             </translate>
@@ -609,7 +781,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="This operation may harm your computer. Do not add the engine if you do not trust its distributor." />
                 <zh-CN content="此操作可能会损害您的计算机。如果不信任引擎的发布来源，请不要添加。" />
+                <zh-TW content="此操作可能會损害您的计算机。如果不信任引擎的發佈來源，請不要新增。" />
+                <zh-HK content="此操作可能會损害您的计算机。如果不信任引擎的發佈來源，請不要新增。" />
+                <ko-KR content="이 작업은 컴퓨터에 손상을 줄 수 있습니다. 엔진 배포처를 신뢰할 수 없다면 추가하지 마세요." />
                 <vi-VN content="この操作はコンピュータに損害を与える可能性があります。エンジンの配布元が信頼できない場合は追加しないでください。" />
                 <th-TH content="この操作はコンピュータに損害を与える可能性があります。エンジンの配布元が信頼できない場合は追加しないでください。" />
             </translate>
@@ -621,7 +798,11 @@
             </match>
 
             <translate>
+                <en-US content="This is not the default engine." />
                 <zh-CN content="这不是默认引擎。" />
+                <zh-TW content="這不是預設引擎。" />
+                <zh-HK content="這不是預設引擎。" />
+                <ko-KR content="기본 엔진이 아닙니다." />
                 <vi-VN content="これはデフォルトエンジンではありません。" />
                 <th-TH content="これはデフォルトエンジンではありません。" />
             </translate>
@@ -633,7 +814,11 @@
             </match>
 
             <translate>
+                <en-US content="Installation error" />
                 <zh-CN content="安装错误" />
+                <zh-TW content="安裝錯誤" />
+                <zh-HK content="安裝錯誤" />
+                <ko-KR content="설치 오류" />
                 <vi-VN content="インストールエラー" />
                 <th-TH content="インストールエラー" />
             </translate>
@@ -645,7 +830,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="The engine information format is not compatible with this version of VOICEVOX. Please update VOICEVOX." />
                 <zh-CN content="引擎信息的格式与此版本的 VOICEVOX 不兼容。请更新 VOICEVOX。" />
+                <zh-TW content="引擎資訊的格式與此版本的 VOICEVOX 不兼容。請更新 VOICEVOX。" />
+                <zh-HK content="引擎資訊的格式與此版本的 VOICEVOX 不兼容。請更新 VOICEVOX。" />
+                <ko-KR content="엔진 정보 형식이 이 버전의 VOICEVOX와 호환되지 않습니다. VOICEVOX를 업데이트하세요." />
                 <vi-VN content="エンジン情報の形式がこのバージョンのVOICEVOXに対応していません。VOICEVOXをアップデートしてください。" />
                 <th-TH content="エンジン情報の形式がこのバージョンのVOICEVOXに対応していません。VOICEVOXをアップデートしてください。" />
             </translate>
@@ -657,7 +847,11 @@
             </match>
 
             <translate>
+                <en-US content="Confirm engine addition" />
                 <zh-CN content="确认添加引擎" />
+                <zh-TW content="確認新增引擎" />
+                <zh-HK content="確認新增引擎" />
+                <ko-KR content="엔진 추가 확인" />
                 <vi-VN content="エンジン追加の確認" />
                 <th-TH content="エンジン追加の確認" />
             </translate>
@@ -669,7 +863,11 @@
             </match>
 
             <translate>
+                <en-US content="Cancel" />
                 <zh-CN content="取消" />
+                <zh-TW content="取消" />
+                <zh-HK content="取消" />
+                <ko-KR content="취소" />
                 <vi-VN content="キャンセル" />
                 <th-TH content="キャンセル" />
             </translate>
@@ -681,7 +879,11 @@
             </match>
 
             <translate>
+                <en-US content="An engine identical to the default engine cannot be installed." />
                 <zh-CN content="无法安装与默认引擎相同的引擎。" />
+                <zh-TW content="無法安裝與預設引擎相同的引擎。" />
+                <zh-HK content="無法安裝與預設引擎相同的引擎。" />
+                <ko-KR content="기본 엔진과 동일한 엔진은 설치할 수 없습니다." />
                 <vi-VN content="デフォルトエンジンと同じエンジンはインストールできません。" />
                 <th-TH content="デフォルトエンジンと同じエンジンはインストールできません。" />
             </translate>
@@ -693,7 +895,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Failed to retrieve the latest engine information due to a network error. Check your internet connection and try again." />
                 <zh-CN content="由于网络错误，无法获取最新的引擎信息。请检查互联网连接后重试。" />
+                <zh-TW content="由于網路錯誤，無法獲取最新的引擎資訊。請检查互联網連接後重试。" />
+                <zh-HK content="由于網路錯誤，無法獲取最新的引擎資訊。請检查互联網連接後重试。" />
+                <ko-KR content="네트워크 오류로 최신 엔진 정보를 가져오지 못했습니다. 인터넷 연결을 확인한 후 다시 시도하세요." />
                 <vi-VN content="ネットワークエラーにより最新のエンジン情報を取得できませんでした。インターネット接続を確認して、再試行してください。" />
                 <th-TH content="ネットワークエラーにより最新のエンジン情報を取得できませんでした。インターネット接続を確認して、再試行してください。" />
             </translate>
@@ -705,7 +912,11 @@
             </match>
 
             <translate>
+                <en-US content="Reload" />
                 <zh-CN content="重新加载" />
+                <zh-TW content="重新載入" />
+                <zh-HK content="重新載入" />
+                <ko-KR content="다시 불러오기" />
                 <vi-VN content="再読み込み" />
                 <th-TH content="再読み込み" />
             </translate>
@@ -717,7 +928,11 @@
             </match>
 
             <translate>
+                <en-US content="Reload required" />
                 <zh-CN content="需要重新加载" />
+                <zh-TW content="需要重新載入" />
+                <zh-HK content="需要重新載入" />
+                <ko-KR content="다시 불러와야 합니다" />
                 <vi-VN content="再読み込みが必要です" />
                 <th-TH content="再読み込みが必要です" />
             </translate>
@@ -729,7 +944,11 @@
             </match>
 
             <translate>
+                <en-US content="Add" />
                 <zh-CN content="添加" />
+                <zh-TW content="新增" />
+                <zh-HK content="新增" />
+                <ko-KR content="추가" />
                 <vi-VN content="追加" />
                 <th-TH content="追加" />
             </translate>
@@ -742,7 +961,11 @@
             </match>
 
             <translate>
+                <en-US content="Detected an IPC message from an invalid URL. senderUrl: {0}" />
                 <zh-CN content="检测到来自非法 URL 的 IPC 消息。senderUrl：{0}" />
+                <zh-TW content="检测到來自非法 URL 的 IPC 消息。senderUrl：{0}" />
+                <zh-HK content="检测到來自非法 URL 的 IPC 消息。senderUrl：{0}" />
+                <ko-KR content="잘못된 URL에서 IPC 메시지가 감지되었습니다. senderUrl: {0}" />
                 <vi-VN content="不正なURLからのIPCメッセージを検出しました。senderUrl: {0}" />
                 <th-TH content="不正なURLからのIPCメッセージを検出しました。senderUrl: {0}" />
             </translate>
@@ -754,7 +977,11 @@
             </match>
 
             <translate>
+                <en-US content="No" />
                 <zh-CN content="否" />
+                <zh-TW content="否" />
+                <zh-HK content="否" />
+                <ko-KR content="아니요" />
                 <vi-VN content="いいえ" />
                 <th-TH content="いいえ" />
             </translate>
@@ -766,7 +993,11 @@
             </match>
 
             <translate>
+                <en-US content="Yes" />
                 <zh-CN content="是" />
+                <zh-TW content="是" />
+                <zh-HK content="是" />
+                <ko-KR content="예" />
                 <vi-VN content="はい" />
                 <th-TH content="はい" />
             </translate>
@@ -778,7 +1009,11 @@
             </match>
 
             <translate>
+                <en-US content="Error" />
                 <zh-CN content="错误" />
+                <zh-TW content="錯誤" />
+                <zh-HK content="錯誤" />
+                <ko-KR content="오류" />
                 <vi-VN content="エラー" />
                 <th-TH content="エラー" />
             </translate>
@@ -791,7 +1026,11 @@
             </match>
 
             <translate>
+                <en-US content="Error name: {0}" />
                 <zh-CN content="错误名称：{0}" />
+                <zh-TW content="錯誤名稱：{0}" />
+                <zh-HK content="錯誤名稱：{0}" />
+                <ko-KR content="오류 이름: {0}" />
                 <vi-VN content="エラー名: {0}" />
                 <th-TH content="エラー名: {0}" />
             </translate>
@@ -804,7 +1043,11 @@
             </match>
 
             <translate>
+                <en-US content="Stack trace: {0}" />
                 <zh-CN content="堆栈跟踪：{0}" />
+                <zh-TW content="堆栈跟踪：{0}" />
+                <zh-HK content="堆栈跟踪：{0}" />
+                <ko-KR content="스택 추적: {0}" />
                 <vi-VN content="スタックトレース: {0}" />
                 <th-TH content="スタックトレース: {0}" />
             </translate>
@@ -817,7 +1060,11 @@
             </match>
 
             <translate>
+                <en-US content="Navigation has been disabled. url: {0}" />
                 <zh-CN content="导航已被禁用。url：{0}" />
+                <zh-TW content="導航已被禁用。url：{0}" />
+                <zh-HK content="導航已被禁用。url：{0}" />
+                <ko-KR content="탐색이 비활성화되었습니다. url: {0}" />
                 <vi-VN content="ナビゲーションは無効化されています。url: {0}" />
                 <th-TH content="ナビゲーションは無効化されています。url: {0}" />
             </translate>
@@ -829,7 +1076,11 @@
             </match>
 
             <translate>
+                <en-US content="Multi-engine functionality is disabled" />
                 <zh-CN content="多引擎功能已禁用" />
+                <zh-TW content="多引擎功能已禁用" />
+                <zh-HK content="多引擎功能已禁用" />
+                <ko-KR content="멀티 엔진 기능이 비활성화되어 있습니다" />
                 <vi-VN content="マルチエンジン機能が無効です" />
                 <th-TH content="マルチエンジン機能が無効です" />
             </translate>
@@ -841,7 +1092,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Multi-engine functionality is disabled. To use VVPP files, enable multi-engine functionality in Settings." />
                 <zh-CN content="多引擎功能已禁用。要使用 vvpp 文件，请在设置中启用多引擎功能。" />
+                <zh-TW content="多引擎功能已禁用。要使用 vvpp 檔案，請在設定中啟用多引擎功能。" />
+                <zh-HK content="多引擎功能已禁用。要使用 vvpp 檔案，請在設定中啟用多引擎功能。" />
+                <ko-KR content="멀티 엔진 기능이 비활성화되어 있습니다. vvpp 파일을 사용하려면 설정에서 멀티 엔진 기능을 활성화하세요." />
                 <vi-VN content="マルチエンジン機能が無効です。vvppファイルを使用するには設定からマルチエンジン機能を有効にしてください。" />
                 <th-TH content="マルチエンジン機能が無効です。vvppファイルを使用するには設定からマルチエンジン機能を有効にしてください。" />
             </translate>
@@ -853,7 +1109,11 @@
             </match>
 
             <translate>
+                <en-US content="An unknown error occurred in the main process." />
                 <zh-CN content="主进程发生了未知错误。" />
+                <zh-TW content="主進程發生了未知錯誤。" />
+                <zh-HK content="主進程發生了未知錯誤。" />
+                <ko-KR content="메인 프로세스에서 알 수 없는 오류가 발생했습니다." />
                 <vi-VN content="メインプロセスで原因不明のエラーが発生しました。" />
                 <th-TH content="メインプロセスで原因不明のエラーが発生しました。" />
             </translate>
@@ -866,7 +1126,11 @@
             </match>
 
             <translate>
+                <en-US content="Message: {0}" />
                 <zh-CN content="消息：{0}" />
+                <zh-TW content="消息：{0}" />
+                <zh-HK content="消息：{0}" />
+                <ko-KR content="메시지: {0}" />
                 <vi-VN content="メッセージ: {0}" />
                 <th-TH content="メッセージ: {0}" />
             </translate>
@@ -878,7 +1142,11 @@
             </match>
 
             <translate>
+                <en-US content="Exit without doing anything" />
                 <zh-CN content="不做任何操作并退出" />
+                <zh-TW content="不做任何操作並退出" />
+                <zh-HK content="不做任何操作並退出" />
+                <ko-KR content="아무것도 하지 않고 종료" />
                 <vi-VN content="何もせず終了" />
                 <th-TH content="何もせず終了" />
             </translate>
@@ -890,7 +1158,11 @@
             </match>
 
             <translate>
+                <en-US content="Reset settings and continue" />
                 <zh-CN content="重置设置并继续" />
+                <zh-TW content="重置設定並继续" />
+                <zh-HK content="重置設定並继续" />
+                <ko-KR content="설정을 초기화하고 계속" />
                 <vi-VN content="設定をリセットして続行" />
                 <th-TH content="設定をリセットして続行" />
             </translate>
@@ -902,7 +1174,11 @@
             </match>
 
             <translate>
+                <en-US content="Open the configuration file folder and exit" />
                 <zh-CN content="打开配置文件所在文件夹并退出" />
+                <zh-TW content="打開設定檔所在資料夾並退出" />
+                <zh-HK content="打開設定檔所在資料夾並退出" />
+                <ko-KR content="설정 파일 폴더를 열고 종료" />
                 <vi-VN content="設定ファイルのフォルダを開いて終了" />
                 <th-TH content="設定ファイルのフォルダを開いて終了" />
             </translate>
@@ -917,8 +1193,14 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Failed to load the configuration file. Renaming config.json in {0} may solve the problem (but all settings will be reset). Open the folder containing the configuration file?" />
                 <zh-CN
                     content="加载配置文件失败。将 {0} 中的 config.json 重命名可能可以解决问题（但所有设置都会被重置）。要打开配置文件所在的文件夹吗？" />
+                <zh-TW content="載入設定檔失败。將 {0} 中的 config.json 重命名可能可以解决問題（但所有設定都會被重置）。要打開設定檔所在的資料夾吗？" />
+                <zh-HK content="載入設定檔失败。將 {0} 中的 config.json 重命名可能可以解决問題（但所有設定都會被重置）。要打開設定檔所在的資料夾吗？" />
+                <ko-KR
+                    content="설정 파일을 불러오지 못했습니다. {0}의 config.json 이름을 변경하면 문제가 해결될 수 있습니다(단, 모든 설정이 초기화됩니다). 설정 파일이 있는 폴더를 여시겠습니까?" />
                 <vi-VN
                     content="設定ファイルの読み込みに失敗しました。{0} にある config.json の名前を変えることで解決することがあります（ただし設定がすべてリセットされます）。設定ファイルがあるフォルダを開きますか？" />
                 <th-TH
@@ -932,7 +1214,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="Failed to load the configuration file. Rename the configuration file or reset the settings." />
                 <zh-CN content="加载配置文件失败。请重命名配置文件或重置设置。" />
+                <zh-TW content="載入設定檔失败。請重命名設定檔或重置設定。" />
+                <zh-HK content="載入設定檔失败。請重命名設定檔或重置設定。" />
+                <ko-KR content="설정 파일을 불러오지 못했습니다. 설정 파일 이름을 변경하거나 설정을 초기화하세요." />
                 <vi-VN content="設定ファイルの読み込みに失敗しました。設定ファイルの名前を変更するか、設定をリセットしてください。" />
                 <th-TH content="設定ファイルの読み込みに失敗しました。設定ファイルの名前を変更するか、設定をリセットしてください。" />
             </translate>
@@ -944,7 +1231,11 @@
             </match>
 
             <translate>
+                <en-US content="Configuration file loading error" />
                 <zh-CN content="配置文件加载错误" />
+                <zh-TW content="設定檔載入錯誤" />
+                <zh-HK content="設定檔載入錯誤" />
+                <ko-KR content="설정 파일 불러오기 오류" />
                 <vi-VN content="設定ファイルの読み込みエラー" />
                 <th-TH content="設定ファイルの読み込みエラー" />
             </translate>
@@ -956,7 +1247,11 @@
             </match>
 
             <translate>
+                <en-US content="Configuration file loading error (developer guidance)" />
                 <zh-CN content="配置文件加载错误（开发者提示）" />
+                <zh-TW content="設定檔載入錯誤（開發者提示）" />
+                <zh-HK content="設定檔載入錯誤（開發者提示）" />
+                <ko-KR content="설정 파일 불러오기 오류(개발자 안내)" />
                 <vi-VN content="設定ファイルの読み込みエラー（開発者向け案内）" />
                 <th-TH content="設定ファイルの読み込みエラー（開発者向け案内）" />
             </translate>
@@ -969,7 +1264,11 @@
             </match>
 
             <translate>
+                <en-US content="This link is not allowed. url: {0}" />
                 <zh-CN content="不允许访问此链接。url：{0}" />
+                <zh-TW content="不允许访問此链接。url：{0}" />
+                <zh-HK content="不允许访問此链接。url：{0}" />
+                <ko-KR content="허용되지 않은 링크입니다. url: {0}" />
                 <vi-VN content="許可されないリンクです。url: {0}" />
                 <th-TH content="許可されないリンクです。url: {0}" />
             </translate>
@@ -981,7 +1280,11 @@
             </match>
 
             <translate>
+                <en-US content="Speech synthesis engine error" />
                 <zh-CN content="语音合成引擎错误" />
+                <zh-TW content="語音合成引擎錯誤" />
+                <zh-HK content="語音合成引擎錯誤" />
+                <ko-KR content="음성 합성 엔진 오류" />
                 <vi-VN content="音声合成エンジンエラー" />
                 <th-TH content="音声合成エンジンエラー" />
             </translate>
@@ -13874,7 +14177,11 @@
             </match>
 
             <translate>
+                <en-US content="Copy" />
                 <zh-CN content="复制" />
+                <zh-TW content="複製" />
+                <zh-HK content="複製" />
+                <ko-KR content="복사" />
                 <vi-VN content="コピー" />
                 <th-TH content="コピー" />
             </translate>
@@ -13886,7 +14193,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to get the context menu item." />
                 <zh-CN content="获取上下文菜单项失败。" />
+                <zh-TW content="獲取上下文菜单項失败。" />
+                <zh-HK content="獲取上下文菜单項失败。" />
+                <ko-KR content="컨텍스트 메뉴 항목을 가져오지 못했습니다." />
                 <vi-VN content="コンテキストメニューアイテムの取得に失敗しました。" />
                 <th-TH content="コンテキストメニューアイテムの取得に失敗しました。" />
             </translate>
@@ -13898,7 +14209,11 @@
             </match>
 
             <translate>
+                <en-US content="Select all" />
                 <zh-CN content="全选" />
+                <zh-TW content="全選" />
+                <zh-HK content="全選" />
+                <ko-KR content="모두 선택" />
                 <vi-VN content="全選択" />
                 <th-TH content="全選択" />
             </translate>
@@ -13910,7 +14225,11 @@
             </match>
 
             <translate>
+                <en-US content="Cut" />
                 <zh-CN content="剪切" />
+                <zh-TW content="剪切" />
+                <zh-HK content="剪切" />
+                <ko-KR content="잘라내기" />
                 <vi-VN content="切り取り" />
                 <th-TH content="切り取り" />
             </translate>
@@ -13922,7 +14241,11 @@
             </match>
 
             <translate>
+                <en-US content="Paste" />
                 <zh-CN content="粘贴" />
+                <zh-TW content="黏貼" />
+                <zh-HK content="黏貼" />
+                <ko-KR content="붙여넣기" />
                 <vi-VN content="貼り付け" />
                 <th-TH content="貼り付け" />
             </translate>
@@ -13934,7 +14257,11 @@
             </match>
 
             <translate>
+                <en-US content="Dark" />
                 <zh-CN content="深色" />
+                <zh-TW content="深色" />
+                <zh-HK content="深色" />
+                <ko-KR content="어둡게" />
                 <vi-VN content="ダーク" />
                 <th-TH content="ダーク" />
             </translate>
@@ -13946,7 +14273,11 @@
             </match>
 
             <translate>
+                <en-US content="Default" />
                 <zh-CN content="默认" />
+                <zh-TW content="預設" />
+                <zh-HK content="預設" />
+                <ko-KR content="기본값" />
                 <vi-VN content="デフォルト" />
                 <th-TH content="デフォルト" />
             </translate>
@@ -13958,7 +14289,11 @@
             </match>
 
             <translate>
+                <en-US content="Select all" />
                 <zh-CN content="全选" />
+                <zh-TW content="全選" />
+                <zh-HK content="全選" />
+                <ko-KR content="모두 선택" />
                 <vi-VN content="すべて選択" />
                 <th-TH content="すべて選択" />
             </translate>
@@ -13970,7 +14305,11 @@
             </match>
 
             <translate>
+                <en-US content="Redo" />
                 <zh-CN content="重做" />
+                <zh-TW content="重做" />
+                <zh-HK content="重做" />
+                <ko-KR content="다시 실행" />
                 <vi-VN content="やり直す" />
                 <th-TH content="やり直す" />
             </translate>
@@ -13982,7 +14321,11 @@
             </match>
 
             <translate>
+                <en-US content="Copy" />
                 <zh-CN content="复制" />
+                <zh-TW content="複製" />
+                <zh-HK content="複製" />
+                <ko-KR content="복사" />
                 <vi-VN content="コピー" />
                 <th-TH content="コピー" />
             </translate>
@@ -13994,7 +14337,11 @@
             </match>
 
             <translate>
+                <en-US content="Export text after concatenating it" />
                 <zh-CN content="合并文本后导出" />
+                <zh-TW content="合並文字後匯出" />
+                <zh-HK content="合並文字後匯出" />
+                <ko-KR content="텍스트를 이어 붙여 내보내기" />
                 <vi-VN content="テキストを繋げて書き出す" />
                 <th-TH content="テキストを繋げて書き出す" />
             </translate>
@@ -14006,7 +14353,11 @@
             </match>
 
             <translate>
+                <en-US content="Load text" />
                 <zh-CN content="加载文本" />
+                <zh-TW content="載入文字" />
+                <zh-HK content="載入文字" />
+                <ko-KR content="텍스트 불러오기" />
                 <vi-VN content="テキストを読み込む" />
                 <th-TH content="テキストを読み込む" />
             </translate>
@@ -14018,7 +14369,11 @@
             </match>
 
             <translate>
+                <en-US content="Remove focus from the text field" />
                 <zh-CN content="移除文本栏焦点" />
+                <zh-TW content="移除文字欄焦点" />
+                <zh-HK content="移除文字欄焦点" />
+                <ko-KR content="텍스트 필드에서 포커스 해제" />
                 <vi-VN content="テキスト欄からフォーカスを外す" />
                 <th-TH content="テキスト欄からフォーカスを外す" />
             </translate>
@@ -14030,7 +14385,11 @@
             </match>
 
             <translate>
+                <en-US content="Restore focus to the text field" />
                 <zh-CN content="恢复文本栏焦点" />
+                <zh-TW content="恢複文字欄焦点" />
+                <zh-HK content="恢複文字欄焦点" />
+                <ko-KR content="텍스트 필드에 포커스 복원" />
                 <vi-VN content="テキスト欄にフォーカスを戻す" />
                 <th-TH content="テキスト欄にフォーカスを戻す" />
             </translate>
@@ -14042,7 +14401,11 @@
             </match>
 
             <translate>
+                <en-US content="Delete text field" />
                 <zh-CN content="删除文本栏" />
+                <zh-TW content="刪除文字欄" />
+                <zh-HK content="刪除文字欄" />
+                <ko-KR content="텍스트 필드 삭제" />
                 <vi-VN content="テキスト欄を削除" />
                 <th-TH content="テキスト欄を削除" />
             </translate>
@@ -14054,7 +14417,11 @@
             </match>
 
             <translate>
+                <en-US content="Duplicate text field" />
                 <zh-CN content="复制文本栏" />
+                <zh-TW content="複製文字欄" />
+                <zh-HK content="複製文字欄" />
+                <ko-KR content="텍스트 필드 복제" />
                 <vi-VN content="テキスト欄を複製" />
                 <th-TH content="テキスト欄を複製" />
             </translate>
@@ -14066,7 +14433,11 @@
             </match>
 
             <translate>
+                <en-US content="Add text field" />
                 <zh-CN content="添加文本栏" />
+                <zh-TW content="新增文字欄" />
+                <zh-HK content="新增文字欄" />
+                <ko-KR content="텍스트 필드 추가" />
                 <vi-VN content="テキスト欄を追加" />
                 <th-TH content="テキスト欄を追加" />
             </translate>
@@ -14078,7 +14449,11 @@
             </match>
 
             <translate>
+                <en-US content="Save a copy of the project" />
                 <zh-CN content="保存项目副本" />
+                <zh-TW content="儲存專案副本" />
+                <zh-HK content="儲存專案副本" />
+                <ko-KR content="프로젝트 복사본 저장" />
                 <vi-VN content="プロジェクトの複製を保存" />
                 <th-TH content="プロジェクトの複製を保存" />
             </translate>
@@ -14090,7 +14465,11 @@
             </match>
 
             <translate>
+                <en-US content="Save project and overwrite" />
                 <zh-CN content="覆盖保存项目" />
+                <zh-TW content="覆盖儲存專案" />
+                <zh-HK content="覆盖儲存專案" />
+                <ko-KR content="프로젝트 덮어쓰기 저장" />
                 <vi-VN content="プロジェクトを上書き保存" />
                 <th-TH content="プロジェクトを上書き保存" />
             </translate>
@@ -14102,7 +14481,11 @@
             </match>
 
             <translate>
+                <en-US content="Save project as" />
                 <zh-CN content="将项目另存为" />
+                <zh-TW content="將專案另存為" />
+                <zh-HK content="將專案另存為" />
+                <ko-KR content="프로젝트를 다른 이름으로 저장" />
                 <vi-VN content="プロジェクトを名前を付けて保存" />
                 <th-TH content="プロジェクトを名前を付けて保存" />
             </translate>
@@ -14114,7 +14497,11 @@
             </match>
 
             <translate>
+                <en-US content="Load project" />
                 <zh-CN content="加载项目" />
+                <zh-TW content="載入專案" />
+                <zh-HK content="載入專案" />
+                <ko-KR content="프로젝트 불러오기" />
                 <vi-VN content="プロジェクトを読み込む" />
                 <th-TH content="プロジェクトを読み込む" />
             </translate>
@@ -14126,7 +14513,11 @@
             </match>
 
             <translate>
+                <en-US content="Undo" />
                 <zh-CN content="撤销" />
+                <zh-TW content="撤销" />
+                <zh-HK content="撤销" />
+                <ko-KR content="실행 취소" />
                 <vi-VN content="元に戻す" />
                 <th-TH content="元に戻す" />
             </translate>
@@ -14138,7 +14529,11 @@
             </match>
 
             <translate>
+                <en-US content="Reset overall intonation" />
                 <zh-CN content="重置全部语调" />
+                <zh-TW content="重置全部語调" />
+                <zh-HK content="重置全部語调" />
+                <ko-KR content="전체 억양 초기화" />
                 <vi-VN content="全体のイントネーションをリセット" />
                 <th-TH content="全体のイントネーションをリセット" />
             </translate>
@@ -14150,7 +14545,11 @@
             </match>
 
             <translate>
+                <en-US content="Toggle fullscreen" />
                 <zh-CN content="切换全屏显示" />
+                <zh-TW content="切換全屏顯示" />
+                <zh-HK content="切換全屏顯示" />
+                <ko-KR content="전체 화면 전환" />
                 <vi-VN content="全画面表示を切り替え" />
                 <th-TH content="全画面表示を切り替え" />
             </translate>
@@ -14162,7 +14561,11 @@
             </match>
 
             <translate>
+                <en-US content="Play/Stop" />
                 <zh-CN content="播放/停止" />
+                <zh-TW content="播放/停止" />
+                <zh-HK content="播放/停止" />
+                <ko-KR content="재생/정지" />
                 <vi-VN content="再生/停止" />
                 <th-TH content="再生/停止" />
             </translate>
@@ -14174,7 +14577,11 @@
             </match>
 
             <translate>
+                <en-US content="Cut" />
                 <zh-CN content="剪切" />
+                <zh-TW content="剪切" />
+                <zh-HK content="剪切" />
+                <ko-KR content="잘라내기" />
                 <vi-VN content="切り取り" />
                 <th-TH content="切り取り" />
             </translate>
@@ -14186,7 +14593,11 @@
             </match>
 
             <translate>
+                <en-US content="Zoom in" />
                 <zh-CN content="放大" />
+                <zh-TW content="放大" />
+                <zh-HK content="放大" />
+                <ko-KR content="확대" />
                 <vi-VN content="拡大" />
                 <th-TH content="拡大" />
             </translate>
@@ -14198,7 +14609,11 @@
             </match>
 
             <translate>
+                <en-US content="Reset zoom level" />
                 <zh-CN content="重置缩放比例" />
+                <zh-TW content="重置縮放比例" />
+                <zh-HK content="重置縮放比例" />
+                <ko-KR content="확대율 초기화" />
                 <vi-VN content="拡大率のリセット" />
                 <th-TH content="拡大率のリセット" />
             </translate>
@@ -14210,7 +14625,11 @@
             </match>
 
             <translate>
+                <en-US content="New project" />
                 <zh-CN content="新建项目" />
+                <zh-TW content="新建專案" />
+                <zh-HK content="新建專案" />
+                <ko-KR content="새 프로젝트" />
                 <vi-VN content="新規プロジェクト" />
                 <th-TH content="新規プロジェクト" />
             </translate>
@@ -14222,7 +14641,11 @@
             </match>
 
             <translate>
+                <en-US content="Select character number" />
                 <zh-CN content="号角色" />
+                <zh-TW content="号角色" />
+                <zh-HK content="号角色" />
+                <ko-KR content="번째 캐릭터 선택" />
                 <vi-VN content="番目のキャラクターを選択" />
                 <th-TH content="番目のキャラクターを選択" />
             </translate>
@@ -14234,7 +14657,11 @@
             </match>
 
             <translate>
+                <en-US content="Zoom out" />
                 <zh-CN content="缩小" />
+                <zh-TW content="縮小" />
+                <zh-HK content="縮小" />
+                <ko-KR content="축소" />
                 <vi-VN content="縮小" />
                 <th-TH content="縮小" />
             </translate>
@@ -14246,7 +14673,11 @@
             </match>
 
             <translate>
+                <en-US content="Paste" />
                 <zh-CN content="粘贴" />
+                <zh-TW content="黏貼" />
+                <zh-HK content="黏貼" />
+                <ko-KR content="붙여넣기" />
                 <vi-VN content="貼り付け" />
                 <th-TH content="貼り付け" />
             </translate>
@@ -14258,7 +14689,11 @@
             </match>
 
             <translate>
+                <en-US content="Play continuously/Stop" />
                 <zh-CN content="连续播放/停止" />
+                <zh-TW content="連续播放/停止" />
+                <zh-HK content="連续播放/停止" />
+                <ko-KR content="연속 재생/정지" />
                 <vi-VN content="連続再生/停止" />
                 <th-TH content="連続再生/停止" />
             </translate>
@@ -14270,7 +14705,11 @@
             </match>
 
             <translate>
+                <en-US content="Reset the intonation of the selected accent phrase" />
                 <zh-CN content="重置所选重音短语的语调" />
+                <zh-TW content="重置所選重音短語的語调" />
+                <zh-HK content="重置所選重音短語的語调" />
+                <ko-KR content="선택한 악센트 구의 억양 초기화" />
                 <vi-VN content="選択中のアクセント句のイントネーションをリセット" />
                 <th-TH content="選択中のアクセント句のイントネーションをリセット" />
             </translate>
@@ -14282,7 +14721,11 @@
             </match>
 
             <translate>
+                <en-US content="Deselect" />
                 <zh-CN content="取消选择" />
+                <zh-TW content="取消選擇" />
+                <zh-HK content="取消選擇" />
+                <ko-KR content="선택 해제" />
                 <vi-VN content="選択解除" />
                 <th-TH content="選択解除" />
             </translate>
@@ -14294,7 +14737,11 @@
             </match>
 
             <translate>
+                <en-US content="Export selected audio" />
                 <zh-CN content="导出选中的音频" />
+                <zh-TW content="匯出選中的音頻" />
+                <zh-HK content="匯出選中的音頻" />
+                <ko-KR content="선택한 음성을 내보내기" />
                 <vi-VN content="選択音声を書き出し" />
                 <th-TH content="選択音声を書き出し" />
             </translate>
@@ -14306,7 +14753,11 @@
             </match>
 
             <translate>
+                <en-US content="Show length field" />
                 <zh-CN content="显示长度栏" />
+                <zh-TW content="顯示長度栏" />
+                <zh-HK content="顯示長度栏" />
+                <ko-KR content="길이 필드 표시" />
                 <vi-VN content="長さ欄を表示" />
                 <th-TH content="長さ欄を表示" />
             </translate>
@@ -14318,7 +14769,11 @@
             </match>
 
             <translate>
+                <en-US content="Export audio after concatenating it" />
                 <zh-CN content="合并音频后导出" />
+                <zh-TW content="合並音頻後匯出" />
+                <zh-HK content="合並音頻後匯出" />
+                <ko-KR content="음성을 이어 붙여 내보내기" />
                 <vi-VN content="音声を繋げて書き出し" />
                 <th-TH content="音声を繋げて書き出し" />
             </translate>
@@ -14330,7 +14785,11 @@
             </match>
 
             <translate>
+                <en-US content="Export audio" />
                 <zh-CN content="导出音频" />
+                <zh-TW content="匯出音頻" />
+                <zh-HK content="匯出音頻" />
+                <ko-KR content="음성 내보내기" />
                 <vi-VN content="音声書き出し" />
                 <th-TH content="音声書き出し" />
             </translate>
@@ -14342,7 +14801,11 @@
             </match>
 
             <translate>
+                <en-US content="Show accent field" />
                 <zh-CN content="显示重音栏" />
+                <zh-TW content="顯示重音栏" />
+                <zh-HK content="顯示重音栏" />
+                <ko-KR content="악센트 필드 표시" />
                 <vi-VN content="ｱｸｾﾝﾄ欄を表示" />
                 <th-TH content="ｱｸｾﾝﾄ欄を表示" />
             </translate>
@@ -14354,7 +14817,11 @@
             </match>
 
             <translate>
+                <en-US content="Show intonation field" />
                 <zh-CN content="显示语调栏" />
+                <zh-TW content="顯示語调栏" />
+                <zh-HK content="顯示語调栏" />
+                <ko-KR content="억양 필드 표시" />
                 <vi-VN content="ｲﾝﾄﾈｰｼｮﾝ欄を表示" />
                 <th-TH content="ｲﾝﾄﾈｰｼｮﾝ欄を表示" />
             </translate>
@@ -14366,7 +14833,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to get nativeEl." />
                 <zh-CN content="获取 nativeEl 失败。" />
+                <zh-TW content="獲取 nativeEl 失败。" />
+                <zh-HK content="獲取 nativeEl 失败。" />
+                <ko-KR content="nativeEl을 가져오지 못했습니다." />
                 <vi-VN content="nativeElの取得に失敗しました。" />
                 <th-TH content="nativeElの取得に失敗しました。" />
             </translate>
@@ -14378,7 +14849,11 @@
             </match>
 
             <translate>
+                <en-US content="(Internal error message)" />
                 <zh-CN content="（内部错误消息）" />
+                <zh-TW content="（內部錯誤消息）" />
+                <zh-HK content="（內部錯誤消息）" />
+                <ko-KR content="(내부 오류 메시지)" />
                 <vi-VN content="（内部エラーメッセージ）" />
                 <th-TH content="（内部エラーメッセージ）" />
             </translate>
@@ -14390,7 +14865,11 @@
             </match>
 
             <translate>
+                <en-US content="The file is open." />
                 <zh-CN content="文件当前已打开。" />
+                <zh-TW content="檔案当前已打開。" />
+                <zh-HK content="檔案当前已打開。" />
+                <ko-KR content="파일이 열려 있습니다." />
                 <vi-VN content="ファイルが開かれています。" />
                 <th-TH content="ファイルが開かれています。" />
             </translate>
@@ -14402,7 +14881,11 @@
             </match>
 
             <translate>
+                <en-US content="You do not have permission to access the file." />
                 <zh-CN content="没有访问文件的权限。" />
+                <zh-TW content="沒有访問檔案的權限。" />
+                <zh-HK content="沒有访問檔案的權限。" />
+                <ko-KR content="파일에 액세스할 권한이 없습니다." />
                 <vi-VN content="ファイルにアクセスする許可がありません。" />
                 <th-TH content="ファイルにアクセスする許可がありません。" />
             </translate>
@@ -14415,7 +14898,11 @@
             </match>
 
             <translate>
+                <en-US content="The operation failed for some reason. {0}" />
                 <zh-CN content="因某种原因操作失败。{0}" />
+                <zh-TW content="因某种原因操作失败。{0}" />
+                <zh-HK content="因某种原因操作失败。{0}" />
+                <ko-KR content="어떤 이유로 작업에 실패했습니다. {0}" />
                 <vi-VN content="何らかの理由で失敗しました。{0}" />
                 <th-TH content="何らかの理由で失敗しました。{0}" />
             </translate>
@@ -14427,7 +14914,11 @@
             </match>
 
             <translate>
+                <en-US content="The specified file or folder was not found." />
                 <zh-CN content="找不到指定的文件或文件夹。" />
+                <zh-TW content="找不到指定的檔案或資料夾。" />
+                <zh-HK content="找不到指定的檔案或資料夾。" />
+                <ko-KR content="지정한 파일 또는 폴더를 찾을 수 없습니다." />
                 <vi-VN content="指定されたファイルまたはフォルダが見つかりません。" />
                 <th-TH content="指定されたファイルまたはフォルダが見つかりません。" />
             </translate>
@@ -14439,7 +14930,11 @@
             </match>
 
             <translate>
+                <en-US content="Not enough free space." />
                 <zh-CN content="可用空间不足。" />
+                <zh-TW content="可用空間不足。" />
+                <zh-HK content="可用空間不足。" />
+                <ko-KR content="사용 가능한 공간이 부족합니다." />
                 <vi-VN content="空き容量が足りません。" />
                 <th-TH content="空き容量が足りません。" />
             </translate>
@@ -14452,7 +14947,11 @@
             </match>
 
             <translate>
+                <en-US content="You cannot place more than two accents in one accent phrase: {text}" />
                 <zh-CN content="一个重音短语中不能设置两个以上的重音：{text}" />
+                <zh-TW content="一個重音短語中不能設定兩個以上的重音：{text}" />
+                <zh-HK content="一個重音短語中不能設定兩個以上的重音：{text}" />
+                <ko-KR content="하나의 악센트 구에는 두 개 이상의 악센트를 넣을 수 없습니다: {text}" />
                 <vi-VN content="1つのアクセント句に二つ以上のアクセントは置けません: {text}" />
                 <th-TH content="1つのアクセント句に二つ以上のアクセントは置けません: {text}" />
             </translate>
@@ -14465,7 +14964,11 @@
             </match>
 
             <translate>
+                <en-US content="The {position}th accent phrase is blank" />
                 <zh-CN content="第 {position} 个重音短语为空白" />
+                <zh-TW content="第 {position} 個重音短語為空白" />
+                <zh-HK content="第 {position} 個重音短語為空白" />
+                <ko-KR content="{position}번째 악센트 구가 비어 있습니다" />
                 <vi-VN content="{position}番目のアクセント句が空白です" />
                 <th-TH content="{position}番目のアクセント句が空白です" />
             </translate>
@@ -14478,7 +14981,11 @@
             </match>
 
             <translate>
+                <en-US content="There is an accent phrase without a specified accent: {text}" />
                 <zh-CN content="存在未指定重音的重音短语：{text}" />
+                <zh-TW content="存在未指定重音的重音短語：{text}" />
+                <zh-HK content="存在未指定重音的重音短語：{text}" />
+                <ko-KR content="악센트가 지정되지 않은 악센트 구가 있습니다: {text}" />
                 <vi-VN content="アクセントを指定していないアクセント句があります: {text}" />
                 <th-TH content="アクセントを指定していないアクセント句があります: {text}" />
             </translate>
@@ -14491,7 +14998,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="&quot;?&quot; can only be placed at the end of an accent phrase: {text}" />
                 <zh-CN content="“？”只能放在重音短语末尾：{text}" />
+                <zh-TW content="“？”只能放在重音短語末尾：{text}" />
+                <zh-HK content="“？”只能放在重音短語末尾：{text}" />
+                <ko-KR content="&quot;?&quot;는 악센트 구의 끝에만 둘 수 있습니다: {text}" />
                 <vi-VN content="アクセント句末以外に「？」は置けません: {text}" />
                 <th-TH content="アクセント句末以外に「？」は置けません: {text}" />
             </translate>
@@ -14503,7 +15015,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="An infinite loop occurred during processing... Please report this bug." />
                 <zh-CN content="处理时进入了无限循环……请报告此错误。" />
+                <zh-TW content="處理時進入了無限循环……請报告此錯誤。" />
+                <zh-HK content="處理時進入了無限循环……請报告此錯誤。" />
+                <ko-KR content="처리 중 무한 루프가 발생했습니다... 이 버그를 신고해 주세요." />
                 <vi-VN content="処理時に無限ループになってしまいました...バグ報告をお願いします。" />
                 <th-TH content="処理時に無限ループになってしまいました...バグ報告をお願いします。" />
             </translate>
@@ -14516,7 +15033,11 @@
             </match>
 
             <translate>
+                <en-US content="There is an unrecognized kana reading: {text}" />
                 <zh-CN content="存在无法识别的假名读法：{text}" />
+                <zh-TW content="存在無法識别的假名讀法：{text}" />
+                <zh-HK content="存在無法識别的假名讀法：{text}" />
+                <ko-KR content="판별할 수 없는 가나 읽기가 있습니다: {text}" />
                 <vi-VN content="判別できない読み仮名があります: {text}" />
                 <th-TH content="判別できない読み仮名があります: {text}" />
             </translate>
@@ -14529,7 +15050,11 @@
             </match>
 
             <translate>
+                <en-US content="An accent cannot be placed at the beginning of a phrase: {text}" />
                 <zh-CN content="句首不能设置重音：{text}" />
+                <zh-TW content="句首不能設定重音：{text}" />
+                <zh-HK content="句首不能設定重音：{text}" />
+                <ko-KR content="구의 시작 부분에는 악센트를 둘 수 없습니다: {text}" />
                 <vi-VN content="句頭にアクセントは置けません: {text}" />
                 <th-TH content="句頭にアクセントは置けません: {text}" />
             </translate>
@@ -14541,7 +15066,11 @@
             </match>
 
             <translate>
+                <en-US content="General" />
                 <zh-CN content="一般" />
+                <zh-TW content="一般" />
+                <zh-HK content="一般" />
+                <ko-KR content="일반" />
                 <vi-VN content="一般" />
                 <th-TH content="一般" />
             </translate>
@@ -14553,7 +15082,11 @@
             </match>
 
             <translate>
+                <en-US content="Noun" />
                 <zh-CN content="名词" />
+                <zh-TW content="名词" />
+                <zh-HK content="名词" />
+                <ko-KR content="명사" />
                 <vi-VN content="名詞" />
                 <th-TH content="名詞" />
             </translate>
@@ -14568,7 +15101,11 @@
             </match>
 
             <translate>
+                <en-US content="Note not found: index={0} phoneme={1}" />
                 <zh-CN content="找不到音符：index={0} phoneme={1}" />
+                <zh-TW content="找不到音符：index={0} phoneme={1}" />
+                <zh-HK content="找不到音符：index={0} phoneme={1}" />
+                <ko-KR content="노트를 찾을 수 없습니다: index={0} phoneme={1}" />
                 <vi-VN content="ノートが見つかりません: index={0} phoneme={1}" />
                 <th-TH content="ノートが見つかりません: index={0} phoneme={1}" />
             </translate>
@@ -14581,7 +15118,11 @@
             </match>
 
             <translate>
+                <en-US content="Cannot convert to phoneme: {0}" />
                 <zh-CN content="无法转换为音素：{0}" />
+                <zh-TW content="無法转換為音素：{0}" />
+                <zh-HK content="無法转換為音素：{0}" />
+                <ko-KR content="음소로 변환할 수 없습니다: {0}" />
                 <vi-VN content="音素に変換できません: {0}" />
                 <th-TH content="音素に変換できません: {0}" />
             </translate>
@@ -14594,7 +15135,11 @@
             </match>
 
             <translate>
+                <en-US content="Unsupported phoneme: {0}" />
                 <zh-CN content="不支持的音素：{0}" />
+                <zh-TW content="不支持的音素：{0}" />
+                <zh-HK content="不支持的音素：{0}" />
+                <ko-KR content="지원되지 않는 음소: {0}" />
                 <vi-VN content="未対応の音素: {0}" />
                 <th-TH content="未対応の音素: {0}" />
             </translate>
@@ -14607,7 +15152,11 @@
             </match>
 
             <translate>
+                <en-US content="Cannot convert to mora: {0}" />
                 <zh-CN content="无法转换为拍：{0}" />
+                <zh-TW content="無法转換為拍：{0}" />
+                <zh-HK content="無法转換為拍：{0}" />
+                <ko-KR content="모라로 변환할 수 없습니다: {0}" />
                 <vi-VN content="モーラに変換できません: {0}" />
                 <th-TH content="モーラに変換できません: {0}" />
             </translate>
@@ -14619,7 +15168,11 @@
             </match>
 
             <translate>
+                <en-US content="Particle" />
                 <zh-CN content="助词" />
+                <zh-TW content="助词" />
+                <zh-HK content="助词" />
+                <ko-KR content="조사" />
                 <vi-VN content="助詞" />
                 <th-TH content="助詞" />
             </translate>
@@ -14632,7 +15185,11 @@
             </match>
 
             <translate>
+                <en-US content="Token without pronunciation: {0}" />
                 <zh-CN content="没有发音的令牌：{0}" />
+                <zh-TW content="沒有發音的令牌：{0}" />
+                <zh-HK content="沒有發音的令牌：{0}" />
+                <ko-KR content="발음이 없는 토큰: {0}" />
                 <vi-VN content="発音がないトークン: {0}" />
                 <th-TH content="発音がないトークン: {0}" />
             </translate>
@@ -14644,7 +15201,11 @@
             </match>
 
             <translate>
+                <en-US content="Symbol" />
                 <zh-CN content="符号" />
+                <zh-TW content="符号" />
+                <zh-HK content="符号" />
+                <ko-KR content="기호" />
                 <vi-VN content="記号" />
                 <th-TH content="記号" />
             </translate>
@@ -14656,7 +15217,11 @@
             </match>
 
             <translate>
+                <en-US content="Unnamed track" />
                 <zh-CN content="未命名音轨" />
+                <zh-TW content="未命名音轨" />
+                <zh-HK content="未命名音轨" />
+                <ko-KR content="이름 없는 트랙" />
                 <vi-VN content="無名トラック" />
                 <th-TH content="無名トラック" />
             </translate>
@@ -14668,7 +15233,11 @@
             </match>
 
             <translate>
+                <en-US content="Song" />
                 <zh-CN content="歌曲" />
+                <zh-TW content="歌曲" />
+                <zh-HK content="歌曲" />
+                <ko-KR content="노래" />
                 <vi-VN content="ソング" />
                 <th-TH content="ソング" />
             </translate>
@@ -14680,7 +15249,11 @@
             </match>
 
             <translate>
+                <en-US content="Talk" />
                 <zh-CN content="Talk" />
+                <zh-TW content="Talk" />
+                <zh-HK content="Talk" />
+                <ko-KR content="토크" />
                 <vi-VN content="トーク" />
                 <th-TH content="トーク" />
             </translate>
@@ -14692,7 +15265,11 @@
             </match>
 
             <translate>
+                <en-US content="Humming" />
                 <zh-CN content="哼唱" />
+                <zh-TW content="哼唱" />
+                <zh-HK content="哼唱" />
+                <ko-KR content="허밍" />
                 <vi-VN content="ハミング" />
                 <th-TH content="ハミング" />
             </translate>
@@ -15051,7 +15628,11 @@
             </match>
 
             <translate>
+                <en-US content="WAV file" />
                 <zh-CN content="WAV 文件" />
+                <zh-TW content="WAV 檔案" />
+                <zh-HK content="WAV 檔案" />
+                <ko-KR content="WAV 파일" />
                 <vi-VN content="WAV ファイル" />
                 <th-TH content="WAV ファイル" />
             </translate>
@@ -15063,7 +15644,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to generate lab." />
                 <zh-CN content="生成 lab 失败。" />
+                <zh-TW content="生成 lab 失败。" />
+                <zh-HK content="生成 lab 失败。" />
+                <ko-KR content="lab을 생성하지 못했습니다." />
                 <vi-VN content="labの生成に失敗しました。" />
                 <th-TH content="labの生成に失敗しました。" />
             </translate>
@@ -15075,7 +15660,11 @@
             </match>
 
             <translate>
+                <en-US content="Load dialogue" />
                 <zh-CN content="加载台词" />
+                <zh-TW content="載入臺词" />
+                <zh-HK content="載入臺词" />
+                <ko-KR content="대사 불러오기" />
                 <vi-VN content="セリフ読み込み" />
                 <th-TH content="セリフ読み込み" />
             </translate>
@@ -15087,7 +15676,11 @@
             </match>
 
             <translate>
+                <en-US content="Text file" />
                 <zh-CN content="文本文件" />
+                <zh-TW content="文字檔案" />
+                <zh-HK content="文字檔案" />
+                <ko-KR content="텍스트 파일" />
                 <vi-VN content="テキストファイル" />
                 <th-TH content="テキストファイル" />
             </translate>
@@ -15099,7 +15692,11 @@
             </match>
 
             <translate>
+                <en-US content="An unknown error occurred." />
                 <zh-CN content="发生未知错误。" />
+                <zh-TW content="發生未知錯誤。" />
+                <zh-HK content="發生未知錯誤。" />
+                <ko-KR content="알 수 없는 오류가 발생했습니다." />
                 <vi-VN content="不明なエラーが発生しました。" />
                 <th-TH content="不明なエラーが発生しました。" />
             </translate>
@@ -15111,7 +15708,11 @@
             </match>
 
             <translate>
+                <en-US content="Save all text concatenated into a text file" />
                 <zh-CN content="合并所有文本后保存为文本文件" />
+                <zh-TW content="合並所有文字後儲存為文字檔案" />
+                <zh-HK content="合並所有文字後儲存為文字檔案" />
+                <ko-KR content="모든 문장을 이어 붙여 텍스트 파일로 저장" />
                 <vi-VN content="文章を全て繋げてテキストファイルに保存" />
                 <th-TH content="文章を全て繋げてテキストファイルに保存" />
             </translate>
@@ -15124,7 +15725,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to change speaker: {0}" />
                 <zh-CN content="更改说话人失败：{0}" />
+                <zh-TW content="更改說話人失败：{0}" />
+                <zh-HK content="更改說話人失败：{0}" />
+                <ko-KR content="화자를 변경하지 못했습니다: {0}" />
                 <vi-VN content="話者の変更に失敗しました： {0}" />
                 <th-TH content="話者の変更に失敗しました： {0}" />
             </translate>
@@ -15136,7 +15741,11 @@
             </match>
 
             <translate>
+                <en-US content="Save audio" />
                 <zh-CN content="保存音频" />
+                <zh-TW content="儲存音頻" />
+                <zh-HK content="儲存音頻" />
+                <ko-KR content="음성 저장" />
                 <vi-VN content="音声を保存" />
                 <th-TH content="音声を保存" />
             </translate>
@@ -15148,7 +15757,11 @@
             </match>
 
             <translate>
+                <en-US content="Save all audio concatenated" />
                 <zh-CN content="合并所有音频后保存" />
+                <zh-TW content="合並所有音頻後儲存" />
+                <zh-HK content="合並所有音頻後儲存" />
+                <ko-KR content="모든 음성을 이어 붙여 저장" />
                 <vi-VN content="音声を全て繋げて保存" />
                 <th-TH content="音声を全て繋げて保存" />
             </translate>
@@ -15160,7 +15773,11 @@
             </match>
 
             <translate>
+                <en-US content="Morphing settings are invalid." />
                 <zh-CN content="变形设置无效。" />
+                <zh-TW content="變形設定無效。" />
+                <zh-HK content="變形設定無效。" />
+                <ko-KR content="모핑 설정이 잘못되었습니다." />
                 <vi-VN content="モーフィングの設定が無効です。" />
                 <th-TH content="モーフィングの設定が無効です。" />
             </translate>
@@ -15172,7 +15789,11 @@
             </match>
 
             <translate>
+                <en-US content="Error" />
                 <zh-CN content="错误" />
+                <zh-TW content="錯誤" />
+                <zh-HK content="錯誤" />
+                <ko-KR content="오류" />
                 <vi-VN content="エラー" />
                 <th-TH content="エラー" />
             </translate>
@@ -15184,7 +15805,11 @@
             </match>
 
             <translate>
+                <en-US content="Playback device not found" />
                 <zh-CN content="找不到播放设备" />
+                <zh-TW content="找不到播放設备" />
+                <zh-HK content="找不到播放設备" />
+                <ko-KR content="재생 장치를 찾을 수 없습니다" />
                 <vi-VN content="再生デバイスが見つかりません" />
                 <th-TH content="再生デバイスが見つかりません" />
             </translate>
@@ -15197,7 +15822,11 @@
             </match>
 
             <translate>
+                <en-US content="Default: {0}" />
                 <zh-CN content="默认：{0}" />
+                <zh-TW content="預設：{0}" />
+                <zh-HK content="預設：{0}" />
+                <ko-KR content="기본값: {0}" />
                 <vi-VN content="デフォルト：{0}" />
                 <th-TH content="デフォルト：{0}" />
             </translate>
@@ -15536,7 +16165,11 @@
             </match>
 
             <translate>
+                <en-US content="$No.$_$Character$($Style$)_$Text$" />
                 <zh-CN content="$連番$_$キャラ$（$スタイル$）_$テキスト$" />
+                <zh-TW content="$連番$_$キャラ$（$スタイル$）_$テキスト$" />
+                <zh-HK content="$連番$_$キャラ$（$スタイル$）_$テキスト$" />
+                <ko-KR content="$연번$_$캐릭터$($스타일$)_$텍스트$" />
                 <vi-VN content="$連番$_$キャラ$（$スタイル$）_$テキスト$" />
                 <th-TH content="$連番$_$キャラ$（$スタイル$）_$テキスト$" />
             </translate>
@@ -15548,7 +16181,11 @@
             </match>
 
             <translate>
+                <en-US content="$No.$_$Character$($Style$)_$TrackName$" />
                 <zh-CN content="$連番$_$キャラ$（$スタイル$）_$トラック名$" />
+                <zh-TW content="$連番$_$キャラ$（$スタイル$）_$トラック名$" />
+                <zh-HK content="$連番$_$キャラ$（$スタイル$）_$トラック名$" />
+                <ko-KR content="$연번$_$캐릭터$($스타일$)_$트랙 이름$" />
                 <vi-VN content="$連番$_$キャラ$（$スタイル$）_$トラック名$" />
                 <th-TH content="$連番$_$キャラ$（$スタイル$）_$トラック名$" />
             </translate>
@@ -15560,7 +16197,11 @@
             </match>
 
             <translate>
+                <en-US content="VOICEVOX Project" />
                 <zh-CN content="VOICEVOX 项目" />
+                <zh-TW content="VOICEVOX 專案" />
+                <zh-HK content="VOICEVOX 專案" />
+                <ko-KR content="VOICEVOX 프로젝트" />
                 <vi-VN content="VOICEVOXプロジェクト" />
                 <th-TH content="VOICEVOXプロジェクト" />
             </translate>
@@ -15572,7 +16213,11 @@
             </match>
 
             <translate>
+                <en-US content="Redo" />
                 <zh-CN content="重做" />
+                <zh-TW content="重做" />
+                <zh-HK content="重做" />
+                <ko-KR content="다시 실행" />
                 <vi-VN content="やり直す" />
                 <th-TH content="やり直す" />
             </translate>
@@ -15584,7 +16229,11 @@
             </match>
 
             <translate>
+                <en-US content="Character" />
                 <zh-CN content="キャラ" />
+                <zh-TW content="キャラ" />
+                <zh-HK content="キャラ" />
+                <ko-KR content="캐릭터" />
                 <vi-VN content="キャラ" />
                 <th-TH content="キャラ" />
             </translate>
@@ -15596,7 +16245,11 @@
             </match>
 
             <translate>
+                <en-US content="Style" />
                 <zh-CN content="スタイル" />
+                <zh-TW content="スタイル" />
+                <zh-HK content="スタイル" />
+                <ko-KR content="스타일" />
                 <vi-VN content="スタイル" />
                 <th-TH content="スタイル" />
             </translate>
@@ -15608,7 +16261,11 @@
             </match>
 
             <translate>
+                <en-US content="Text" />
                 <zh-CN content="テキスト" />
+                <zh-TW content="テキスト" />
+                <zh-HK content="テキスト" />
+                <ko-KR content="텍스트" />
                 <vi-VN content="テキスト" />
                 <th-TH content="テキスト" />
             </translate>
@@ -15620,7 +16277,11 @@
             </match>
 
             <translate>
+                <en-US content="TextTextText" />
                 <zh-CN content="文本文本文本" />
+                <zh-TW content="文字文字文字" />
+                <zh-HK content="文字文字文字" />
+                <ko-KR content="텍스트텍스트텍스트" />
                 <vi-VN content="テキストテキストテキスト" />
                 <th-TH content="テキストテキストテキスト" />
             </translate>
@@ -15632,7 +16293,11 @@
             </match>
 
             <translate>
+                <en-US content="Load text" />
                 <zh-CN content="加载文本" />
+                <zh-TW content="載入文字" />
+                <zh-HK content="載入文字" />
+                <ko-KR content="텍스트 불러오기" />
                 <vi-VN content="テキスト読み込み" />
                 <th-TH content="テキスト読み込み" />
             </translate>
@@ -15644,7 +16309,11 @@
             </match>
 
             <translate>
+                <en-US content="Track name" />
                 <zh-CN content="トラック名" />
+                <zh-TW content="トラック名" />
+                <zh-HK content="トラック名" />
+                <ko-KR content="트랙 이름" />
                 <vi-VN content="トラック名" />
                 <th-TH content="トラック名" />
             </translate>
@@ -15656,7 +16325,11 @@
             </match>
 
             <translate>
+                <en-US content="Normal" />
                 <zh-CN content="ノーマル" />
+                <zh-TW content="ノーマル" />
+                <zh-HK content="ノーマル" />
+                <ko-KR content="일반" />
                 <vi-VN content="ノーマル" />
                 <th-TH content="ノーマル" />
             </translate>
@@ -15668,7 +16341,11 @@
             </match>
 
             <translate>
+                <en-US content="Save project" />
                 <zh-CN content="保存项目" />
+                <zh-TW content="儲存專案" />
+                <zh-HK content="儲存專案" />
+                <ko-KR content="프로젝트 저장" />
                 <vi-VN content="プロジェクト保存" />
                 <th-TH content="プロジェクト保存" />
             </translate>
@@ -15680,7 +16357,11 @@
             </match>
 
             <translate>
+                <en-US content="Project name" />
                 <zh-CN content="プロジェクト名" />
+                <zh-TW content="プロジェクト名" />
+                <zh-HK content="プロジェクト名" />
+                <ko-KR content="프로젝트 이름" />
                 <vi-VN content="プロジェクト名" />
                 <th-TH content="プロジェクト名" />
             </translate>
@@ -15692,7 +16373,11 @@
             </match>
 
             <translate>
+                <en-US content="Stop" />
                 <zh-CN content="停止" />
+                <zh-TW content="停止" />
+                <zh-HK content="停止" />
+                <ko-KR content="정지" />
                 <vi-VN content="停止" />
                 <th-TH content="停止" />
             </translate>
@@ -15704,7 +16389,11 @@
             </match>
 
             <translate>
+                <en-US content="Undo" />
                 <zh-CN content="撤销" />
+                <zh-TW content="撤销" />
+                <zh-HK content="撤销" />
+                <ko-KR content="실행 취소" />
                 <vi-VN content="元に戻す" />
                 <th-TH content="元に戻す" />
             </translate>
@@ -15716,7 +16405,11 @@
             </match>
 
             <translate>
+                <en-US content="Export all" />
                 <zh-CN content="全部导出" />
+                <zh-TW content="全部匯出" />
+                <zh-HK content="全部匯出" />
+                <ko-KR content="모두 내보내기" />
                 <vi-VN content="全部書き出し" />
                 <th-TH content="全部書き出し" />
             </translate>
@@ -15728,7 +16421,11 @@
             </match>
 
             <translate>
+                <en-US content="Shikoku Metan" />
                 <zh-CN content="四国めたん" />
+                <zh-TW content="四國めたん" />
+                <zh-HK content="四國めたん" />
+                <ko-KR content="시코쿠 메탄" />
                 <vi-VN content="四国めたん" />
                 <th-TH content="四国めたん" />
             </translate>
@@ -15740,7 +16437,11 @@
             </match>
 
             <translate>
+                <en-US content="Date" />
                 <zh-CN content="日付" />
+                <zh-TW content="日付" />
+                <zh-HK content="日付" />
+                <ko-KR content="날짜" />
                 <vi-VN content="日付" />
                 <th-TH content="日付" />
             </translate>
@@ -15752,7 +16453,11 @@
             </match>
 
             <translate>
+                <en-US content="Blank" />
                 <zh-CN content="空白" />
+                <zh-TW content="空白" />
+                <zh-HK content="空白" />
+                <ko-KR content="공백" />
                 <vi-VN content="空白" />
                 <th-TH content="空白" />
             </translate>
@@ -15764,7 +16469,11 @@
             </match>
 
             <translate>
+                <en-US content="Sequence number" />
                 <zh-CN content="連番" />
+                <zh-TW content="連番" />
+                <zh-HK content="連番" />
+                <ko-KR content="연번" />
                 <vi-VN content="連番" />
                 <th-TH content="連番" />
             </translate>
@@ -15776,7 +16485,11 @@
             </match>
 
             <translate>
+                <en-US content="Continuous playback" />
                 <zh-CN content="连续播放" />
+                <zh-TW content="連续播放" />
+                <zh-HK content="連续播放" />
+                <ko-KR content="연속 재생" />
                 <vi-VN content="連続再生" />
                 <th-TH content="連続再生" />
             </translate>
@@ -15788,7 +16501,11 @@
             </match>
 
             <translate>
+                <en-US content="Export selected audio" />
                 <zh-CN content="导出选中的音频" />
+                <zh-TW content="匯出選中的音頻" />
+                <zh-HK content="匯出選中的音頻" />
+                <ko-KR content="선택한 음성을 내보내기" />
                 <vi-VN content="選択音声を書き出し" />
                 <th-TH content="選択音声を書き出し" />
             </translate>
@@ -15800,7 +16517,11 @@
             </match>
 
             <translate>
+                <en-US content="Export audio after concatenating it" />
                 <zh-CN content="合并音频后导出" />
+                <zh-TW content="合並音頻後匯出" />
+                <zh-HK content="合並音頻後匯出" />
+                <ko-KR content="음성을 이어 붙여 내보내기" />
                 <vi-VN content="音声を繋げて書き出し" />
                 <th-TH content="音声を繋げて書き出し" />
             </translate>
@@ -15813,7 +16534,12 @@
             </match>
 
             <translate>
+                <en-US
+                    content="To use the VOICEVOX editor, you need to install a speech synthesis engine. Please install or update one from the engine list below." />
                 <zh-CN content="使用 VOICEVOX 编辑器需要安装语音合成引擎。请从下面的引擎列表中安装或更新引擎。" />
+                <zh-TW content="使用 VOICEVOX 編輯器需要安裝語音合成引擎。請從下面的引擎清單中安裝或更新引擎。" />
+                <zh-HK content="使用 VOICEVOX 編輯器需要安裝語音合成引擎。請從下面的引擎清單中安裝或更新引擎。" />
+                <ko-KR content="VOICEVOX 에디터를 사용하려면 음성 합성 엔진을 설치해야 합니다. 아래 엔진 목록에서 설치하거나 업데이트하세요." />
                 <vi-VN
                     content="VOICEVOXエディタを使用するには、音声合成エンジンのインストールが必要です。 以下のエンジン一覧から、インストールまたは更新を行ってください。" />
                 <th-TH
@@ -15925,7 +16651,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to get maximized state" />
                 <zh-CN content="获取最大化状态失败" />
+                <zh-TW content="獲取最大化狀態失败" />
+                <zh-HK content="獲取最大化狀態失败" />
+                <ko-KR content="최대화 상태를 가져오지 못했습니다" />
                 <vi-VN content="最大化状態の取得に失敗しました" />
                 <th-TH content="最大化状態の取得に失敗しました" />
             </translate>
@@ -16017,7 +16747,11 @@
             </match>
 
             <translate>
+                <en-US content="No engine is installed." />
                 <zh-CN content="尚未安装引擎。" />
+                <zh-TW content="尚未安裝引擎。" />
+                <zh-HK content="尚未安裝引擎。" />
+                <ko-KR content="엔진이 설치되어 있지 않습니다." />
                 <vi-VN content="エンジンがインストールされていません。" />
                 <th-TH content="エンジンがインストールされていません。" />
             </translate>
@@ -16029,7 +16763,11 @@
             </match>
 
             <translate>
+                <en-US content="Failed to install the engine" />
                 <zh-CN content="引擎安装失败" />
+                <zh-TW content="引擎安裝失败" />
+                <zh-HK content="引擎安裝失败" />
+                <ko-KR content="엔진을 설치하지 못했습니다" />
                 <vi-VN content="エンジンのインストールに失敗しました" />
                 <th-TH content="エンジンのインストールに失敗しました" />
             </translate>
@@ -16041,7 +16779,11 @@
             </match>
 
             <translate>
+                <en-US content="Loading engine information." />
                 <zh-CN content="正在加载引擎信息。" />
+                <zh-TW content="正在載入引擎資訊。" />
+                <zh-HK content="正在載入引擎資訊。" />
+                <ko-KR content="엔진 정보를 불러오는 중입니다." />
                 <vi-VN content="エンジンの情報を読み込み中です。" />
                 <th-TH content="エンジンの情報を読み込み中です。" />
             </translate>
@@ -16053,7 +16795,11 @@
             </match>
 
             <translate>
+                <en-US content="Installing engine." />
                 <zh-CN content="正在安装引擎。" />
+                <zh-TW content="正在安裝引擎。" />
+                <zh-HK content="正在安裝引擎。" />
+                <ko-KR content="엔진을 설치하는 중입니다." />
                 <vi-VN content="エンジンをインストール中です。" />
                 <th-TH content="エンジンをインストール中です。" />
             </translate>
