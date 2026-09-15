@@ -2,7 +2,7 @@
 
 The i18n runtime localizes the already-rendered interface instead of rewriting application source.
 
-- `locales.xml` remains the source of translation rules.
+- `defines.xml` remains the source of translation rules.
 - The Vite plugin only packages those rules and injects the runtime into the two application entry points.
 - `runtime.ts` schedules work with `requestAnimationFrame` and uses regular expressions to match/replace translated text.
 - `MutationObserver` triggers another frame when Vue or another UI layer changes the DOM.

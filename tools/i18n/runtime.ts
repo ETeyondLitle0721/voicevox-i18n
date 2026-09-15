@@ -8,6 +8,8 @@ const SUPPORTED_LOCALES: readonly Locale[] = [
   "zh-TW",
   "zh-HK",
   "ko-KR",
+  "vi-VN",
+  "th-TH",
 ];
 
 const SOURCE_ATTRIBUTE_NAMES = new Set([
@@ -103,7 +105,10 @@ const detectLocale = (languages: readonly string[]): Locale => {
 const resolveLocale = (): Locale => {
   if (typeof localStorage !== "undefined") {
     try {
-      const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
+      let storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
+
+      if (storedLocale === "auto") storedLocale = null;
+
       if (storedLocale && SUPPORTED_LOCALES.includes(storedLocale as Locale)) {
         return storedLocale as Locale;
       }
@@ -229,6 +234,8 @@ export function createRuntime(rules: TranslationRules) {
       "zh-TW": compileRules(rules["zh-TW"]),
       "zh-HK": compileRules(rules["zh-HK"]),
       "ko-KR": compileRules(rules["ko-KR"]),
+      "vi-VN": compileRules(rules["vi-VN"]),
+      "th-TH": compileRules(rules["th-TH"]),
     },
     running: false,
     frameId: 0 as number | undefined,

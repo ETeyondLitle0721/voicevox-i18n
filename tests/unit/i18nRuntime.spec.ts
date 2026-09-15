@@ -30,6 +30,8 @@ const rules: TranslationRules = {
   "zh-TW": [],
   "zh-HK": [],
   "ko-KR": [],
+  "vi-VN": [],
+  "th-TH": [],
 };
 
 describe("VOICEVOX runtime i18n", () => {

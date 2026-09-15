@@ -22,6 +22,8 @@
                 <xs:element name="zh-TW" type="langMetaDerivedType" minOccurs="0" />
                 <xs:element name="zh-HK" type="langMetaDerivedType" minOccurs="0" />
                 <xs:element name="ko-KR" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="vi-VN" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="th-TH" type="langMetaDerivedType" minOccurs="0" />
             </xs:sequence>
         </xs:sequence>
     </xs:complexType>
@@ -81,6 +83,8 @@
             <xs:element name="zh-TW" type="contentValueType" minOccurs="0" />
             <xs:element name="zh-HK" type="contentValueType" minOccurs="0" />
             <xs:element name="ko-KR" type="contentValueType" minOccurs="0" />
+            <xs:element name="vi-VN" type="contentValueType" minOccurs="0" />
+            <xs:element name="th-TH" type="contentValueType" minOccurs="0" />
         </xs:sequence>
     </xs:complexType>
 

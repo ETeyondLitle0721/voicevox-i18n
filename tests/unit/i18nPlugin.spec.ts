@@ -50,7 +50,7 @@ describe("voicevox i18n Vite plugin", () => {
     );
   });
 
-  it("embeds runtime regex rules parsed from locales.xml", () => {
+  it("embeds runtime regex rules parsed from defines.xml", () => {
     const plugin = createPlugin();
     const virtualId = plugin.resolveId?.("virtual:voicevox-i18n/runtime");
     expect(virtualId).toBe("\0virtual:voicevox-i18n/runtime");

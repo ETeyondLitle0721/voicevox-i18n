@@ -8,7 +8,9 @@ export type Locale =
   | "zh-CN"
   | "zh-TW"
   | "zh-HK"
-  | "ko-KR";
+  | "ko-KR"
+  | "vi-VN"
+  | "th-TH";
 
 export type TranslationRule = {
   type: "equals" | "contains";
@@ -29,6 +31,8 @@ const SOURCE_LOCALES: readonly Exclude<Locale, "ja-JP">[] = [
   "zh-TW",
   "zh-HK",
   "ko-KR",
+  "vi-VN",
+  "th-TH",
 ];
 
 const VIRTUAL_RUNTIME_PUBLIC_ID = "virtual:voicevox-i18n/runtime";
@@ -121,6 +125,8 @@ function parseTranslationRules(xml: string): TranslationRules {
     "zh-TW": [],
     "zh-HK": [],
     "ko-KR": [],
+    "vi-VN": [],
+    "th-TH": [],
   };
 
   for (const itemMatch of xml.matchAll(XML_ITEM_RE)) {
@@ -223,7 +229,7 @@ function createVirtualRuntimeModule(rules: TranslationRules, runtimeFile: string
 
 export function voicevoxI18n(): Plugin {
   const projectRoot = process.cwd();
-  const localeXml = path.join(projectRoot, "tools/i18n/locales/locales.xml");
+  const localeXml = path.join(projectRoot, "tools/i18n/locales/defines.xml");
 
   let rules: TranslationRules = {
     "en-US": [],
@@ -231,6 +237,8 @@ export function voicevoxI18n(): Plugin {
     "zh-TW": [],
     "zh-HK": [],
     "ko-KR": [],
+    "vi-VN": [],
+    "th-TH": [],
   };
 
   return {

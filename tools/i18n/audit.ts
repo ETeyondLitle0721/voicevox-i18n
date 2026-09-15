@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { extractCandidates, normalizeKey, type MessageCandidate } from "./extract";
 
-type Locale = "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR";
+type Locale = "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR" | "vi-VN" | "th-TH";
 
 const LOCALES: readonly Locale[] = [
   "en-US",
@@ -10,6 +10,8 @@ const LOCALES: readonly Locale[] = [
   "zh-TW",
   "zh-HK",
   "ko-KR",
+  "vi-VN",
+  "th-TH",
 ];
 
 function loadLocale(

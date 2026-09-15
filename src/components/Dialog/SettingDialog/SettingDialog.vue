@@ -565,7 +565,15 @@ import { isProduction } from "@/helpers/platform";
 import { ExhaustiveError } from "@/type/utility";
 
 type SamplingRateOption = EngineSettingType["outputSamplingRate"];
-type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR";
+type VoicevoxLocale =
+  | "ja-JP"
+  | "en-US"
+  | "zh-CN"
+  | "zh-TW"
+  | "zh-HK"
+  | "ko-KR"
+  | "vi-VN"
+  | "th-TH";
 
 const LOCALE_STORAGE_KEY = "voicevox.locale";
 const LOCALE_VALUES = new Set<VoicevoxLocale>([
@@ -575,10 +583,15 @@ const LOCALE_VALUES = new Set<VoicevoxLocale>([
   "zh-TW",
   "zh-HK",
   "ko-KR",
+  "vi-VN",
+  "th-TH",
 ]);
 
 const getCurrentLocale = (): VoicevoxLocale => {
-  const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
+  let storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
+
+  if (storedLocale === "auto") storedLocale = null;
+
   return storedLocale && LOCALE_VALUES.has(storedLocale as VoicevoxLocale)
     ? (storedLocale as VoicevoxLocale)
     : "ja-JP";
@@ -598,6 +611,9 @@ const localeOptions = [
   { label: "台灣正體", value: "zh-TW" },
   { label: "香港繁體", value: "zh-HK" },
   { label: "한국어", value: "ko-KR" },
+  { label: "Việt Nam", value: "vi-VN" },
+  { label: "ไทย", value: "th-TH" },
+  { label: "自动检测", value: "auto" },
 ];
 const changeLocale = (value: string | undefined) => {
   if (!LOCALE_VALUES.has(value as VoicevoxLocale)) return;
