@@ -6,4 +6,5 @@ onlyBuiltDependencies:
   - '@nestjs/core'
   - '@openapitools/openapi-generator-cli'
   - esbuild
+  - unrs-resolver
   - vue-demi
