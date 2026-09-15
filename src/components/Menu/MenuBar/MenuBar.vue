@@ -86,7 +86,7 @@ const titleText = computed(
     (isMultiEngineOffMode.value ? " - マルチエンジンオフ" : "") +
     (defaultEngineAltPortTo.value != null
       ? ` - Port: ${defaultEngineAltPortTo.value}`
-      : ""),
+      : "") + "- i18n",
 );
 
 // FIXME: App.vue内に移動する

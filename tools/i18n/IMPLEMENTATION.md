@@ -1,32 +1,27 @@
-# Tier 1 i18n MVP implementation
+# Runtime i18n implementation
 
 ## Scope
-This snapshot adds build-time localization for Tier 1 UI surfaces: menus, buttons, dialogs,
-error/startup messages, settings, project management, import/export and shortcut-related UI.
-
-Locales: English (`en-US`), Simplified Chinese (`zh-CN`), Traditional Chinese (`zh-TW`), Hong Kong Traditional Chinese (`zh-HK`), and Korean (`ko-KR`).
+The localization system translates rendered UI at runtime for English (`en-US`), Simplified Chinese
+(`zh-CN`), Traditional Chinese (`zh-TW`), Hong Kong Traditional Chinese (`zh-HK`), and Korean (`ko-KR`).
 
 ## Design
-- Original Vue/TS source files remain unchanged on disk by the transform.
-- `tools/i18n/voicevoxI18nPlugin.ts` runs as a Vite `pre` plugin.
-- Vue SFC template text and selected static UI attributes are localized through AST/source ranges.
-- Selected TypeScript UI modules are localized through the TypeScript AST.
-- Message identity is scoped by source file path plus a normalized source template.
-- Lookup normalization trims leading/trailing whitespace and collapses internal whitespace.
-- Leading/trailing whitespace is restored after translation.
-- Template placeholders use `0`, `1`, ... and may be reordered by the target language.
-- Missing entries always fall back to the original Japanese source.
-- Runtime locale is selected from the persisted `localStorage` key `voicevox.locale` when valid.
-  On first launch, Electron's `app.getPreferredSystemLanguages()` result is detected and persisted so later launches keep the initial locale.
-  `zh-Hans` maps to `zh-CN`; `zh-Hant-HK`/`zh-HK` maps to `zh-HK`; `zh-Hant` maps to `zh-TW`; `en-*` maps to `en-US`; `ko-*` maps to `ko-KR`; other locales fall back to Japanese.
-- Locale catalogs are split by source module under `tools/i18n/locales/<locale>/`.
+- Vite does not parse or rewrite Vue/TypeScript source for localization.
+- `tools/i18n/locales/locales.xml` is parsed once during Vite configuration and converted into compact regex rules.
+- The virtual runtime module embeds those rules into the renderer bundle.
+- After the Vue app mounts, `tools/i18n/runtime.ts` uses `requestAnimationFrame` as the scheduling mechanism.
+- A `MutationObserver` marks the DOM dirty; translation work is then performed in the next animation frame.
+- The runtime scans rendered text nodes and user-facing attributes (`title`, `aria-label`, `placeholder`, `alt`, `label`, `description`).
+- `equals` rules preserve leading/trailing whitespace; `contains` rules replace matching substrings.
+- `<param>` entries become regex capture groups and `{0}`, `{1}`, ... placeholders are substituted with captured values.
+- Editable content (`textarea`, `contenteditable`) and code-oriented elements are excluded to avoid translating user data or source text.
+- Missing translations leave the original text unchanged.
+- Runtime locale selection remains based on `localStorage.voicevox.locale`, then Electron preferred system languages, with the existing locale mappings.
 
 ## Build integration
-`vite.config.ts` registers the plugin before `@vitejs/plugin-vue`.
-The plugin injects a virtual runtime and installs it into the two Vue app entry points at build time;
-the source entry files themselves are not edited.
+`vite.config.ts` registers `voicevoxI18n()` before Vue. The plugin only injects the runtime into
+`src/main.ts` and `src/welcome/main.ts`; application source files are otherwise untouched by i18n.
 
-## Current limitation
-The uploaded environment did not contain `node_modules` and network access was unavailable, so the
-full VOICEVOX build could not be executed here. The TypeScript sources were syntax-transpiled and the
-runtime lookup/reordering behavior was exercised independently.
+## Why runtime regex
+This approach follows DOM reality rather than compiler structure: dynamically generated strings,
+Quasar-rendered labels, menus, dialogs, and later-rendered content can all be translated after they
+exist in the page. It also removes the dependency on AST/source-range rewriting from the localization path.

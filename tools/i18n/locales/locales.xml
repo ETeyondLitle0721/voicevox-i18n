@@ -3902,19 +3902,6 @@
             </translate>
         </item>
 
-        <item id="#0292">
-            <match type="equals">
-                <text content="大陆简体" />
-            </match>
-
-            <translate>
-                <en-US content="Simplified Chinese (Mainland China)" />
-                <zh-TW content="簡體中文（中国大陆）" />
-                <zh-HK content="簡體中文（中国大陆）" />
-                <ko-KR content="중국 본토 간체" />
-            </translate>
-        </item>
-
         <item id="#0293">
             <match type="equals">
                 <text content="実験的機能" />
@@ -4360,19 +4347,6 @@
                 <zh-TW content="可以選擇播放音訊時詳細調整區域的自動捲動模式。" />
                 <zh-HK content="可以選擇播放音頻時詳細調整區域的自動捲動模式。" />
                 <ko-KR content="음성 재생 중 상세 조정 영역의 자동 스크롤 모드를 선택할 수 있습니다." />
-            </translate>
-        </item>
-
-        <item id="#0325">
-            <match type="equals">
-                <text content="香港繁體" />
-            </match>
-
-            <translate>
-                <en-US content="Traditional Chinese (Hong Kong)" />
-                <zh-TW content="繁體中文（香港）" />
-                <zh-HK content="繁體中文（香港）" />
-                <ko-KR content="홍콩 번체" />
             </translate>
         </item>
 

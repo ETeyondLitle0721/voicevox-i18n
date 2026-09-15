@@ -1,86 +1,103 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { createRuntime, type LocaleCatalogs } from "../../tools/i18n/runtime";
+import { createRuntime } from "../../tools/i18n/runtime";
+import type { TranslationRules } from "../../tools/i18n/voicevoxI18nPlugin";
 
-const catalogs: LocaleCatalogs = {
-  "ja-JP": {},
-  "en-US": { "test.vue": { "設定": "Settings" } },
-  "zh-CN": { "test.vue": { "設定": "设置" } },
-  "zh-TW": { "test.vue": { "設定": "設定" } },
-  "zh-HK": { "test.vue": { "設定": "設定" } },
-  "ko-KR": { "test.vue": { "設定": "설정" } },
-} as const;
+const rules: TranslationRules = {
+  "en-US": [
+    {
+      type: "equals",
+      pattern: "^(?<lead>\\s*)設定(?<trail>\\s*)$",
+      flags: "u",
+      parameters: [],
+      translation: "Settings",
+    },
+    {
+      type: "contains",
+      pattern: "ファイルが見つかりません：(?<p0>[\\s\\S]*)",
+      flags: "gu",
+      parameters: ["0"],
+      translation: "File not found: {0}",
+    },
+    {
+      type: "contains",
+      pattern: "エンジン：(?<p0>[\\s\\S]*?)!",
+      flags: "gu",
+      parameters: ["0"],
+      translation: "Engine: {0}!",
+    },
+  ],
+  "zh-CN": [],
+  "zh-TW": [],
+  "zh-HK": [],
+  "ko-KR": [],
+};
 
-describe("VOICEVOX i18n locale resolution", () => {
+describe("VOICEVOX runtime i18n", () => {
   beforeEach(() => {
     localStorage.clear();
     globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ["en-US"];
-    Object.defineProperty(navigator, "language", {
-      configurable: true,
-      value: "ja-JP",
-    });
-  });
-  
-  it("persists the detected locale on first launch", () => {
-    const runtime = createRuntime(catalogs);
-
-    expect(runtime.locale).toBe("en-US");
-    expect(localStorage.getItem("voicevox.locale")).toBe("en-US");
+    document.body.innerHTML = "";
   });
 
-  it("uses the persisted locale before system language", () => {
+  it("translates rendered text nodes without AST/source rewriting", () => {
+    const runtime = createRuntime(rules);
+    runtime.scan();
+
+    document.body.innerHTML = `
+      <button><span> 設定 </span></button>
+      <p>エンジン：VOICEVOX!</p>
+    `;
+
+    runtime.scan();
+
+    expect(document.body.textContent).toContain(" Settings ");
+    expect(document.body.textContent).toContain("Engine: VOICEVOX!");
+  });
+
+  it("translates user-facing DOM attributes", () => {
+    const runtime = createRuntime(rules);
+    const button = document.createElement("button");
+    button.setAttribute("title", "設定");
+    button.setAttribute("aria-label", "設定");
+    button.setAttribute("id", "設定");
+    const input = document.createElement("input");
+    input.setAttribute("placeholder", "設定");
+    document.body.append(button, input);
+
+    runtime.scan();
+
+    expect(button.getAttribute("title")).toBe("Settings");
+    expect(button.getAttribute("aria-label")).toBe("Settings");
+    expect(button.getAttribute("id")).toBe("設定");
+    expect(input.getAttribute("placeholder")).toBe("Settings");
+  });
+
+  it("does not translate editable or code content", () => {
+    const runtime = createRuntime(rules);
+    document.body.innerHTML = `
+      <textarea>設定</textarea>
+      <div contenteditable="true">設定</div>
+      <code>設定</code>
+      <pre>設定</pre>
+    `;
+
+    runtime.scan();
+
+    expect(document.body.querySelector("textarea")?.textContent).toBe("設定");
+    expect(document.body.querySelector("[contenteditable='true']")?.textContent).toBe("設定");
+    expect(document.body.querySelector("code")?.textContent).toBe("設定");
+    expect(document.body.querySelector("pre")?.textContent).toBe("設定");
+  });
+
+  it("keeps the original locale behavior", () => {
     localStorage.setItem("voicevox.locale", "zh-CN");
-    globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ["ja-JP"];
-
-    const runtime = createRuntime(catalogs);
-
+    const runtime = createRuntime(rules);
     expect(runtime.locale).toBe("zh-CN");
-    expect(runtime.text("src/test.vue", "設定")).toBe("设置");
-  });
+    expect(runtime.text("ignored", "設定")).toBe("設定");
 
-  it("uses preferred system languages instead of browser language preferences", () => {
-    globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ["zh-CN"];
-    Object.defineProperty(navigator, "language", {
-      configurable: true,
-      value: "ja-JP",
-    });
-
-    const runtime = createRuntime(catalogs);
-
-    expect(runtime.locale).toBe("zh-CN");
-  });
-
-  it("detects Korean system locales", () => {
-    globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ["ko-KR"];
-
-    const runtime = createRuntime(catalogs);
-
-    expect(runtime.locale).toBe("ko-KR");
-    expect(runtime.text("src/test.vue", "設定")).toBe("설정");
-  });
-
-  it("detects Hong Kong Traditional Chinese system locales", () => {
-    globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ["zh-HK"];
-
-    const runtime = createRuntime(catalogs);
-
-    expect(runtime.locale).toBe("zh-HK");
-  });
-
-  it("falls back to Japanese for unsupported system locales", () => {
-    globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__ = ["fr-FR"];
-
-    const runtime = createRuntime(catalogs);
-
-    expect(runtime.locale).toBe("ja-JP");
-    expect(localStorage.getItem("voicevox.locale")).toBe("ja-JP");
-  });
-
-  it("replaces invalid persisted locale with the detected locale", () => {
-    localStorage.setItem("voicevox.locale", "fr");
-
-    const runtime = createRuntime(catalogs);
-
-    expect(runtime.locale).toBe("en-US");
-    expect(localStorage.getItem("voicevox.locale")).toBe("en-US");
+    localStorage.setItem("voicevox.locale", "en-US");
+    const englishRuntime = createRuntime(rules);
+    expect(englishRuntime.locale).toBe("en-US");
+    expect(englishRuntime.text("ignored", "設定")).toBe("Settings");
   });
 });
