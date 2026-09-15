@@ -6,7 +6,7 @@ import path from "node:path";
 const root = path.resolve(import.meta.dirname, "../..");
 const distDir = path.join(root, "dist");
 const packageJson = path.join(root, "package.json");
-const output = path.join(root, "test4", "app.asar");
+const output = path.join(root, "test6", "app.asar");
 
 async function main() {
   const stageDir = await mkdtemp(path.join(os.tmpdir(), "voicevox-i18n-asar-"));

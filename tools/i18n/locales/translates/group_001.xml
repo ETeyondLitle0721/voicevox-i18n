@@ -3,7 +3,6 @@
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
-
     <item id="#0001">
         <match type="contains">
             <text content="マイグレーション処理が必要です。" />

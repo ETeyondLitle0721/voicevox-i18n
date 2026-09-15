@@ -103,13 +103,17 @@ function extractVue(file: string, projectRoot: string): MessageCandidate[] {
           });
         }
 
-        if (prop.type === 7 && prop.arg?.type === 4 && prop.exp) {
+        if (
+          prop.type === 7 &&
+          prop.arg?.type === 4 &&
+          prop.exp?.type === 4
+        ) {
           const argName = prop.arg.content;
           const expression = prop.exp.content.trim();
           const boundValue =
             ["label", "title", "placeholder", "aria-label", "alt", "description"].includes(
               argName,
-            ) && !prop.arg.isDynamic
+            ) && prop.arg.isStatic
               ? parseAttributeBindingLiteral(expression)
               : undefined;
 
