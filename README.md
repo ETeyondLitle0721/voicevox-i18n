@@ -28,8 +28,7 @@ Vite の仮想モジュール（Virtual Module）プラグインを活用した�
 ### 1. 設定画面（OPTIONS）での言語切り替え
 > OPTIONS 画面に言語を選択する項目を追加しました。
 
-<img width="2060" height="1320" alt="image" src="https://github.com/user-attachments/assets/350f0671-4ce5-424b-9d3d-b30b839b9b02" />
-
+<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/8b247803-0a75-45d8-9914-7e08960dc5c9" />
 
 
 ---
@@ -37,7 +36,7 @@ Vite の仮想モジュール（Virtual Module）プラグインを活用した�
 ### 2. テキスト編集・会話画面（Talk Editor）
 > 各メニューやボタンテキストが選択した言語に即座に反映されます。
 
-<img width="2060" height="1320" alt="image" src="https://github.com/user-attachments/assets/c0fbcfc2-c9e7-49ea-91a0-f79a5364a50c" />
+<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/6f1556b2-2e65-44c7-9918-3ecc4c17be04" />
 
 
 ---
