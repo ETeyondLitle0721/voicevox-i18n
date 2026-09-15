@@ -37,11 +37,6 @@ type SpacerContent = {
 };
 
 const store = useStore();
-const t = (source: string): string =>
-  globalThis.__VOICEVOX_I18N__?.text(
-    "components/Talk/ToolBar.vue",
-    source,
-  ) ?? source;
 
 const uiLocked = computed(() => store.getters.UI_LOCKED);
 const editor = "talk";
@@ -171,7 +166,7 @@ const buttons = computed(() =>
     if (buttonContent) {
       return {
         ...buttonContent,
-        text: t(getToolbarButtonName(tag)),
+        text: getToolbarButtonName(tag),
       };
     } else {
       return {

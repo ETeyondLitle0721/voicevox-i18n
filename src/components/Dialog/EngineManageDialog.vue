@@ -357,13 +357,7 @@ const selectedId = ref<EngineId | undefined>(undefined);
 
 const engineDir = computed(() => {
   if (selectedId.value == undefined) throw new Error("engine is not selected");
-  return (
-    engineInfos.value[selectedId.value]?.path ||
-    (globalThis.__VOICEVOX_I18N__?.text(
-      "components/Dialog/EngineManageDialog.vue",
-      "（組み込み）",
-    ) ?? "（組み込み）")
-  );
+  return engineInfos.value[selectedId.value]?.path || "（組み込み）";
 });
 
 const getEngineTypeName = (name: string) => {

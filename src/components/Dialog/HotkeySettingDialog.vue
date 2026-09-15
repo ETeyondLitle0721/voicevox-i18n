@@ -56,9 +56,7 @@
                 <div
                   v-for="hotkeySetting in hotkeySettings.filter(
                     (hotkeySetting) =>
-                      hotkeyActionLabel(hotkeySetting.action).includes(
-                        hotkeyFilter,
-                      ) ||
+                      hotkeySetting.action.includes(hotkeyFilter) ||
                       hotkeySetting.combination
                         .toLocaleLowerCase()
                         .includes(hotkeyFilter.toLocaleLowerCase()),
@@ -68,7 +66,7 @@
                 >
                   <div class="table-cell"></div>
                   <div class="table-cell hotkey-name">
-                    {{ hotkeyActionLabel(hotkeySetting.action) }}
+                    {{ hotkeySetting.action }}
                   </div>
                   <div class="table-cell key-button">
                     <BaseButton
@@ -145,10 +143,6 @@ const isHotkeyDialogOpened = ref(false);
 const hotkeyFilter = ref("");
 
 const hotkeySettings = computed(() => store.state.hotkeySettings);
-
-const hotkeyActionScope = "components/Dialog/HotkeySettingDialog.vue";
-const hotkeyActionLabel = (action: string) =>
-  globalThis.__VOICEVOX_I18N__?.text(hotkeyActionScope, action) ?? action;
 
 const lastAction = ref("");
 const lastRecord = ref(HotkeyCombination(""));
@@ -233,10 +227,9 @@ const isDefaultCombination = (action: string) => {
 };
 
 const resetHotkey = async (action: string) => {
-  const translatedAction = hotkeyActionLabel(action);
   const result = await store.actions.SHOW_CONFIRM_DIALOG({
     title: "デフォルトに戻しますか？",
-    message: `${translatedAction}のショートカットキーをデフォルトに戻します。`,
+    message: `${action}のショートカットキーをデフォルトに戻します。`,
     actionName: "デフォルトに戻す",
   });
 

@@ -27,7 +27,7 @@
             ショートカットキーが次の操作と重複しています
           </div>
           <div class="q-mt-sm text-weight-bold text-warning">
-            「{{ hotkeyActionLabel(duplicatedHotkey.action) }}」
+            「{{ duplicatedHotkey.action }}」
           </div>
         </div>
       </QCardSection>
@@ -85,10 +85,6 @@ import { computed } from "vue";
 import type { HotkeyCombination } from "@/domain/hotkeyAction";
 
 const dialogOpened = defineModel<boolean>("dialogOpened", { default: false });
-const hotkeyActionScope = "components/Dialog/HotkeyRecordingDialog.vue";
-const hotkeyActionLabel = (action: string) =>
-  globalThis.__VOICEVOX_I18N__?.text(hotkeyActionScope, action) ?? action;
-
 const props = defineProps<{
   lastAction: string;
   lastRecord: HotkeyCombination;

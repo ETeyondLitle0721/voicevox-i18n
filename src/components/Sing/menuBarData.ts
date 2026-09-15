@@ -10,11 +10,6 @@ import type {
 
 export const useMenuBarData = (store: Store): MaybeComputedMenuBarContent => {
   const uiLocked = computed(() => store.getters.UI_LOCKED);
-  const t = (source: string): string =>
-    globalThis.__VOICEVOX_I18N__?.text(
-      "components/Sing/menuBarData.ts",
-      source,
-    ) ?? source;
   const isNotesSelected = computed(
     () => store.getters.SELECTED_NOTE_IDS.size > 0,
   );
@@ -69,7 +64,7 @@ export const useMenuBarData = (store: Store): MaybeComputedMenuBarContent => {
     audioExport: [
       {
         type: "button",
-        label: t("音声書き出し"),
+        label: "音声書き出し",
         onClick: () => {
           void exportAudioFile();
         },
@@ -77,7 +72,7 @@ export const useMenuBarData = (store: Store): MaybeComputedMenuBarContent => {
       },
       {
         type: "button",
-        label: t("labファイルを書き出し"),
+        label: "labファイルを書き出し",
         onClick: () => {
           void exportLabelFile();
         },
@@ -87,7 +82,7 @@ export const useMenuBarData = (store: Store): MaybeComputedMenuBarContent => {
     externalProject: [
       {
         type: "button",
-        label: t("プロジェクトをインポート"),
+        label: "プロジェクトをインポート",
         onClick: () => {
           void importExternalSongProject();
         },
@@ -95,7 +90,7 @@ export const useMenuBarData = (store: Store): MaybeComputedMenuBarContent => {
       },
       {
         type: "root",
-        label: t("プロジェクトをエクスポート"),
+        label: "プロジェクトをエクスポート",
         subMenu: (
           [
             ["smf", "MIDI (SMF)"],

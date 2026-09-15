@@ -57,24 +57,31 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- 扁平翻译列表 -->
+    <!-- 翻译列表容器 -->
     <xs:complexType name="translatesType">
         <xs:sequence>
-            <xs:element name="translate" type="translateItemType" maxOccurs="unbounded" />
+            <xs:element name="item" type="itemType" maxOccurs="unbounded" />
         </xs:sequence>
     </xs:complexType>
 
-    <!-- 单个翻译节点；结构与原 item 一致，但去掉路径/文件名以及内部 translate 包装节点 -->
-    <xs:complexType name="translateItemType">
+    <!-- 单个 item 节点定义：包含 match 与 translate 包裹节点 -->
+    <xs:complexType name="itemType">
         <xs:sequence>
             <xs:element name="match" type="matchType" />
+            <xs:element name="translate" type="translateWrapperType" />
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required" />
+    </xs:complexType>
+
+    <!-- 翻译语言包裹节点类型 -->
+    <xs:complexType name="translateWrapperType">
+        <xs:sequence>
             <xs:element name="en-US" type="contentValueType" minOccurs="0" />
             <xs:element name="zh-CN" type="contentValueType" minOccurs="0" />
             <xs:element name="zh-TW" type="contentValueType" minOccurs="0" />
             <xs:element name="zh-HK" type="contentValueType" minOccurs="0" />
             <xs:element name="ko-KR" type="contentValueType" minOccurs="0" />
         </xs:sequence>
-        <xs:attribute name="id" type="xs:string" use="required" />
     </xs:complexType>
 
     <!-- 匹配条件节点 -->

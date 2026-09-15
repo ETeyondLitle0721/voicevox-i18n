@@ -29,7 +29,8 @@ import { ExhaustiveError } from "@/type/utility";
 
 type ExportingInfo =
   | { nowExporting: false }
-  | { nowExporting: true; mediaName: string };
+  | { nowExporting: true; mediaName: "音声" }
+  | { nowExporting: true; mediaName: "labファイル" };
 
 const store = useStore();
 
@@ -41,23 +42,9 @@ const exportingInfo = computed<ExportingInfo>(() => {
   if (store.state.exportState === "NOT_EXPORTING") {
     return { nowExporting: false };
   } else if (store.state.exportState === "EXPORTING_AUDIO") {
-    return {
-      nowExporting: true,
-      mediaName:
-        globalThis.__VOICEVOX_I18N__?.text(
-          "components/Sing/ExportOverlay.vue",
-          "音声",
-        ) ?? "音声",
-    };
+    return { nowExporting: true, mediaName: "音声" };
   } else if (store.state.exportState === "EXPORTING_LABEL") {
-    return {
-      nowExporting: true,
-      mediaName:
-        globalThis.__VOICEVOX_I18N__?.text(
-          "components/Sing/ExportOverlay.vue",
-          "labファイル",
-        ) ?? "labファイル",
-    };
+    return { nowExporting: true, mediaName: "labファイル" };
   } else {
     throw new ExhaustiveError(store.state.exportState);
   }

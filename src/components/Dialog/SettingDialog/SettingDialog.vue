@@ -11,10 +11,17 @@
       <QCard class="locale-reload-dialog">
         <QCardSection>
           <div class="text-h6">言語を変更しました</div>
-          <div class="q-mt-sm">新しい表示言語を適用するため、今すぐ画面を再読み込みしますか？</div>
+          <div class="q-mt-sm">
+            新しい表示言語を適用するため、今すぐ画面を再読み込みしますか？
+          </div>
         </QCardSection>
         <QCardActions align="right">
-          <QBtn flat label="いいえ" autofocus @click="localeReloadDialogOpened = false" />
+          <QBtn
+            flat
+            label="いいえ"
+            autofocus
+            @click="localeReloadDialogOpened = false"
+          />
           <QBtn flat label="はい" @click="reloadForLocaleChange" />
         </QCardActions>
       </QCard>
@@ -138,28 +145,20 @@
                   description="音声再生中の、詳細調整欄の自動スクロールのモードを選べます。"
                   :options="[
                     {
-                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', '連続'),
+                      label: '連続',
                       value: 'CONTINUOUSLY',
-                      description: $vvI18nText(
-                        'components/Dialog/SettingDialog/SettingDialog.vue',
-                        '現在の再生位置を真ん中に表示します。',
-                      ),
+                      description: '現在の再生位置を真ん中に表示します。',
                     },
                     {
-                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'ページめくり'),
+                      label: 'ページめくり',
                       value: 'PAGE',
-                      description: $vvI18nText(
-                        'components/Dialog/SettingDialog/SettingDialog.vue',
+                      description:
                         '現在の再生位置が表示範囲外にある場合にスクロールします。',
-                      ),
                     },
                     {
-                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'オフ'),
+                      label: 'オフ',
                       value: 'OFF',
-                      description: $vvI18nText(
-                        'components/Dialog/SettingDialog/SettingDialog.vue',
-                        '自動でスクロールしません。',
-                      ),
+                      description: '自動でスクロールしません。',
                     },
                   ]"
                 />
@@ -169,28 +168,19 @@
                   :modelValue="splitTextWhenPaste"
                   :options="[
                     {
-                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', '句点と改行'),
+                      label: '句点と改行',
                       value: 'PERIOD_AND_NEW_LINE',
-                      description: $vvI18nText(
-                        'components/Dialog/SettingDialog/SettingDialog.vue',
-                        '句点と改行を基にテキストを分割します。',
-                      ),
+                      description: '句点と改行を基にテキストを分割します。',
                     },
                     {
-                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', '改行'),
+                      label: '改行',
                       value: 'NEW_LINE',
-                      description: $vvI18nText(
-                        'components/Dialog/SettingDialog/SettingDialog.vue',
-                        '改行のみを基にテキストを分割します。',
-                      ),
+                      description: '改行のみを基にテキストを分割します。',
                     },
                     {
-                      label: $vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'オフ'),
+                      label: 'オフ',
                       value: 'OFF',
-                      description: $vvI18nText(
-                        'components/Dialog/SettingDialog/SettingDialog.vue',
-                        '分割を行いません。',
-                      ),
+                      description: '分割を行いません。',
                     },
                   ]"
                   @update:modelValue="
@@ -331,22 +321,16 @@
                   "
                 />
                 <ToggleCell
-                  :title="$vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'txtファイルを書き出し')"
-                  :description="$vvI18nText(
-                    'components/Dialog/SettingDialog/SettingDialog.vue',
-                    'ONの場合、音声書き出しの際にテキストがtxtファイルとして書き出されます。',
-                  )"
+                  title="txtファイルを書き出し"
+                  description="ONの場合、音声書き出しの際にテキストがtxtファイルとして書き出されます。"
                   :modelValue="savingSetting.exportText"
                   @update:modelValue="
                     handleSavingSettingChange('exportText', $event)
                   "
                 />
                 <ToggleCell
-                  :title="$vvI18nText('components/Dialog/SettingDialog/SettingDialog.vue', 'labファイルを書き出し')"
-                  :description="$vvI18nText(
-                    'components/Dialog/SettingDialog/SettingDialog.vue',
-                    'ONの場合、音声書き出しの際にリップシンク用のlabファイルが書き出されます。',
-                  )"
+                  title="labファイルを書き出し"
+                  description="ONの場合、音声書き出しの際にリップシンク用のlabファイルが書き出されます。"
                   :modelValue="savingSetting.exportLab"
                   @update:modelValue="
                     handleSavingSettingChange('exportLab', $event)
@@ -584,7 +568,14 @@ type SamplingRateOption = EngineSettingType["outputSamplingRate"];
 type VoicevoxLocale = "ja-JP" | "en-US" | "zh-CN" | "zh-TW" | "zh-HK" | "ko-KR";
 
 const LOCALE_STORAGE_KEY = "voicevox.locale";
-const LOCALE_VALUES = new Set<VoicevoxLocale>(["ja-JP", "en-US", "zh-CN", "zh-TW", "zh-HK", "ko-KR"]);
+const LOCALE_VALUES = new Set<VoicevoxLocale>([
+  "ja-JP",
+  "en-US",
+  "zh-CN",
+  "zh-TW",
+  "zh-HK",
+  "ko-KR",
+]);
 
 const getCurrentLocale = (): VoicevoxLocale => {
   const storedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
