@@ -22,9 +22,6 @@ importers:
       '@std/path':
         specifier: jsr:1.1.4
         version: '@jsr/std__path@1.1.4'
-      '@xmldom/xmldom':
-        specifier: 0.9.12
-        version: 0.9.12
       archiver:
         specifier: 8.0.0
         version: 8.0.0
@@ -2229,10 +2226,6 @@ packages:
     resolution: {integrity: sha512-KRYzxepc14G/CEpEGc3Yn+JKaAeT63smlDr+vjB8jRfgTBBI9wRj/nkQEO+ucV8p8I9bfKLWp37uHgFrbntPvw==}
     engines: {node: '>=10.0.0'}
     deprecated: this version has critical issues, please update to the latest version
-
-  '@xmldom/xmldom@0.9.12':
-    resolution: {integrity: sha512-5AXjrcMClTryPe9LgZrygpB1lj7s0S9E0+W+AHaVKAVyHanafK86iPSvG5xHVSp/jC+VH1UXu0TAEmY279xH7A==}
-    engines: {node: '>=14.6'}
 
   abbrev@2.0.0:
     resolution: {integrity: sha512-6/mh1E2u2YgEsCHdY0Yx5oW+61gZU+1vXaoiHHrpKeuRNNgFvS+/jrwHiQhB5apAf5oB7UB7E19ol2R2LKH8hQ==}
@@ -8109,8 +8102,6 @@ snapshots:
   '@webgpu/types@0.1.70': {}
 
   '@xmldom/xmldom@0.8.13': {}
-
-  '@xmldom/xmldom@0.9.12': {}
 
   abbrev@2.0.0: {}
 

@@ -61,7 +61,6 @@
     "@quasar/extras": "1.18.0",
     "@sevenc-nanashi/utaformatix-ts": "jsr:0.4.0",
     "@std/path": "jsr:1.1.4",
-    "@xmldom/xmldom": "0.9.12",
     "archiver": "8.0.0",
     "async-lock": "1.4.1",
     "dayjs": "1.11.20",
