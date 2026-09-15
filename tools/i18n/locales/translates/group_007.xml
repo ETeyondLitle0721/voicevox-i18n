@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
@@ -12,6 +11,7 @@
             <en-US content="Delete" />
             <zh-CN content="删除" />
             <zh-TW content="刪除" />
+            <ko-KR content="삭제" />
         </translate>
     </item>
 
@@ -22,8 +22,9 @@
 
         <translate>
             <en-US content="Only sounds in the i and u rows can be devoiced" />
-            <zh-CN content="只有イ段和ウ段的音可以清化" />
-            <zh-TW content="只有イ段和ウ段的音可以清化" />
+            <zh-CN content="只有 i 段和 u 段的音可以清化" />
+            <zh-TW content="只有 i 段和 u 段的音可以清音化" />
+            <ko-KR content="이단과 우단 이외의 음은 무성화할 수 없습니다." />
         </translate>
     </item>
 
@@ -35,7 +36,8 @@
         <translate>
             <en-US content="Reading can only be changed in the Accent section," />
             <zh-CN content="只能在重音项目中修改读法，" />
-            <zh-TW content="只能在重音项目中修改读法，" />
+            <zh-TW content="只能在重音項目中修改讀法，" />
+            <ko-KR content="읽기는 악센트 항목에서만 변경할 수 있습니다." />
         </translate>
     </item>
 
@@ -47,7 +49,8 @@
         <translate>
             <en-US content="Devoicing can only be adjusted in the Intonation section" />
             <zh-CN content="只能在语调项目中调整清化" />
-            <zh-TW content="只能在语调项目中调整清化" />
+            <zh-TW content="只能在語調項目中調整清音化" />
+            <ko-KR content="무성화는 억양 항목에서만 조정할 수 있습니다." />
         </translate>
     </item>
 
@@ -60,6 +63,7 @@
             <en-US content="Copy" />
             <zh-CN content="复制" />
             <zh-TW content="複製" />
+            <ko-KR content="복사" />
         </translate>
     </item>
 
@@ -71,7 +75,8 @@
         <translate>
             <en-US content="Failed to get context menu items." />
             <zh-CN content="获取上下文菜单项失败。" />
-            <zh-TW content="获取上下文菜单项失敗。" />
+            <zh-TW content="取得上下文菜單項失敗。" />
+            <ko-KR content="컨텍스트 메뉴 항목을 가져오지 못했습니다." />
         </translate>
     </item>
 
@@ -83,7 +88,8 @@
         <translate>
             <en-US content="Unexpected type error." />
             <zh-CN content="发生了意外的类型错误。" />
-            <zh-TW content="發生了意外的类型错誤。" />
+            <zh-TW content="發生了意外的類型錯誤。" />
+            <ko-KR content="예상치 못한 타입 오류입니다." />
         </translate>
     </item>
 
@@ -96,6 +102,7 @@
             <en-US content="Select all" />
             <zh-CN content="全选" />
             <zh-TW content="全選" />
+            <ko-KR content="선택 all" />
         </translate>
     </item>
 
@@ -108,6 +115,7 @@
             <en-US content="Cut" />
             <zh-CN content="剪切" />
             <zh-TW content="剪切" />
+            <ko-KR content="잘라내기" />
         </translate>
     </item>
 
@@ -119,7 +127,8 @@
         <translate>
             <en-US content="Long text may not work correctly. Please split the text at punctuation." />
             <zh-CN content="文本过长可能无法正常运行。请在标点符号处拆分文本。" />
-            <zh-TW content="文字過長可能無法正常运行。請在标點符号处拆分文字。" />
+            <zh-TW content="文字過長可能無法正常執行。請在標點符号處拆分文字。" />
+            <ko-KR content="텍스트가 너무 길면 정상적으로 작동하지 않을 수 있습니다. 문장 부호를 기준으로 나눠 주세요." />
         </translate>
     </item>
 
@@ -132,6 +141,7 @@
             <en-US content="The next audioKey to select was not found (unreachable)" />
             <zh-CN content="找不到下一个要选择的 audioKey（不可达）" />
             <zh-TW content="找不到下一個要選擇的 audioKey（不可达）" />
+            <ko-KR content="선택할 다음 audioKey를 찾을 수 없습니다(도달 불가)." />
         </translate>
     </item>
 
@@ -143,7 +153,8 @@
         <translate>
             <en-US content="Apply without changing the reading" />
             <zh-CN content="保持读法不变并应用" />
-            <zh-TW content="保持讀法不变并应用" />
+            <zh-TW content="保持讀法不變並應用" />
+            <ko-KR content="읽기를 변경하지 않고 적용" />
         </translate>
     </item>
 
@@ -156,6 +167,7 @@
             <en-US content="Paste" />
             <zh-CN content="粘贴" />
             <zh-TW content="粘贴" />
+            <ko-KR content="붙여넣기" />
         </translate>
     </item>
 
@@ -168,6 +180,7 @@
             <en-US content="+ Wheel: ±0.01" />
             <zh-CN content="+ 滚轮：±0.01" />
             <zh-TW content="+ 滚轮：±0.01" />
+            <ko-KR content="+ Wheel: ±0.01" />
         </translate>
     </item>
 
@@ -180,6 +193,7 @@
             <en-US content="+ Wheel: Batch adjustment" />
             <zh-CN content="+ 滚轮：批量调整" />
             <zh-TW content="+ 滚轮：批量調整" />
+            <ko-KR content="+ Wheel: Batch adjustment" />
         </translate>
     </item>
 
@@ -191,7 +205,8 @@
         <translate>
             <en-US content="Please try restarting the engine." />
             <zh-CN content="请尝试重新启动引擎。" />
-            <zh-TW content="請尝试重新啟动引擎。" />
+            <zh-TW content="請嘗試重新啟動引擎。" />
+            <ko-KR content="엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -204,6 +219,7 @@
             <en-US content="Fine-tune the slider." />
             <zh-CN content="可以微调滑块。" />
             <zh-TW content="可以微調滑块。" />
+            <ko-KR content="슬라이더를 미세 조정할 수 있습니다." />
         </translate>
     </item>
 
@@ -216,6 +232,7 @@
             <en-US content="Wheel: ±0.1" />
             <zh-CN content="滚轮：±0.1" />
             <zh-TW content="滚轮：±0.1" />
+            <ko-KR content="Wheel: ±0.1" />
         </translate>
     </item>
 
@@ -227,7 +244,8 @@
         <translate>
             <en-US content="Use the mouse wheel" />
             <zh-CN content="使用鼠标滚轮" />
-            <zh-TW content="使用鼠标滚轮" />
+            <zh-TW content="使用鼠標滚轮" />
+            <ko-KR content="마우스 휠 사용" />
         </translate>
     </item>
 
@@ -239,7 +257,8 @@
         <translate>
             <en-US content="Reset overall intonation" />
             <zh-CN content="重置整体语调" />
-            <zh-TW content="重置整体語調" />
+            <zh-TW content="重設整體語調" />
+            <ko-KR content="초기화 overall 억양" />
         </translate>
     </item>
 
@@ -252,6 +271,7 @@
             <en-US content="Play / Stop" />
             <zh-CN content="播放 / 停止" />
             <zh-TW content="播放 / 停止" />
+            <ko-KR content="재생 / 정지" />
         </translate>
     </item>
 
@@ -264,6 +284,7 @@
             <en-US content="Failed to play." />
             <zh-CN content="播放失败。" />
             <zh-TW content="播放失敗。" />
+            <ko-KR content="play에 실패했습니다." />
         </translate>
     </item>
 
@@ -275,7 +296,8 @@
         <translate>
             <en-US content="Reset the intonation of the selected accent phrase" />
             <zh-CN content="重置所选重音短语的语调" />
-            <zh-TW content="重置所選重音短语的語調" />
+            <zh-TW content="重設所選重音短語的語調" />
+            <ko-KR content="선택한 악센트 구의 억양 초기화" />
         </translate>
     </item>
 
@@ -288,6 +310,7 @@
             <en-US content="Length" />
             <zh-CN content="长度" />
             <zh-TW content="長度" />
+            <ko-KR content="길이" />
         </translate>
     </item>
 
@@ -299,7 +322,8 @@
         <translate>
             <en-US content="Show length field" />
             <zh-CN content="显示长度栏" />
-            <zh-TW content="顯示長度栏" />
+            <zh-TW content="顯示長度欄" />
+            <ko-KR content="길이 입력란 표시" />
         </translate>
     </item>
 
@@ -312,6 +336,7 @@
             <en-US content="Accent" />
             <zh-CN content="重音" />
             <zh-TW content="重音" />
+            <ko-KR content="Accent" />
         </translate>
     </item>
 
@@ -323,7 +348,8 @@
         <translate>
             <en-US content="Show accent field" />
             <zh-CN content="显示重音栏" />
-            <zh-TW content="顯示重音栏" />
+            <zh-TW content="顯示重音欄" />
+            <ko-KR content="악센트 입력란 표시" />
         </translate>
     </item>
 
@@ -336,6 +362,7 @@
             <en-US content="Intonation" />
             <zh-CN content="语调" />
             <zh-TW content="語調" />
+            <ko-KR content="억양" />
         </translate>
     </item>
 
@@ -347,7 +374,8 @@
         <translate>
             <en-US content="Show intonation field" />
             <zh-CN content="显示语调栏" />
-            <zh-TW content="顯示語調栏" />
+            <zh-TW content="顯示語調欄" />
+            <ko-KR content="억양 입력란 표시" />
         </translate>
     </item>
 
@@ -360,6 +388,7 @@
             <en-US content="Preset" />
             <zh-CN content="预设" />
             <zh-TW content="预設" />
+            <ko-KR content="프리셋" />
         </translate>
     </item>
 
@@ -372,6 +401,7 @@
             <en-US content="Create new preset" />
             <zh-CN content="新建预设" />
             <zh-TW content="新建预設" />
+            <ko-KR content="새 프리셋 만들기" />
         </translate>
     </item>
 
@@ -384,6 +414,7 @@
             <en-US content="Manage presets" />
             <zh-CN content="预设管理" />
             <zh-TW content="预設管理" />
+            <ko-KR content="프리셋 관리" />
         </translate>
     </item>
 
@@ -396,6 +427,7 @@
             <en-US content="Clear preset" />
             <zh-CN content="清除预设" />
             <zh-TW content="清除预設" />
+            <ko-KR content="프리셋 해제" />
         </translate>
     </item>
 
@@ -408,6 +440,7 @@
             <en-US content="Select preset" />
             <zh-CN content="选择预设" />
             <zh-TW content="選擇预設" />
+            <ko-KR content="프리셋 선택" />
         </translate>
     </item>
 
@@ -419,7 +452,8 @@
         <translate>
             <en-US content="Input" />
             <zh-CN content="输入" />
-            <zh-TW content="输入" />
+            <zh-TW content="輸入" />
+            <ko-KR content="Input" />
         </translate>
     </item>
 
@@ -432,6 +466,7 @@
             <en-US content="Intonation" />
             <zh-CN content="抑扬" />
             <zh-TW content="抑扬" />
+            <ko-KR content="억양" />
         </translate>
     </item>
 
@@ -443,7 +478,8 @@
         <translate>
             <en-US content="End silence" />
             <zh-CN content="结束静音" />
-            <zh-TW content="结束静音" />
+            <zh-TW content="結束静音" />
+            <ko-KR content="끝 묵음" />
         </translate>
     </item>
 
@@ -455,7 +491,8 @@
         <translate>
             <en-US content="Speech speed" />
             <zh-CN content="语速" />
-            <zh-TW content="语速" />
+            <zh-TW content="語速" />
+            <ko-KR content="말하기 속도" />
         </translate>
     </item>
 
@@ -468,6 +505,7 @@
             <en-US content="Start silence" />
             <zh-CN content="开始静音" />
             <zh-TW content="開始静音" />
+            <ko-KR content="시작 묵음" />
         </translate>
     </item>
 
@@ -480,6 +518,7 @@
             <en-US content="Pause length" />
             <zh-CN content="停顿时长" />
             <zh-TW content="停顿時長" />
+            <ko-KR content="쉼 길이" />
         </translate>
     </item>
 
@@ -492,6 +531,7 @@
             <en-US content="Volume" />
             <zh-CN content="音量" />
             <zh-TW content="音量" />
+            <ko-KR content="볼륨" />
         </translate>
     </item>
 
@@ -504,6 +544,7 @@
             <en-US content="Pitch" />
             <zh-CN content="音高" />
             <zh-TW content="音高" />
+            <ko-KR content="음높이" />
         </translate>
     </item>
 
@@ -515,7 +556,8 @@
         <translate>
             <en-US content="No presets" />
             <zh-CN content="没有预设" />
-            <zh-TW content="没有预设" />
+            <zh-TW content="没有预設" />
+            <ko-KR content="프리셋이 없습니다." />
         </translate>
     </item>
 
@@ -527,7 +569,8 @@
         <translate>
             <en-US content="Register Preset" />
             <zh-CN content="注册预设" />
-            <zh-TW content="注册预设" />
+            <zh-TW content="注册预設" />
+            <ko-KR content="프리셋 등록" />
         </translate>
     </item>
 
@@ -540,6 +583,7 @@
             <en-US content="Title" />
             <zh-CN content="标题" />
             <zh-TW content="標題" />
+            <ko-KR content="Title" />
         </translate>
     </item>
 
@@ -552,6 +596,7 @@
             <en-US content="Cancel" />
             <zh-CN content="取消" />
             <zh-TW content="取消" />
+            <ko-KR content="취소" />
         </translate>
     </item>
 
@@ -564,6 +609,7 @@
             <en-US content="Confirm" />
             <zh-CN content="确定" />
             <zh-TW content="確定" />
+            <ko-KR content="Confirm" />
         </translate>
     </item>
 
@@ -575,7 +621,8 @@
         <translate>
             <en-US content="Re-register Preset" />
             <zh-CN content="重新注册预设" />
-            <zh-TW content="重新注册预设" />
+            <zh-TW content="重新注册预設" />
+            <ko-KR content="프리셋 다시 등록" />
         </translate>
     </item>
 
@@ -588,7 +635,8 @@
             <en-US
                 content="Re-register the preset and reapply it to all text fields using this preset" />
             <zh-CN content="重新注册预设并重新应用到所有使用该预设的文本框" />
-            <zh-TW content="重新注册预设并重新应用到所有使用该预设的文本框" />
+            <zh-TW content="重新注册预設並重新應用到所有使用该预設的文字框" />
+            <ko-KR content="프리셋을 다시 등록하고 이 프리셋이 설정된 모든 텍스트 입력란에 다시 적용" />
         </translate>
     </item>
 
@@ -600,7 +648,8 @@
         <translate>
             <en-US content="Only re-register the preset" />
             <zh-CN content="仅重新注册预设" />
-            <zh-TW content="仅重新注册预设" />
+            <zh-TW content="仅重新注册预設" />
+            <ko-KR content="프리셋만 다시 등록" />
         </translate>
     </item>
 
@@ -612,7 +661,8 @@
         <translate>
             <en-US content="Morphing" />
             <zh-CN content="变声混合" />
-            <zh-TW content="变声混合" />
+            <zh-TW content="變聲混合" />
+            <ko-KR content="Morphing" />
         </translate>
     </item>
 
@@ -625,6 +675,7 @@
             <en-US content="This engine is not supported" />
             <zh-CN content="不支持此引擎" />
             <zh-TW content="不支持此引擎" />
+            <ko-KR content="지원되지 않는 엔진입니다." />
         </translate>
     </item>
 
@@ -636,7 +687,8 @@
         <translate>
             <en-US content="Invalid settings" />
             <zh-CN content="设置无效" />
-            <zh-TW content="设置无效" />
+            <zh-TW content="設定無效" />
+            <ko-KR content="잘못된 설정" />
         </translate>
     </item>
 
@@ -650,6 +702,7 @@
             <en-US content="Ratio {0}" />
             <zh-CN content="比例 {0}" />
             <zh-TW content="比例 {0}" />
+            <ko-KR content="비율 {0}" />
         </translate>
     </item>
 
@@ -662,6 +715,7 @@
             <en-US content="Click the text to undo devoicing." />
             <zh-CN content="点击文本可取消清音化。" />
             <zh-TW content="點击文字可取消清音化。" />
+            <ko-KR content="텍스트를 클릭하면 무성화를 해제할 수 있습니다." />
         </translate>
     </item>
 
@@ -674,6 +728,7 @@
             <en-US content="Voiceless sounds have no intonation." />
             <zh-CN content="清音化的声音不存在语调。" />
             <zh-TW content="清音化的聲音不存在語調。" />
+            <ko-KR content="Voiceless sounds have no 억양." />
         </translate>
     </item>
 
@@ -685,7 +740,8 @@
         <translate>
             <en-US content="(Display error)" />
             <zh-CN content="(显示错误）" />
-            <zh-TW content="(顯示错誤）" />
+            <zh-TW content="(顯示錯誤）" />
+            <ko-KR content="(표시 오류)" />
         </translate>
     </item>
 
@@ -702,7 +758,8 @@
         <translate>
             <en-US content="Because port {0} was already in use, {1} started on port {2}." />
             <zh-CN content="由于端口 {0} 已被占用，{1} 已在端口 {2} 上启动。" />
-            <zh-TW content="由于端口 {0} 已被占用，{1} 已在端口 {2} 上啟动。" />
+            <zh-TW content="由於端口 {0} 已被占用，{1} 已在端口 {2} 上啟動。" />
+            <ko-KR content="포트 {0}이(가) 사용 중이어서 {1}이(가) 포트 {2}에서 시작되었습니다." />
         </translate>
     </item>
 
@@ -715,6 +772,7 @@
             <en-US content="Select All" />
             <zh-CN content="全选" />
             <zh-TW content="全選" />
+            <ko-KR content="선택 All" />
         </translate>
     </item>
 
@@ -726,7 +784,8 @@
         <translate>
             <en-US content="Export concatenated text" />
             <zh-CN content="导出合并后的文本" />
-            <zh-TW content="匯出合併后的文字" />
+            <zh-TW content="匯出合併後的文字" />
+            <ko-KR content="이어 붙인 텍스트 내보내기" />
         </translate>
     </item>
 
@@ -739,6 +798,7 @@
             <en-US content="Import text" />
             <zh-CN content="导入文本" />
             <zh-TW content="匯入文字" />
+            <ko-KR content="가져오기 텍스트" />
         </translate>
     </item>
 
@@ -751,6 +811,7 @@
             <en-US content="Supports text files (.txt) and VOICEVOX project files (.vvproj)." />
             <zh-CN content="支持文本文件（.txt）和 VOICEVOX 项目文件（.vvproj）。" />
             <zh-TW content="支持文字檔案（.txt）和 VOICEVOX 專案檔案（.vvproj）。" />
+            <ko-KR content="텍스트 파일(.txt)과 VOICEVOX 프로젝트 파일(.vvproj)을 지원합니다." />
         </translate>
     </item>
 
@@ -763,6 +824,7 @@
             <en-US content="Remove focus from the text field" />
             <zh-CN content="移除文本框焦点" />
             <zh-TW content="移除文字欄焦點" />
+            <ko-KR content="텍스트 입력란에서 포커스를 해제" />
         </translate>
     </item>
 
@@ -775,6 +837,7 @@
             <en-US content="Return focus to the text field" />
             <zh-CN content="将焦点返回文本框" />
             <zh-TW content="將焦點返回文字欄" />
+            <ko-KR content="텍스트 입력란으로 포커스를 되돌리기" />
         </translate>
     </item>
 
@@ -787,6 +850,7 @@
             <en-US content="Delete the text field" />
             <zh-CN content="删除文本框" />
             <zh-TW content="刪除文字欄" />
+            <ko-KR content="텍스트 입력란 삭제" />
         </translate>
     </item>
 
@@ -799,6 +863,7 @@
             <en-US content="Duplicate the text field" />
             <zh-CN content="复制文本框" />
             <zh-TW content="複製文字欄" />
+            <ko-KR content="텍스트 입력란 복제" />
         </translate>
     </item>
 
@@ -811,6 +876,7 @@
             <en-US content="Add a text field" />
             <zh-CN content="添加文本框" />
             <zh-TW content="添加文字欄" />
+            <ko-KR content="텍스트 입력란 추가" />
         </translate>
     </item>
 
@@ -823,6 +889,7 @@
             <en-US content="Unsupported file." />
             <zh-CN content="不支持的文件。" />
             <zh-TW content="不支持的檔案。" />
+            <ko-KR content="지원되지 않는 파일." />
         </translate>
     </item>
 
@@ -835,6 +902,7 @@
             <en-US content="Export selected audio" />
             <zh-CN content="导出所选音频" />
             <zh-TW content="匯出所選音訊" />
+            <ko-KR content="선택한 음성 내보내기" />
         </translate>
     </item>
 
@@ -846,7 +914,8 @@
         <translate>
             <en-US content="Export concatenated audio" />
             <zh-CN content="导出合并后的音频" />
-            <zh-TW content="匯出合併后的音訊" />
+            <zh-TW content="匯出合併後的音訊" />
+            <ko-KR content="이어 붙인 음성 내보내기" />
         </translate>
     </item>
 
@@ -859,6 +928,7 @@
             <en-US content="Audio Export" />
             <zh-CN content="音频导出" />
             <zh-TW content="音訊匯出" />
+            <ko-KR content="음성 내보내기" />
         </translate>
     </item>
 
@@ -871,6 +941,7 @@
             <en-US content="Add Text" />
             <zh-CN content="添加文本" />
             <zh-TW content="新增文字" />
+            <ko-KR content="텍스트 추가" />
         </translate>
     </item>
 
@@ -883,6 +954,7 @@
             <en-US content="Redo" />
             <zh-CN content="重做" />
             <zh-TW content="重做" />
+            <ko-KR content="다시 실행" />
         </translate>
     </item>
 
@@ -894,7 +966,8 @@
         <translate>
             <en-US content="Please try restarting the engine." />
             <zh-CN content="请尝试重新启动引擎。" />
-            <zh-TW content="請尝试重新啟动引擎。" />
+            <zh-TW content="請嘗試重新啟動引擎。" />
+            <ko-KR content="엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -907,6 +980,7 @@
             <en-US content="Import Text" />
             <zh-CN content="导入文本" />
             <zh-TW content="匯入文字" />
+            <ko-KR content="텍스트 가져오기" />
         </translate>
     </item>
 
@@ -919,6 +993,7 @@
             <en-US content="Save Project" />
             <zh-CN content="保存项目" />
             <zh-TW content="儲存專案" />
+            <ko-KR content="프로젝트 저장" />
         </translate>
     </item>
 
@@ -931,6 +1006,7 @@
             <en-US content="Undo" />
             <zh-CN content="撤销" />
             <zh-TW content="復原" />
+            <ko-KR content="실행 취소" />
         </translate>
     </item>
 
@@ -943,6 +1019,7 @@
             <en-US content="Export All Audio" />
             <zh-CN content="导出全部音频" />
             <zh-TW content="匯出全部音訊" />
+            <ko-KR content="모든 음성 내보내기" />
         </translate>
     </item>
 
@@ -955,6 +1032,7 @@
             <en-US content="Failed to play." />
             <zh-CN content="播放失败。" />
             <zh-TW content="播放失敗。" />
+            <ko-KR content="play에 실패했습니다." />
         </translate>
     </item>
 
@@ -964,9 +1042,10 @@
         </match>
 
         <translate>
-            <en-US content="Play / Stop continuously" />
+            <en-US content="Play continuously / Stop" />
             <zh-CN content="连续播放 / 停止" />
-            <zh-TW content="连续播放 / 停止" />
+            <zh-TW content="連續播放 / 停止" />
+            <ko-KR content="연속 재생 / 정지" />
         </translate>
     </item>
 
@@ -979,6 +1058,7 @@
             <en-US content="Export Selected Audio" />
             <zh-CN content="导出所选音频" />
             <zh-TW content="匯出選取的音訊" />
+            <ko-KR content="내보내기 선택ed 음성" />
         </translate>
     </item>
 
@@ -991,6 +1071,7 @@
             <en-US content="Export Connected Audio" />
             <zh-CN content="导出合并后的音频" />
             <zh-TW content="匯出合併後的音訊" />
+            <ko-KR content="내보내기 Connected 음성" />
         </translate>
     </item>
 
@@ -1002,7 +1083,8 @@
         <translate>
             <en-US content="Export concatenated text" />
             <zh-CN content="导出合并后的文本" />
-            <zh-TW content="匯出合併后的文字" />
+            <zh-TW content="匯出合併後的文字" />
+            <ko-KR content="이어 붙인 텍스트 내보내기" />
         </translate>
     </item>
 
@@ -1015,6 +1097,7 @@
             <en-US content="Import text" />
             <zh-CN content="导入文本" />
             <zh-TW content="匯入文字" />
+            <ko-KR content="가져오기 텍스트" />
         </translate>
     </item>
 
@@ -1026,7 +1109,8 @@
         <translate>
             <en-US content="Show line numbers" />
             <zh-CN content="显示行号" />
-            <zh-TW content="顯示行号" />
+            <zh-TW content="顯示行號" />
+            <ko-KR content="줄 번호 표시" />
         </translate>
     </item>
 
@@ -1038,7 +1122,8 @@
         <translate>
             <en-US content="Hide line numbers" />
             <zh-CN content="隐藏行号" />
-            <zh-TW content="隐藏行号" />
+            <zh-TW content="隱藏行號" />
+            <ko-KR content="줄 번호 숨기기" />
         </translate>
     </item>
 
@@ -1051,6 +1136,7 @@
             <en-US content="Export selected audio" />
             <zh-CN content="导出所选音频" />
             <zh-TW content="匯出所選音訊" />
+            <ko-KR content="선택한 음성 내보내기" />
         </translate>
     </item>
 
@@ -1062,7 +1148,8 @@
         <translate>
             <en-US content="Export concatenated audio" />
             <zh-CN content="导出合并后的音频" />
-            <zh-TW content="匯出合併后的音訊" />
+            <zh-TW content="匯出合併後的音訊" />
+            <ko-KR content="이어 붙인 음성 내보내기" />
         </translate>
     </item>
 
@@ -1075,6 +1162,7 @@
             <en-US content="Audio Export" />
             <zh-CN content="音频导出" />
             <zh-TW content="音訊匯出" />
+            <ko-KR content="음성 내보내기" />
         </translate>
     </item>
 
@@ -1087,6 +1175,7 @@
             <en-US content="No character selected" />
             <zh-CN content="未选择角色" />
             <zh-TW content="未選擇角色" />
+            <ko-KR content="캐릭터가 선택되지 않았습니다" />
         </translate>
     </item>
 
@@ -1099,6 +1188,7 @@
             <en-US content="No valid style is selected" />
             <zh-CN content="未选择有效风格" />
             <zh-TW content="未選擇有效風格" />
+            <ko-KR content="유효한 스타일이 선택되지 않았습니다" />
         </translate>
     </item>
 
@@ -1111,6 +1201,7 @@
             <en-US content="No selectable styles" />
             <zh-CN content="没有可选择的风格" />
             <zh-TW content="没有可選擇的風格" />
+            <ko-KR content="선택할 수 있는 스타일이 없습니다" />
         </translate>
     </item>
 
@@ -1123,6 +1214,7 @@
             <en-US content="Deselect" />
             <zh-CN content="取消选择" />
             <zh-TW content="取消選擇" />
+            <ko-KR content="선택 해제" />
         </translate>
     </item>
 
@@ -1135,6 +1227,7 @@
             <en-US content="View Q&amp;A" />
             <zh-CN content="查看问答" />
             <zh-TW content="查看問答" />
+            <ko-KR content="Q&amp;A 보기" />
         </translate>
     </item>
 
@@ -1147,6 +1240,7 @@
             <en-US content="Failed to start the engine. Please try restarting the engine." />
             <zh-CN content="引擎启动失败。请尝试重新启动引擎。" />
             <zh-TW content="引擎啟動失敗。請嘗試重新啟動引擎。" />
+            <ko-KR content="엔진을 시작하지 못했습니다. 엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -1159,6 +1253,7 @@
             <en-US content="The engine is taking a while to start." />
             <zh-CN content="引擎启动需要较长时间。" />
             <zh-TW content="引擎啟動需要較長時間。" />
+            <ko-KR content="엔진을 시작하는 데 시간이 걸리고 있습니다." />
         </translate>
     </item>
 
@@ -1171,6 +1266,7 @@
             <en-US content="Turn off multi-engine and reload" />
             <zh-CN content="关闭多引擎并重新加载" />
             <zh-TW content="關閉多引擎並重新載入" />
+            <ko-KR content="멀티 엔진을 끄고 다시 불러오기" />
         </translate>
     </item>
 
@@ -1183,6 +1279,7 @@
             <en-US content="Generating..." />
             <zh-CN content="生成中……" />
             <zh-TW content="產生中……" />
+            <ko-KR content="생성 중..." />
         </translate>
     </item>
 
@@ -1195,6 +1292,7 @@
             <en-US content="Copy" />
             <zh-CN content="复制" />
             <zh-TW content="複製" />
+            <ko-KR content="복사" />
         </translate>
     </item>
 
@@ -1206,7 +1304,8 @@
         <translate>
             <en-US content="Failed to get the context menu item." />
             <zh-CN content="获取上下文菜单项失败。" />
-            <zh-TW content="獲取上下文菜单項失败。" />
+            <zh-TW content="獲取上下文菜單項失敗。" />
+            <ko-KR content="컨텍스트 메뉴 항목을 가져오지 못했습니다." />
         </translate>
     </item>
 
@@ -1219,6 +1318,7 @@
             <en-US content="Select all" />
             <zh-CN content="全选" />
             <zh-TW content="全選" />
+            <ko-KR content="선택 all" />
         </translate>
     </item>
 
@@ -1231,6 +1331,7 @@
             <en-US content="Cut" />
             <zh-CN content="剪切" />
             <zh-TW content="剪切" />
+            <ko-KR content="잘라내기" />
         </translate>
     </item>
 
@@ -1243,6 +1344,7 @@
             <en-US content="Paste" />
             <zh-CN content="粘贴" />
             <zh-TW content="黏貼" />
+            <ko-KR content="붙여넣기" />
         </translate>
     </item>
 
@@ -1255,6 +1357,7 @@
             <en-US content="Dark" />
             <zh-CN content="深色" />
             <zh-TW content="深色" />
+            <ko-KR content="어둡게" />
         </translate>
     </item>
 
@@ -1267,6 +1370,7 @@
             <en-US content="Default" />
             <zh-CN content="默认" />
             <zh-TW content="預設" />
+            <ko-KR content="기본값" />
         </translate>
     </item>
 
@@ -1279,6 +1383,7 @@
             <en-US content="Select all" />
             <zh-CN content="全选" />
             <zh-TW content="全選" />
+            <ko-KR content="선택 all" />
         </translate>
     </item>
 
@@ -1291,6 +1396,7 @@
             <en-US content="Redo" />
             <zh-CN content="重做" />
             <zh-TW content="重做" />
+            <ko-KR content="다시 실행" />
         </translate>
     </item>
 
@@ -1303,6 +1409,7 @@
             <en-US content="Copy" />
             <zh-CN content="复制" />
             <zh-TW content="複製" />
+            <ko-KR content="복사" />
         </translate>
     </item>
 
@@ -1315,6 +1422,7 @@
             <en-US content="Export text after concatenating it" />
             <zh-CN content="合并文本后导出" />
             <zh-TW content="合並文字後匯出" />
+            <ko-KR content="내보내기 텍스트 after concatenating it" />
         </translate>
     </item>
 
@@ -1327,6 +1435,7 @@
             <en-US content="Load text" />
             <zh-CN content="加载文本" />
             <zh-TW content="載入文字" />
+            <ko-KR content="불러오기 텍스트" />
         </translate>
     </item>
 
@@ -1338,7 +1447,8 @@
         <translate>
             <en-US content="Remove focus from the text field" />
             <zh-CN content="移除文本栏焦点" />
-            <zh-TW content="移除文字欄焦点" />
+            <zh-TW content="移除文字欄焦點" />
+            <ko-KR content="텍스트 입력란에서 포커스를 해제" />
         </translate>
     </item>
 
@@ -1350,7 +1460,8 @@
         <translate>
             <en-US content="Restore focus to the text field" />
             <zh-CN content="恢复文本栏焦点" />
-            <zh-TW content="恢複文字欄焦点" />
+            <zh-TW content="恢複文字欄焦點" />
+            <ko-KR content="텍스트 입력란으로 포커스를 되돌리기" />
         </translate>
     </item>
 
@@ -1363,6 +1474,7 @@
             <en-US content="Delete text field" />
             <zh-CN content="删除文本栏" />
             <zh-TW content="刪除文字欄" />
+            <ko-KR content="삭제 텍스트 입력란" />
         </translate>
     </item>
 
@@ -1375,6 +1487,7 @@
             <en-US content="Duplicate text field" />
             <zh-CN content="复制文本栏" />
             <zh-TW content="複製文字欄" />
+            <ko-KR content="Duplicate 텍스트 입력란" />
         </translate>
     </item>
 
@@ -1387,6 +1500,7 @@
             <en-US content="Add text field" />
             <zh-CN content="添加文本栏" />
             <zh-TW content="新增文字欄" />
+            <ko-KR content="추가 텍스트 입력란" />
         </translate>
     </item>
 
@@ -1399,6 +1513,7 @@
             <en-US content="Save a copy of the project" />
             <zh-CN content="保存项目副本" />
             <zh-TW content="儲存專案副本" />
+            <ko-KR content="프로젝트 사본 저장" />
         </translate>
     </item>
 
@@ -1410,7 +1525,8 @@
         <translate>
             <en-US content="Save project and overwrite" />
             <zh-CN content="覆盖保存项目" />
-            <zh-TW content="覆盖儲存專案" />
+            <zh-TW content="覆寫儲存專案" />
+            <ko-KR content="저장 프로젝트 및 overwrite" />
         </translate>
     </item>
 
@@ -1423,6 +1539,7 @@
             <en-US content="Save project as" />
             <zh-CN content="将项目另存为" />
             <zh-TW content="將專案另存為" />
+            <ko-KR content="저장 프로젝트 as" />
         </translate>
     </item>
 
@@ -1435,6 +1552,7 @@
             <en-US content="Load project" />
             <zh-CN content="加载项目" />
             <zh-TW content="載入專案" />
+            <ko-KR content="불러오기 프로젝트" />
         </translate>
     </item>
 
@@ -1447,6 +1565,7 @@
             <en-US content="Undo" />
             <zh-CN content="撤销" />
             <zh-TW content="撤销" />
+            <ko-KR content="실행 취소" />
         </translate>
     </item>
 
@@ -1458,7 +1577,8 @@
         <translate>
             <en-US content="Reset overall intonation" />
             <zh-CN content="重置全部语调" />
-            <zh-TW content="重置全部語调" />
+            <zh-TW content="重設全部語調" />
+            <ko-KR content="초기화 overall 억양" />
         </translate>
     </item>
 
@@ -1471,6 +1591,7 @@
             <en-US content="Toggle fullscreen" />
             <zh-CN content="切换全屏显示" />
             <zh-TW content="切換全屏顯示" />
+            <ko-KR content="Toggle fullscreen" />
         </translate>
     </item>
 
@@ -1483,6 +1604,7 @@
             <en-US content="Play/Stop" />
             <zh-CN content="播放/停止" />
             <zh-TW content="播放/停止" />
+            <ko-KR content="재생/정지" />
         </translate>
     </item>
 
@@ -1495,6 +1617,7 @@
             <en-US content="Cut" />
             <zh-CN content="剪切" />
             <zh-TW content="剪切" />
+            <ko-KR content="잘라내기" />
         </translate>
     </item>
 
@@ -1507,6 +1630,7 @@
             <en-US content="Zoom in" />
             <zh-CN content="放大" />
             <zh-TW content="放大" />
+            <ko-KR content="확대" />
         </translate>
     </item>
 
@@ -1518,7 +1642,8 @@
         <translate>
             <en-US content="Reset zoom level" />
             <zh-CN content="重置缩放比例" />
-            <zh-TW content="重置縮放比例" />
+            <zh-TW content="重設縮放比例" />
+            <ko-KR content="초기화 zoom level" />
         </translate>
     </item>
 
@@ -1531,6 +1656,7 @@
             <en-US content="New project" />
             <zh-CN content="新建项目" />
             <zh-TW content="新建專案" />
+            <ko-KR content="새 프로젝트" />
         </translate>
     </item>
 </translates>

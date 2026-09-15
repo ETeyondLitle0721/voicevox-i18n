@@ -604,7 +604,7 @@ const localeOptions = [
   { label: "大陆简体", value: "zh-CN" },
   { label: "台灣正體", value: "zh-TW" },
   // { label: "香港繁體", value: "zh-HK" },
-  // { label: "한국어", value: "ko-KR" },
+  { label: "한국어", value: "ko-KR" },
   // { label: "Việt Nam", value: "vi-VN" },
   // { label: "ไทย", value: "th-TH" },
   { label: "自動検出", value: "auto" },

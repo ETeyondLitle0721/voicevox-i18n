@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
@@ -15,6 +14,7 @@
             <en-US content="Migration processing is required. {0} =&gt; {1}" />
             <zh-CN content="需要执行迁移处理。{0} =&gt; {1}" />
             <zh-TW content="需要執行迁移處理。{0} =&gt; {1}" />
+            <ko-KR content="마이그레이션 처리가 필요합니다. {0} =&gt; {1}" />
         </translate>
     </item>
 
@@ -27,6 +27,7 @@
             <en-US content="Configuration file not found" />
             <zh-CN content="找不到配置文件" />
             <zh-TW content="找不到設定檔" />
+            <ko-KR content="설정 파일을 찾을 수 없습니다." />
         </translate>
     </item>
 
@@ -40,6 +41,7 @@
             <en-US content="File not found: {0}" />
             <zh-CN content="找不到文件：{0}" />
             <zh-TW content="找不到檔案：{0}" />
+            <ko-KR content="파일을 찾을 수 없습니다: {0}" />
         </translate>
     </item>
 
@@ -52,7 +54,8 @@
         <translate>
             <en-US content="Permission to access the folder is not available. Folder name: {0}" />
             <zh-CN content="没有访问文件夹的权限。尝试访问的文件夹名称：{0}" />
-            <zh-TW content="沒有访問資料夾的權限。尝试访問的資料夾名稱：{0}" />
+            <zh-TW content="沒有访問資料夾的權限。嘗試访問的資料夾名稱：{0}" />
+            <ko-KR content="폴더에 접근할 권한이 없습니다. 접근하려는 폴더 이름: {0}" />
         </translate>
     </item>
 
@@ -66,6 +69,7 @@
                 content="Permission to access the folder is not available. Permission is required to read and write files." />
             <zh-CN content="没有访问文件夹的权限。读写文件需要相应的访问权限。" />
             <zh-TW content="沒有访問資料夾的權限。讀寫檔案需要相應的访問權限。" />
+            <ko-KR content="폴더에 접근할 권한이 없습니다. 파일을 읽고 쓰려면 접근 권한이 필요합니다." />
         </translate>
     </item>
 
@@ -79,6 +83,7 @@
             <en-US content="This is not a pseudo path: {0}" />
             <zh-CN content="不是虚拟路径：{0}" />
             <zh-TW content="不是虚拟路徑：{0}" />
+            <ko-KR content="유사 경로가 아닙니다: {0}" />
         </translate>
     </item>
 
@@ -89,8 +94,9 @@
 
         <translate>
             <en-US content="Export text after concatenating it" />
-            <zh-CN content="テキストを繋げて書き出す" />
-            <zh-TW content="テキストを繋げて書き出す" />
+            <zh-CN content="拼接后导出文本" />
+            <zh-TW content="串接後匯出文字" />
+            <ko-KR content="내보내기 텍스트 after concatenating it" />
         </translate>
     </item>
 
@@ -101,8 +107,9 @@
 
         <translate>
             <en-US content="Load text" />
-            <zh-CN content="テキストを読み込む" />
-            <zh-TW content="テキストを読み込む" />
+            <zh-CN content="导入文本" />
+            <zh-TW content="匯入文字" />
+            <ko-KR content="불러오기 텍스트" />
         </translate>
     </item>
 
@@ -113,8 +120,9 @@
 
         <translate>
             <en-US content="Load text" />
-            <zh-CN content="テキスト読み込む" />
-            <zh-TW content="テキスト読み込む" />
+            <zh-CN content="导入文本" />
+            <zh-TW content="匯入文字" />
+            <ko-KR content="불러오기 텍스트" />
         </translate>
     </item>
 
@@ -125,8 +133,9 @@
 
         <translate>
             <en-US content="Load project" />
-            <zh-CN content="プロジェクトを読み込む" />
-            <zh-TW content="プロジェクトを読み込む" />
+            <zh-CN content="导入项目" />
+            <zh-TW content="匯入專案" />
+            <ko-KR content="불러오기 프로젝트" />
         </translate>
     </item>
 
@@ -137,8 +146,9 @@
 
         <translate>
             <en-US content="Project loading" />
-            <zh-CN content="プロジェクト読み込み" />
-            <zh-TW content="プロジェクト読み込み" />
+            <zh-CN content="导入项目" />
+            <zh-TW content="匯入專案" />
+            <ko-KR content="프로젝트 불러오는 중" />
         </translate>
     </item>
 
@@ -149,8 +159,9 @@
 
         <translate>
             <en-US content="Export only one" />
-            <zh-CN content="一つだけ書き出し" />
-            <zh-TW content="一つだけ書き出し" />
+            <zh-CN content="仅导出一个" />
+            <zh-TW content="僅匯出一個" />
+            <ko-KR content="하나만 내보내기" />
         </translate>
     </item>
 
@@ -161,8 +172,9 @@
 
         <translate>
             <en-US content="Export selected audio" />
-            <zh-CN content="選択音声を書き出し" />
-            <zh-TW content="選択音聲を書き出し" />
+            <zh-CN content="导出选中的音频" />
+            <zh-TW content="匯出選取的音訊" />
+            <ko-KR content="선택한 음성 내보내기" />
         </translate>
     </item>
 
@@ -176,6 +188,7 @@
             <en-US content="Failed to load {0}. This engine will be removed." />
             <zh-CN content="无法加载 {0}。此引擎将被删除。" />
             <zh-TW content="無法載入 {0}。此引擎將被刪除。" />
+            <ko-KR content="{0}을(를) 불러오지 못했습니다. 이 엔진은 삭제됩니다." />
         </translate>
     </item>
 
@@ -187,7 +200,8 @@
         <translate>
             <en-US content="Failed to load the engine." />
             <zh-CN content="加载引擎失败。" />
-            <zh-TW content="載入引擎失败。" />
+            <zh-TW content="載入引擎失敗。" />
+            <ko-KR content="엔진을 불러오지 못했습니다." />
         </translate>
     </item>
 
@@ -200,7 +214,8 @@
         <translate>
             <en-US content="Failed to start {0}" />
             <zh-CN content="启动 {0} 失败" />
-            <zh-TW content="啟動 {0} 失败" />
+            <zh-TW content="啟動 {0} 失敗" />
+            <ko-KR content="{0} 시작에 실패했습니다." />
         </translate>
     </item>
 
@@ -214,6 +229,7 @@
             <en-US content="{0} terminated abnormally. Please restart the engine." />
             <zh-CN content="{0} 异常退出。请重新启动引擎。" />
             <zh-TW content="{0} 异常退出。請重新啟動引擎。" />
+            <ko-KR content="{0}이(가) 비정상적으로 종료되었습니다. 엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -224,10 +240,10 @@
         </match>
 
         <translate>
-            <en-US
-                content="No available port was found to replace port {0}. Please restart the PC." />
+            <en-US content="No available port was found to replace port {0}. Please restart the PC." />
             <zh-CN content="没有找到可用端口来替代 {0} 号端口。请重新启动电脑。" />
             <zh-TW content="沒有找到可用連接埠來替代 {0} 号連接埠。請重新啟動電腦。" />
+            <ko-KR content="포트 {0}을(를) 대신할 사용 가능한 포트를 찾지 못했습니다. PC를 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -241,6 +257,7 @@
                 content="The speech synthesis engine terminated abnormally. Please restart the engine." />
             <zh-CN content="语音合成引擎异常退出。请重新启动引擎。" />
             <zh-TW content="語音合成引擎异常退出。請重新啟動引擎。" />
+            <ko-KR content="음성 합성 엔진이 비정상적으로 종료되었습니다. 엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -253,6 +270,7 @@
             <en-US content="Change save location" />
             <zh-CN content="更改保存位置" />
             <zh-TW content="更改儲存位置" />
+            <ko-KR content="변경 저장 위치" />
         </translate>
     </item>
 
@@ -268,6 +286,7 @@
                 content="The specified save destination may be automatically deleted by {0}. Saving to another location is recommended." />
             <zh-CN content="指定的保存位置可能会被 {0} 自动删除。建议保存到其他位置。" />
             <zh-TW content="指定的儲存位置可能會被 {0} 自動刪除。建議儲存到其他位置。" />
+            <ko-KR content="지정한 저장 위치는 {0}에 의해 자동으로 삭제될 수 있습니다. 다른 위치에 저장하는 것을 권장합니다." />
         </translate>
     </item>
 
@@ -280,6 +299,7 @@
             <en-US content="Ignore and save" />
             <zh-CN content="忽略并保存" />
             <zh-TW content="忽略並儲存" />
+            <ko-KR content="Ignore 및 저장" />
         </translate>
     </item>
 
@@ -292,6 +312,7 @@
             <en-US content="Warning" />
             <zh-CN content="警告" />
             <zh-TW content="警告" />
+            <ko-KR content="경고" />
         </translate>
     </item>
 
@@ -304,6 +325,7 @@
             <en-US content="Engine not found." />
             <zh-CN content="找不到引擎。" />
             <zh-TW content="找不到引擎。" />
+            <ko-KR content="Engine을(를) 찾을 수 없습니다." />
         </translate>
     </item>
 
@@ -319,7 +341,8 @@
             <en-US
                 content="Failed to remove the engine. Please manually delete the engine folder. {0} Error details: {1}" />
             <zh-CN content="删除引擎失败。请手动删除引擎文件夹。{0} 错误内容：{1}" />
-            <zh-TW content="刪除引擎失败。請手動刪除引擎資料夾。{0} 錯誤內容：{1}" />
+            <zh-TW content="刪除引擎失敗。請手動刪除引擎資料夾。{0} 錯誤內容：{1}" />
+            <ko-KR content="엔진을 삭제하지 못했습니다. 엔진 폴더를 직접 삭제해 주세요. {0} 오류 내용: {1}" />
         </translate>
     </item>
 
@@ -337,7 +360,8 @@
             <en-US
                 content="Failed to add the engine. Please manually move the engine folder. {0} -&gt; {1} Error details: {2}" />
             <zh-CN content="添加引擎失败。请手动移动引擎文件夹。{0} -&gt; {1} 错误内容：{2}" />
-            <zh-TW content="新增引擎失败。請手動移動引擎資料夾。{0} -&gt; {1} 錯誤內容：{2}" />
+            <zh-TW content="新增引擎失敗。請手動移動引擎資料夾。{0} -&gt; {1} 錯誤內容：{2}" />
+            <ko-KR content="엔진을 추가하지 못했습니다. 엔진 폴더를 직접 이동해 주세요. {0} → {1} 오류 내용: {2}" />
         </translate>
     </item>
 
@@ -350,6 +374,7 @@
             <en-US content="Engine removal error" />
             <zh-CN content="引擎删除错误" />
             <zh-TW content="引擎刪除錯誤" />
+            <ko-KR content="엔진 removal 오류" />
         </translate>
     </item>
 
@@ -362,6 +387,7 @@
             <en-US content="Engine addition error" />
             <zh-CN content="引擎添加错误" />
             <zh-TW content="引擎新增錯誤" />
+            <ko-KR content="엔진 addition 오류" />
         </translate>
     </item>
 
@@ -374,6 +400,7 @@
             <en-US content="Engine setup" />
             <zh-CN content="引擎设置" />
             <zh-TW content="引擎設定" />
+            <ko-KR content="엔진 setup" />
         </translate>
     </item>
 
@@ -386,6 +413,7 @@
             <en-US content="Engine management" />
             <zh-CN content="引擎管理" />
             <zh-TW content="引擎管理" />
+            <ko-KR content="엔진 management" />
         </translate>
     </item>
 
@@ -398,6 +426,7 @@
             <en-US content="Open folder" />
             <zh-CN content="打开文件夹" />
             <zh-TW content="打開資料夾" />
+            <ko-KR content="열기 폴더" />
         </translate>
     </item>
 
@@ -410,6 +439,7 @@
             <en-US content="Turn on multi-engine and reload" />
             <zh-CN content="启用多引擎并重新加载" />
             <zh-TW content="啟用多引擎並重新載入" />
+            <ko-KR content="Turn 켜기 multi-엔진 및 reload" />
         </translate>
     </item>
 
@@ -422,6 +452,7 @@
             <en-US content="Restart all engines" />
             <zh-CN content="重新启动所有引擎" />
             <zh-TW content="重新啟動所有引擎" />
+            <ko-KR content="Restart all 엔진" />
         </translate>
     </item>
 
@@ -434,6 +465,7 @@
             <en-US content="Restart" />
             <zh-CN content="重新启动" />
             <zh-TW content="重新啟動" />
+            <ko-KR content="Restart" />
         </translate>
     </item>
 
@@ -445,7 +477,8 @@
         <translate>
             <en-US content="Failed to confirm saving" />
             <zh-CN content="确认保存状态失败" />
-            <zh-TW content="確認儲存状態失败" />
+            <zh-TW content="確認儲存状態失敗" />
+            <ko-KR content="confirm saving에 실패했습니다." />
         </translate>
     </item>
 
@@ -459,6 +492,7 @@
                 content="There is unsaved data that will be lost when you exit. Do you want to exit?" />
             <zh-CN content="存在未保存的数据，退出后将会丢失。确定要退出吗？" />
             <zh-TW content="存在未儲存的數據，退出後將會丢失。確定要退出吗？" />
+            <ko-KR content="저장하지 않은 데이터가 있습니다. 종료하면 데이터가 손실됩니다. 종료하시겠습니까?" />
         </translate>
     </item>
 
@@ -471,6 +505,7 @@
             <en-US content="Don't exit" />
             <zh-CN content="不退出" />
             <zh-TW content="不退出" />
+            <ko-KR content="Don't exit" />
         </translate>
     </item>
 
@@ -483,6 +518,7 @@
             <en-US content="Exit" />
             <zh-CN content="退出" />
             <zh-TW content="退出" />
+            <ko-KR content="Exit" />
         </translate>
     </item>
 
@@ -495,7 +531,8 @@
             <en-US
                 content="VVPP file loaded. Reloading is required for the changes to take effect. Reload now?" />
             <zh-CN content="已加载 VVPP 文件。需要重新加载才能应用更改。现在重新加载吗？" />
-            <zh-TW content="已載入 VVPP 檔案。需要重新載入才能應用更改。现在重新載入吗？" />
+            <zh-TW content="已載入 VVPP 檔案。需要重新載入才能應用更改。現在重新載入吗？" />
+            <ko-KR content="VVPP 파일을 불러왔습니다. 변경 사항을 적용하려면 다시 불러와야 합니다. 지금 다시 불러오시겠습니까?" />
         </translate>
     </item>
 
@@ -509,6 +546,7 @@
             <en-US content="Failed to uninstall {0}." />
             <zh-CN content="无法卸载 {0}。" />
             <zh-TW content="無法卸載 {0}。" />
+            <ko-KR content="uninstall {0}에 실패했습니다." />
         </translate>
     </item>
 
@@ -522,6 +560,7 @@
             <en-US content="Failed to install {0}." />
             <zh-CN content="无法安装 {0}。" />
             <zh-TW content="無法安裝 {0}。" />
+            <ko-KR content="install {0}에 실패했습니다." />
         </translate>
     </item>
 
@@ -535,6 +574,7 @@
                 content="This operation may harm your computer. Do not add the engine if you do not trust its distributor." />
             <zh-CN content="此操作可能会损害您的计算机。如果不信任引擎的发布来源，请不要添加。" />
             <zh-TW content="此操作可能會损害您的计算机。如果不信任引擎的發佈來源，請不要新增。" />
+            <ko-KR content="이 작업은 컴퓨터에 피해를 줄 수 있습니다. 엔진 배포처를 신뢰할 수 없다면 추가하지 마세요." />
         </translate>
     </item>
 
@@ -547,6 +587,7 @@
             <en-US content="This is not the default engine." />
             <zh-CN content="这不是默认引擎。" />
             <zh-TW content="這不是預設引擎。" />
+            <ko-KR content="기본 엔진이 아닙니다." />
         </translate>
     </item>
 
@@ -559,6 +600,7 @@
             <en-US content="Installation error" />
             <zh-CN content="安装错误" />
             <zh-TW content="安裝錯誤" />
+            <ko-KR content="Installation 오류" />
         </translate>
     </item>
 
@@ -572,6 +614,7 @@
                 content="The engine information format is not compatible with this version of VOICEVOX. Please update VOICEVOX." />
             <zh-CN content="引擎信息的格式与此版本的 VOICEVOX 不兼容。请更新 VOICEVOX。" />
             <zh-TW content="引擎資訊的格式與此版本的 VOICEVOX 不兼容。請更新 VOICEVOX。" />
+            <ko-KR content="엔진 정보 형식이 이 버전의 VOICEVOX와 호환되지 않습니다. VOICEVOX를 업데이트해 주세요." />
         </translate>
     </item>
 
@@ -584,6 +627,7 @@
             <en-US content="Confirm engine addition" />
             <zh-CN content="确认添加引擎" />
             <zh-TW content="確認新增引擎" />
+            <ko-KR content="Confirm 엔진 addition" />
         </translate>
     </item>
 
@@ -596,6 +640,7 @@
             <en-US content="Cancel" />
             <zh-CN content="取消" />
             <zh-TW content="取消" />
+            <ko-KR content="취소" />
         </translate>
     </item>
 
@@ -608,6 +653,7 @@
             <en-US content="An engine identical to the default engine cannot be installed." />
             <zh-CN content="无法安装与默认引擎相同的引擎。" />
             <zh-TW content="無法安裝與預設引擎相同的引擎。" />
+            <ko-KR content="기본 엔진과 동일한 엔진은 설치할 수 없습니다." />
         </translate>
     </item>
 
@@ -620,7 +666,8 @@
             <en-US
                 content="Failed to retrieve the latest engine information due to a network error. Check your internet connection and try again." />
             <zh-CN content="由于网络错误，无法获取最新的引擎信息。请检查互联网连接后重试。" />
-            <zh-TW content="由于網路錯誤，無法獲取最新的引擎資訊。請检查互联網連接後重试。" />
+            <zh-TW content="由於網路錯誤，無法取得最新的引擎資訊。請檢查互联網連接後重試。" />
+            <ko-KR content="네트워크 오류로 최신 엔진 정보를 가져오지 못했습니다. 인터넷 연결을 확인한 후 다시 시도해 주세요." />
         </translate>
     </item>
 
@@ -633,6 +680,7 @@
             <en-US content="Reload" />
             <zh-CN content="重新加载" />
             <zh-TW content="重新載入" />
+            <ko-KR content="다시 불러오기" />
         </translate>
     </item>
 
@@ -645,6 +693,7 @@
             <en-US content="Reload required" />
             <zh-CN content="需要重新加载" />
             <zh-TW content="需要重新載入" />
+            <ko-KR content="다시 불러와야 합니다." />
         </translate>
     </item>
 
@@ -657,6 +706,7 @@
             <en-US content="Add" />
             <zh-CN content="添加" />
             <zh-TW content="新增" />
+            <ko-KR content="추가" />
         </translate>
     </item>
 
@@ -669,7 +719,8 @@
         <translate>
             <en-US content="Detected an IPC message from an invalid URL. senderUrl: {0}" />
             <zh-CN content="检测到来自非法 URL 的 IPC 消息。senderUrl：{0}" />
-            <zh-TW content="检测到來自非法 URL 的 IPC 消息。senderUrl：{0}" />
+            <zh-TW content="檢测到來自非法 URL 的 IPC 消息。senderUrl：{0}" />
+            <ko-KR content="잘못된 URL에서 IPC 메시지를 감지했습니다. senderUrl: {0}" />
         </translate>
     </item>
 
@@ -682,6 +733,7 @@
             <en-US content="No" />
             <zh-CN content="否" />
             <zh-TW content="否" />
+            <ko-KR content="No" />
         </translate>
     </item>
 
@@ -694,6 +746,7 @@
             <en-US content="Yes" />
             <zh-CN content="是" />
             <zh-TW content="是" />
+            <ko-KR content="Yes" />
         </translate>
     </item>
 
@@ -706,6 +759,7 @@
             <en-US content="Error" />
             <zh-CN content="错误" />
             <zh-TW content="錯誤" />
+            <ko-KR content="오류" />
         </translate>
     </item>
 
@@ -719,6 +773,7 @@
             <en-US content="Error name: {0}" />
             <zh-CN content="错误名称：{0}" />
             <zh-TW content="錯誤名稱：{0}" />
+            <ko-KR content="오류 name: {0}" />
         </translate>
     </item>
 
@@ -732,6 +787,7 @@
             <en-US content="Stack trace: {0}" />
             <zh-CN content="堆栈跟踪：{0}" />
             <zh-TW content="堆栈跟踪：{0}" />
+            <ko-KR content="Stack trace: {0}" />
         </translate>
     </item>
 
@@ -745,6 +801,7 @@
             <en-US content="Navigation has been disabled. url: {0}" />
             <zh-CN content="导航已被禁用。url：{0}" />
             <zh-TW content="導航已被禁用。url：{0}" />
+            <ko-KR content="Navigation has been disabled. url: {0}" />
         </translate>
     </item>
 
@@ -757,6 +814,7 @@
             <en-US content="Multi-engine functionality is disabled" />
             <zh-CN content="多引擎功能已禁用" />
             <zh-TW content="多引擎功能已禁用" />
+            <ko-KR content="멀티 엔진 기능이 비활성화되어 있습니다." />
         </translate>
     </item>
 
@@ -770,6 +828,7 @@
                 content="Multi-engine functionality is disabled. To use VVPP files, enable multi-engine functionality in Settings." />
             <zh-CN content="多引擎功能已禁用。要使用 vvpp 文件，请在设置中启用多引擎功能。" />
             <zh-TW content="多引擎功能已禁用。要使用 vvpp 檔案，請在設定中啟用多引擎功能。" />
+            <ko-KR content="멀티 엔진 기능이 비활성화되어 있습니다. vvpp 파일을 사용하려면 설정에서 멀티 엔진 기능을 활성화해 주세요." />
         </translate>
     </item>
 
@@ -782,6 +841,7 @@
             <en-US content="An unknown error occurred in the main process." />
             <zh-CN content="主进程发生了未知错误。" />
             <zh-TW content="主進程發生了未知錯誤。" />
+            <ko-KR content="메인 프로세스에서 원인을 알 수 없는 오류가 발생했습니다." />
         </translate>
     </item>
 
@@ -795,6 +855,7 @@
             <en-US content="Message: {0}" />
             <zh-CN content="消息：{0}" />
             <zh-TW content="消息：{0}" />
+            <ko-KR content="Message: {0}" />
         </translate>
     </item>
 
@@ -807,6 +868,7 @@
             <en-US content="Exit without doing anything" />
             <zh-CN content="不做任何操作并退出" />
             <zh-TW content="不做任何操作並退出" />
+            <ko-KR content="Exit 없이 doing anything" />
         </translate>
     </item>
 
@@ -818,7 +880,8 @@
         <translate>
             <en-US content="Reset settings and continue" />
             <zh-CN content="重置设置并继续" />
-            <zh-TW content="重置設定並继续" />
+            <zh-TW content="重設設定並繼續" />
+            <ko-KR content="초기화 설정 및 continue" />
         </translate>
     </item>
 
@@ -831,6 +894,7 @@
             <en-US content="Open the configuration file folder and exit" />
             <zh-CN content="打开配置文件所在文件夹并退出" />
             <zh-TW content="打開設定檔所在資料夾並退出" />
+            <ko-KR content="설정 파일 폴더를 열고 종료" />
         </translate>
     </item>
 
@@ -845,9 +909,10 @@
         <translate>
             <en-US
                 content="Failed to load the configuration file. Renaming config.json in {0} may solve the problem (but all settings will be reset). Open the folder containing the configuration file?" />
-            <zh-CN
-                content="加载配置文件失败。将 {0} 中的 config.json 重命名可能可以解决问题（但所有设置都会被重置）。要打开配置文件所在的文件夹吗？" />
-            <zh-TW content="載入設定檔失败。將 {0} 中的 config.json 重命名可能可以解决問題（但所有設定都會被重置）。要打開設定檔所在的資料夾吗？" />
+            <zh-CN content="加载配置文件失败。将 {0} 中的 config.json 重命名可能可以解决问题（但所有设置都会被重置）。要打开配置文件所在的文件夹吗？" />
+            <zh-TW content="載入設定檔失敗。將 {0} 中的 config.json 重命名可能可以解决問題（但所有設定都會被重設）。要打開設定檔所在的資料夾吗？" />
+            <ko-KR
+                content="설정 파일을 불러오지 못했습니다. {0}의 config.json 이름을 변경하면 문제가 해결될 수 있습니다(모든 설정이 초기화됩니다). 설정 파일 폴더를 열겠습니까?" />
         </translate>
     </item>
 
@@ -860,7 +925,8 @@
             <en-US
                 content="Failed to load the configuration file. Rename the configuration file or reset the settings." />
             <zh-CN content="加载配置文件失败。请重命名配置文件或重置设置。" />
-            <zh-TW content="載入設定檔失败。請重命名設定檔或重置設定。" />
+            <zh-TW content="載入設定檔失敗。請重命名設定檔或重設設定。" />
+            <ko-KR content="설정 파일을 불러오지 못했습니다. 설정 파일의 이름을 변경하거나 설정을 초기화해 주세요." />
         </translate>
     </item>
 
@@ -873,6 +939,7 @@
             <en-US content="Configuration file loading error" />
             <zh-CN content="配置文件加载错误" />
             <zh-TW content="設定檔載入錯誤" />
+            <ko-KR content="설정 파일 불러오는 중 오류" />
         </translate>
     </item>
 
@@ -885,6 +952,7 @@
             <en-US content="Configuration file loading error (developer guidance)" />
             <zh-CN content="配置文件加载错误（开发者提示）" />
             <zh-TW content="設定檔載入錯誤（開發者提示）" />
+            <ko-KR content="설정 파일 불러오는 중 오류 (developer guidance)" />
         </translate>
     </item>
 
@@ -898,6 +966,7 @@
             <en-US content="This link is not allowed. url: {0}" />
             <zh-CN content="不允许访问此链接。url：{0}" />
             <zh-TW content="不允许访問此链接。url：{0}" />
+            <ko-KR content="허용되지 않는 링크입니다. url: {0}" />
         </translate>
     </item>
 
@@ -910,6 +979,7 @@
             <en-US content="Speech synthesis engine error" />
             <zh-CN content="语音合成引擎错误" />
             <zh-TW content="語音合成引擎錯誤" />
+            <ko-KR content="Speech synthesis 엔진 오류" />
         </translate>
     </item>
 
@@ -922,6 +992,7 @@
             <en-US content="Select all" />
             <zh-CN content="全选" />
             <zh-TW content="全選" />
+            <ko-KR content="선택 all" />
         </translate>
     </item>
 
@@ -934,6 +1005,7 @@
             <en-US content="Copy" />
             <zh-CN content="复制" />
             <zh-TW content="複製" />
+            <ko-KR content="복사" />
         </translate>
     </item>
 
@@ -946,6 +1018,7 @@
             <en-US content="Cut" />
             <zh-CN content="剪切" />
             <zh-TW content="剪切" />
+            <ko-KR content="잘라내기" />
         </translate>
     </item>
 
@@ -958,6 +1031,7 @@
             <en-US content="Paste" />
             <zh-CN content="粘贴" />
             <zh-TW content="粘贴" />
+            <ko-KR content="붙여넣기" />
         </translate>
     </item>
 
@@ -970,6 +1044,7 @@
             <en-US content="# Heading 1&#10;Text text text&#10;## Heading 2&#10;Text text text" />
             <zh-CN content="# 标题1&#10;正文正文正文&#10;## 标题2&#10;正文正文正文" />
             <zh-TW content="# 標題1&#10;內文內文內文&#10;## 標題2&#10;內文內文內文" />
+            <ko-KR content="# Heading 1&#10;텍스트 텍스트 텍스트&#10;## Heading 2&#10;텍스트 텍스트 텍스트" />
         </translate>
     </item>
 
@@ -982,6 +1057,7 @@
             <en-US content="Title" />
             <zh-CN content="标题" />
             <zh-TW content="標題" />
+            <ko-KR content="Title" />
         </translate>
     </item>
 
@@ -994,6 +1070,7 @@
             <en-US content="Accept" />
             <zh-CN content="同意" />
             <zh-TW content="同意" />
+            <ko-KR content="Accept" />
         </translate>
     </item>
 
@@ -1006,6 +1083,7 @@
             <en-US content="Press the Accept button" />
             <zh-CN content="按下同意按钮" />
             <zh-TW content="按下同意按鈕" />
+            <ko-KR content="동의 버튼 누르기" />
         </translate>
     </item>
 
@@ -1018,6 +1096,7 @@
             <en-US content="Decline" />
             <zh-CN content="拒绝" />
             <zh-TW content="拒絕" />
+            <ko-KR content="Decline" />
         </translate>
     </item>
 
@@ -1030,6 +1109,7 @@
             <en-US content="Press the Decline button" />
             <zh-CN content="按下拒绝按钮" />
             <zh-TW content="按下拒絕按鈕" />
+            <ko-KR content="거부 버튼 누르기" />
         </translate>
     </item>
 
@@ -1042,6 +1122,7 @@
             <en-US content="Heading" />
             <zh-CN content="标题" />
             <zh-TW content="標題" />
+            <ko-KR content="Heading" />
         </translate>
     </item>
 
@@ -1054,6 +1135,7 @@
             <en-US content="Closed" />
             <zh-CN content="已关闭" />
             <zh-TW content="已關閉" />
+            <ko-KR content="닫기d" />
         </translate>
     </item>
 
@@ -1066,6 +1148,7 @@
             <en-US content="Open" />
             <zh-CN content="已打开" />
             <zh-TW content="已開啟" />
+            <ko-KR content="열기" />
         </translate>
     </item>
 
@@ -1078,6 +1161,7 @@
             <en-US content="VOICEVOX is being developed to make it easier to use." />
             <zh-CN content="VOICEVOX 致力于打造更加易用的软件。" />
             <zh-TW content="VOICEVOX 致力於打造更容易使用的軟體。" />
+            <ko-KR content="VOICEVOX는 더 사용하기 편리한 소프트웨어를 목표로 개발되고 있습니다." />
         </translate>
     </item>
 
@@ -1092,6 +1176,8 @@
                 content="When deciding things such as button placement, information such as UI usage rates is important. If you are willing, please help us by allowing us to collect data about software usage." />
             <zh-CN content="在决定按钮布局等策略时，各 UI 的使用率等信息非常重要。如果您愿意，请协助我们收集软件使用情况数据。" />
             <zh-TW content="在決定按鈕配置等策略時，各 UI 的使用率等資訊非常重要。如果您願意，請協助我們收集軟體使用情況資料。" />
+            <ko-KR
+                content="버튼 배치 등의 방향을 결정할 때 각 UI의 사용률과 같은 정보가 중요합니다. 괜찮으시다면 소프트웨어 사용 현황 데이터 수집에 협조해 주세요." />
         </translate>
     </item>
 
@@ -1104,6 +1190,7 @@
             <en-US content="Help us make VOICEVOX easier to use" />
             <zh-CN content="为了让 VOICEVOX 更好用，希望得到您的帮助" />
             <zh-TW content="為了讓 VOICEVOX 更好用，希望得到您的協助" />
+            <ko-KR content="사용 편의성 향상을 위한 부탁" />
         </translate>
     </item>
 
@@ -1117,6 +1204,7 @@
                 content="(We do not collect any information about the text or audio data you enter, so please rest assured.)" />
             <zh-CN content="（我们不会收集您输入的文本数据或音频数据，请放心。）" />
             <zh-TW content="（我們不會收集您輸入的文字資料或音訊資料，請放心。）" />
+            <ko-KR content="(입력한 텍스트 데이터나 음성 데이터는 수집하지 않으니 안심해 주세요.)" />
         </translate>
     </item>
 
@@ -1129,6 +1217,7 @@
             <en-US content="Terms of Use" />
             <zh-CN content="使用条款" />
             <zh-TW content="使用條款" />
+            <ko-KR content="이용 약관 안내" />
         </translate>
     </item>
 
@@ -1142,6 +1231,7 @@
                 content="To help everyone use VOICEVOX with confidence, please agree to the Terms of Use." />
             <zh-CN content="为了让更多人安心使用 VOICEVOX，请同意使用条款。" />
             <zh-TW content="為了讓更多人安心使用 VOICEVOX，請同意使用條款。" />
+            <ko-KR content="많은 분이 안심하고 VOICEVOX를 사용할 수 있도록 이용 약관에 동의해 주세요." />
         </translate>
     </item>
 
@@ -1153,7 +1243,8 @@
         <translate>
             <en-US content="Please try restarting the engine." />
             <zh-CN content="请尝试重新启动引擎。" />
-            <zh-TW content="請尝试重新啟动引擎。" />
+            <zh-TW content="請嘗試重新啟動引擎。" />
+            <ko-KR content="엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -1166,6 +1257,7 @@
             <en-US content="Delete" />
             <zh-CN content="删除" />
             <zh-TW content="刪除" />
+            <ko-KR content="삭제" />
         </translate>
     </item>
 
@@ -1177,7 +1269,8 @@
         <translate>
             <en-US content="Deleted words cannot be restored." />
             <zh-CN content="删除的单词无法恢复。" />
-            <zh-TW content="刪除的单词無法恢复。" />
+            <zh-TW content="刪除的單詞無法復原。" />
+            <ko-KR content="삭제한 단어는 복구할 수 없습니다." />
         </translate>
     </item>
 
@@ -1190,6 +1283,7 @@
             <en-US content="Keep" />
             <zh-CN content="不删除" />
             <zh-TW content="不刪除" />
+            <ko-KR content="Keep" />
         </translate>
     </item>
 
@@ -1202,6 +1296,7 @@
             <en-US content="Delete" />
             <zh-CN content="删除" />
             <zh-TW content="刪除" />
+            <ko-KR content="삭제" />
         </translate>
     </item>
 
@@ -1213,7 +1308,8 @@
         <translate>
             <en-US content="Failed to delete the word" />
             <zh-CN content="删除单词失败" />
-            <zh-TW content="刪除单词失敗" />
+            <zh-TW content="刪除單詞失敗" />
+            <ko-KR content="단어를 삭제하지 못했습니다." />
         </translate>
     </item>
 
@@ -1225,7 +1321,8 @@
         <translate>
             <en-US content="Cancel changes to the word?" />
             <zh-CN content="取消对单词的修改吗？" />
-            <zh-TW content="取消对单词的修改吗？" />
+            <zh-TW content="取消对單詞的修改吗？" />
+            <ko-KR content="단어 변경을 취소하시겠습니까?" />
         </translate>
     </item>
 
@@ -1237,7 +1334,8 @@
         <translate>
             <en-US content="Failed to update the word" />
             <zh-CN content="更新单词失败" />
-            <zh-TW content="更新单词失敗" />
+            <zh-TW content="更新單詞失敗" />
+            <ko-KR content="단어를 업데이트하지 못했습니다." />
         </translate>
     </item>
 
@@ -1249,7 +1347,8 @@
         <translate>
             <en-US content="Failed to register the word" />
             <zh-CN content="注册单词失败" />
-            <zh-TW content="注册单词失敗" />
+            <zh-TW content="注册單詞失敗" />
+            <ko-KR content="단어를 등록하지 못했습니다." />
         </translate>
     </item>
 
@@ -1261,7 +1360,8 @@
         <translate>
             <en-US content="Discard adding the word?" />
             <zh-CN content="放弃添加单词吗？" />
-            <zh-TW content="放弃添加单词吗？" />
+            <zh-TW content="放弃添加單詞吗？" />
+            <ko-KR content="단어 추가를 취소하시겠습니까?" />
         </translate>
     </item>
 
@@ -1273,7 +1373,8 @@
         <translate>
             <en-US content="Delete the word?" />
             <zh-CN content="删除这个单词吗？" />
-            <zh-TW content="刪除這個单词吗？" />
+            <zh-TW content="刪除這個單詞吗？" />
+            <ko-KR content="단어를 삭제하시겠습니까?" />
         </translate>
     </item>
 
@@ -1286,6 +1387,7 @@
             <en-US content="Add Word" />
             <zh-CN content="添加词语" />
             <zh-TW content="新增詞語" />
+            <ko-KR content="추가 Word" />
         </translate>
     </item>
 
@@ -1298,6 +1400,7 @@
             <en-US content="Word List" />
             <zh-CN content="词语列表" />
             <zh-TW content="詞語列表" />
+            <ko-KR content="Word List" />
         </translate>
     </item>
 
@@ -1310,6 +1413,7 @@
             <en-US content="Syncing..." />
             <zh-CN content="同步中……" />
             <zh-TW content="同步中……" />
+            <ko-KR content="Syncing..." />
         </translate>
     </item>
 
@@ -1321,7 +1425,8 @@
         <translate>
             <en-US content="Discarding changes will reset the added word." />
             <zh-CN content="放弃更改后，新增单词将被重置。" />
-            <zh-TW content="放弃更改后，新增单词將被重置。" />
+            <zh-TW content="放弃更改後，新增單詞將被重設。" />
+            <ko-KR content="변경 사항을 취소하면 추가한 단어가 초기화됩니다." />
         </translate>
     </item>
 
@@ -1333,7 +1438,8 @@
         <translate>
             <en-US content="Discarding changes will reset the current edits." />
             <zh-CN content="放弃更改后，当前编辑内容将被重置。" />
-            <zh-TW content="放弃更改后，当前编辑内容將被重置。" />
+            <zh-TW content="放弃更改後，当前編輯內容將被重設。" />
+            <ko-KR content="변경 사항을 취소하면 현재 편집 내용이 초기화됩니다." />
         </translate>
     </item>
 
@@ -1346,6 +1452,7 @@
             <en-US content="Keep changes" />
             <zh-CN content="不放弃" />
             <zh-TW content="不放弃" />
+            <ko-KR content="Keep changes" />
         </translate>
     </item>
 
@@ -1358,6 +1465,7 @@
             <en-US content="Discard" />
             <zh-CN content="丢弃" />
             <zh-TW content="捨棄" />
+            <ko-KR content="Discard" />
         </translate>
     </item>
 
@@ -1370,6 +1478,7 @@
             <en-US content="Pronunciation &amp; Accent Dictionary" />
             <zh-CN content="读音和重音词典" />
             <zh-TW content="讀音與重音辭典" />
+            <ko-KR content="읽기 및 악센트 사전" />
         </translate>
     </item>
 
@@ -1382,6 +1491,7 @@
             <en-US content="Loading..." />
             <zh-CN content="加载中……" />
             <zh-TW content="載入中……" />
+            <ko-KR content="불러오는 중..." />
         </translate>
     </item>
 
@@ -1393,7 +1503,8 @@
         <translate>
             <en-US content="Failed to retrieve the dictionary" />
             <zh-CN content="获取词典失败" />
-            <zh-TW content="获取词典失敗" />
+            <zh-TW content="取得詞典失敗" />
+            <ko-KR content="사전을 가져오지 못했습니다." />
         </translate>
     </item>
 
@@ -1405,7 +1516,8 @@
         <translate>
             <en-US content="Failed to sync the dictionary" />
             <zh-CN content="同步词典失败" />
-            <zh-TW content="同步词典失敗" />
+            <zh-TW content="同步詞典失敗" />
+            <ko-KR content="사전을 동기화하지 못했습니다." />
         </translate>
     </item>
 
@@ -1418,6 +1530,7 @@
             <en-US content="Close Dictionary" />
             <zh-CN content="关闭词典" />
             <zh-TW content="關閉辭典" />
+            <ko-KR content="닫기 Dictionary" />
         </translate>
     </item>
 
@@ -1430,6 +1543,7 @@
             <en-US content="Add" />
             <zh-CN content="添加" />
             <zh-TW content="新增" />
+            <ko-KR content="추가" />
         </translate>
     </item>
 
@@ -1441,7 +1555,8 @@
         <translate>
             <en-US content="Please try restarting the engine." />
             <zh-CN content="请尝试重新启动引擎。" />
-            <zh-TW content="請尝试重新啟动引擎。" />
+            <zh-TW content="請嘗試重新啟動引擎。" />
+            <ko-KR content="엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -1454,6 +1569,7 @@
             <en-US content="ガ'" />
             <zh-CN content="ガ'" />
             <zh-TW content="ガ'" />
+            <ko-KR content="ガ'" />
         </translate>
     </item>
 
@@ -1466,6 +1582,7 @@
             <en-US content="Word" />
             <zh-CN content="词语" />
             <zh-TW content="詞語" />
+            <ko-KR content="Word" />
         </translate>
     </item>
 
@@ -1478,6 +1595,7 @@
             <en-US content="Edit Word" />
             <zh-CN content="编辑词语" />
             <zh-TW content="編輯詞語" />
+            <ko-KR content="편집 Word" />
         </translate>
     </item>
 
@@ -1490,6 +1608,7 @@
             <en-US content="Full-width and half-width characters are treated the same." />
             <zh-CN content="全角和半角字符不作区分。" />
             <zh-TW content="全形與半形字元不作區分。" />
+            <ko-KR content="단어는 전각과 반각을 구분하지 않습니다." />
         </translate>
     </item>
 
@@ -1502,6 +1621,7 @@
             <en-US content="A word is required." />
             <zh-CN content="词语为必填项。" />
             <zh-TW content="詞語為必填項。" />
+            <ko-KR content="단어는 필수입니다." />
         </translate>
     </item>
 
@@ -1514,6 +1634,7 @@
             <en-US content="Add New Word" />
             <zh-CN content="添加新词" />
             <zh-TW content="新增詞語" />
+            <ko-KR content="추가 새 Word" />
         </translate>
     </item>
 
@@ -1526,6 +1647,7 @@
             <en-US content="Failed to generate." />
             <zh-CN content="生成失败。" />
             <zh-TW content="生成失敗。" />
+            <ko-KR content="generate에 실패했습니다." />
         </translate>
     </item>
 
@@ -1538,6 +1660,7 @@
             <en-US content="Reading" />
             <zh-CN content="读法" />
             <zh-TW content="讀法" />
+            <ko-KR content="Reading" />
         </translate>
     </item>
 
@@ -1550,6 +1673,7 @@
             <en-US content="A reading is required." />
             <zh-CN content="读法为必填项。" />
             <zh-TW content="讀法為必填項。" />
+            <ko-KR content="읽기는 필수입니다." />
         </translate>
     </item>
 
@@ -1561,7 +1685,8 @@
         <translate>
             <en-US content="Characters other than hiragana and katakana have been entered." />
             <zh-CN content="输入了平假名和片假名以外的字符。" />
-            <zh-TW content="输入了平假名和片假名以外的字符。" />
+            <zh-TW content="輸入了平假名和片假名以外的字元。" />
+            <ko-KR content="캐릭터s other than hiragana 및 katakana have been entered." />
         </translate>
     </item>
 
@@ -1574,6 +1699,7 @@
             <en-US content="Accent Adjustment" />
             <zh-CN content="重音调整" />
             <zh-TW content="重音調整" />
+            <ko-KR content="Accent Adjustment" />
         </translate>
     </item>
 
@@ -1586,7 +1712,8 @@
             <en-US
                 content="&quot;が&quot; is automatically inserted to account for the accent at the end of a word." />
             <zh-CN content="为了考虑词尾重音，会自动插入“が”。" />
-            <zh-TW content="为了考虑词尾重音，会自动插入“が”。" />
+            <zh-TW content="為了考慮詞尾重音，會自動插入「が」。" />
+            <ko-KR content="어미의 악센트를 고려하기 위해 'が'가 자동으로 삽입됩니다." />
         </translate>
     </item>
 </translates>

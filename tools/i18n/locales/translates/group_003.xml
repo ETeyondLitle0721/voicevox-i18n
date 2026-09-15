@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
@@ -12,6 +11,7 @@
             <en-US content="Song: Track Operations for Undo" />
             <zh-CN content="歌曲：撤销所包含的音轨操作" />
             <zh-TW content="Song：復原所包含的音軌操作" />
+            <ko-KR content="노래: 실행 취소 대상 트랙 작업" />
         </translate>
     </item>
 
@@ -24,6 +24,7 @@
             <en-US content="Choose the character encoding used when exporting text files." />
             <zh-CN content="可以选择导出文本文件时使用的字符编码。" />
             <zh-TW content="可以選擇匯出文字檔時使用的字元編碼。" />
+            <ko-KR content="텍스트 파일을 내보낼 때 사용할 문자 인코딩을 선택할 수 있습니다." />
         </translate>
     </item>
 
@@ -36,6 +37,7 @@
             <en-US content="Automatic Text Splitting" />
             <zh-CN content="文本自动分割" />
             <zh-TW content="文字自動分割" />
+            <ko-KR content="Automatic 텍스트 Splitting" />
         </translate>
     </item>
 
@@ -48,6 +50,7 @@
             <en-US content="Choose where text is split when pasting text." />
             <zh-CN content="可以选择粘贴文本时的分割方式。" />
             <zh-TW content="可以選擇貼上文字時的分割方式。" />
+            <ko-KR content="텍스트를 붙여넣을 때 텍스트를 나눌 위치를 선택할 수 있습니다." />
         </translate>
     </item>
 
@@ -60,6 +63,7 @@
             <en-US content="Show Add Text Button" />
             <zh-CN content="显示添加文本按钮" />
             <zh-TW content="顯示新增文字按鈕" />
+            <ko-KR content="텍스트 추가 버튼 표시" />
         </translate>
     </item>
 
@@ -72,6 +76,7 @@
             <en-US content="Theme" />
             <zh-CN content="主题" />
             <zh-TW content="主題" />
+            <ko-KR content="Theme" />
         </translate>
     </item>
 
@@ -84,6 +89,7 @@
             <en-US content="Default" />
             <zh-CN content="默认" />
             <zh-TW content="預設" />
+            <ko-KR content="기본값" />
         </translate>
     </item>
 
@@ -96,6 +102,7 @@
             <en-US content="Data Collection" />
             <zh-CN content="数据收集" />
             <zh-TW content="資料收集" />
+            <ko-KR content="Data Collection" />
         </translate>
     </item>
 
@@ -108,6 +115,7 @@
             <en-US content="Talk: Export Filename Pattern" />
             <zh-CN content="对话：导出文件名格式" />
             <zh-TW content="Talk：匯出檔名格式" />
+            <ko-KR content="대화: 내보내기 파일name Pattern" />
         </translate>
     </item>
 
@@ -120,6 +128,7 @@
             <en-US content="Carry Over Parameters" />
             <zh-CN content="继承参数" />
             <zh-TW content="繼承參數" />
+            <ko-KR content="Carry Over 매개변수" />
         </translate>
     </item>
 
@@ -132,6 +141,7 @@
             <en-US content="Pan / Volume" />
             <zh-CN content="声像 / 音量" />
             <zh-TW content="聲像 / 音量" />
+            <ko-KR content="Pan / 볼륨" />
         </translate>
     </item>
 
@@ -144,6 +154,7 @@
             <en-US content="Choose Folder" />
             <zh-CN content="选择文件夹" />
             <zh-TW content="選擇資料夾" />
+            <ko-KR content="Choose 폴더" />
         </translate>
     </item>
 
@@ -156,6 +167,7 @@
             <en-US content="Font" />
             <zh-CN content="字体" />
             <zh-TW content="字型" />
+            <ko-KR content="Font" />
         </translate>
     </item>
 
@@ -168,6 +180,7 @@
             <en-US content="Preset Feature" />
             <zh-CN content="预设功能" />
             <zh-TW content="預設功能" />
+            <ko-KR content="프리셋 Feature" />
         </translate>
     </item>
 
@@ -180,6 +193,7 @@
             <en-US content="Page turn" />
             <zh-CN content="翻页" />
             <zh-TW content="翻頁" />
+            <ko-KR content="Page turn" />
         </translate>
     </item>
 
@@ -192,6 +206,7 @@
             <en-US content="Multi-Engine Feature" />
             <zh-CN content="多引擎功能" />
             <zh-TW content="多引擎功能" />
+            <ko-KR content="Multi-엔진 Feature" />
         </translate>
     </item>
 
@@ -204,6 +219,7 @@
             <en-US content="Mute / Solo" />
             <zh-CN content="静音 / 独奏" />
             <zh-TW content="靜音 / 獨奏" />
+            <ko-KR content="음소거 / 솔로" />
         </translate>
     </item>
 
@@ -216,6 +232,7 @@
             <en-US content="Memo Feature" />
             <zh-CN content="备忘录功能" />
             <zh-TW content="備忘功能" />
+            <ko-KR content="Memo Feature" />
         </translate>
     </item>
 
@@ -228,6 +245,7 @@
             <en-US content="Morphing Feature" />
             <zh-CN content="变声融合功能" />
             <zh-TW content="聲音混合功能" />
+            <ko-KR content="Morphing Feature" />
         </translate>
     </item>
 
@@ -240,6 +258,7 @@
             <en-US content="Ruby Annotation Feature" />
             <zh-CN content="注音功能" />
             <zh-TW content="注音功能" />
+            <ko-KR content="Ruby Annotation Feature" />
         </translate>
     </item>
 
@@ -252,6 +271,7 @@
             <en-US content="This feature is unavailable in some engines." />
             <zh-CN content="部分引擎不支持此功能。" />
             <zh-TW content="部分引擎不支持此功能。" />
+            <ko-KR content="일부 엔진에서는 이 기능을 사용할 수 없습니다." />
         </translate>
     </item>
 
@@ -264,6 +284,7 @@
             <en-US content="Prevent Overwriting" />
             <zh-CN content="防止覆盖" />
             <zh-TW content="防止覆寫" />
+            <ko-KR content="Prevent Overwriting" />
         </translate>
     </item>
 
@@ -276,6 +297,7 @@
             <en-US content="Saving" />
             <zh-CN content="保存" />
             <zh-TW content="儲存" />
+            <ko-KR content="Saving" />
         </translate>
     </item>
 
@@ -288,6 +310,7 @@
             <en-US content="Playback Device" />
             <zh-CN content="播放设备" />
             <zh-TW content="播放裝置" />
+            <ko-KR content="Playback Device" />
         </translate>
     </item>
 
@@ -301,6 +324,7 @@
                 content="You can change the audio sampling rate used for playback and saving (raising the sampling rate does not improve audio quality)." />
             <zh-CN content="可以更改播放和保存时的音频采样率（提高采样率不会提升音频质量）。" />
             <zh-TW content="可以變更播放及儲存時的音訊取樣率（提高取樣率不會提升音訊品質）。" />
+            <ko-KR content="재생 및 저장 시 음성의 샘플링 레이트를 변경할 수 있습니다. (샘플링 레이트를 높여도 음성 품질은 향상되지 않습니다.)" />
         </translate>
     </item>
 
@@ -313,6 +337,7 @@
             <en-US content="Follow Playback Position" />
             <zh-CN content="跟随播放位置" />
             <zh-TW content="跟隨播放位置" />
+            <ko-KR content="Follow Playback Position" />
         </translate>
     </item>
 
@@ -325,6 +350,7 @@
             <en-US content="Show Again" />
             <zh-CN content="重新显示" />
             <zh-TW content="重新顯示" />
+            <ko-KR content="다시 표시" />
         </translate>
     </item>
 
@@ -338,6 +364,7 @@
                 content="Changing the output sampling rate does not change audio quality. Audio generation may also take slightly longer." />
             <zh-CN content="更改输出采样率不会改变音质。此外，音频生成处理可能需要稍长一些时间。" />
             <zh-TW content="變更輸出取樣率不會改變音質。此外，音訊產生處理可能需要稍長一些時間。" />
+            <ko-KR content="출력 샘플링 레이트를 변경해도 음질은 변하지 않습니다. 또한 음성 생성에 약간의 시간이 더 걸릴 수 있습니다." />
         </translate>
     </item>
 
@@ -350,6 +377,7 @@
             <en-US content="Change the Output Sampling Rate?" />
             <zh-CN content="要更改输出采样率吗？" />
             <zh-TW content="要變更輸出取樣率嗎？" />
+            <ko-KR content="출력 샘플링 레이트를 변경하시겠습니까?" />
         </translate>
     </item>
 
@@ -362,6 +390,7 @@
             <en-US content="Do not split." />
             <zh-CN content="不拆分。" />
             <zh-TW content="不分割。" />
+            <ko-KR content="Do 아님 split." />
         </translate>
     </item>
 
@@ -374,6 +403,7 @@
             <en-US content="Periods and line breaks" />
             <zh-CN content="句号和换行" />
             <zh-TW content="句號與換行" />
+            <ko-KR content="Periods 및 줄 breaks" />
         </translate>
     </item>
 
@@ -386,6 +416,7 @@
             <en-US content="Split text at periods and line breaks." />
             <zh-CN content="根据句号和换行拆分文本。" />
             <zh-TW content="依句號與換行分割文字。" />
+            <ko-KR content="Split 텍스트 at periods 및 줄 breaks." />
         </translate>
     </item>
 
@@ -398,6 +429,7 @@
             <en-US content="Change" />
             <zh-CN content="更改" />
             <zh-TW content="變更" />
+            <ko-KR content="변경" />
         </translate>
     </item>
 
@@ -410,6 +442,7 @@
             <en-US content="Appearance" />
             <zh-CN content="外观" />
             <zh-TW content="外觀" />
+            <ko-KR content="Appearance" />
         </translate>
     </item>
 
@@ -422,6 +455,7 @@
             <en-US content="Experimental Features" />
             <zh-CN content="实验性功能" />
             <zh-TW content="實驗性功能" />
+            <ko-KR content="Experimental 기능" />
         </translate>
     </item>
 
@@ -434,6 +468,7 @@
             <en-US content="Operation" />
             <zh-CN content="操作" />
             <zh-TW content="操作" />
+            <ko-KR content="작업" />
         </translate>
     </item>
 
@@ -446,6 +481,7 @@
             <en-US content="Line breaks" />
             <zh-CN content="换行" />
             <zh-TW content="換行" />
+            <ko-KR content="줄 breaks" />
         </translate>
     </item>
 
@@ -458,6 +494,7 @@
             <en-US content="Split text at line breaks only." />
             <zh-CN content="仅根据换行拆分文本。" />
             <zh-TW content="僅依換行分割文字。" />
+            <ko-KR content="줄바꿈만을 기준으로 텍스트를 나눕니다." />
         </translate>
     </item>
 
@@ -470,6 +507,7 @@
             <en-US content="Character Encoding" />
             <zh-CN content="字符编码" />
             <zh-TW content="字元編碼" />
+            <ko-KR content="캐릭터 Encoding" />
         </translate>
     </item>
 
@@ -482,6 +520,7 @@
             <en-US content="Reload the screen now to apply the new display language?" />
             <zh-CN content="要立即重新加载页面以应用新的显示语言吗？" />
             <zh-TW content="要立即重新載入畫面以套用新的顯示語言嗎？" />
+            <ko-KR content="새 표시 언어를 적용하기 위해 지금 화면을 다시 불러오시겠습니까?" />
         </translate>
     </item>
 
@@ -494,6 +533,7 @@
             <en-US content="Export Destination Folder" />
             <zh-CN content="导出文件夹" />
             <zh-TW content="匯出資料夾" />
+            <ko-KR content="내보내기 Destination 폴더" />
         </translate>
     </item>
 
@@ -505,7 +545,8 @@
         <translate>
             <en-US content="Select export destination folder" />
             <zh-CN content="选择导出目标文件夹" />
-            <zh-TW content="選擇匯出目标檔案夹" />
+            <zh-TW content="選擇匯出目標檔案夾" />
+            <ko-KR content="선택 내보내기 destination 폴더" />
         </translate>
     </item>
 
@@ -518,6 +559,7 @@
             <en-US content="Fix Export Destination" />
             <zh-CN content="固定导出位置" />
             <zh-TW content="固定匯出位置" />
+            <ko-KR content="Fix 내보내기 Destination" />
         </translate>
     </item>
 
@@ -530,6 +572,7 @@
             <en-US content="Customize the filename pattern used when exporting." />
             <zh-CN content="可以自定义导出时使用的文件名格式。" />
             <zh-TW content="可以自訂匯出時使用的檔名格式。" />
+            <ko-KR content="내보낼 때 사용할 파일 이름 패턴을 사용자 지정할 수 있습니다." />
         </translate>
     </item>
 
@@ -542,6 +585,7 @@
             <en-US content="Convert Unknown English Words to Katakana Readings" />
             <zh-CN content="将未知英文单词转换为片假名读法" />
             <zh-TW content="將未知英文單字轉換為片假名讀法" />
+            <ko-KR content="알 수 없는 영어 단어를 가타카나 읽기로 변환" />
         </translate>
     </item>
 
@@ -554,6 +598,7 @@
             <en-US content="Set the default lyrics for notes that do not have lyrics assigned." />
             <zh-CN content="可以设置未配置歌词的音符所使用的默认歌词。" />
             <zh-TW content="可以設定未配置歌詞的音符所使用的預設歌詞。" />
+            <ko-KR content="가사가 설정되지 않은 음표에 기본으로 적용할 가사를 설정할 수 있습니다." />
         </translate>
     </item>
 
@@ -566,6 +611,7 @@
             <en-US content="Scroll when the current playback position is outside the visible range." />
             <zh-CN content="当当前播放位置超出显示范围时滚动。" />
             <zh-TW content="當目前播放位置超出顯示範圍時捲動。" />
+            <ko-KR content="현재 재생 위치가 표시 범위를 벗어나면 스크롤합니다." />
         </translate>
     </item>
 
@@ -578,6 +624,7 @@
             <en-US content="Keep the current playback position centered." />
             <zh-CN content="将当前播放位置显示在中间。" />
             <zh-TW content="將目前播放位置顯示在中央。" />
+            <ko-KR content="현재 재생 위치를 가운데에 표시합니다." />
         </translate>
     </item>
 
@@ -590,6 +637,7 @@
             <en-US content="Automatically Adjust Questions" />
             <zh-CN content="自动调整疑问句" />
             <zh-TW content="自動調整疑問句" />
+            <ko-KR content="Automatically Adjust Questions" />
         </translate>
     </item>
 
@@ -602,6 +650,7 @@
             <en-US content="Do not scroll automatically." />
             <zh-CN content="不自动滚动。" />
             <zh-TW content="不自動捲動。" />
+            <ko-KR content="Do 아님 scroll automatically." />
         </translate>
     </item>
 
@@ -614,6 +663,7 @@
             <en-US content="Show Line Numbers" />
             <zh-CN content="显示行号" />
             <zh-TW content="顯示行號" />
+            <ko-KR content="줄 번호 표시" />
         </translate>
     </item>
 
@@ -626,6 +676,7 @@
             <en-US content="Display Language" />
             <zh-CN content="显示语言" />
             <zh-TW content="顯示語言" />
+            <ko-KR content="Display Language" />
         </translate>
     </item>
 
@@ -638,6 +689,7 @@
             <en-US content="Multi-Select" />
             <zh-CN content="多选" />
             <zh-TW content="多選" />
+            <ko-KR content="Multi-선택" />
         </translate>
     </item>
 
@@ -650,6 +702,7 @@
             <en-US content="Language" />
             <zh-CN content="语言" />
             <zh-TW content="語言" />
+            <ko-KR content="Language" />
         </translate>
     </item>
 
@@ -662,6 +715,7 @@
             <en-US content="Language Changed" />
             <zh-CN content="语言已更改" />
             <zh-TW content="語言已變更" />
+            <ko-KR content="Language 변경d" />
         </translate>
     </item>
 
@@ -674,6 +728,7 @@
             <en-US content="Settings / Options" />
             <zh-CN content="设置 / 选项" />
             <zh-TW content="設定 / 選項" />
+            <ko-KR content="설정 / 옵션" />
         </translate>
     </item>
 
@@ -686,6 +741,7 @@
             <en-US content="Close Settings" />
             <zh-CN content="关闭设置" />
             <zh-TW content="關閉設定" />
+            <ko-KR content="닫기 설정" />
         </translate>
     </item>
 
@@ -698,6 +754,7 @@
             <en-US content="Continuous" />
             <zh-CN content="连续" />
             <zh-TW content="連續" />
+            <ko-KR content="Continuous" />
         </translate>
     </item>
 
@@ -710,6 +767,7 @@
             <en-US content="Show all tips that you previously hid again." />
             <zh-CN content="可以重新显示之前隐藏的所有提示。" />
             <zh-TW content="可以重新顯示之前隱藏的所有提示。" />
+            <ko-KR content="이전에 숨긴 모든 도움말을 다시 표시할 수 있습니다." />
         </translate>
     </item>
 
@@ -722,6 +780,7 @@
             <en-US content="Show All Hidden Tips Again" />
             <zh-CN content="重新显示所有已隐藏的提示" />
             <zh-TW content="重新顯示所有已隱藏的提示" />
+            <ko-KR content="숨긴 모든 도움말 다시 표시" />
         </translate>
     </item>
 
@@ -734,6 +793,7 @@
             <en-US content="Audio Sampling Rate" />
             <zh-CN content="音频采样率" />
             <zh-TW content="音訊取樣率" />
+            <ko-KR content="음성 Sampling Rate" />
         </translate>
     </item>
 
@@ -746,6 +806,7 @@
             <en-US content="Change the audio playback device." />
             <zh-CN content="可以更改音频播放设备。" />
             <zh-TW content="可以變更音訊播放裝置。" />
+            <ko-KR content="음성 재생 장치를 변경할 수 있습니다." />
         </translate>
     </item>
 
@@ -758,6 +819,7 @@
             <en-US content="Show Audio Duration" />
             <zh-CN content="显示音频时长" />
             <zh-TW content="顯示音訊長度" />
+            <ko-KR content="음성 길이 표시" />
         </translate>
     </item>
 
@@ -770,6 +832,7 @@
             <en-US content="Convert Audio to Stereo" />
             <zh-CN content="将音频转换为立体声" />
             <zh-TW content="將音訊轉為立體聲" />
+            <ko-KR content="음성을 스테레오로 변환" />
         </translate>
     </item>
 
@@ -783,6 +846,7 @@
                 content="Choose the auto-scroll mode for the detailed adjustment area during audio playback." />
             <zh-CN content="可以选择播放音频时详细调节区域的自动滚动模式。" />
             <zh-TW content="可以選擇播放音訊時詳細調整區域的自動捲動模式。" />
+            <ko-KR content="음성 재생 중 상세 조정 영역의 자동 스크롤 모드를 선택할 수 있습니다." />
         </translate>
     </item>
 
@@ -795,6 +859,7 @@
             <en-US content="Advanced Settings" />
             <zh-CN content="高级设置" />
             <zh-TW content="進階設定" />
+            <ko-KR content="Advanced 설정" />
         </translate>
     </item>
 
@@ -807,6 +872,7 @@
             <en-US content="Click OK" />
             <zh-CN content="点击“确定”" />
             <zh-TW content="點击“確定”" />
+            <ko-KR content="확인 누르기" />
         </translate>
     </item>
 
@@ -819,6 +885,7 @@
             <en-US content="Title" />
             <zh-CN content="标题" />
             <zh-TW content="標題" />
+            <ko-KR content="Title" />
         </translate>
     </item>
 
@@ -831,6 +898,7 @@
             <en-US content="Message" />
             <zh-CN content="消息" />
             <zh-TW content="訊息" />
+            <ko-KR content="Message" />
         </translate>
     </item>
 
@@ -843,6 +911,7 @@
             <en-US content="Message&#10;Multiline" />
             <zh-CN content="消息&#10;多行" />
             <zh-TW content="訊息&#10;多行" />
+            <ko-KR content="Message&#10;Multiline" />
         </translate>
     </item>
 
@@ -855,6 +924,7 @@
             <en-US content="Closed" />
             <zh-CN content="已关闭" />
             <zh-TW content="已關閉" />
+            <ko-KR content="닫기d" />
         </translate>
     </item>
 
@@ -867,6 +937,7 @@
             <en-US content="Open" />
             <zh-CN content="已打开" />
             <zh-TW content="已開啟" />
+            <ko-KR content="열기" />
         </translate>
     </item>
 
@@ -879,6 +950,7 @@
             <en-US content="Open: multiline" />
             <zh-CN content="已打开：多行" />
             <zh-TW content="已開啟：多行" />
+            <ko-KR content="열기: multiline" />
         </translate>
     </item>
 
@@ -891,6 +963,7 @@
             <en-US content="Press A" />
             <zh-CN content="按下 A" />
             <zh-TW content="按下 A" />
+            <ko-KR content="A 누르기" />
         </translate>
     </item>
 
@@ -903,6 +976,7 @@
             <en-US content="With persistent: false, clicking the background cancels" />
             <zh-CN content="persistent: false 时点击背景会取消" />
             <zh-TW content="persistent: false 時點擊背景會取消" />
+            <ko-KR content="persistent: false일 때 배경을 클릭하면 취소로 처리됩니다." />
         </translate>
     </item>
 
@@ -915,6 +989,7 @@
             <en-US content="With persistent: true, clicking the background does not cancel" />
             <zh-CN content="persistent: true 时点击背景不会取消" />
             <zh-TW content="persistent: true 時點擊背景不會取消" />
+            <ko-KR content="persistent: true일 때 배경을 클릭해도 취소되지 않습니다." />
         </translate>
     </item>
 
@@ -927,6 +1002,7 @@
             <en-US content="Cancel" />
             <zh-CN content="取消" />
             <zh-TW content="取消" />
+            <ko-KR content="취소" />
         </translate>
     </item>
 
@@ -939,6 +1015,7 @@
             <en-US content="Title" />
             <zh-CN content="标题" />
             <zh-TW content="標題" />
+            <ko-KR content="Title" />
         </translate>
     </item>
 
@@ -951,6 +1028,7 @@
             <en-US content="Message" />
             <zh-CN content="消息" />
             <zh-TW content="訊息" />
+            <ko-KR content="Message" />
         </translate>
     </item>
 
@@ -963,6 +1041,7 @@
             <en-US content="Message&#10;Multiline" />
             <zh-CN content="消息&#10;多行" />
             <zh-TW content="訊息&#10;多行" />
+            <ko-KR content="Message&#10;Multiline" />
         </translate>
     </item>
 
@@ -975,6 +1054,7 @@
             <en-US content="Closed" />
             <zh-CN content="已关闭" />
             <zh-TW content="已關閉" />
+            <ko-KR content="닫기d" />
         </translate>
     </item>
 
@@ -987,6 +1067,7 @@
             <en-US content="Open" />
             <zh-CN content="已打开" />
             <zh-TW content="已開啟" />
+            <ko-KR content="열기" />
         </translate>
     </item>
 
@@ -999,6 +1080,7 @@
             <en-US content="Open: change button color" />
             <zh-CN content="已打开：更改按钮颜色" />
             <zh-TW content="已開啟：變更按鈕顏色" />
+            <ko-KR content="열기: 변경 버튼 color" />
         </translate>
     </item>
 
@@ -1011,6 +1093,7 @@
             <en-US content="Open: multiline" />
             <zh-CN content="已打开：多行" />
             <zh-TW content="已開啟：多行" />
+            <ko-KR content="열기: multiline" />
         </translate>
     </item>
 
@@ -1022,7 +1105,8 @@
         <translate>
             <en-US content="info has no icon" />
             <zh-CN content="info 没有图标" />
-            <zh-TW content="info 没有图标" />
+            <zh-TW content="info 没有圖標" />
+            <ko-KR content="info has no icon" />
         </translate>
     </item>
 
@@ -1036,6 +1120,7 @@
             <en-US content="Invalid skipUpdateVersion: {0}" />
             <zh-CN content="skipUpdateVersion 无效：{0}" />
             <zh-TW content="skipUpdateVersion 無效：{0}" />
+            <ko-KR content="잘못된 skipUpdate버전: {0}" />
         </translate>
     </item>
 
@@ -1048,7 +1133,8 @@
             <en-US
                 content="The environment variable VITE_LATEST_UPDATE_INFOS_URL is not set. Please add it to .env." />
             <zh-CN content="未设置环境变量 VITE_LATEST_UPDATE_INFOS_URL。请将其写入 .env。" />
-            <zh-TW content="未設定环境变量 VITE_LATEST_UPDATE_INFOS_URL。請將其寫入 .env。" />
+            <zh-TW content="未設定环境變量 VITE_LATEST_UPDATE_INFOS_URL。請將其寫入 .env。" />
+            <ko-KR content="환경 변수 VITE_LATEST_UPDATE_INFOS_URL이 설정되어 있지 않습니다. .env에 기재해 주세요." />
         </translate>
     </item>
 
@@ -1061,6 +1147,7 @@
             <en-US content="Update Available" />
             <zh-CN content="更新通知" />
             <zh-TW content="更新通知" />
+            <ko-KR content="업데이트가 있습니다" />
         </translate>
     </item>
 
@@ -1074,6 +1161,7 @@
             <en-US content="Version {0}" />
             <zh-CN content="版本 {0}" />
             <zh-TW content="版本 {0}" />
+            <ko-KR content="버전 {0}" />
         </translate>
     </item>
 
@@ -1086,6 +1174,7 @@
             <en-US content="You can download the latest version from the official website." />
             <zh-CN content="可以从官方网站下载最新版本。" />
             <zh-TW content="可以從官方網站下載最新版本。" />
+            <ko-KR content="공식 웹사이트에서 최신 버전을 다운로드할 수 있습니다." />
         </translate>
     </item>
 
@@ -1098,6 +1187,7 @@
             <en-US content="Close" />
             <zh-CN content="关闭" />
             <zh-TW content="關閉" />
+            <ko-KR content="닫기" />
         </translate>
     </item>
 
@@ -1110,6 +1200,7 @@
             <en-US content="Skip This Version" />
             <zh-CN content="跳过此版本" />
             <zh-TW content="跳过此版本" />
+            <ko-KR content="이 버전 건너뛰기" />
         </translate>
     </item>
 
@@ -1122,6 +1213,7 @@
             <en-US content="Open Official Website" />
             <zh-CN content="打开官方网站" />
             <zh-TW content="開啟官方網站" />
+            <ko-KR content="공식 웹사이트 열기" />
         </translate>
     </item>
 
@@ -1133,7 +1225,8 @@
         <translate>
             <en-US content="This should not be displayed." />
             <zh-CN content="这不应显示。" />
-            <zh-TW content="這不应顯示。" />
+            <zh-TW content="這不應顯示。" />
+            <ko-KR content="표시되면 안 되는 메시지입니다." />
         </translate>
     </item>
 
@@ -1145,7 +1238,8 @@
         <translate>
             <en-US content="Click the Skip button" />
             <zh-CN content="点击“跳过”按钮" />
-            <zh-TW content="點击“跳過”按钮" />
+            <zh-TW content="點击“跳過”按鈕" />
+            <ko-KR content="건너뛰기 버튼 누르기" />
         </translate>
     </item>
 
@@ -1157,7 +1251,8 @@
         <translate>
             <en-US content="Bug fixes" />
             <zh-CN content="错误修复" />
-            <zh-TW content="错誤修复" />
+            <zh-TW content="錯誤修復" />
+            <ko-KR content="버그 수정" />
         </translate>
     </item>
 
@@ -1169,7 +1264,8 @@
         <translate>
             <en-US content="Click the Open official site button" />
             <zh-CN content="点击“打开官方网站”按钮" />
-            <zh-TW content="點击“打開官方網站”按钮" />
+            <zh-TW content="點击“打開官方網站”按鈕" />
+            <ko-KR content="공식 웹사이트 열기 버튼 누르기" />
         </translate>
     </item>
 
@@ -1182,6 +1278,7 @@
             <en-US content="New feature 1" />
             <zh-CN content="新增功能 1" />
             <zh-TW content="新增功能 1" />
+            <ko-KR content="새 기능 1" />
         </translate>
     </item>
 
@@ -1194,6 +1291,7 @@
             <en-US content="New feature 2" />
             <zh-CN content="新增功能 2" />
             <zh-TW content="新增功能 2" />
+            <ko-KR content="새 기능 2" />
         </translate>
     </item>
 
@@ -1206,6 +1304,7 @@
             <en-US content="Closed" />
             <zh-CN content="已关闭" />
             <zh-TW content="已關閉" />
+            <ko-KR content="닫기d" />
         </translate>
     </item>
 
@@ -1218,6 +1317,7 @@
             <en-US content="Press the Close button" />
             <zh-CN content="按下关闭按钮" />
             <zh-TW content="按下關閉按鈕" />
+            <ko-KR content="닫기 버튼 누르기" />
         </translate>
     </item>
 
@@ -1230,6 +1330,7 @@
             <en-US content="Open" />
             <zh-CN content="已打开" />
             <zh-TW content="已開啟" />
+            <ko-KR content="열기" />
         </translate>
     </item>
 
@@ -1242,6 +1343,7 @@
             <en-US content="Default Style" />
             <zh-CN content="默认风格" />
             <zh-TW content="預設樣式" />
+            <ko-KR content="기본 스타일" />
         </translate>
     </item>
 
@@ -1255,6 +1357,7 @@
             <en-US content="Default Style: {0}" />
             <zh-CN content="默认风格：{0}" />
             <zh-TW content="預設樣式：{0}" />
+            <ko-KR content="기본 스타일: {0}" />
         </translate>
     </item>
 
@@ -1267,6 +1370,7 @@
             <en-US content="Terms of Use" />
             <zh-CN content="使用条款" />
             <zh-TW content="使用條款" />
+            <ko-KR content="이용 약관" />
         </translate>
     </item>
 
@@ -1279,6 +1383,7 @@
             <en-US content="Back" />
             <zh-CN content="返回" />
             <zh-TW content="返回" />
+            <ko-KR content="Back" />
         </translate>
     </item>
 
@@ -1292,6 +1397,7 @@
             <en-US content="Settings / Manage Characters &amp; Styles / {0}" />
             <zh-CN content="设置 / 管理角色和风格 / {0}" />
             <zh-TW content="設定 / 管理角色與樣式 / {0}" />
+            <ko-KR content="설정 / 캐릭터 및 스타일 관리 / {0}" />
         </translate>
     </item>
 
@@ -1305,6 +1411,7 @@
             <en-US content="Character not found: {0}" />
             <zh-CN content="未找到角色：{0}" />
             <zh-TW content="未找到角色：{0}" />
+            <ko-KR content="캐릭터를 찾을 수 없습니다: {0}" />
         </translate>
     </item>
 
@@ -1317,6 +1424,7 @@
             <en-US content="Character List" />
             <zh-CN content="角色列表" />
             <zh-TW content="角色列表" />
+            <ko-KR content="캐릭터 목록" />
         </translate>
     </item>
 
@@ -1329,6 +1437,7 @@
             <en-US content="Sample Voices" />
             <zh-CN content="示例语音" />
             <zh-TW content="範例語音" />
+            <ko-KR content="샘플 음성" />
         </translate>
     </item>
 
@@ -1341,6 +1450,7 @@
             <en-US content="Song" />
             <zh-CN content="歌曲" />
             <zh-TW content="歌曲" />
+            <ko-KR content="노래" />
         </translate>
     </item>
 
@@ -1353,6 +1463,7 @@
             <en-US content="Talk" />
             <zh-CN content="对话" />
             <zh-TW content="對話" />
+            <ko-KR content="대화" />
         </translate>
     </item>
 
@@ -1365,6 +1476,7 @@
             <en-US content="Done" />
             <zh-CN content="完成" />
             <zh-TW content="完成" />
+            <ko-KR content="완료" />
         </translate>
     </item>
 
@@ -1377,6 +1489,7 @@
             <en-US content="Reorder Characters" />
             <zh-CN content="调整角色顺序" />
             <zh-TW content="調整角色順序" />
+            <ko-KR content="캐릭터 순서 변경" />
         </translate>
     </item>
 
@@ -1389,6 +1502,7 @@
             <en-US content="Play Sample Voice" />
             <zh-CN content="播放示例语音" />
             <zh-TW content="播放範例語音" />
+            <ko-KR content="샘플 음성 재생" />
         </translate>
     </item>
 
@@ -1401,6 +1515,7 @@
             <en-US content="Previous Style" />
             <zh-CN content="上一个风格" />
             <zh-TW content="上一個樣式" />
+            <ko-KR content="Previous 스타일" />
         </translate>
     </item>
 
@@ -1413,6 +1528,7 @@
             <en-US content="Next Style" />
             <zh-CN content="下一个风格" />
             <zh-TW content="下一個樣式" />
+            <ko-KR content="Next 스타일" />
         </translate>
     </item>
 
@@ -1425,6 +1541,7 @@
             <en-US content="LAB file" />
             <zh-CN content="LAB 文件" />
             <zh-TW content="LAB 檔案" />
+            <ko-KR content="LAB 파일" />
         </translate>
     </item>
 
@@ -1438,6 +1555,7 @@
             <en-US content="Exported {0}" />
             <zh-CN content="已导出 {0}" />
             <zh-TW content="已匯出 {0}" />
+            <ko-KR content="내보내기ed {0}" />
         </translate>
     </item>
 
@@ -1450,6 +1568,7 @@
             <en-US content="Export failed due to an engine error. Please try restarting the engine." />
             <zh-CN content="由于引擎错误，导出失败。请尝试重新启动引擎。" />
             <zh-TW content="由於引擎錯誤，匯出失敗。請嘗試重新啟動引擎。" />
+            <ko-KR content="엔진 오류로 내보내기에 실패했습니다. 엔진을 다시 시작해 주세요." />
         </translate>
     </item>
 
@@ -1462,6 +1581,7 @@
             <en-US content="Cancel" />
             <zh-CN content="取消" />
             <zh-TW content="取消" />
+            <ko-KR content="취소" />
         </translate>
     </item>
 
@@ -1474,6 +1594,7 @@
             <en-US content="Text" />
             <zh-CN content="文本" />
             <zh-TW content="文字" />
+            <ko-KR content="텍스트" />
         </translate>
     </item>
 
@@ -1486,6 +1607,7 @@
             <en-US content="Failed to export text." />
             <zh-CN content="文本导出失败。" />
             <zh-TW content="文字匯出失敗。" />
+            <ko-KR content="내보내기 text에 실패했습니다." />
         </translate>
     </item>
 
@@ -1498,6 +1620,7 @@
             <en-US content="Project" />
             <zh-CN content="项目" />
             <zh-TW content="專案" />
+            <ko-KR content="프로젝트" />
         </translate>
     </item>
 
@@ -1510,6 +1633,7 @@
             <en-US content="Do not show this message again" />
             <zh-CN content="以后不再显示此消息" />
             <zh-TW content="之後不再顯示此訊息" />
+            <ko-KR content="이 메시지를 다시 표시하지 않음" />
         </translate>
     </item>
 
@@ -1522,6 +1646,7 @@
             <en-US content="Export failed for an unknown reason. Please check the logs." />
             <zh-CN content="由于某种原因导出失败。请查看日志。" />
             <zh-TW content="由於某種原因匯出失敗。請查看記錄。" />
+            <ko-KR content="알 수 없는 이유로 내보내기에 실패했습니다. 로그를 확인해 주세요." />
         </translate>
     </item>
 
@@ -1534,6 +1659,7 @@
             <en-US content="Export failed." />
             <zh-CN content="导出失败。" />
             <zh-TW content="匯出失敗。" />
+            <ko-KR content="내보내기에 실패했습니다." />
         </translate>
     </item>
 
@@ -1547,6 +1673,7 @@
                 content="The operation failed due to a write error. Please make sure there is enough free space and that you have write permission." />
             <zh-CN content="由于写入错误，操作失败。请确认磁盘有足够的剩余空间并具备写入权限。" />
             <zh-TW content="由於寫入錯誤，操作失敗。請確認磁碟有足夠的可用空間並具備寫入權限。" />
+            <ko-KR content="쓰기 오류로 작업에 실패했습니다. 여유 공간과 쓰기 권한이 있는지 확인해 주세요." />
         </translate>
     </item>
 </translates>

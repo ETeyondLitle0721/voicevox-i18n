@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version='1.0' encoding='utf-8'?>
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
@@ -12,6 +11,7 @@
             <en-US content="Close" />
             <zh-CN content="关闭" />
             <zh-TW content="關閉" />
+            <ko-KR content="닫기" />
         </translate>
     </item>
 
@@ -24,6 +24,7 @@
             <en-US content="No engine is installed." />
             <zh-CN content="尚未安装引擎。" />
             <zh-TW content="尚未安裝引擎。" />
+            <ko-KR content="엔진이 설치되어 있지 않습니다." />
         </translate>
     </item>
 
@@ -35,7 +36,8 @@
         <translate>
             <en-US content="Failed to install the engine" />
             <zh-CN content="引擎安装失败" />
-            <zh-TW content="引擎安裝失败" />
+            <zh-TW content="引擎安裝失敗" />
+            <ko-KR content="엔진 설치에 실패했습니다." />
         </translate>
     </item>
 
@@ -48,6 +50,7 @@
             <en-US content="Loading engine information." />
             <zh-CN content="正在加载引擎信息。" />
             <zh-TW content="正在載入引擎資訊。" />
+            <ko-KR content="불러오는 중 엔진 정보." />
         </translate>
     </item>
 
@@ -60,6 +63,7 @@
             <en-US content="Installing engine." />
             <zh-CN content="正在安装引擎。" />
             <zh-TW content="正在安裝引擎。" />
+            <ko-KR content="Installing 엔진." />
         </translate>
     </item>
 
@@ -72,6 +76,7 @@
             <en-US content="Automatic detection" />
             <zh-CN content="自动检测" />
             <zh-TW content="自動檢測" />
+            <ko-KR content="자동 감지" />
         </translate>
     </item>
 
@@ -83,8 +88,9 @@
 
         <translate>
             <en-US content="{0} is not available in GPU mode." />
-            <zh-CN content="{0} 不在 GPU 模式下可用。" />
-            <zh-TW content="{0} 不在 GPU 模式下可用。" />
+            <zh-CN content="{0} 为 CPU 版本，无法使用 GPU 模式。" />
+            <zh-TW content="{0} 為 CPU 版本，無法使用 GPU 模式。" />
+            <ko-KR content="{0}은(는) CPU 버전이므로 GPU 모드를 사용할 수 없습니다." />
         </translate>
     </item>
 
@@ -97,6 +103,7 @@
             <en-US content="Follow OS" />
             <zh-CN content="跟随OS" />
             <zh-TW content="跟隨OS" />
+            <ko-KR content="OS 설정 따르기" />
         </translate>
     </item>
 </translates>
