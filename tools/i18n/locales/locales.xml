@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<locales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="locales.xsd">
+
+    <languages>
+        <ja-JP>
+            <name>日本語</name>
+            <version>0.1.0</version>
+
+            <contributors>
+                <person name="OpenAI ChatGPT" type="ai"/>
+                <person name="Google Gemini" type="ai"/>
+                <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com"/>
+            </contributors>
+        </ja-JP>
+
+        <en-US source="ja-JP">
+            <name>English</name>
+            <version>0.1.0</version>
+
+            <contributors>
+                <person name="OpenAI ChatGPT" type="ai"/>
+                <person name="Google Gemini" type="ai"/>
+                <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com"/>
+            </contributors>
+        </en-US>
+
+        <zh-CN source="ja-JP">
+            <name>简体中文</name>
+            <version>0.1.0</version>
+
+            <contributors>
+                <person name="OpenAI ChatGPT" type="ai"/>
+                <person name="Google Gemini" type="ai"/>
+                <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com"/>
+            </contributors>
+        </zh-CN>
+
+        <zh-TW source="ja-JP">
+            <name>台灣正體</name>
+            <version>0.1.0</version>
+
+            <contributors>
+                <person name="OpenAI ChatGPT" type="ai"/>
+                <person name="Google Gemini" type="ai"/>
+                <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com"/>
+            </contributors>
+        </zh-TW>
+
+        <zh-HK source="ja-JP">
+            <name>香港繁體</name>
+            <version>0.1.0</version>
+
+            <contributors>
+                <person name="OpenAI ChatGPT" type="ai"/>
+                <person name="Google Gemini" type="ai"/>
+                <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com"/>
+            </contributors>
+        </zh-HK>
+
+        <ko-KR source="ja-JP">
+            <name>한국어</name>
+            <version>0.1.0</version>
+
+            <contributors>
+                <person name="OpenAI ChatGPT" type="ai"/>
+                <person name="Google Gemini" type="ai"/>
+                <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com"/>
+            </contributors>
+        </ko-KR>
+    </languages>
+
+    <folder name="components">
+        <folder name="Talk">
+            <file name="AudioDetail.vue">
+                <!-- script: 再生/停止 -->
+                <item id="#0001">
+                    <match type="equals">
+                        <text content="再生/停止"/>
+                    </match>
+
+                    <translate>
+                        <en-US content="Play/Stop"/>
+                        <zh-CN content="播放/停止"/>
+                        <zh-TW content="播放/停止"/>
+                        <zh-HK content="播放/停止"/>
+                        <ko-KR content="재생/정지"/>
+                    </translate>
+                </item>
+
+                <!-- script: ｱｸｾﾝﾄ欄を表示 -->
+                <item id="#0002">
+                    <match type="equals">
+                        <text content="ｱｸｾﾝﾄ欄を表示"/>
+                    </match>
+
+                    <translate>
+                        <en-US content="Show the accent panel"/>
+                        <zh-CN content="显示重音栏"/>
+                        <zh-TW content="顯示重音欄"/>
+                        <zh-HK content="顯示重音欄"/>
+                        <ko-KR content="악센트 패널 표시"/>
+                    </translate>
+                </item>
+
+                <!-- script: ｲﾝﾄﾈｰｼｮﾝ欄を表示 -->
+                <item id="#0003">
+                    <match type="equals">
+                        <text content="ｲﾝﾄﾈｰｼｮﾝ欄を表示"/>
+                    </match>
+
+                    <translate>
+                        <en-US content="Show the intonation panel"/>
+                        <zh-CN content="显示语调栏"/>
+                        <zh-TW content="顯示語調欄"/>
+                        <zh-HK content="顯示語調欄"/>
+                        <ko-KR content="억양 패널 표시"/>
+                    </translate>
+                </item>
+
+                <!-- element: マウスホイールを使って -->
+                <item id="#0004">
+                    <match type="equals">
+                        <text content="マウスホイールを使って"/>
+                    </match>
+
+                    <translate>
+                        <en-US content="Use the mouse wheel"/>
+                        <zh-CN content="使用鼠标滚轮"/>
+                        <zh-TW content="使用滾輪"/>
+                        <zh-HK content="使用滾輪"/>
+                        <ko-KR content="마우스 휠을 사용해"/>
+                    </translate>
+                </item>
+            </file>
+        </folder>
+
+        <folder name="Sing">
+            <folder name="SequencerRuler">
+                <folder name="ValueChangesLane">
+                    <file name="Container.vue">
+                        <!-- script: 拍子：{0}/{1} -->
+                        <item id="#0001">
+                            <match type="contains">
+                                <text content="拍子："/>
+                                <param name="beats"/>
+                                <text content="/"/>
+                                <param name="beatType"/>
+                            </match>
+
+                            <translate>
+                                <en-US content="Time signature: {0}/{1}"/>
+                                <zh-CN content="拍子：{0}/{1}"/>
+                                <zh-TW content="拍子：{0}/{1}"/>
+                                <zh-HK content="拍子：{0}/{1}"/>
+                                <ko-KR content="시그널: {0}/{1}"/>
+                            </translate>
+                        </item>
+                    </file>
+                </folder>
+            </folder>
+        </folder>
+
+        <!-- デフォルト -->
+        <item id="#0001">
+            <match type="equals">
+                <text content="デフォルト"/>
+            </match>
+
+            <translate>
+                <en-US content="Default"/>
+                <zh-CN content="默认"/>
+                <zh-TW content="預設"/>
+                <zh-HK content="預設"/>
+                <ko-KR content="기본"/>
+            </translate>
+        </item>
+    </folder>
+
+</locales>
