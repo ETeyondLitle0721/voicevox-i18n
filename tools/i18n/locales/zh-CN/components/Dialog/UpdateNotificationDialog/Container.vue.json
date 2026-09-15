@@ -1,4 +1,0 @@
-{
-  "skipUpdateVersionが不正です: {0}": "skipUpdateVersion 无效：{0}",
-  "環境変数VITE_LATEST_UPDATE_INFOS_URLが設定されていません。.envに記載してください。": "未设置环境变量 VITE_LATEST_UPDATE_INFOS_URL。请将其写入 .env。"
-}
