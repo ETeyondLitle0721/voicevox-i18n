@@ -17,7 +17,8 @@ Vite の仮想モジュール（Virtual Module）プラグインを活用した�
 - en-US **英語** (English)
 - zh-CN **簡体字中国語** (Simplified Chinese / 大陆简体)
 - zh-TW **繁体字中国語** (Traditional Chinese / 台灣正體)
-
+- ko-KR **韓国語** (Korean / 한국어)
+  
 ※ 設定（OPTIONS）画面からいつでも言語を切り替えることができます。
 
 ---
