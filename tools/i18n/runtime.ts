@@ -235,11 +235,13 @@ export function createRuntime(rules: TranslationRules) {
     dirty: true,
     observer: undefined as MutationObserver | undefined,
     start(): void {
+      console.log("call i18n:start");
       if (runtime.running || typeof window === "undefined") return;
       runtime.running = true;
       runtime.schedule();
     },
     stop(): void {
+      console.log("call i18n:stop");
       runtime.running = false;
       if (runtime.frameId !== undefined) {
         window.cancelAnimationFrame(runtime.frameId);
@@ -249,7 +251,8 @@ export function createRuntime(rules: TranslationRules) {
       runtime.observer = undefined;
     },
     schedule(): void {
-      if (!runtime.running || runtime.frameId !== undefined) return;
+      console.log("call i18n:schedule");
+      if (!runtime.running) return;
       runtime.frameId = window.requestAnimationFrame(() => {
         runtime.frameId = undefined;
         if (runtime.dirty) {
@@ -259,6 +262,7 @@ export function createRuntime(rules: TranslationRules) {
       });
     },
     scan(): void {
+      console.log("call i18n:scan");
       if (typeof document === "undefined" || runtime.locale === "ja-JP") {
         return;
       }

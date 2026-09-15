@@ -3860,20 +3860,7 @@
                 <ko-KR content="마침표와 줄바꿈을 기준으로 텍스트를 나눕니다." />
             </translate>
         </item>
-
-        <item id="#0289">
-            <match type="equals">
-                <text content="台灣正體" />
-            </match>
-
-            <translate>
-                <en-US content="Traditional Chinese (Taiwan)" />
-                <zh-TW content="繁體中文（台灣）" />
-                <zh-HK content="繁體中文（台灣）" />
-                <ko-KR content="대만 정체" />
-            </translate>
-        </item>
-
+        
         <item id="#0290">
             <match type="equals">
                 <text content="変更する" />
@@ -12673,16 +12660,6 @@
             </translate>
         </item>
 
-        <item id="#0936">
-            <match type="equals">
-                <text content="ら" />
-            </match>
-
-            <translate>
-                <zh-CN content="la" />
-            </translate>
-        </item>
-
         <item id="#0937">
             <match type="equals">
                 <text content="無名トラック" />
@@ -12690,26 +12667,6 @@
 
             <translate>
                 <zh-CN content="未命名音轨" />
-            </translate>
-        </item>
-
-        <item id="#0938">
-            <match type="equals">
-                <text content="シ" />
-            </match>
-
-            <translate>
-                <zh-CN content="Si" />
-            </translate>
-        </item>
-
-        <item id="#0939">
-            <match type="equals">
-                <text content="ソ" />
-            </match>
-
-            <translate>
-                <zh-CN content="Sol" />
             </translate>
         </item>
 
@@ -12733,16 +12690,6 @@
             </translate>
         </item>
 
-        <item id="#0942">
-            <match type="equals">
-                <text content="ド" />
-            </match>
-
-            <translate>
-                <zh-CN content="Do" />
-            </translate>
-        </item>
-
         <item id="#0943">
             <match type="equals">
                 <text content="ハミング" />
@@ -12750,46 +12697,6 @@
 
             <translate>
                 <zh-CN content="哼唱" />
-            </translate>
-        </item>
-
-        <item id="#0944">
-            <match type="equals">
-                <text content="ファ" />
-            </match>
-
-            <translate>
-                <zh-CN content="Fa" />
-            </translate>
-        </item>
-
-        <item id="#0945">
-            <match type="equals">
-                <text content="ミ" />
-            </match>
-
-            <translate>
-                <zh-CN content="Mi" />
-            </translate>
-        </item>
-
-        <item id="#0946">
-            <match type="equals">
-                <text content="ラ" />
-            </match>
-
-            <translate>
-                <zh-CN content="La" />
-            </translate>
-        </item>
-
-        <item id="#0947">
-            <match type="equals">
-                <text content="レ" />
-            </match>
-
-            <translate>
-                <zh-CN content="Re" />
             </translate>
         </item>
 
