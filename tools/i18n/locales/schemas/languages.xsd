@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- 根节点定义 -->
+    <xs:element name="languages" type="languagesType" />
+
+    <!-- 语言列表定义 -->
+    <xs:complexType name="languagesType">
+        <xs:sequence>
+            <xs:element name="ja-JP" type="langMetaType" />
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element name="en-US" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="zh-CN" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="zh-TW" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="zh-HK" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="ko-KR" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="vi-VN" type="langMetaDerivedType" minOccurs="0" />
+                <xs:element name="th-TH" type="langMetaDerivedType" minOccurs="0" />
+            </xs:sequence>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- 原语言元数据 -->
+    <xs:complexType name="langMetaType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string" />
+            <xs:element name="version" type="xs:string" />
+            <xs:element name="contributors" type="contributorsType" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <!-- 派生语言元数据（带 source 属性） -->
+    <xs:complexType name="langMetaDerivedType">
+        <xs:complexContent>
+            <xs:extension base="langMetaType">
+                <xs:attribute name="source" type="xs:string" use="required" />
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <!-- 贡献者列表 -->
+    <xs:complexType name="contributorsType">
+        <xs:sequence>
+            <xs:element name="person" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                    <xs:attribute name="type" type="xs:string" use="optional" />
+                    <xs:attribute name="email" type="xs:string" use="optional" />
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

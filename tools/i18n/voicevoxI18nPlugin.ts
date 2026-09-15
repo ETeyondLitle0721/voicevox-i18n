@@ -43,7 +43,7 @@ const XML_MATCH_RE = /<match\b[^>]*\btype="(equals|contains)"[^>]*>([\s\S]*?)<\/
 const XML_TRANSLATE_RE = /<translate\b[^>]*>([\s\S]*?)<\/translate>/u;
 const XML_PART_RE = /<(text|param)\b([^>]*)\/>/gu;
 const XML_ATTR_RE = /([:\w-]+)="([\s\S]*?)"/gu;
-const XML_TRANSLATION_RE = /<(en-US|zh-CN|zh-TW|zh-HK|ko-KR)\b[^>]*\bcontent="([\s\S]*?)"[^>]*\/>/gu;
+const XML_TRANSLATION_RE = /<(en-US|zh-CN|zh-TW|zh-HK|ko-KR|vi-VN|th-TH)\b[^>]*\bcontent="([\s\S]*?)"[^>]*\/>/gu;
 
 const normalizeXmlEntity = (value: string): string =>
   value
@@ -174,12 +174,61 @@ function parseTranslationRules(xml: string): TranslationRules {
   return rules;
 }
 
-function loadTranslationRules(file: string): TranslationRules {
-  if (!fs.existsSync(file)) {
-    throw new Error(`voicevox-i18n: locale XML was not found: ${file}`);
+function loadTranslationRules(files: readonly string[]): TranslationRules {
+  if (files.length === 0) {
+    throw new Error("voicevox-i18n: no locale XML files were found");
   }
 
-  return parseTranslationRules(fs.readFileSync(file, "utf8"));
+  const merged: TranslationRules = {
+    "en-US": [],
+    "zh-CN": [],
+    "zh-TW": [],
+    "zh-HK": [],
+    "ko-KR": [],
+    "vi-VN": [],
+    "th-TH": [],
+  };
+
+  for (const file of files) {
+    if (!fs.existsSync(file)) {
+      throw new Error(`voicevox-i18n: locale XML was not found: ${file}`);
+    }
+
+    const rules = parseTranslationRules(fs.readFileSync(file, "utf8"));
+    for (const locale of SOURCE_LOCALES) {
+      merged[locale] = [...merged[locale], ...rules[locale]];
+    }
+  }
+
+  for (const locale of SOURCE_LOCALES) {
+    merged[locale] = [...merged[locale]].sort((a, b) => {
+      if (a.type !== b.type) return a.type === "equals" ? -1 : 1;
+      return b.pattern.length - a.pattern.length;
+    });
+  }
+
+  return merged;
+}
+
+function discoverLocaleXmlFiles(localeDir: string): string[] {
+  if (!fs.existsSync(localeDir)) {
+    throw new Error(`voicevox-i18n: locale directory was not found: ${localeDir}`);
+  }
+
+  const files = fs
+    .readdirSync(localeDir, { withFileTypes: true })
+    .filter(
+      (entry) =>
+        entry.isFile() && /^group_\d{3}\.xml$/u.test(entry.name),
+    )
+    .map((entry) => path.join(localeDir, entry.name))
+    .sort((a, b) => a.localeCompare(b, "en"));
+
+  if (files.length === 0) {
+    throw new Error(`voicevox-i18n: no group_*.xml files were found in ${localeDir}`);
+  }
+
+  return files;
 }
 
 const escapeJsString = (value: string): string => JSON.stringify(value);
@@ -229,7 +278,7 @@ function createVirtualRuntimeModule(rules: TranslationRules, runtimeFile: string
 
 export function voicevoxI18n(): Plugin {
   const projectRoot = process.cwd();
-  const localeXml = path.join(projectRoot, "tools/i18n/locales/defines.xml");
+  const localeDir = path.join(projectRoot, "tools/i18n/locales/translates");
 
   let rules: TranslationRules = {
     "en-US": [],
@@ -246,7 +295,7 @@ export function voicevoxI18n(): Plugin {
     enforce: "pre",
 
     configResolved() {
-      rules = loadTranslationRules(localeXml);
+      rules = loadTranslationRules(discoverLocaleXmlFiles(localeDir));
     },
 
     resolveId(id) {

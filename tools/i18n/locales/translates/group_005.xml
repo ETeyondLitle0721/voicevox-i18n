@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
+
+    <item id="#0517">
+        <match type="equals">
+            <text content="プロジェクトを上書き保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project" />
+            <zh-CN content="覆盖保存项目" />
+            <zh-TW content="覆寫儲存專案" />
+        </translate>
+    </item>
+
+    <item id="#0518">
+        <match type="equals">
+            <text content="プロジェクトを名前を付けて保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project As" />
+            <zh-CN content="将项目另存为" />
+            <zh-TW content="將專案另存為" />
+        </translate>
+    </item>
+
+    <item id="#0519">
+        <match type="equals">
+            <text content="プロジェクトを読み込む" />
+        </match>
+
+        <translate>
+            <en-US content="Load Project" />
+            <zh-CN content="加载项目" />
+            <zh-TW content="載入專案" />
+        </translate>
+    </item>
+
+    <item id="#0520">
+        <match type="equals">
+            <text content="全画面表示を切り替え" />
+        </match>
+
+        <translate>
+            <en-US content="Toggle Fullscreen" />
+            <zh-CN content="切换全屏" />
+            <zh-TW content="切換全螢幕" />
+        </translate>
+    </item>
+
+    <item id="#0521">
+        <match type="equals">
+            <text content="拡大" />
+        </match>
+
+        <translate>
+            <en-US content="Zoom In" />
+            <zh-CN content="放大" />
+            <zh-TW content="放大" />
+        </translate>
+    </item>
+
+    <item id="#0522">
+        <match type="equals">
+            <text content="拡大率のリセット" />
+        </match>
+
+        <translate>
+            <en-US content="Reset Zoom" />
+            <zh-CN content="重置缩放" />
+            <zh-TW content="重設縮放" />
+        </translate>
+    </item>
+
+    <item id="#0523">
+        <match type="equals">
+            <text content="新規プロジェクト" />
+        </match>
+
+        <translate>
+            <en-US content="New Project" />
+            <zh-CN content="新建项目" />
+            <zh-TW content="新建專案" />
+        </translate>
+    </item>
+
+    <item id="#0524">
+        <match type="equals">
+            <text content="縮小" />
+        </match>
+
+        <translate>
+            <en-US content="Zoom Out" />
+            <zh-CN content="缩小" />
+            <zh-TW content="縮小" />
+        </translate>
+    </item>
+
+    <item id="#0525">
+        <match type="equals">
+            <text content="連続再生/停止" />
+        </match>
+
+        <translate>
+            <en-US content="Play / Stop continuously" />
+            <zh-CN content="连续播放 / 停止" />
+            <zh-TW content="连续播放 / 停止" />
+        </translate>
+    </item>
+
+    <item id="#0526">
+        <match type="equals">
+            <text content="テキストを繋げて書き出す" />
+        </match>
+
+        <translate>
+            <en-US content="Export concatenated text" />
+            <zh-CN content="导出合并后的文本" />
+            <zh-TW content="匯出合併后的文字" />
+        </translate>
+    </item>
+
+    <item id="#0527">
+        <match type="equals">
+            <text content="テキストを読み込む" />
+        </match>
+
+        <translate>
+            <en-US content="Import text" />
+            <zh-CN content="导入文本" />
+            <zh-TW content="匯入文字" />
+        </translate>
+    </item>
+
+    <item id="#0528">
+        <match type="equals">
+            <text content="テキスト欄からフォーカスを外す" />
+        </match>
+
+        <translate>
+            <en-US content="Remove focus from the text field" />
+            <zh-CN content="移除文本框焦点" />
+            <zh-TW content="移除文字欄焦點" />
+        </translate>
+    </item>
+
+    <item id="#0529">
+        <match type="equals">
+            <text content="テキスト欄にフォーカスを戻す" />
+        </match>
+
+        <translate>
+            <en-US content="Return focus to the text field" />
+            <zh-CN content="将焦点返回文本框" />
+            <zh-TW content="將焦點返回文字欄" />
+        </translate>
+    </item>
+
+    <item id="#0530">
+        <match type="equals">
+            <text content="テキスト欄を削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete the text field" />
+            <zh-CN content="删除文本框" />
+            <zh-TW content="刪除文字欄" />
+        </translate>
+    </item>
+
+    <item id="#0531">
+        <match type="equals">
+            <text content="テキスト欄を複製" />
+        </match>
+
+        <translate>
+            <en-US content="Duplicate the text field" />
+            <zh-CN content="复制文本框" />
+            <zh-TW content="複製文字欄" />
+        </translate>
+    </item>
+
+    <item id="#0532">
+        <match type="equals">
+            <text content="テキスト欄を追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add a text field" />
+            <zh-CN content="添加文本框" />
+            <zh-TW content="添加文字欄" />
+        </translate>
+    </item>
+
+    <item id="#0533">
+        <match type="equals">
+            <text content="選択音声を書き出し" />
+        </match>
+
+        <translate>
+            <en-US content="Export selected audio" />
+            <zh-CN content="导出所选音频" />
+            <zh-TW content="匯出所選音訊" />
+        </translate>
+    </item>
+
+    <item id="#0534">
+        <match type="equals">
+            <text content="音声を繋げて書き出し" />
+        </match>
+
+        <translate>
+            <en-US content="Export concatenated audio" />
+            <zh-CN content="导出合并后的音频" />
+            <zh-TW content="匯出合併后的音訊" />
+        </translate>
+    </item>
+
+    <item id="#0535">
+        <match type="equals">
+            <text content="全体のイントネーションをリセット" />
+        </match>
+
+        <translate>
+            <en-US content="Reset overall intonation" />
+            <zh-CN content="重置整体语调" />
+            <zh-TW content="重置整体語調" />
+        </translate>
+    </item>
+
+    <item id="#0536">
+        <match type="equals">
+            <text content="選択中のアクセント句のイントネーションをリセット" />
+        </match>
+
+        <translate>
+            <en-US content="Reset the intonation of the selected accent phrase" />
+            <zh-CN content="重置所选重音短语的语调" />
+            <zh-TW content="重置所選重音短语的語調" />
+        </translate>
+    </item>
+
+    <item id="#0537">
+        <match type="equals">
+            <text content="長さ欄を表示" />
+        </match>
+
+        <translate>
+            <en-US content="Show length field" />
+            <zh-CN content="显示长度栏" />
+            <zh-TW content="顯示長度栏" />
+        </translate>
+    </item>
+
+    <item id="#0538">
+        <match type="equals">
+            <text content="ｱｸｾﾝﾄ欄を表示" />
+        </match>
+
+        <translate>
+            <en-US content="Show accent field" />
+            <zh-CN content="显示重音栏" />
+            <zh-TW content="顯示重音栏" />
+        </translate>
+    </item>
+
+    <item id="#0539">
+        <match type="equals">
+            <text content="ｲﾝﾄﾈｰｼｮﾝ欄を表示" />
+        </match>
+
+        <translate>
+            <en-US content="Show intonation field" />
+            <zh-CN content="显示语调栏" />
+            <zh-TW content="顯示語調栏" />
+        </translate>
+    </item>
+
+    <item id="#0540">
+        <match type="equals">
+            <text content="1番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 1th character" />
+            <zh-CN content="选择第 1 个角色" />
+            <zh-TW content="選擇第 1 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0541">
+        <match type="equals">
+            <text content="2番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 2th character" />
+            <zh-CN content="选择第 2 个角色" />
+            <zh-TW content="選擇第 2 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0542">
+        <match type="equals">
+            <text content="3番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 3th character" />
+            <zh-CN content="选择第 3 个角色" />
+            <zh-TW content="選擇第 3 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0543">
+        <match type="equals">
+            <text content="4番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 4th character" />
+            <zh-CN content="选择第 4 个角色" />
+            <zh-TW content="選擇第 4 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0544">
+        <match type="equals">
+            <text content="5番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 5th character" />
+            <zh-CN content="选择第 5 个角色" />
+            <zh-TW content="選擇第 5 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0545">
+        <match type="equals">
+            <text content="6番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 6th character" />
+            <zh-CN content="选择第 6 个角色" />
+            <zh-TW content="選擇第 6 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0546">
+        <match type="equals">
+            <text content="7番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 7th character" />
+            <zh-CN content="选择第 7 个角色" />
+            <zh-TW content="選擇第 7 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0547">
+        <match type="equals">
+            <text content="8番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 8th character" />
+            <zh-CN content="选择第 8 个角色" />
+            <zh-TW content="選擇第 8 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0548">
+        <match type="equals">
+            <text content="9番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 9th character" />
+            <zh-CN content="选择第 9 个角色" />
+            <zh-TW content="選擇第 9 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0549">
+        <match type="equals">
+            <text content="10番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 10th character" />
+            <zh-CN content="选择第 10 个角色" />
+            <zh-TW content="選擇第 10 個角色" />
+        </translate>
+    </item>
+
+    <item id="#0550">
+        <match type="equals">
+            <text content="インポート" />
+        </match>
+
+        <translate>
+            <en-US content="Import" />
+            <zh-CN content="导入" />
+            <zh-TW content="匯入" />
+        </translate>
+    </item>
+
+    <item id="#0551">
+        <match type="equals">
+            <text content="インポートするファイル" />
+        </match>
+
+        <translate>
+            <en-US content="File to Import" />
+            <zh-CN content="要导入的文件" />
+            <zh-TW content="要匯入的檔案" />
+        </translate>
+    </item>
+
+    <item id="#0552">
+        <match type="equals">
+            <text content="キャンセル" />
+        </match>
+
+        <translate>
+            <en-US content="Cancel" />
+            <zh-CN content="取消" />
+            <zh-TW content="取消" />
+        </translate>
+    </item>
+
+    <item id="#0553">
+        <match type="equals">
+            <text content="トラックがありません" />
+        </match>
+
+        <translate>
+            <en-US content="No tracks" />
+            <zh-CN content="没有轨道" />
+            <zh-TW content="没有轨道" />
+        </translate>
+    </item>
+
+    <item id="#0554">
+        <match type="equals">
+            <text content="ノートがありません" />
+        </match>
+
+        <translate>
+            <en-US content="No notes" />
+            <zh-CN content="没有音符" />
+            <zh-TW content="没有音符" />
+        </translate>
+    </item>
+
+    <item id="#0555">
+        <match type="equals">
+            <text content="ノートが重なっています" />
+        </match>
+
+        <translate>
+            <en-US content="Notes overlap" />
+            <zh-CN content="音符重叠" />
+            <zh-TW content="音符重叠" />
+        </translate>
+    </item>
+
+    <item id="#0556">
+        <match type="contains">
+            <text content="ノート数：" />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Notes: {0}" />
+            <zh-CN content="音符数：{0}" />
+            <zh-TW content="音符數：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0557">
+        <match type="equals">
+            <text content="ファイルの解析に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to parse the file" />
+            <zh-CN content="文件解析失败" />
+            <zh-TW content="檔案解析失敗" />
+        </translate>
+    </item>
+
+    <item id="#0558">
+        <match type="equals">
+            <text content="ファイルを選択してください" />
+        </match>
+
+        <translate>
+            <en-US content="Select a file" />
+            <zh-CN content="请选择文件" />
+            <zh-TW content="請選擇檔案" />
+        </translate>
+    </item>
+
+    <item id="#0559">
+        <match type="equals">
+            <text content="プロジェクトが空です" />
+        </match>
+
+        <translate>
+            <en-US content="The project is empty." />
+            <zh-CN content="项目为空。" />
+            <zh-TW content="專案為空。" />
+        </translate>
+    </item>
+
+    <item id="#0560">
+        <match type="equals">
+            <text content="不明なエラーが発生しました" />
+        </match>
+
+        <translate>
+            <en-US content="An unknown error occurred." />
+            <zh-CN content="发生未知错误。" />
+            <zh-TW content="發生未知错誤。" />
+        </translate>
+    </item>
+
+    <item id="#0561">
+        <match type="equals">
+            <text content="古いプロジェクトファイルです" />
+        </match>
+
+        <translate>
+            <en-US content="This is an old project file." />
+            <zh-CN content="这是旧版项目文件。" />
+            <zh-TW content="這是旧版專案檔案。" />
+        </translate>
+    </item>
+
+    <item id="#0562">
+        <match type="equals">
+            <text content="対応しているファイル形式" />
+        </match>
+
+        <translate>
+            <en-US content="Supported File Formats" />
+            <zh-CN content="支持的文件格式" />
+            <zh-TW content="支援的檔案格式" />
+        </translate>
+    </item>
+
+    <item id="#0563">
+        <match type="equals">
+            <text content="キャラクター並び替え" />
+        </match>
+
+        <translate>
+            <en-US content="Reorder Characters" />
+            <zh-CN content="角色排序" />
+            <zh-TW content="角色排序" />
+        </translate>
+    </item>
+
+    <item id="#0564">
+        <match type="equals">
+            <text content="サンプルボイス一覧" />
+        </match>
+
+        <translate>
+            <en-US content="Sample Voice List" />
+            <zh-CN content="示例语音列表" />
+            <zh-TW content="範例語音列表" />
+        </translate>
+    </item>
+
+    <item id="#0565">
+        <match type="equals">
+            <text content="完了" />
+        </match>
+
+        <translate>
+            <en-US content="Done" />
+            <zh-CN content="完成" />
+            <zh-TW content="完成" />
+        </translate>
+    </item>
+
+    <item id="#0566">
+        <match type="equals">
+            <text content="前のスタイル" />
+        </match>
+
+        <translate>
+            <en-US content="Previous Style" />
+            <zh-CN content="上一个风格" />
+            <zh-TW content="上一個樣式" />
+        </translate>
+    </item>
+
+    <item id="#0567">
+        <match type="equals">
+            <text content="次のスタイル" />
+        </match>
+
+        <translate>
+            <en-US content="Next Style" />
+            <zh-CN content="下一个风格" />
+            <zh-TW content="下一個樣式" />
+        </translate>
+    </item>
+
+    <item id="#0568">
+        <match type="contains">
+            <text content="全" />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="{0} total" />
+            <zh-CN content="共 {0}" />
+            <zh-TW content="共 {0}" />
+        </translate>
+    </item>
+
+    <item id="#0569">
+        <match type="equals">
+            <text content="完了" />
+        </match>
+
+        <translate>
+            <en-US content="Done" />
+            <zh-CN content="完成" />
+            <zh-TW content="完成" />
+        </translate>
+    </item>
+
+    <item id="#0570">
+        <match type="equals">
+            <text content="設定 / デフォルトスタイル・試聴" />
+        </match>
+
+        <translate>
+            <en-US content="Settings / Default Styles &amp; Preview" />
+            <zh-CN content="设置 / 默认风格和试听" />
+            <zh-TW content="設定 / 預設樣式與試聽" />
+        </translate>
+    </item>
+
+    <item id="#0571">
+        <match type="contains">
+            <text content="設定 / デフォルトスタイル・試聴 / " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Settings / Default Style &amp; Preview / {0}" />
+            <zh-CN content="设置 / 默认样式・试听 / {0}" />
+            <zh-TW content="设置 / 默认样式・试听 / {0}" />
+        </translate>
+    </item>
+
+    <item id="#0572">
+        <match type="contains">
+            <text content="プリセット &quot;" />
+            <param name="0" />
+            <text content="&quot; を削除します。" />
+        </match>
+
+        <translate>
+            <en-US content="Delete preset &quot;{0}&quot;." />
+            <zh-CN content="删除预设“{0}”。" />
+            <zh-TW content="刪除预設“{0}”。" />
+        </translate>
+    </item>
+
+    <item id="#0573">
+        <match type="equals">
+            <text content="プリセットの管理" />
+        </match>
+
+        <translate>
+            <en-US content="Manage Presets" />
+            <zh-CN content="管理预设" />
+            <zh-TW content="管理預設" />
+        </translate>
+    </item>
+
+    <item id="#0574">
+        <match type="equals">
+            <text content="プリセットを削除しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Delete the preset?" />
+            <zh-CN content="删除此预设吗？" />
+            <zh-TW content="刪除此预設吗？" />
+        </translate>
+    </item>
+
+    <item id="#0575">
+        <match type="equals">
+            <text content="プリセット一覧" />
+        </match>
+
+        <translate>
+            <en-US content="Preset List" />
+            <zh-CN content="预设列表" />
+            <zh-TW content="預設列表" />
+        </translate>
+    </item>
+
+    <item id="#0576">
+        <match type="equals">
+            <text content="削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete" />
+            <zh-CN content="删除" />
+            <zh-TW content="刪除" />
+        </translate>
+    </item>
+
+    <item id="#0577">
+        <match type="equals">
+            <text content="削除する" />
+        </match>
+
+        <translate>
+            <en-US content="Delete" />
+            <zh-CN content="删除" />
+            <zh-TW content="刪除" />
+        </translate>
+    </item>
+
+    <item id="#0578">
+        <match type="equals">
+            <text content="抑揚" />
+        </match>
+
+        <translate>
+            <en-US content="Intonation" />
+            <zh-CN content="抑扬" />
+            <zh-TW content="抑扬" />
+        </translate>
+    </item>
+
+    <item id="#0579">
+        <match type="equals">
+            <text content="終了無音" />
+        </match>
+
+        <translate>
+            <en-US content="End silence" />
+            <zh-CN content="结束静音" />
+            <zh-TW content="结束静音" />
+        </translate>
+    </item>
+
+    <item id="#0580">
+        <match type="equals">
+            <text content="話速" />
+        </match>
+
+        <translate>
+            <en-US content="Speech speed" />
+            <zh-CN content="语速" />
+            <zh-TW content="语速" />
+        </translate>
+    </item>
+
+    <item id="#0581">
+        <match type="equals">
+            <text content="開始無音" />
+        </match>
+
+        <translate>
+            <en-US content="Start silence" />
+            <zh-CN content="开始静音" />
+            <zh-TW content="開始静音" />
+        </translate>
+    </item>
+
+    <item id="#0582">
+        <match type="equals">
+            <text content="間の長さ" />
+        </match>
+
+        <translate>
+            <en-US content="Pause length" />
+            <zh-CN content="停顿时长" />
+            <zh-TW content="停顿時長" />
+        </translate>
+    </item>
+
+    <item id="#0583">
+        <match type="equals">
+            <text content="音量" />
+        </match>
+
+        <translate>
+            <en-US content="Volume" />
+            <zh-CN content="音量" />
+            <zh-TW content="音量" />
+        </translate>
+    </item>
+
+    <item id="#0584">
+        <match type="equals">
+            <text content="音高" />
+        </match>
+
+        <translate>
+            <en-US content="Pitch" />
+            <zh-CN content="音高" />
+            <zh-TW content="音高" />
+        </translate>
+    </item>
+
+    <item id="#0585">
+        <match type="equals">
+            <text content="プリセット名" />
+        </match>
+
+        <translate>
+            <en-US content="Preset Name" />
+            <zh-CN content="预设名称" />
+            <zh-TW content="预设名称" />
+        </translate>
+    </item>
+
+    <item id="#0586">
+        <match type="equals">
+            <text content="モーフィング" />
+        </match>
+
+        <translate>
+            <en-US content="Morphing" />
+            <zh-CN content="变声混合" />
+            <zh-TW content="变声混合" />
+        </translate>
+    </item>
+
+    <item id="#0587">
+        <match type="equals">
+            <text content="割合" />
+        </match>
+
+        <translate>
+            <en-US content="Ratio" />
+            <zh-CN content="比例" />
+            <zh-TW content="比例" />
+        </translate>
+    </item>
+
+    <item id="#0588">
+        <match type="equals">
+            <text content="エラー１つだけ" />
+        </match>
+
+        <translate>
+            <en-US content="One error only" />
+            <zh-CN content="仅有一个错误" />
+            <zh-TW content="僅有一個錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0589">
+        <match type="equals">
+            <text content="エンジンの応答がありません" />
+        </match>
+
+        <translate>
+            <en-US content="No response from the engine" />
+            <zh-CN content="引擎无响应" />
+            <zh-TW content="引擎沒有回應" />
+        </translate>
+    </item>
+
+    <item id="#0590">
+        <match type="equals">
+            <text content="ディスク容量が不足しています" />
+        </match>
+
+        <translate>
+            <en-US content="Insufficient disk space" />
+            <zh-CN content="磁盘空间不足" />
+            <zh-TW content="磁碟空間不足" />
+        </translate>
+    </item>
+
+    <item id="#0591">
+        <match type="equals">
+            <text content="成功とエラーが混在している" />
+        </match>
+
+        <translate>
+            <en-US content="Successes and errors are mixed" />
+            <zh-CN content="成功和错误混在一起" />
+            <zh-TW content="成功與錯誤混在一起" />
+        </translate>
+    </item>
+
+    <item id="#0592">
+        <match type="equals">
+            <text content="書き込み権限がありません" />
+        </match>
+
+        <translate>
+            <en-US content="No write permission" />
+            <zh-CN content="没有写入权限" />
+            <zh-TW content="沒有寫入權限" />
+        </translate>
+    </item>
+
+    <item id="#0593">
+        <match type="equals">
+            <text content="閉じている" />
+        </match>
+
+        <translate>
+            <en-US content="Closed" />
+            <zh-CN content="已关闭" />
+            <zh-TW content="已關閉" />
+        </translate>
+    </item>
+
+    <item id="#0594">
+        <match type="equals">
+            <text content="閉じる" />
+        </match>
+
+        <translate>
+            <en-US content="Close" />
+            <zh-CN content="关闭" />
+            <zh-TW content="關閉" />
+        </translate>
+    </item>
+
+    <item id="#0595">
+        <match type="equals">
+            <text content="閉じるボタンを押す" />
+        </match>
+
+        <translate>
+            <en-US content="Press the Close button" />
+            <zh-CN content="按下关闭按钮" />
+            <zh-TW content="按下關閉按鈕" />
+        </translate>
+    </item>
+
+    <item id="#0596">
+        <match type="equals">
+            <text content="開いている" />
+        </match>
+
+        <translate>
+            <en-US content="Open" />
+            <zh-CN content="已打开" />
+            <zh-TW content="已開啟" />
+        </translate>
+    </item>
+
+    <item id="#0597">
+        <match type="contains">
+            <text content="詳細：" />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Details: {0}" />
+            <zh-CN content="详情：{0}" />
+            <zh-TW content="詳細：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0598">
+        <match type="equals">
+            <text content="閉じる" />
+        </match>
+
+        <translate>
+            <en-US content="Close" />
+            <zh-CN content="关闭" />
+            <zh-TW content="關閉" />
+        </translate>
+    </item>
+
+    <item id="#0599">
+        <match type="equals">
+            <text content="音声書き出し結果" />
+        </match>
+
+        <translate>
+            <en-US content="Audio Export Results" />
+            <zh-CN content="音频导出结果" />
+            <zh-TW content="音訊匯出結果" />
+        </translate>
+    </item>
+
+    <item id="#0600">
+        <match type="equals">
+            <text content="これはボタンではありません。レイアウトの調整に使います。また、実際には表示されません。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="This is not a button. It is used to adjust the layout and is not actually displayed." />
+            <zh-CN content="这不是按钮，用于调整布局，实际不会显示。" />
+            <zh-TW content="這不是按钮，用于調整布局，实际不会顯示。" />
+        </translate>
+    </item>
+
+    <item id="#0601">
+        <match type="equals">
+            <text content="カスタマイズを終了しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Finish customization?" />
+            <zh-CN content="结束自定义吗？" />
+            <zh-TW content="结束自定义吗？" />
+        </translate>
+    </item>
+
+    <item id="#0602">
+        <match type="equals">
+            <text content="ツールバーのカスタマイズ" />
+        </match>
+
+        <translate>
+            <en-US content="Customize Toolbar" />
+            <zh-CN content="自定义工具栏" />
+            <zh-TW content="自訂工具列" />
+        </translate>
+    </item>
+
+    <item id="#0603">
+        <match type="equals">
+            <text content="ツールバーのカスタマイズを閉じる" />
+        </match>
+
+        <translate>
+            <en-US content="Close Toolbar Customization" />
+            <zh-CN content="关闭工具栏自定义" />
+            <zh-TW content="關閉工具列自訂" />
+        </translate>
+    </item>
+
+    <item id="#0604">
+        <match type="equals">
+            <text content="ツールバーをデフォルトに戻します。" />
+        </match>
+
+        <translate>
+            <en-US content="Restore the toolbar to its default." />
+            <zh-CN content="将工具栏恢复为默认设置。" />
+            <zh-TW content="將工具栏恢复為預設設定。" />
+        </translate>
+    </item>
+
+    <item id="#0605">
+        <match type="equals">
+            <text content="テキストが読み上げられているときに、それを止めます。" />
+        </match>
+
+        <translate>
+            <en-US content="Stop speech when text is being read aloud." />
+            <zh-CN content="文本朗读时停止朗读。" />
+            <zh-TW content="文字朗讀時停止朗讀。" />
+        </translate>
+    </item>
+
+    <item id="#0606">
+        <match type="equals">
+            <text content="テキストファイル(.txt)を読み込みます。" />
+        </match>
+
+        <translate>
+            <en-US content="Import a text file (.txt)." />
+            <zh-CN content="导入文本文件（.txt）。" />
+            <zh-TW content="匯入文字檔案（.txt）。" />
+        </translate>
+    </item>
+
+    <item id="#0607">
+        <match type="equals">
+            <text content="デフォルトに戻しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Restore defaults?" />
+            <zh-CN content="恢复默认设置吗？" />
+            <zh-TW content="恢复預設設定吗？" />
+        </translate>
+    </item>
+
+    <item id="#0608">
+        <match type="equals">
+            <text content="デフォルトに戻す" />
+        </match>
+
+        <translate>
+            <en-US content="Restore Defaults" />
+            <zh-CN content="恢复默认值" />
+            <zh-TW content="還原預設值" />
+        </translate>
+    </item>
+
+    <item id="#0609">
+        <match type="equals">
+            <text content="プロジェクトを上書き保存します。" />
+        </match>
+
+        <translate>
+            <en-US content="Overwrite and save the project." />
+            <zh-CN content="覆盖并保存项目。" />
+            <zh-TW content="覆盖并保存專案。" />
+        </translate>
+    </item>
+
+    <item id="#0610">
+        <match type="equals">
+            <text content="保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save" />
+            <zh-CN content="保存" />
+            <zh-TW content="儲存" />
+        </translate>
+    </item>
+
+    <item id="#0611">
+        <match type="equals">
+            <text content="保存せずに終了すると、カスタマイズは破棄されてリセットされます。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="If you exit without saving, your customization will be discarded and reset." />
+            <zh-CN content="不保存直接退出时，自定义内容将被丢弃并重置。" />
+            <zh-TW content="不保存直接退出時，自定义内容將被丢弃并重置。" />
+        </translate>
+    </item>
+
+    <item id="#0612">
+        <match type="equals">
+            <text content="元に戻した操作をやり直します。" />
+        </match>
+
+        <translate>
+            <en-US content="Redo the undone operation." />
+            <zh-CN content="重做已撤销的操作。" />
+            <zh-TW content="重做已撤销的操作。" />
+        </translate>
+    </item>
+
+    <item id="#0613">
+        <match type="equals">
+            <text content="入力されているすべてのテキストの読み上げを一つの音声ファイルに繋げて書き出します。" />
+        </match>
+
+        <translate>
+            <en-US content="Export all entered text as a single audio file." />
+            <zh-CN content="将所有输入文本的朗读合并导出为一个音频文件。" />
+            <zh-TW content="將所有输入文字的朗讀合併匯出為一個音訊檔案。" />
+        </translate>
+    </item>
+
+    <item id="#0614">
+        <match type="equals">
+            <text content="入力されているすべてのテキストの読み上げを音声ファイルに書き出します。" />
+        </match>
+
+        <translate>
+            <en-US content="Export the speech of all entered text as audio files." />
+            <zh-CN content="将所有输入文本的朗读导出为音频文件。" />
+            <zh-TW content="將所有输入文字的朗讀匯出為音訊檔案。" />
+        </translate>
+    </item>
+
+    <item id="#0615">
+        <match type="equals">
+            <text content="操作を一つ戻します。" />
+        </match>
+
+        <translate>
+            <en-US content="Undo one operation." />
+            <zh-CN content="撤销一步操作。" />
+            <zh-TW content="撤销一步操作。" />
+        </translate>
+    </item>
+
+    <item id="#0616">
+        <match type="equals">
+            <text content="終了する" />
+        </match>
+
+        <translate>
+            <en-US content="Exit" />
+            <zh-CN content="退出" />
+            <zh-TW content="退出" />
+        </translate>
+    </item>
+
+    <item id="#0617">
+        <match type="equals">
+            <text content="選択されているテキストの読み上げを音声ファイルに書き出します。" />
+        </match>
+
+        <translate>
+            <en-US content="Export the selected text as an audio file." />
+            <zh-CN content="将所选文本的朗读导出为音频文件。" />
+            <zh-TW content="將所選文字的朗讀匯出為音訊檔案。" />
+        </translate>
+    </item>
+
+    <item id="#0618">
+        <match type="equals">
+            <text content="選択されているテキスト以降のすべてのテキストを読み上げます。" />
+        </match>
+
+        <translate>
+            <en-US content="Read aloud all text from the selected text onward." />
+            <zh-CN content="朗读从所选文本开始的全部文本。" />
+            <zh-TW content="朗讀从所選文字開始的全部文字。" />
+        </translate>
+    </item>
+
+    <item id="#0619">
+        <match type="equals">
+            <text content="ドラッグでボタンの並びを変更できます。" />
+        </match>
+
+        <translate>
+            <en-US content="Drag to reorder the buttons." />
+            <zh-CN content="拖动即可调整按钮顺序。" />
+            <zh-TW content="拖动即可调整按钮顺序。" />
+        </translate>
+    </item>
+
+    <item id="#0620">
+        <match type="equals">
+            <text content="表示するボタン" />
+        </match>
+
+        <translate>
+            <en-US content="Buttons to Show" />
+            <zh-CN content="显示的按钮" />
+            <zh-TW content="顯示的按鈕" />
+        </translate>
+    </item>
+
+    <item id="#0621">
+        <match type="equals">
+            <text content="- マルチエンジンオフ" />
+        </match>
+
+        <translate>
+            <en-US content="- Multi-engine off" />
+            <zh-CN content="- 多引擎关闭" />
+            <zh-TW content="- 多引擎關閉" />
+        </translate>
+    </item>
+
+    <item id="#0622">
+        <match type="equals">
+            <text content="エンジン" />
+        </match>
+
+        <translate>
+            <en-US content="Engine" />
+            <zh-CN content="引擎" />
+            <zh-TW content="引擎" />
+        </translate>
+    </item>
+
+    <item id="#0623">
+        <match type="equals">
+            <text content="ファイル" />
+        </match>
+
+        <translate>
+            <en-US content="File" />
+            <zh-CN content="文件" />
+            <zh-TW content="檔案" />
+        </translate>
+    </item>
+
+    <item id="#0624">
+        <match type="equals">
+            <text content="ヘルプ" />
+        </match>
+
+        <translate>
+            <en-US content="Help" />
+            <zh-CN content="帮助" />
+            <zh-TW content="帮助" />
+        </translate>
+    </item>
+
+    <item id="#0625">
+        <match type="equals">
+            <text content="編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit" />
+            <zh-CN content="编辑" />
+            <zh-TW content="编辑" />
+        </translate>
+    </item>
+
+    <item id="#0626">
+        <match type="equals">
+            <text content="表示" />
+        </match>
+
+        <translate>
+            <en-US content="View" />
+            <zh-CN content="显示" />
+            <zh-TW content="顯示" />
+        </translate>
+    </item>
+
+    <item id="#0627">
+        <match type="equals">
+            <text content="設定" />
+        </match>
+
+        <translate>
+            <en-US content="Settings" />
+            <zh-CN content="设置" />
+            <zh-TW content="偏好設定" />
+        </translate>
+    </item>
+
+    <item id="#0628">
+        <match type="equals">
+            <text content="最大化" />
+        </match>
+
+        <translate>
+            <en-US content="Maximize" />
+            <zh-CN content="最大化" />
+            <zh-TW content="最大化" />
+        </translate>
+    </item>
+
+    <item id="#0629">
+        <match type="equals">
+            <text content="最小化" />
+        </match>
+
+        <translate>
+            <en-US content="Minimize" />
+            <zh-CN content="最小化" />
+            <zh-TW content="最小化" />
+        </translate>
+    </item>
+
+    <item id="#0630">
+        <match type="equals">
+            <text content="閉じる" />
+        </match>
+
+        <translate>
+            <en-US content="Close" />
+            <zh-CN content="关闭" />
+            <zh-TW content="關閉" />
+        </translate>
+    </item>
+
+    <item id="#0631">
+        <match type="equals">
+            <text content="最前面に固定" />
+        </match>
+
+        <translate>
+            <en-US content="Pin to Top" />
+            <zh-CN content="置于最前" />
+            <zh-TW content="置於最前" />
+        </translate>
+    </item>
+
+    <item id="#0632">
+        <match type="equals">
+            <text content="最前面固定を解除" />
+        </match>
+
+        <translate>
+            <en-US content="Unpin from Top" />
+            <zh-CN content="取消置顶" />
+            <zh-TW content="取消置頂" />
+        </translate>
+    </item>
+
+    <item id="#0633">
+        <match type="equals">
+            <text content="すべて選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select All" />
+            <zh-CN content="全选" />
+            <zh-TW content="全選" />
+        </translate>
+    </item>
+
+    <item id="#0634">
+        <match type="equals">
+            <text content="やり直す" />
+        </match>
+
+        <translate>
+            <en-US content="Redo" />
+            <zh-CN content="重做" />
+            <zh-TW content="重做" />
+        </translate>
+    </item>
+
+    <item id="#0635">
+        <match type="equals">
+            <text content="オプション" />
+        </match>
+
+        <translate>
+            <en-US content="Options" />
+            <zh-CN content="选项" />
+            <zh-TW content="選項" />
+        </translate>
+    </item>
+
+    <item id="#0636">
+        <match type="equals">
+            <text content="キャラクター並び替え・試聴" />
+        </match>
+
+        <translate>
+            <en-US content="Reorder &amp; Preview Characters" />
+            <zh-CN content="角色排序和试听" />
+            <zh-TW content="角色排序與試聽" />
+        </translate>
+    </item>
+
+    <item id="#0637">
+        <match type="equals">
+            <text content="キャラクター＆スタイルの管理" />
+        </match>
+
+        <translate>
+            <en-US content="Manage Characters &amp; Styles" />
+            <zh-CN content="管理角色和风格" />
+            <zh-TW content="管理角色與樣式" />
+        </translate>
+    </item>
+
+    <item id="#0638">
+        <match type="equals">
+            <text content="キー割り当て" />
+        </match>
+
+        <translate>
+            <en-US content="Key Bindings" />
+            <zh-CN content="快捷键绑定" />
+            <zh-TW content="快速鍵指派" />
+        </translate>
+    </item>
+
+    <item id="#0639">
+        <match type="equals">
+            <text content="ツールバーのカスタマイズ" />
+        </match>
+
+        <translate>
+            <en-US content="Customize Toolbar" />
+            <zh-CN content="自定义工具栏" />
+            <zh-TW content="自訂工具列" />
+        </translate>
+    </item>
+
+    <item id="#0640">
+        <match type="equals">
+            <text content="デフォルトスタイル" />
+        </match>
+
+        <translate>
+            <en-US content="Default Style" />
+            <zh-CN content="默认风格" />
+            <zh-TW content="預設樣式" />
+        </translate>
+    </item>
+
+    <item id="#0641">
+        <match type="equals">
+            <text content="プロジェクトの複製を保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project Copy" />
+            <zh-CN content="保存项目副本" />
+            <zh-TW content="儲存專案副本" />
+        </translate>
+    </item>
+
+    <item id="#0642">
+        <match type="equals">
+            <text content="プロジェクトを上書き保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project" />
+            <zh-CN content="覆盖保存项目" />
+            <zh-TW content="覆寫儲存專案" />
+        </translate>
+    </item>
+
+    <item id="#0643">
+        <match type="equals">
+            <text content="プロジェクトを名前を付けて保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project As" />
+            <zh-CN content="将项目另存为" />
+            <zh-TW content="將專案另存為" />
+        </translate>
+    </item>
+
+    <item id="#0644">
+        <match type="equals">
+            <text content="プロジェクトを読み込む" />
+        </match>
+
+        <translate>
+            <en-US content="Load Project" />
+            <zh-CN content="加载项目" />
+            <zh-TW content="載入專案" />
+        </translate>
+    </item>
+</translates>

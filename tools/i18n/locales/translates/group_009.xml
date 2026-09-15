@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
+
+    <item id="#1042">
+        <match type="equals">
+            <text content="閉じる" />
+        </match>
+
+        <translate>
+            <en-US content="Close" />
+            <zh-CN content="关闭" />
+            <zh-TW content="關閉" />
+        </translate>
+    </item>
+
+    <item id="#1043">
+        <match type="equals">
+            <text content="エンジンがインストールされていません。" />
+        </match>
+
+        <translate>
+            <en-US content="No engine is installed." />
+            <zh-CN content="尚未安装引擎。" />
+            <zh-TW content="尚未安裝引擎。" />
+        </translate>
+    </item>
+
+    <item id="#1044">
+        <match type="equals">
+            <text content="エンジンのインストールに失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to install the engine" />
+            <zh-CN content="引擎安装失败" />
+            <zh-TW content="引擎安裝失败" />
+        </translate>
+    </item>
+
+    <item id="#1045">
+        <match type="equals">
+            <text content="エンジンの情報を読み込み中です。" />
+        </match>
+
+        <translate>
+            <en-US content="Loading engine information." />
+            <zh-CN content="正在加载引擎信息。" />
+            <zh-TW content="正在載入引擎資訊。" />
+        </translate>
+    </item>
+
+    <item id="#1046">
+        <match type="equals">
+            <text content="エンジンをインストール中です。" />
+        </match>
+
+        <translate>
+            <en-US content="Installing engine." />
+            <zh-CN content="正在安装引擎。" />
+            <zh-TW content="正在安裝引擎。" />
+        </translate>
+    </item>
+
+    <item id="#1047">
+        <match type="equals">
+            <text content="自動検出" />
+        </match>
+
+        <translate>
+            <en-US content="Automatic detection" />
+            <zh-CN content="自动检测" />
+            <zh-TW content="自動檢測" />
+        </translate>
+    </item>
+
+    <item id="#1048">
+        <match type="contains">
+            <param name="0" />
+            <text content="はCPU版のためGPUモードを利用できません。" />
+        </match>
+
+        <translate>
+            <en-US content="{0} is not available in GPU mode." />
+            <zh-CN content="{0} 不在 GPU 模式下可用。" />
+            <zh-TW content="{0} 不在 GPU 模式下可用。" />
+        </translate>
+    </item>
+
+    <item id="#1049">
+        <match type="equals">
+            <text content="OS標準" />
+        </match>
+
+        <translate>
+            <en-US content="Follow OS" />
+            <zh-CN content="跟随OS" />
+            <zh-TW content="跟隨OS" />
+        </translate>
+    </item>
+</translates>

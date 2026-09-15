@@ -1,0 +1,1593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
+
+
+    <item id="#0001">
+        <match type="contains">
+            <text content="マイグレーション処理が必要です。" />
+            <param name="0" />
+            <text content=" =&gt; " />
+            <param name="1" />
+        </match>
+
+        <translate>
+            <en-US content="Migration processing is required. {0} =&gt; {1}" />
+            <zh-CN content="需要执行迁移处理。{0} =&gt; {1}" />
+            <zh-TW content="需要執行迁移處理。{0} =&gt; {1}" />
+        </translate>
+    </item>
+
+    <item id="#0002">
+        <match type="equals">
+            <text content="設定ファイルが見つかりません" />
+        </match>
+
+        <translate>
+            <en-US content="Configuration file not found" />
+            <zh-CN content="找不到配置文件" />
+            <zh-TW content="找不到設定檔" />
+        </translate>
+    </item>
+
+    <item id="#0003">
+        <match type="contains">
+            <text content="ファイルが見つかりません: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="File not found: {0}" />
+            <zh-CN content="找不到文件：{0}" />
+            <zh-TW content="找不到檔案：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0004">
+        <match type="contains">
+            <text content="フォルダへのアクセス許可がありません。アクセスしようとしたフォルダ名: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Permission to access the folder is not available. Folder name: {0}" />
+            <zh-CN content="没有访问文件夹的权限。尝试访问的文件夹名称：{0}" />
+            <zh-TW content="沒有访問資料夾的權限。尝试访問的資料夾名稱：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0005">
+        <match type="equals">
+            <text content="フォルダへのアクセス許可がありません。ファイルの読み書きのためにアクセス許可が必要です。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Permission to access the folder is not available. Permission is required to read and write files." />
+            <zh-CN content="没有访问文件夹的权限。读写文件需要相应的访问权限。" />
+            <zh-TW content="沒有访問資料夾的權限。讀寫檔案需要相應的访問權限。" />
+        </translate>
+    </item>
+
+    <item id="#0006">
+        <match type="contains">
+            <text content="疑似パスではありません: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="This is not a pseudo path: {0}" />
+            <zh-CN content="不是虚拟路径：{0}" />
+            <zh-TW content="不是虚拟路徑：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0007">
+        <match type="equals">
+            <text content="テキストを繋げて書き出す" />
+        </match>
+
+        <translate>
+            <en-US content="Export text after concatenating it" />
+            <zh-CN content="テキストを繋げて書き出す" />
+            <zh-TW content="テキストを繋げて書き出す" />
+        </translate>
+    </item>
+
+    <item id="#0008">
+        <match type="equals">
+            <text content="テキストを読み込む" />
+        </match>
+
+        <translate>
+            <en-US content="Load text" />
+            <zh-CN content="テキストを読み込む" />
+            <zh-TW content="テキストを読み込む" />
+        </translate>
+    </item>
+
+    <item id="#0009">
+        <match type="equals">
+            <text content="テキスト読み込む" />
+        </match>
+
+        <translate>
+            <en-US content="Load text" />
+            <zh-CN content="テキスト読み込む" />
+            <zh-TW content="テキスト読み込む" />
+        </translate>
+    </item>
+
+    <item id="#0010">
+        <match type="equals">
+            <text content="プロジェクトを読み込む" />
+        </match>
+
+        <translate>
+            <en-US content="Load project" />
+            <zh-CN content="プロジェクトを読み込む" />
+            <zh-TW content="プロジェクトを読み込む" />
+        </translate>
+    </item>
+
+    <item id="#0011">
+        <match type="equals">
+            <text content="プロジェクト読み込み" />
+        </match>
+
+        <translate>
+            <en-US content="Project loading" />
+            <zh-CN content="プロジェクト読み込み" />
+            <zh-TW content="プロジェクト読み込み" />
+        </translate>
+    </item>
+
+    <item id="#0012">
+        <match type="equals">
+            <text content="一つだけ書き出し" />
+        </match>
+
+        <translate>
+            <en-US content="Export only one" />
+            <zh-CN content="一つだけ書き出し" />
+            <zh-TW content="一つだけ書き出し" />
+        </translate>
+    </item>
+
+    <item id="#0013">
+        <match type="equals">
+            <text content="選択音声を書き出し" />
+        </match>
+
+        <translate>
+            <en-US content="Export selected audio" />
+            <zh-CN content="選択音声を書き出し" />
+            <zh-TW content="選択音聲を書き出し" />
+        </translate>
+    </item>
+
+    <item id="#0014">
+        <match type="contains">
+            <param name="0" />
+            <text content="を読み込めませんでした。このエンジンは削除されます。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to load {0}. This engine will be removed." />
+            <zh-CN content="无法加载 {0}。此引擎将被删除。" />
+            <zh-TW content="無法載入 {0}。此引擎將被刪除。" />
+        </translate>
+    </item>
+
+    <item id="#0015">
+        <match type="equals">
+            <text content="エンジンの読み込みに失敗しました。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to load the engine." />
+            <zh-CN content="加载引擎失败。" />
+            <zh-TW content="載入引擎失败。" />
+        </translate>
+    </item>
+
+    <item id="#0016">
+        <match type="contains">
+            <param name="0" />
+            <text content=" の起動に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to start {0}" />
+            <zh-CN content="启动 {0} 失败" />
+            <zh-TW content="啟動 {0} 失败" />
+        </translate>
+    </item>
+
+    <item id="#0017">
+        <match type="contains">
+            <param name="0" />
+            <text content="が異常終了しました。エンジンを再起動してください。" />
+        </match>
+
+        <translate>
+            <en-US content="{0} terminated abnormally. Please restart the engine." />
+            <zh-CN content="{0} 异常退出。请重新启动引擎。" />
+            <zh-TW content="{0} 异常退出。請重新啟動引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0018">
+        <match type="contains">
+            <param name="0" />
+            <text content="番ポートの代わりに利用可能なポートが見つかりませんでした。PCを再起動してください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="No available port was found to replace port {0}. Please restart the PC." />
+            <zh-CN content="没有找到可用端口来替代 {0} 号端口。请重新启动电脑。" />
+            <zh-TW content="沒有找到可用連接埠來替代 {0} 号連接埠。請重新啟動電腦。" />
+        </translate>
+    </item>
+
+    <item id="#0019">
+        <match type="equals">
+            <text content="音声合成エンジンが異常終了しました。エンジンを再起動してください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="The speech synthesis engine terminated abnormally. Please restart the engine." />
+            <zh-CN content="语音合成引擎异常退出。请重新启动引擎。" />
+            <zh-TW content="語音合成引擎异常退出。請重新啟動引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0020">
+        <match type="equals">
+            <text content="保存場所を変更" />
+        </match>
+
+        <translate>
+            <en-US content="Change save location" />
+            <zh-CN content="更改保存位置" />
+            <zh-TW content="更改儲存位置" />
+        </translate>
+    </item>
+
+    <item id="#0021">
+        <match type="contains">
+            <text content="指定された保存先は" />
+            <param name="0" />
+            <text content="により自動的に削除される可能性があります。 他の場所に保存することをおすすめします。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="The specified save destination may be automatically deleted by {0}. Saving to another location is recommended." />
+            <zh-CN content="指定的保存位置可能会被 {0} 自动删除。建议保存到其他位置。" />
+            <zh-TW content="指定的儲存位置可能會被 {0} 自動刪除。建議儲存到其他位置。" />
+        </translate>
+    </item>
+
+    <item id="#0022">
+        <match type="equals">
+            <text content="無視して保存" />
+        </match>
+
+        <translate>
+            <en-US content="Ignore and save" />
+            <zh-CN content="忽略并保存" />
+            <zh-TW content="忽略並儲存" />
+        </translate>
+    </item>
+
+    <item id="#0023">
+        <match type="equals">
+            <text content="警告" />
+        </match>
+
+        <translate>
+            <en-US content="Warning" />
+            <zh-CN content="警告" />
+            <zh-TW content="警告" />
+        </translate>
+    </item>
+
+    <item id="#0024">
+        <match type="equals">
+            <text content="エンジンが見つかりませんでした。" />
+        </match>
+
+        <translate>
+            <en-US content="Engine not found." />
+            <zh-CN content="找不到引擎。" />
+            <zh-TW content="找不到引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0025">
+        <match type="contains">
+            <text content="エンジンの削除に失敗しました。エンジンのフォルダを手動で削除してください。 " />
+            <param name="0" />
+            <text content=" エラー内容: " />
+            <param name="1" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Failed to remove the engine. Please manually delete the engine folder. {0} Error details: {1}" />
+            <zh-CN content="删除引擎失败。请手动删除引擎文件夹。{0} 错误内容：{1}" />
+            <zh-TW content="刪除引擎失败。請手動刪除引擎資料夾。{0} 錯誤內容：{1}" />
+        </translate>
+    </item>
+
+    <item id="#0026">
+        <match type="contains">
+            <text content="エンジンの追加に失敗しました。エンジンのフォルダを手動で移動してください。 " />
+            <param name="0" />
+            <text content=" -&gt; " />
+            <param name="1" />
+            <text content=" エラー内容: " />
+            <param name="2" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Failed to add the engine. Please manually move the engine folder. {0} -&gt; {1} Error details: {2}" />
+            <zh-CN content="添加引擎失败。请手动移动引擎文件夹。{0} -&gt; {1} 错误内容：{2}" />
+            <zh-TW content="新增引擎失败。請手動移動引擎資料夾。{0} -&gt; {1} 錯誤內容：{2}" />
+        </translate>
+    </item>
+
+    <item id="#0027">
+        <match type="equals">
+            <text content="エンジン削除エラー" />
+        </match>
+
+        <translate>
+            <en-US content="Engine removal error" />
+            <zh-CN content="引擎删除错误" />
+            <zh-TW content="引擎刪除錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0028">
+        <match type="equals">
+            <text content="エンジン追加エラー" />
+        </match>
+
+        <translate>
+            <en-US content="Engine addition error" />
+            <zh-CN content="引擎添加错误" />
+            <zh-TW content="引擎新增錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0029">
+        <match type="equals">
+            <text content="エンジンのセットアップ" />
+        </match>
+
+        <translate>
+            <en-US content="Engine setup" />
+            <zh-CN content="引擎设置" />
+            <zh-TW content="引擎設定" />
+        </translate>
+    </item>
+
+    <item id="#0030">
+        <match type="equals">
+            <text content="エンジンの管理" />
+        </match>
+
+        <translate>
+            <en-US content="Engine management" />
+            <zh-CN content="引擎管理" />
+            <zh-TW content="引擎管理" />
+        </translate>
+    </item>
+
+    <item id="#0031">
+        <match type="equals">
+            <text content="フォルダを開く" />
+        </match>
+
+        <translate>
+            <en-US content="Open folder" />
+            <zh-CN content="打开文件夹" />
+            <zh-TW content="打開資料夾" />
+        </translate>
+    </item>
+
+    <item id="#0032">
+        <match type="equals">
+            <text content="マルチエンジンをオンにして再読み込み" />
+        </match>
+
+        <translate>
+            <en-US content="Turn on multi-engine and reload" />
+            <zh-CN content="启用多引擎并重新加载" />
+            <zh-TW content="啟用多引擎並重新載入" />
+        </translate>
+    </item>
+
+    <item id="#0033">
+        <match type="equals">
+            <text content="全てのエンジンを再起動" />
+        </match>
+
+        <translate>
+            <en-US content="Restart all engines" />
+            <zh-CN content="重新启动所有引擎" />
+            <zh-TW content="重新啟動所有引擎" />
+        </translate>
+    </item>
+
+    <item id="#0034">
+        <match type="equals">
+            <text content="再起動" />
+        </match>
+
+        <translate>
+            <en-US content="Restart" />
+            <zh-CN content="重新启动" />
+            <zh-TW content="重新啟動" />
+        </translate>
+    </item>
+
+    <item id="#0035">
+        <match type="equals">
+            <text content="保存の確認に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to confirm saving" />
+            <zh-CN content="确认保存状态失败" />
+            <zh-TW content="確認儲存状態失败" />
+        </translate>
+    </item>
+
+    <item id="#0036">
+        <match type="equals">
+            <text content="未保存のデータがある場合、終了すると失われます。終了しますか？" />
+        </match>
+
+        <translate>
+            <en-US
+                content="There is unsaved data that will be lost when you exit. Do you want to exit?" />
+            <zh-CN content="存在未保存的数据，退出后将会丢失。确定要退出吗？" />
+            <zh-TW content="存在未儲存的數據，退出後將會丢失。確定要退出吗？" />
+        </translate>
+    </item>
+
+    <item id="#0037">
+        <match type="equals">
+            <text content="終了しない" />
+        </match>
+
+        <translate>
+            <en-US content="Don't exit" />
+            <zh-CN content="不退出" />
+            <zh-TW content="不退出" />
+        </translate>
+    </item>
+
+    <item id="#0038">
+        <match type="equals">
+            <text content="終了する" />
+        </match>
+
+        <translate>
+            <en-US content="Exit" />
+            <zh-CN content="退出" />
+            <zh-TW content="退出" />
+        </translate>
+    </item>
+
+    <item id="#0039">
+        <match type="equals">
+            <text content="VVPPファイルを読み込みました。反映には再読み込みが必要です。今すぐ再読み込みしますか？" />
+        </match>
+
+        <translate>
+            <en-US
+                content="VVPP file loaded. Reloading is required for the changes to take effect. Reload now?" />
+            <zh-CN content="已加载 VVPP 文件。需要重新加载才能应用更改。现在重新加载吗？" />
+            <zh-TW content="已載入 VVPP 檔案。需要重新載入才能應用更改。现在重新載入吗？" />
+        </translate>
+    </item>
+
+    <item id="#0040">
+        <match type="contains">
+            <param name="0" />
+            <text content=" をアンインストールできませんでした。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to uninstall {0}." />
+            <zh-CN content="无法卸载 {0}。" />
+            <zh-TW content="無法卸載 {0}。" />
+        </translate>
+    </item>
+
+    <item id="#0041">
+        <match type="contains">
+            <param name="0" />
+            <text content=" をインストールできませんでした。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to install {0}." />
+            <zh-CN content="无法安装 {0}。" />
+            <zh-TW content="無法安裝 {0}。" />
+        </translate>
+    </item>
+
+    <item id="#0042">
+        <match type="equals">
+            <text content="この操作はコンピュータに損害を与える可能性があります。エンジンの配布元が信頼できない場合は追加しないでください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="This operation may harm your computer. Do not add the engine if you do not trust its distributor." />
+            <zh-CN content="此操作可能会损害您的计算机。如果不信任引擎的发布来源，请不要添加。" />
+            <zh-TW content="此操作可能會损害您的计算机。如果不信任引擎的發佈來源，請不要新增。" />
+        </translate>
+    </item>
+
+    <item id="#0043">
+        <match type="equals">
+            <text content="これはデフォルトエンジンではありません。" />
+        </match>
+
+        <translate>
+            <en-US content="This is not the default engine." />
+            <zh-CN content="这不是默认引擎。" />
+            <zh-TW content="這不是預設引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0044">
+        <match type="equals">
+            <text content="インストールエラー" />
+        </match>
+
+        <translate>
+            <en-US content="Installation error" />
+            <zh-CN content="安装错误" />
+            <zh-TW content="安裝錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0045">
+        <match type="equals">
+            <text content="エンジン情報の形式がこのバージョンのVOICEVOXに対応していません。VOICEVOXをアップデートしてください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="The engine information format is not compatible with this version of VOICEVOX. Please update VOICEVOX." />
+            <zh-CN content="引擎信息的格式与此版本的 VOICEVOX 不兼容。请更新 VOICEVOX。" />
+            <zh-TW content="引擎資訊的格式與此版本的 VOICEVOX 不兼容。請更新 VOICEVOX。" />
+        </translate>
+    </item>
+
+    <item id="#0046">
+        <match type="equals">
+            <text content="エンジン追加の確認" />
+        </match>
+
+        <translate>
+            <en-US content="Confirm engine addition" />
+            <zh-CN content="确认添加引擎" />
+            <zh-TW content="確認新增引擎" />
+        </translate>
+    </item>
+
+    <item id="#0047">
+        <match type="equals">
+            <text content="キャンセル" />
+        </match>
+
+        <translate>
+            <en-US content="Cancel" />
+            <zh-CN content="取消" />
+            <zh-TW content="取消" />
+        </translate>
+    </item>
+
+    <item id="#0048">
+        <match type="equals">
+            <text content="デフォルトエンジンと同じエンジンはインストールできません。" />
+        </match>
+
+        <translate>
+            <en-US content="An engine identical to the default engine cannot be installed." />
+            <zh-CN content="无法安装与默认引擎相同的引擎。" />
+            <zh-TW content="無法安裝與預設引擎相同的引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0049">
+        <match type="equals">
+            <text content="ネットワークエラーにより最新のエンジン情報を取得できませんでした。インターネット接続を確認して、再試行してください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Failed to retrieve the latest engine information due to a network error. Check your internet connection and try again." />
+            <zh-CN content="由于网络错误，无法获取最新的引擎信息。请检查互联网连接后重试。" />
+            <zh-TW content="由于網路錯誤，無法獲取最新的引擎資訊。請检查互联網連接後重试。" />
+        </translate>
+    </item>
+
+    <item id="#0050">
+        <match type="equals">
+            <text content="再読み込み" />
+        </match>
+
+        <translate>
+            <en-US content="Reload" />
+            <zh-CN content="重新加载" />
+            <zh-TW content="重新載入" />
+        </translate>
+    </item>
+
+    <item id="#0051">
+        <match type="equals">
+            <text content="再読み込みが必要です" />
+        </match>
+
+        <translate>
+            <en-US content="Reload required" />
+            <zh-CN content="需要重新加载" />
+            <zh-TW content="需要重新載入" />
+        </translate>
+    </item>
+
+    <item id="#0052">
+        <match type="equals">
+            <text content="追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add" />
+            <zh-CN content="添加" />
+            <zh-TW content="新增" />
+        </translate>
+    </item>
+
+    <item id="#0053">
+        <match type="contains">
+            <text content="不正なURLからのIPCメッセージを検出しました。senderUrl: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Detected an IPC message from an invalid URL. senderUrl: {0}" />
+            <zh-CN content="检测到来自非法 URL 的 IPC 消息。senderUrl：{0}" />
+            <zh-TW content="检测到來自非法 URL 的 IPC 消息。senderUrl：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0054">
+        <match type="equals">
+            <text content="いいえ" />
+        </match>
+
+        <translate>
+            <en-US content="No" />
+            <zh-CN content="否" />
+            <zh-TW content="否" />
+        </translate>
+    </item>
+
+    <item id="#0055">
+        <match type="equals">
+            <text content="はい" />
+        </match>
+
+        <translate>
+            <en-US content="Yes" />
+            <zh-CN content="是" />
+            <zh-TW content="是" />
+        </translate>
+    </item>
+
+    <item id="#0056">
+        <match type="equals">
+            <text content="エラー" />
+        </match>
+
+        <translate>
+            <en-US content="Error" />
+            <zh-CN content="错误" />
+            <zh-TW content="錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0057">
+        <match type="contains">
+            <text content="エラー名: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Error name: {0}" />
+            <zh-CN content="错误名称：{0}" />
+            <zh-TW content="錯誤名稱：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0058">
+        <match type="contains">
+            <text content="スタックトレース: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Stack trace: {0}" />
+            <zh-CN content="堆栈跟踪：{0}" />
+            <zh-TW content="堆栈跟踪：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0059">
+        <match type="contains">
+            <text content="ナビゲーションは無効化されています。url: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Navigation has been disabled. url: {0}" />
+            <zh-CN content="导航已被禁用。url：{0}" />
+            <zh-TW content="導航已被禁用。url：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0060">
+        <match type="equals">
+            <text content="マルチエンジン機能が無効です" />
+        </match>
+
+        <translate>
+            <en-US content="Multi-engine functionality is disabled" />
+            <zh-CN content="多引擎功能已禁用" />
+            <zh-TW content="多引擎功能已禁用" />
+        </translate>
+    </item>
+
+    <item id="#0061">
+        <match type="equals">
+            <text content="マルチエンジン機能が無効です。vvppファイルを使用するには設定からマルチエンジン機能を有効にしてください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Multi-engine functionality is disabled. To use VVPP files, enable multi-engine functionality in Settings." />
+            <zh-CN content="多引擎功能已禁用。要使用 vvpp 文件，请在设置中启用多引擎功能。" />
+            <zh-TW content="多引擎功能已禁用。要使用 vvpp 檔案，請在設定中啟用多引擎功能。" />
+        </translate>
+    </item>
+
+    <item id="#0062">
+        <match type="equals">
+            <text content="メインプロセスで原因不明のエラーが発生しました。" />
+        </match>
+
+        <translate>
+            <en-US content="An unknown error occurred in the main process." />
+            <zh-CN content="主进程发生了未知错误。" />
+            <zh-TW content="主進程發生了未知錯誤。" />
+        </translate>
+    </item>
+
+    <item id="#0063">
+        <match type="contains">
+            <text content="メッセージ: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Message: {0}" />
+            <zh-CN content="消息：{0}" />
+            <zh-TW content="消息：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0064">
+        <match type="equals">
+            <text content="何もせず終了" />
+        </match>
+
+        <translate>
+            <en-US content="Exit without doing anything" />
+            <zh-CN content="不做任何操作并退出" />
+            <zh-TW content="不做任何操作並退出" />
+        </translate>
+    </item>
+
+    <item id="#0065">
+        <match type="equals">
+            <text content="設定をリセットして続行" />
+        </match>
+
+        <translate>
+            <en-US content="Reset settings and continue" />
+            <zh-CN content="重置设置并继续" />
+            <zh-TW content="重置設定並继续" />
+        </translate>
+    </item>
+
+    <item id="#0066">
+        <match type="equals">
+            <text content="設定ファイルのフォルダを開いて終了" />
+        </match>
+
+        <translate>
+            <en-US content="Open the configuration file folder and exit" />
+            <zh-CN content="打开配置文件所在文件夹并退出" />
+            <zh-TW content="打開設定檔所在資料夾並退出" />
+        </translate>
+    </item>
+
+    <item id="#0067">
+        <match type="contains">
+            <text content="設定ファイルの読み込みに失敗しました。" />
+            <param name="0" />
+            <text
+                content=" にある config.json の名前を変えることで解決することがあります（ただし設定がすべてリセットされます）。設定ファイルがあるフォルダを開きますか？" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Failed to load the configuration file. Renaming config.json in {0} may solve the problem (but all settings will be reset). Open the folder containing the configuration file?" />
+            <zh-CN
+                content="加载配置文件失败。将 {0} 中的 config.json 重命名可能可以解决问题（但所有设置都会被重置）。要打开配置文件所在的文件夹吗？" />
+            <zh-TW content="載入設定檔失败。將 {0} 中的 config.json 重命名可能可以解决問題（但所有設定都會被重置）。要打開設定檔所在的資料夾吗？" />
+        </translate>
+    </item>
+
+    <item id="#0068">
+        <match type="equals">
+            <text content="設定ファイルの読み込みに失敗しました。設定ファイルの名前を変更するか、設定をリセットしてください。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="Failed to load the configuration file. Rename the configuration file or reset the settings." />
+            <zh-CN content="加载配置文件失败。请重命名配置文件或重置设置。" />
+            <zh-TW content="載入設定檔失败。請重命名設定檔或重置設定。" />
+        </translate>
+    </item>
+
+    <item id="#0069">
+        <match type="equals">
+            <text content="設定ファイルの読み込みエラー" />
+        </match>
+
+        <translate>
+            <en-US content="Configuration file loading error" />
+            <zh-CN content="配置文件加载错误" />
+            <zh-TW content="設定檔載入錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0070">
+        <match type="equals">
+            <text content="設定ファイルの読み込みエラー（開発者向け案内）" />
+        </match>
+
+        <translate>
+            <en-US content="Configuration file loading error (developer guidance)" />
+            <zh-CN content="配置文件加载错误（开发者提示）" />
+            <zh-TW content="設定檔載入錯誤（開發者提示）" />
+        </translate>
+    </item>
+
+    <item id="#0071">
+        <match type="contains">
+            <text content="許可されないリンクです。url: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="This link is not allowed. url: {0}" />
+            <zh-CN content="不允许访问此链接。url：{0}" />
+            <zh-TW content="不允许访問此链接。url：{0}" />
+        </translate>
+    </item>
+
+    <item id="#0072">
+        <match type="equals">
+            <text content="音声合成エンジンエラー" />
+        </match>
+
+        <translate>
+            <en-US content="Speech synthesis engine error" />
+            <zh-CN content="语音合成引擎错误" />
+            <zh-TW content="語音合成引擎錯誤" />
+        </translate>
+    </item>
+
+    <item id="#0073">
+        <match type="equals">
+            <text content="すべて選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select all" />
+            <zh-CN content="全选" />
+            <zh-TW content="全選" />
+        </translate>
+    </item>
+
+    <item id="#0074">
+        <match type="equals">
+            <text content="コピー" />
+        </match>
+
+        <translate>
+            <en-US content="Copy" />
+            <zh-CN content="复制" />
+            <zh-TW content="複製" />
+        </translate>
+    </item>
+
+    <item id="#0075">
+        <match type="equals">
+            <text content="切り取り" />
+        </match>
+
+        <translate>
+            <en-US content="Cut" />
+            <zh-CN content="剪切" />
+            <zh-TW content="剪切" />
+        </translate>
+    </item>
+
+    <item id="#0076">
+        <match type="equals">
+            <text content="貼り付け" />
+        </match>
+
+        <translate>
+            <en-US content="Paste" />
+            <zh-CN content="粘贴" />
+            <zh-TW content="粘贴" />
+        </translate>
+    </item>
+
+    <item id="#0077">
+        <match type="equals">
+            <text content="# 見出し1 文章文章文章 ## 見出し2 文章文章文章" />
+        </match>
+
+        <translate>
+            <en-US content="# Heading 1&#10;Text text text&#10;## Heading 2&#10;Text text text" />
+            <zh-CN content="# 标题1&#10;正文正文正文&#10;## 标题2&#10;正文正文正文" />
+            <zh-TW content="# 標題1&#10;內文內文內文&#10;## 標題2&#10;內文內文內文" />
+        </translate>
+    </item>
+
+    <item id="#0078">
+        <match type="equals">
+            <text content="タイトル" />
+        </match>
+
+        <translate>
+            <en-US content="Title" />
+            <zh-CN content="标题" />
+            <zh-TW content="標題" />
+        </translate>
+    </item>
+
+    <item id="#0079">
+        <match type="equals">
+            <text content="承諾" />
+        </match>
+
+        <translate>
+            <en-US content="Accept" />
+            <zh-CN content="同意" />
+            <zh-TW content="同意" />
+        </translate>
+    </item>
+
+    <item id="#0080">
+        <match type="equals">
+            <text content="承諾ボタンを押す" />
+        </match>
+
+        <translate>
+            <en-US content="Press the Accept button" />
+            <zh-CN content="按下同意按钮" />
+            <zh-TW content="按下同意按鈕" />
+        </translate>
+    </item>
+
+    <item id="#0081">
+        <match type="equals">
+            <text content="拒否" />
+        </match>
+
+        <translate>
+            <en-US content="Decline" />
+            <zh-CN content="拒绝" />
+            <zh-TW content="拒絕" />
+        </translate>
+    </item>
+
+    <item id="#0082">
+        <match type="equals">
+            <text content="拒否ボタンを押す" />
+        </match>
+
+        <translate>
+            <en-US content="Press the Decline button" />
+            <zh-CN content="按下拒绝按钮" />
+            <zh-TW content="按下拒絕按鈕" />
+        </translate>
+    </item>
+
+    <item id="#0083">
+        <match type="equals">
+            <text content="見出し" />
+        </match>
+
+        <translate>
+            <en-US content="Heading" />
+            <zh-CN content="标题" />
+            <zh-TW content="標題" />
+        </translate>
+    </item>
+
+    <item id="#0084">
+        <match type="equals">
+            <text content="閉じている" />
+        </match>
+
+        <translate>
+            <en-US content="Closed" />
+            <zh-CN content="已关闭" />
+            <zh-TW content="已關閉" />
+        </translate>
+    </item>
+
+    <item id="#0085">
+        <match type="equals">
+            <text content="開いている" />
+        </match>
+
+        <translate>
+            <en-US content="Open" />
+            <zh-CN content="已打开" />
+            <zh-TW content="已開啟" />
+        </translate>
+    </item>
+
+    <item id="#0086">
+        <match type="equals">
+            <text content="VOICEVOXはより使いやすいソフトウェアを目指して開発されています。" />
+        </match>
+
+        <translate>
+            <en-US content="VOICEVOX is being developed to make it easier to use." />
+            <zh-CN content="VOICEVOX 致力于打造更加易用的软件。" />
+            <zh-TW content="VOICEVOX 致力於打造更容易使用的軟體。" />
+        </translate>
+    </item>
+
+    <item id="#0087">
+        <match type="equals">
+            <text
+                content="ボタンの配置換えなどの方針を決める際は、各UIの利用率などの情報が重要になります。もしよろしければ、ソフトウェアの利用状況のデータ収集にご協力お願いします。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="When deciding things such as button placement, information such as UI usage rates is important. If you are willing, please help us by allowing us to collect data about software usage." />
+            <zh-CN content="在决定按钮布局等策略时，各 UI 的使用率等信息非常重要。如果您愿意，请协助我们收集软件使用情况数据。" />
+            <zh-TW content="在決定按鈕配置等策略時，各 UI 的使用率等資訊非常重要。如果您願意，請協助我們收集軟體使用情況資料。" />
+        </translate>
+    </item>
+
+    <item id="#0088">
+        <match type="equals">
+            <text content="使いやすさ向上のためのお願い" />
+        </match>
+
+        <translate>
+            <en-US content="Help us make VOICEVOX easier to use" />
+            <zh-CN content="为了让 VOICEVOX 更好用，希望得到您的帮助" />
+            <zh-TW content="為了讓 VOICEVOX 更好用，希望得到您的協助" />
+        </translate>
+    </item>
+
+    <item id="#0089">
+        <match type="equals">
+            <text content="（入力されたテキストデータや音声データの情報は収集しておりませんのでご安心ください。）" />
+        </match>
+
+        <translate>
+            <en-US
+                content="(We do not collect any information about the text or audio data you enter, so please rest assured.)" />
+            <zh-CN content="（我们不会收集您输入的文本数据或音频数据，请放心。）" />
+            <zh-TW content="（我們不會收集您輸入的文字資料或音訊資料，請放心。）" />
+        </translate>
+    </item>
+
+    <item id="#0090">
+        <match type="equals">
+            <text content="利用規約に関するお知らせ" />
+        </match>
+
+        <translate>
+            <en-US content="Terms of Use" />
+            <zh-CN content="使用条款" />
+            <zh-TW content="使用條款" />
+        </translate>
+    </item>
+
+    <item id="#0091">
+        <match type="equals">
+            <text content="多くの人が安心して VOICEVOX を使えるよう、利用規約への同意をお願いします。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="To help everyone use VOICEVOX with confidence, please agree to the Terms of Use." />
+            <zh-CN content="为了让更多人安心使用 VOICEVOX，请同意使用条款。" />
+            <zh-TW content="為了讓更多人安心使用 VOICEVOX，請同意使用條款。" />
+        </translate>
+    </item>
+
+    <item id="#0092">
+        <match type="equals">
+            <text content="エンジンの再起動をお試しください。" />
+        </match>
+
+        <translate>
+            <en-US content="Please try restarting the engine." />
+            <zh-CN content="请尝试重新启动引擎。" />
+            <zh-TW content="請尝试重新啟动引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0093">
+        <match type="equals">
+            <text content="削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete" />
+            <zh-CN content="删除" />
+            <zh-TW content="刪除" />
+        </translate>
+    </item>
+
+    <item id="#0094">
+        <match type="equals">
+            <text content="削除された単語は元に戻せません。" />
+        </match>
+
+        <translate>
+            <en-US content="Deleted words cannot be restored." />
+            <zh-CN content="删除的单词无法恢复。" />
+            <zh-TW content="刪除的单词無法恢复。" />
+        </translate>
+    </item>
+
+    <item id="#0095">
+        <match type="equals">
+            <text content="削除しない" />
+        </match>
+
+        <translate>
+            <en-US content="Keep" />
+            <zh-CN content="不删除" />
+            <zh-TW content="不刪除" />
+        </translate>
+    </item>
+
+    <item id="#0096">
+        <match type="equals">
+            <text content="削除する" />
+        </match>
+
+        <translate>
+            <en-US content="Delete" />
+            <zh-CN content="删除" />
+            <zh-TW content="刪除" />
+        </translate>
+    </item>
+
+    <item id="#0097">
+        <match type="equals">
+            <text content="単語の削除に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to delete the word" />
+            <zh-CN content="删除单词失败" />
+            <zh-TW content="刪除单词失敗" />
+        </translate>
+    </item>
+
+    <item id="#0098">
+        <match type="equals">
+            <text content="単語の変更をキャンセルしますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Cancel changes to the word?" />
+            <zh-CN content="取消对单词的修改吗？" />
+            <zh-TW content="取消对单词的修改吗？" />
+        </translate>
+    </item>
+
+    <item id="#0099">
+        <match type="equals">
+            <text content="単語の更新に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to update the word" />
+            <zh-CN content="更新单词失败" />
+            <zh-TW content="更新单词失敗" />
+        </translate>
+    </item>
+
+    <item id="#0100">
+        <match type="equals">
+            <text content="単語の登録に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to register the word" />
+            <zh-CN content="注册单词失败" />
+            <zh-TW content="注册单词失敗" />
+        </translate>
+    </item>
+
+    <item id="#0101">
+        <match type="equals">
+            <text content="単語の追加を破棄しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Discard adding the word?" />
+            <zh-CN content="放弃添加单词吗？" />
+            <zh-TW content="放弃添加单词吗？" />
+        </translate>
+    </item>
+
+    <item id="#0102">
+        <match type="equals">
+            <text content="単語を削除しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Delete the word?" />
+            <zh-CN content="删除这个单词吗？" />
+            <zh-TW content="刪除這個单词吗？" />
+        </translate>
+    </item>
+
+    <item id="#0103">
+        <match type="equals">
+            <text content="単語を追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add Word" />
+            <zh-CN content="添加词语" />
+            <zh-TW content="新增詞語" />
+        </translate>
+    </item>
+
+    <item id="#0104">
+        <match type="equals">
+            <text content="単語一覧" />
+        </match>
+
+        <translate>
+            <en-US content="Word List" />
+            <zh-CN content="词语列表" />
+            <zh-TW content="詞語列表" />
+        </translate>
+    </item>
+
+    <item id="#0105">
+        <match type="equals">
+            <text content="同期中・・・" />
+        </match>
+
+        <translate>
+            <en-US content="Syncing..." />
+            <zh-CN content="同步中……" />
+            <zh-TW content="同步中……" />
+        </translate>
+    </item>
+
+    <item id="#0106">
+        <match type="equals">
+            <text content="変更を破棄すると、単語の追加はリセットされます。" />
+        </match>
+
+        <translate>
+            <en-US content="Discarding changes will reset the added word." />
+            <zh-CN content="放弃更改后，新增单词将被重置。" />
+            <zh-TW content="放弃更改后，新增单词將被重置。" />
+        </translate>
+    </item>
+
+    <item id="#0107">
+        <match type="equals">
+            <text content="変更を破棄すると、現在の編集内容はリセットされます。" />
+        </match>
+
+        <translate>
+            <en-US content="Discarding changes will reset the current edits." />
+            <zh-CN content="放弃更改后，当前编辑内容将被重置。" />
+            <zh-TW content="放弃更改后，当前编辑内容將被重置。" />
+        </translate>
+    </item>
+
+    <item id="#0108">
+        <match type="equals">
+            <text content="破棄しない" />
+        </match>
+
+        <translate>
+            <en-US content="Keep changes" />
+            <zh-CN content="不放弃" />
+            <zh-TW content="不放弃" />
+        </translate>
+    </item>
+
+    <item id="#0109">
+        <match type="equals">
+            <text content="破棄する" />
+        </match>
+
+        <translate>
+            <en-US content="Discard" />
+            <zh-CN content="丢弃" />
+            <zh-TW content="捨棄" />
+        </translate>
+    </item>
+
+    <item id="#0110">
+        <match type="equals">
+            <text content="読み方＆アクセント辞書" />
+        </match>
+
+        <translate>
+            <en-US content="Pronunciation &amp; Accent Dictionary" />
+            <zh-CN content="读音和重音词典" />
+            <zh-TW content="讀音與重音辭典" />
+        </translate>
+    </item>
+
+    <item id="#0111">
+        <match type="equals">
+            <text content="読み込み中・・・" />
+        </match>
+
+        <translate>
+            <en-US content="Loading..." />
+            <zh-CN content="加载中……" />
+            <zh-TW content="載入中……" />
+        </translate>
+    </item>
+
+    <item id="#0112">
+        <match type="equals">
+            <text content="辞書の取得に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to retrieve the dictionary" />
+            <zh-CN content="获取词典失败" />
+            <zh-TW content="获取词典失敗" />
+        </translate>
+    </item>
+
+    <item id="#0113">
+        <match type="equals">
+            <text content="辞書の同期に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to sync the dictionary" />
+            <zh-CN content="同步词典失败" />
+            <zh-TW content="同步词典失敗" />
+        </translate>
+    </item>
+
+    <item id="#0114">
+        <match type="equals">
+            <text content="辞書を閉じる" />
+        </match>
+
+        <translate>
+            <en-US content="Close Dictionary" />
+            <zh-CN content="关闭词典" />
+            <zh-TW content="關閉辭典" />
+        </translate>
+    </item>
+
+    <item id="#0115">
+        <match type="equals">
+            <text content="追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add" />
+            <zh-CN content="添加" />
+            <zh-TW content="新增" />
+        </translate>
+    </item>
+
+    <item id="#0116">
+        <match type="equals">
+            <text content="エンジンの再起動をお試しください。" />
+        </match>
+
+        <translate>
+            <en-US content="Please try restarting the engine." />
+            <zh-CN content="请尝试重新启动引擎。" />
+            <zh-TW content="請尝试重新啟动引擎。" />
+        </translate>
+    </item>
+
+    <item id="#0117">
+        <match type="equals">
+            <text content="ガ'" />
+        </match>
+
+        <translate>
+            <en-US content="ガ'" />
+            <zh-CN content="ガ'" />
+            <zh-TW content="ガ'" />
+        </translate>
+    </item>
+
+    <item id="#0118">
+        <match type="equals">
+            <text content="単語" />
+        </match>
+
+        <translate>
+            <en-US content="Word" />
+            <zh-CN content="词语" />
+            <zh-TW content="詞語" />
+        </translate>
+    </item>
+
+    <item id="#0119">
+        <match type="equals">
+            <text content="単語の編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit Word" />
+            <zh-CN content="编辑词语" />
+            <zh-TW content="編輯詞語" />
+        </translate>
+    </item>
+
+    <item id="#0120">
+        <match type="equals">
+            <text content="単語は全角と半角は区別しません。" />
+        </match>
+
+        <translate>
+            <en-US content="Full-width and half-width characters are treated the same." />
+            <zh-CN content="全角和半角字符不作区分。" />
+            <zh-TW content="全形與半形字元不作區分。" />
+        </translate>
+    </item>
+
+    <item id="#0121">
+        <match type="equals">
+            <text content="単語は必須です。" />
+        </match>
+
+        <translate>
+            <en-US content="A word is required." />
+            <zh-CN content="词语为必填项。" />
+            <zh-TW content="詞語為必填項。" />
+        </translate>
+    </item>
+
+    <item id="#0122">
+        <match type="equals">
+            <text content="新しい単語の追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add New Word" />
+            <zh-CN content="添加新词" />
+            <zh-TW content="新增詞語" />
+        </translate>
+    </item>
+
+    <item id="#0123">
+        <match type="equals">
+            <text content="生成に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to generate." />
+            <zh-CN content="生成失败。" />
+            <zh-TW content="生成失敗。" />
+        </translate>
+    </item>
+
+    <item id="#0124">
+        <match type="equals">
+            <text content="読み" />
+        </match>
+
+        <translate>
+            <en-US content="Reading" />
+            <zh-CN content="读法" />
+            <zh-TW content="讀法" />
+        </translate>
+    </item>
+
+    <item id="#0125">
+        <match type="equals">
+            <text content="読みは必須です。" />
+        </match>
+
+        <translate>
+            <en-US content="A reading is required." />
+            <zh-CN content="读法为必填项。" />
+            <zh-TW content="讀法為必填項。" />
+        </translate>
+    </item>
+
+    <item id="#0126">
+        <match type="equals">
+            <text content="ひらがなとカタカナ以外の文字が入力されています。" />
+        </match>
+
+        <translate>
+            <en-US content="Characters other than hiragana and katakana have been entered." />
+            <zh-CN content="输入了平假名和片假名以外的字符。" />
+            <zh-TW content="输入了平假名和片假名以外的字符。" />
+        </translate>
+    </item>
+
+    <item id="#0127">
+        <match type="equals">
+            <text content="アクセント調整" />
+        </match>
+
+        <translate>
+            <en-US content="Accent Adjustment" />
+            <zh-CN content="重音调整" />
+            <zh-TW content="重音調整" />
+        </translate>
+    </item>
+
+    <item id="#0128">
+        <match type="equals">
+            <text content="語尾のアクセントを考慮するため、「が」が自動で挿入されます。" />
+        </match>
+
+        <translate>
+            <en-US
+                content="&quot;が&quot; is automatically inserted to account for the accent at the end of a word." />
+            <zh-CN content="为了考虑词尾重音，会自动插入“が”。" />
+            <zh-TW content="为了考虑词尾重音，会自动插入“が”。" />
+        </translate>
+    </item>
+</translates>

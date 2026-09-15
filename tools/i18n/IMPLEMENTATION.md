@@ -1,12 +1,11 @@
 # Runtime i18n implementation
 
 ## Scope
-The localization system translates rendered UI at runtime for English (`en-US`), Simplified Chinese
-(`zh-CN`), Traditional Chinese (`zh-TW`), Hong Kong Traditional Chinese (`zh-HK`), and Korean (`ko-KR`).
+The localization system translates rendered UI at runtime for Japanese (`ja-JP`), English (`en-US`), Simplified Chinese (`zh-CN`), and Traditional Chinese (`zh-TW`).
 
 ## Design
 - Vite does not parse or rewrite Vue/TypeScript source for localization.
-- `tools/i18n/locales/defines.xml` is parsed once during Vite configuration and converted into compact regex rules.
+- `tools/i18n/locales/translates/group_*.xml` are discovered and parsed during Vite configuration, then merged into compact regex rules.
 - The virtual runtime module embeds those rules into the renderer bundle.
 - After the Vue app mounts, `tools/i18n/runtime.ts` uses `requestAnimationFrame` as the scheduling mechanism.
 - A `MutationObserver` marks the DOM dirty; translation work is then performed in the next animation frame.
