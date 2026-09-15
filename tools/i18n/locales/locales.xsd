@@ -7,7 +7,7 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="languages" type="languagesType" />
-                <xs:element name="folder" type="folderType" maxOccurs="unbounded" />
+                <xs:element name="translates" type="translatesType" />
             </xs:sequence>
         </xs:complexType>
     </xs:element>
@@ -57,29 +57,22 @@
         </xs:sequence>
     </xs:complexType>
 
-    <!-- 文件夹节点（递归定义） -->
-    <xs:complexType name="folderType">
+    <!-- 扁平翻译列表 -->
+    <xs:complexType name="translatesType">
         <xs:sequence>
-            <xs:element name="folder" type="folderType" minOccurs="0" maxOccurs="unbounded" />
-            <xs:element name="file" type="fileType" minOccurs="0" maxOccurs="unbounded" />
-            <xs:element name="item" type="itemType" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element name="translate" type="translateItemType" maxOccurs="unbounded" />
         </xs:sequence>
-        <xs:attribute name="name" type="xs:string" use="required" />
     </xs:complexType>
 
-    <!-- 文件节点 -->
-    <xs:complexType name="fileType">
-        <xs:sequence>
-            <xs:element name="item" type="itemType" maxOccurs="unbounded" />
-        </xs:sequence>
-        <xs:attribute name="name" type="xs:string" use="required" />
-    </xs:complexType>
-
-    <!-- 翻译条目节点 -->
-    <xs:complexType name="itemType">
+    <!-- 单个翻译节点；结构与原 item 一致，但去掉路径/文件名以及内部 translate 包装节点 -->
+    <xs:complexType name="translateItemType">
         <xs:sequence>
             <xs:element name="match" type="matchType" />
-            <xs:element name="translate" type="translateType" />
+            <xs:element name="en-US" type="contentValueType" minOccurs="0" />
+            <xs:element name="zh-CN" type="contentValueType" minOccurs="0" />
+            <xs:element name="zh-TW" type="contentValueType" minOccurs="0" />
+            <xs:element name="zh-HK" type="contentValueType" minOccurs="0" />
+            <xs:element name="ko-KR" type="contentValueType" minOccurs="0" />
         </xs:sequence>
         <xs:attribute name="id" type="xs:string" use="required" />
     </xs:complexType>
@@ -106,17 +99,6 @@
                 </xs:restriction>
             </xs:simpleType>
         </xs:attribute>
-    </xs:complexType>
-
-    <!-- 翻译目标列表节点 -->
-    <xs:complexType name="translateType">
-        <xs:all>
-            <xs:element name="en-US" type="contentValueType" minOccurs="0" />
-            <xs:element name="zh-CN" type="contentValueType" minOccurs="0" />
-            <xs:element name="zh-TW" type="contentValueType" minOccurs="0" />
-            <xs:element name="zh-HK" type="contentValueType" minOccurs="0" />
-            <xs:element name="ko-KR" type="contentValueType" minOccurs="0" />
-        </xs:all>
     </xs:complexType>
 
     <!-- 翻译文本属性节点 -->
