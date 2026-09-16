@@ -75,6 +75,8 @@ const interpolate = (
       originalName: string | undefined,
       translatedName: string | undefined,
     ) => {
+      if (translatedName == undefined) return match;
+
       if (originalName != undefined) {
         return (
           resolveGroupValue(originalGroups, originalName, parameters) ?? match
@@ -86,6 +88,7 @@ const interpolate = (
         translatedName,
         parameters,
       );
+
       return (
         translated ??
         resolveGroupValue(originalGroups, translatedName, parameters) ??

@@ -10,6 +10,7 @@ const rules: TranslationRules = {
       flags: "u",
       parameters: [],
       translation: "Settings",
+      translatableParameters: [false],
     },
     {
       type: "contains",
@@ -17,6 +18,7 @@ const rules: TranslationRules = {
       flags: "gu",
       parameters: ["0"],
       translation: "File not found: {0}",
+      translatableParameters: [false],
     },
     {
       type: "contains",
@@ -24,6 +26,7 @@ const rules: TranslationRules = {
       flags: "gu",
       parameters: ["0"],
       translation: "Engine: {0}!",
+      translatableParameters: [false],
     },
   ],
   "zh-CN": [],
