@@ -45,24 +45,54 @@ const IGNORED_TAG_NAMES = new Set([
 
 const LOCALE_STORAGE_KEY = "voicevox.locale";
 
+const resolveGroupValue = (
+  groups: Record<string, string | undefined>,
+  name: string,
+  parameters: readonly string[],
+): string | undefined => {
+  const byName = groups[name];
+  if (byName != undefined) return byName;
+
+  const numericIndex = Number(name);
+  if (Number.isInteger(numericIndex)) {
+    const parameterName = parameters[numericIndex];
+    return parameterName ? groups[parameterName] : undefined;
+  }
+
+  return undefined;
+};
+
 const interpolate = (
   template: string,
-  groups: Record<string, string | undefined>,
-  fallbackParameters: readonly string[],
+  originalGroups: Record<string, string | undefined>,
+  parameters: readonly string[],
+  translatedGroups: Record<string, string | undefined>,
 ): string =>
-  template.replace(/\{([^{}]+)\}/gu, (match, name: string) => {
-    const byName = groups[name];
-    if (byName != undefined) return byName;
+  template.replace(
+    /\{([^{}]+)\}|\[([^\[\]]+)\]/gu,
+    (
+      match,
+      originalName: string | undefined,
+      translatedName: string | undefined,
+    ) => {
+      if (originalName != undefined) {
+        return (
+          resolveGroupValue(originalGroups, originalName, parameters) ?? match
+        );
+      }
 
-    const numericIndex = Number(name);
-    if (Number.isInteger(numericIndex)) {
-      const parameterName = fallbackParameters[numericIndex];
-      const byIndex = parameterName ? groups[parameterName] : undefined;
-      if (byIndex != undefined) return byIndex;
-    }
-
-    return match;
-  });
+      const translated = resolveGroupValue(
+        translatedGroups,
+        translatedName,
+        parameters,
+      );
+      return (
+        translated ??
+        resolveGroupValue(originalGroups, translatedName, parameters) ??
+        match
+      );
+    },
+  );
 
 const getPreferredSystemLanguages = (): readonly string[] => {
   if (globalThis.__VOICEVOX_PREFERRED_SYSTEM_LANGUAGES__?.length) {
@@ -171,6 +201,26 @@ const getRuleGroups = (
   return groups;
 };
 
+const getTranslatedGroups = (
+  groups: Record<string, string | undefined>,
+  rule: TranslationRule,
+  translateGroup: (source: string) => string,
+): Record<string, string | undefined> => {
+  const translated: Record<string, string | undefined> = {};
+
+  for (let index = 0; index < rule.parameters.length; index += 1) {
+    const parameterName = rule.parameters[index];
+    const source = groups[parameterName];
+
+    translated[parameterName] =
+      source != undefined && rule.translatableParameters[index]
+        ? translateGroup(source)
+        : undefined;
+  }
+
+  return translated;
+};
+
 type CompiledTranslationRule = TranslationRule & {
   regex: RegExp;
 };
@@ -183,15 +233,27 @@ const compileRules = (
     regex: new RegExp(rule.pattern, rule.flags),
   }));
 
-const applyRule = (value: string, rule: CompiledTranslationRule): string => {
-  const regex = rule.regex;
+const applyRule = (
+  value: string,
+  rule: CompiledTranslationRule,
+  translateGroup: (source: string) => string,
+): string => {
+  // Clone the RegExp so a nested second-pass translation cannot interfere with
+  // the parent `replace()` iteration when the rule uses the global flag.
+  const regex = new RegExp(rule.regex.source, rule.regex.flags);
 
   if (rule.type === "equals") {
     const match = regex.exec(value);
     if (!match) return value;
 
     const groups = getRuleGroups(match, rule);
-    const translated = interpolate(rule.translation, groups, rule.parameters);
+    const translatedGroups = getTranslatedGroups(groups, rule, translateGroup);
+    const translated = interpolate(
+      rule.translation,
+      groups,
+      rule.parameters,
+      translatedGroups,
+    );
     return `${groups.lead ?? ""}${translated}${groups.trail ?? ""}`;
   }
 
@@ -210,30 +272,44 @@ const applyRule = (value: string, rule: CompiledTranslationRule): string => {
       normalizedGroups[parameterName] = normalizedGroups[`p${index}`];
     }
 
-    const translated = interpolate(
+    const translatedGroups = getTranslatedGroups(
+      normalizedGroups,
+      rule,
+      translateGroup,
+    );
+    return interpolate(
       rule.translation,
       normalizedGroups,
       rule.parameters,
+      translatedGroups,
     );
-    return translated;
   });
 };
+
+const MAX_SECOND_TRANSLATION_DEPTH = 4;
 
 const translateValue = (
   value: string,
   rules: readonly CompiledTranslationRule[],
-): string => {
-  let result = value;
+  depth = 0,
+): { from: string; to: string; changed: boolean } => {
+  let result = value.trim();
+  const last = result;
+
+  const translateGroup = (source: string): string => {
+    if (depth >= MAX_SECOND_TRANSLATION_DEPTH) return source;
+
+    const translated = translateValue(source, rules, depth + 1);
+    return translated.changed ? translated.to : source;
+  };
 
   for (const rule of rules) {
-    const last = result;
-
-    result = applyRule(result, rule);
+    result = applyRule(result, rule, translateGroup);
 
     if (last !== result) break;
   }
 
-  return result;
+  return { from: last, to: result, changed: last !== result };
 };
 
 export function createRuntime(rules: TranslationRules) {
@@ -252,6 +328,7 @@ export function createRuntime(rules: TranslationRules) {
     running: false,
     frameId: 0 as number | undefined,
     dirty: true,
+    clickCallback: () => runtime.scan(),
     observer: undefined as MutationObserver | undefined,
     start(): void {
       console.log("call i18n:start");
@@ -268,6 +345,7 @@ export function createRuntime(rules: TranslationRules) {
       }
       runtime.observer?.disconnect();
       runtime.observer = undefined;
+      window.removeEventListener("click", runtime.clickCallback);
     },
     schedule(): void {
       console.log("call i18n:schedule");
@@ -279,6 +357,7 @@ export function createRuntime(rules: TranslationRules) {
           runtime.dirty = false;
         }
       });
+      window.addEventListener("click", runtime.clickCallback);
     },
     scan(): void {
       console.log("call i18n:scan");
@@ -305,16 +384,17 @@ export function createRuntime(rules: TranslationRules) {
           continue;
         }
 
-        const textNode = node as Text & { ok?: boolean };
+        const textNode = node as Text & { ok?: boolean; lastData?: string };
         const parent = textNode.parentElement;
         if (!parent || hasIgnoredTextAncestor(parent)) continue;
 
-        if (textNode.ok) continue;
+        if (textNode.ok && textNode.lastData === textNode.data) continue;
 
         const translated = translateValue(textNode.data, activeRules);
 
-        if (translated !== textNode.data) {
-          textNode.data = translated;
+        if (translated.changed) {
+          textNode.data = textNode.data.replace(translated.from, translated.to);
+          textNode.lastData = textNode.data;
         }
 
         textNode.ok = true;
@@ -327,8 +407,12 @@ export function createRuntime(rules: TranslationRules) {
           if (current == null) continue;
 
           const translated = translateValue(current, activeRules);
-          if (translated !== current) {
-            element.setAttribute(name, translated);
+
+          if (translated.changed) {
+            element.setAttribute(
+              name,
+              current.replace(translated.from, translated.to),
+            );
           }
         }
       }
@@ -355,10 +439,8 @@ export function createRuntime(rules: TranslationRules) {
     },
     text(_scope: string, source: string): string {
       if (runtime.locale === "ja-JP") return source;
-      return translateValue(
-        source,
-        runtime.compiledRules[runtime.locale] ?? [],
-      );
+      return translateValue(source, runtime.compiledRules[runtime.locale] ?? [])
+        .to;
     },
     template(
       _scope: string,

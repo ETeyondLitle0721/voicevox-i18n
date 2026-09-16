@@ -12,3 +12,6 @@ The locale still comes from `voicevox.locale`, with Electron preferred-system-la
 
 The extraction/audit tools remain separate build tooling for finding translation coverage; they do not participate
 in runtime translation.
+
+
+`<param translate="allow">` enables second-pass translation of that capture. Use `{0}` for the original captured text and `[0]` for the translated capture; `[0]` falls back to the original when no second-pass rule matches.

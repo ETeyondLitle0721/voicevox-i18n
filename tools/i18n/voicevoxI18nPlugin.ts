@@ -17,6 +17,7 @@ export type TranslationRule = {
   pattern: string;
   flags: "u" | "gu";
   parameters: readonly string[];
+  translatableParameters: readonly boolean[];
   translation: string;
 };
 
@@ -78,10 +79,15 @@ const getXmlAttribute = (
 
 function buildRule(
   type: "equals" | "contains",
-  parts: readonly { kind: "text" | "param"; value: string }[],
+  parts: readonly {
+    kind: "text" | "param";
+    value: string;
+    translate?: boolean;
+  }[],
   translation: string,
 ): TranslationRule {
   const parameters: string[] = [];
+  const translatableParameters: boolean[] = [];
   const parameterGroups = new Map<string, string>();
   let parameterIndex = 0;
   let sourcePattern = "";
@@ -104,6 +110,7 @@ function buildRule(
     parameterIndex += 1;
     parameterGroups.set(part.value, groupName);
     parameters.push(part.value);
+    translatableParameters.push(part.translate === true);
 
     const isLastPart = index === parts.length - 1;
     sourcePattern += `(?<${groupName}>${isLastPart ? "[\\s\\S]*" : "[\\s\\S]*?"})`;
@@ -119,6 +126,7 @@ function buildRule(
     pattern,
     flags: type === "equals" ? "u" : "gu",
     parameters,
+    translatableParameters,
     translation,
   };
 }
@@ -144,7 +152,11 @@ function parseTranslationRules(xml: string): TranslationRules {
     }
 
     const type = matchSection[1] as "equals" | "contains";
-    const parts: Array<{ kind: "text" | "param"; value: string }> = [];
+    const parts: Array<{
+      kind: "text" | "param";
+      value: string;
+      translate?: boolean;
+    }> = [];
 
     for (const partMatch of matchSection[2].matchAll(XML_PART_RE)) {
       const kind = partMatch[1] as "text" | "param";
@@ -153,7 +165,11 @@ function parseTranslationRules(xml: string): TranslationRules {
         kind === "text" ? "content" : "name",
       );
       if (content == undefined) continue;
-      parts.push({ kind, value: content });
+
+      const translate =
+        kind === "param" &&
+        getXmlAttribute(partMatch[2], "translate") === "allow";
+      parts.push({ kind, value: content, translate });
     }
 
     if (parts.length === 0) {

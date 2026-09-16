@@ -1033,4 +1033,73 @@
         </translate>
     </item>
 
+    <item id="#0785">
+        <match type="equals">
+            <text content="表示する" />
+        </match>
+
+        <translate>
+            <en-US content="Display" />
+            <zh-CN content="显示" />
+            <zh-TW content="顯示" />
+            <ko-KR content="보이기" />
+        </translate>
+    </item>
+
+    <item id="#0786">
+        <match type="equals">
+            <text content="表示しない" />
+        </match>
+
+        <translate>
+            <en-US content="Do not display" />
+            <zh-CN content="不显示" />
+            <zh-TW content="不顯示" />
+            <ko-KR content="보이지 않기" />
+        </translate>
+    </item>
+
+    <item id="#0787">
+        <match type="equals">
+            <text content="データ準備中・・・" />
+        </match>
+
+        <translate>
+            <en-US content="Data preparation..." />
+            <zh-CN content="数据准备中..." />
+            <zh-TW content="數據準備中..." />
+            <ko-KR content="데이터 준비 중..." />
+        </translate>
+    </item>
+
+    <item id="#0788">
+        <match type="contains">
+            <text content="設定 / " />
+            <param name="0" translate="allow"/>
+        </match>
+
+        <translate>
+            <en-US content="Settings / [0]" />
+            <zh-CN content="设置 / [0]" />
+            <zh-TW content="設定 / [0]" />
+            <ko-KR content="설정 / [0]" />
+        </translate>
+    </item>
+
+    <item id="#0789">
+        <match type="contains">
+            <text content="ヘルプ / " />
+            <param name="0" translate="allow" />
+            <text content=" / " />
+            <param name="1" translate="allow" />
+        </match>
+
+        <translate>
+            <en-US content="Help / {0} / [1]" />
+            <zh-CN content="帮助 / {0} / [1]" />
+            <zh-TW content="說明 / {0} / [1]" />
+            <ko-KR content="도움말 / {0} / [1]" />
+        </translate>
+    </item>
+
 </translates>

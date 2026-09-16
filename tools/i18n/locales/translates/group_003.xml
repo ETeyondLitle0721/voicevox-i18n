@@ -396,15 +396,14 @@
     <item id="#0159">
         <match type="contains">
             <text content="ヘルプ / " />
-            <param name="0" />
-            <param name="1" />
+            <param name="0" translate="allow" />
         </match>
 
         <translate>
-            <en-US content="Help / {0}{1}" />
-            <zh-CN content="帮助 / {0}{1}" />
-            <zh-TW content="說明 / {0}{1}" />
-            <ko-KR content="도움말 / {0}{1}" />
+            <en-US content="Help / [0]" />
+            <zh-CN content="帮助 / [0]" />
+            <zh-TW content="說明 / [0]" />
+            <ko-KR content="도움말 / [0]" />
         </translate>
     </item>
 

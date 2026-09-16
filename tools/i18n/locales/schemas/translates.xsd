@@ -45,6 +45,17 @@
             <xs:element name="param">
                 <xs:complexType>
                     <xs:attribute name="name" type="xs:string" use="required" />
+                    <xs:attribute name="translate" default="disallow" use="optional">
+                        <xs:annotation>
+                            <xs:documentation>When set to allow, the captured parameter can be referenced by [0] / [1] style placeholders after a second-pass translation; {0} / {1} keep the original capture.</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                                <xs:enumeration value="allow" />
+                                <xs:enumeration value="disallow" />
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
                 </xs:complexType>
             </xs:element>
         </xs:choice>
