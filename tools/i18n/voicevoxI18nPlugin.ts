@@ -39,11 +39,13 @@ const VIRTUAL_RUNTIME_PUBLIC_ID = "virtual:voicevox-i18n/runtime";
 const VIRTUAL_RUNTIME_ID = `\0${VIRTUAL_RUNTIME_PUBLIC_ID}`;
 
 const XML_ITEM_RE = /<item\b[^>]*>([\s\S]*?)<\/item>/gu;
-const XML_MATCH_RE = /<match\b[^>]*\btype="(equals|contains)"[^>]*>([\s\S]*?)<\/match>/u;
+const XML_MATCH_RE =
+  /<match\b[^>]*\btype="(equals|contains)"[^>]*>([\s\S]*?)<\/match>/u;
 const XML_TRANSLATE_RE = /<translate\b[^>]*>([\s\S]*?)<\/translate>/u;
 const XML_PART_RE = /<(text|param)\b([^>]*)\/>/gu;
 const XML_ATTR_RE = /([:\w-]+)="([\s\S]*?)"/gu;
-const XML_TRANSLATION_RE = /<(en-US|zh-CN|zh-TW|zh-HK|ko-KR|vi-VN|th-TH)\b[^>]*\bcontent="([\s\S]*?)"[^>]*\/>/gu;
+const XML_TRANSLATION_RE =
+  /<(en-US|zh-CN|zh-TW|zh-HK|ko-KR|vi-VN|th-TH)\b[^>]*\bcontent="([\s\S]*?)"[^>]*\/>/gu;
 
 const normalizeXmlEntity = (value: string): string =>
   value
@@ -62,7 +64,10 @@ const normalizeXmlEntity = (value: string): string =>
 const escapeRegExp = (value: string): string =>
   value.replace(/[\\^$.*+?()[\]{}|]/gu, "\\$&");
 
-const getXmlAttribute = (attributes: string, name: string): string | undefined => {
+const getXmlAttribute = (
+  attributes: string,
+  name: string,
+): string | undefined => {
   for (const match of attributes.matchAll(XML_ATTR_RE)) {
     if (match[1] === name) {
       return normalizeXmlEntity(match[2]);
@@ -143,10 +148,11 @@ function parseTranslationRules(xml: string): TranslationRules {
 
     for (const partMatch of matchSection[2].matchAll(XML_PART_RE)) {
       const kind = partMatch[1] as "text" | "param";
-      const content = getXmlAttribute(partMatch[2],
+      const content = getXmlAttribute(
+        partMatch[2],
         kind === "text" ? "content" : "name",
       );
-      if (content === undefined) continue;
+      if (content == undefined) continue;
       parts.push({ kind, value: content });
     }
 
@@ -154,13 +160,12 @@ function parseTranslationRules(xml: string): TranslationRules {
       continue;
     }
 
-    for (const translationMatch of translateSection[1].matchAll(XML_TRANSLATION_RE)) {
+    for (const translationMatch of translateSection[1].matchAll(
+      XML_TRANSLATION_RE,
+    )) {
       const locale = translationMatch[1] as Exclude<Locale, "ja-JP">;
       const translation = normalizeXmlEntity(translationMatch[2]);
-      rules[locale] = [
-        ...rules[locale],
-        buildRule(type, parts, translation),
-      ];
+      rules[locale] = [...rules[locale], buildRule(type, parts, translation)];
     }
   }
 
@@ -212,20 +217,21 @@ function loadTranslationRules(files: readonly string[]): TranslationRules {
 
 function discoverLocaleXmlFiles(localeDir: string): string[] {
   if (!fs.existsSync(localeDir)) {
-    throw new Error(`voicevox-i18n: locale directory was not found: ${localeDir}`);
+    throw new Error(
+      `voicevox-i18n: locale directory was not found: ${localeDir}`,
+    );
   }
 
   const files = fs
     .readdirSync(localeDir, { withFileTypes: true })
-    .filter(
-      (entry) =>
-        entry.isFile() && /^group_\d{3}\.xml$/u.test(entry.name),
-    )
+    .filter((entry) => entry.isFile() && /^group_\d{3}\.xml$/u.test(entry.name))
     .map((entry) => path.join(localeDir, entry.name))
     .sort((a, b) => a.localeCompare(b, "en"));
 
   if (files.length === 0) {
-    throw new Error(`voicevox-i18n: no group_*.xml files were found in ${localeDir}`);
+    throw new Error(
+      `voicevox-i18n: no group_*.xml files were found in ${localeDir}`,
+    );
   }
 
   return files;
@@ -262,7 +268,10 @@ function injectRuntimePlugin(code: string): string {
   );
 }
 
-function createVirtualRuntimeModule(rules: TranslationRules, runtimeFile: string): string {
+function createVirtualRuntimeModule(
+  rules: TranslationRules,
+  runtimeFile: string,
+): string {
   return [
     `import { installVoicevoxI18nRuntime, createRuntime } from ${escapeJsString(runtimeFile)};`,
     `const rules = ${JSON.stringify(rules)};`,

@@ -1,109 +1,843 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
-    <item id="#1042">
+    <item id="#0513">
         <match type="equals">
-            <text content="閉じる" />
+            <text content="キー割り当て" />
         </match>
 
         <translate>
-            <en-US content="Close" />
-            <zh-CN content="关闭" />
-            <zh-TW content="關閉" />
-            <ko-KR content="닫기" />
+            <en-US content="Key Bindings" />
+            <zh-CN content="快捷键绑定" />
+            <zh-TW content="快速鍵指派" />
+            <ko-KR content="키 배정" />
         </translate>
     </item>
 
-    <item id="#1043">
+    <item id="#0514">
         <match type="equals">
-            <text content="エンジンがインストールされていません。" />
+            <text content="最近使ったプロジェクト" />
         </match>
 
         <translate>
-            <en-US content="No engine is installed." />
-            <zh-CN content="尚未安装引擎。" />
-            <zh-TW content="尚未安裝引擎。" />
-            <ko-KR content="엔진이 설치되어 있지 않습니다." />
+            <en-US content="Recent Projects" />
+            <zh-CN content="最近使用的项目" />
+            <zh-TW content="最近使用的專案" />
+            <ko-KR content="최근 프로젝트" />
         </translate>
     </item>
 
-    <item id="#1044">
+    <item id="#0515">
         <match type="equals">
-            <text content="エンジンのインストールに失敗しました" />
+            <text content="最近使ったプロジェクトはありません" />
         </match>
 
         <translate>
-            <en-US content="Failed to install the engine" />
-            <zh-CN content="引擎安装失败" />
-            <zh-TW content="引擎安裝失敗" />
-            <ko-KR content="엔진 설치에 실패했습니다." />
+            <en-US content="No recent projects" />
+            <zh-CN content="没有最近使用的项目" />
+            <zh-TW content="沒有最近使用的專案" />
+            <ko-KR content="최근 프로젝트가 없습니다." />
         </translate>
     </item>
 
-    <item id="#1045">
+    <item id="#0516">
         <match type="equals">
-            <text content="エンジンの情報を読み込み中です。" />
+            <text content="OKボタンを押す：編集" />
         </match>
 
         <translate>
-            <en-US content="Loading engine information." />
-            <zh-CN content="正在加载引擎信息。" />
-            <zh-TW content="正在載入引擎資訊。" />
-            <ko-KR content="불러오는 중 엔진 정보." />
+            <en-US content="Click the OK button: Edit" />
+            <zh-CN content="点击“确定”按钮：编辑" />
+            <zh-TW content="點击“確定”按鈕：編輯" />
+            <ko-KR content="확인 버튼 누르기: 편집" />
         </translate>
     </item>
 
-    <item id="#1046">
+    <item id="#0517">
         <match type="equals">
-            <text content="エンジンをインストール中です。" />
+            <text content="OKボタンを押す：追加" />
         </match>
 
         <translate>
-            <en-US content="Installing engine." />
-            <zh-CN content="正在安装引擎。" />
-            <zh-TW content="正在安裝引擎。" />
-            <ko-KR content="Installing 엔진." />
+            <en-US content="Click the OK button: Add" />
+            <zh-CN content="点击“确定”按钮：添加" />
+            <zh-TW content="點击“確定”按鈕：添加" />
+            <ko-KR content="확인 버튼 누르기: 추가" />
         </translate>
     </item>
 
-    <item id="#1047">
+    <item id="#0518">
         <match type="equals">
-            <text content="自動検出" />
+            <text content="テンポ" />
         </match>
 
         <translate>
-            <en-US content="Automatic detection" />
-            <zh-CN content="自动检测" />
-            <zh-TW content="自動檢測" />
-            <ko-KR content="자동 감지" />
+            <en-US content="Tempo" />
+            <zh-CN content="速度" />
+            <zh-TW content="速度" />
+            <ko-KR content="템포" />
         </translate>
     </item>
 
-    <item id="#1048">
+    <item id="#0519">
+        <match type="equals">
+            <text content="開いている：変更" />
+        </match>
+
+        <translate>
+            <en-US content="Open: Edit" />
+            <zh-CN content="打开：编辑" />
+            <zh-TW content="打開：編輯" />
+            <ko-KR content="열기: 편집" />
+        </translate>
+    </item>
+
+    <item id="#0520">
+        <match type="equals">
+            <text content="開いている：追加" />
+        </match>
+
+        <translate>
+            <en-US content="Open: Add" />
+            <zh-CN content="打开：添加" />
+            <zh-TW content="打開：添加" />
+            <ko-KR content="열기: 추가" />
+        </translate>
+    </item>
+
+    <item id="#0521">
+        <match type="equals">
+            <text content="拍子の分子" />
+        </match>
+
+        <translate>
+            <en-US content="Time signature numerator" />
+            <zh-CN content="拍号分子" />
+            <zh-TW content="拍号分子" />
+            <ko-KR content="박자표 numerator" />
+        </translate>
+    </item>
+
+    <item id="#0522">
+        <match type="equals">
+            <text content="拍子の分母" />
+        </match>
+
+        <translate>
+            <en-US content="Time signature denominator" />
+            <zh-CN content="拍号分母" />
+            <zh-TW content="拍号分母" />
+            <ko-KR content="박자표 denominator" />
+        </translate>
+    </item>
+
+    <item id="#0523">
+        <match type="equals">
+            <text content="拍子変化" />
+        </match>
+
+        <translate>
+            <en-US content="Time-signature change" />
+            <zh-CN content="拍号变化" />
+            <zh-TW content="拍号變化" />
+            <ko-KR content="시간-signature 변경" />
+        </translate>
+    </item>
+
+    <item id="#0524">
+        <match type="equals">
+            <text content="ループ有効" />
+        </match>
+
+        <translate>
+            <en-US content="Loop on" />
+            <zh-CN content="启用循环" />
+            <zh-TW content="啟用循环" />
+            <ko-KR content="루프 켜기" />
+        </translate>
+    </item>
+
+    <item id="#0525">
+        <match type="equals">
+            <text content="ループ無効" />
+        </match>
+
+        <translate>
+            <en-US content="Loop off" />
+            <zh-CN content="禁用循环" />
+            <zh-TW content="禁用循环" />
+            <ko-KR content="루프 끄기" />
+        </translate>
+    </item>
+
+    <item id="#0526">
+        <match type="equals">
+            <text content="ループ範囲を作成" />
+        </match>
+
+        <translate>
+            <en-US content="Create loop range" />
+            <zh-CN content="创建循环范围" />
+            <zh-TW content="创建循环范围" />
+            <ko-KR content="루프 구간 만들기" />
+        </translate>
+    </item>
+
+    <item id="#0527">
+        <match type="equals">
+            <text content="ループ範囲を削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete loop range" />
+            <zh-CN content="删除循环范围" />
+            <zh-TW content="刪除循环范围" />
+            <ko-KR content="루프 구간 삭제" />
+        </translate>
+    </item>
+
+    <item id="#0528">
+        <match type="equals">
+            <text content="ドラッグ中(有効)" />
+        </match>
+
+        <translate>
+            <en-US content="Dragging (enabled)" />
+            <zh-CN content="正在拖动（启用）" />
+            <zh-TW content="正在拖動（啟用）" />
+            <ko-KR content="Dragging (enabled)" />
+        </translate>
+    </item>
+
+    <item id="#0529">
+        <match type="equals">
+            <text content="ドラッグ中(無効)" />
+        </match>
+
+        <translate>
+            <en-US content="Dragging (disabled)" />
+            <zh-CN content="正在拖动（禁用）" />
+            <zh-TW content="正在拖動（禁用）" />
+            <ko-KR content="Dragging (disabled)" />
+        </translate>
+    </item>
+
+    <item id="#0530">
+        <match type="equals">
+            <text content="無効状態" />
+        </match>
+
+        <translate>
+            <en-US content="Disabled state" />
+            <zh-CN content="禁用状态" />
+            <zh-TW content="禁用狀態" />
+            <ko-KR content="Disabled state" />
+        </translate>
+    </item>
+
+    <item id="#0531">
+        <match type="equals">
+            <text content="短いループ範囲" />
+        </match>
+
+        <translate>
+            <en-US content="Short loop range" />
+            <zh-CN content="短循环范围" />
+            <zh-TW content="短循环范围" />
+            <ko-KR content="Short loop 범위" />
+        </translate>
+    </item>
+
+    <item id="#0532">
+        <match type="equals">
+            <text content="空の状態" />
+        </match>
+
+        <translate>
+            <en-US content="Empty state" />
+            <zh-CN content="空状态" />
+            <zh-TW content="空狀態" />
+            <ko-KR content="Empty state" />
+        </translate>
+    </item>
+
+    <item id="#0533">
+        <match type="equals">
+            <text content="長いループ範囲" />
+        </match>
+
+        <translate>
+            <en-US content="Long loop range" />
+            <zh-CN content="长循环范围" />
+            <zh-TW content="長循环范围" />
+            <ko-KR content="Long loop 범위" />
+        </translate>
+    </item>
+
+    <item id="#0534">
+        <match type="equals">
+            <text content="テンポ変化を削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete tempo change" />
+            <zh-CN content="删除速度变化" />
+            <zh-TW content="刪除速度變化" />
+            <ko-KR content="삭제 tempo 변경" />
+        </translate>
+    </item>
+
+    <item id="#0535">
+        <match type="equals">
+            <text content="テンポ変化を挿入" />
+        </match>
+
+        <translate>
+            <en-US content="Insert tempo change" />
+            <zh-CN content="插入速度变化" />
+            <zh-TW content="插入速度變化" />
+            <ko-KR content="Insert tempo 변경" />
+        </translate>
+    </item>
+
+    <item id="#0536">
+        <match type="equals">
+            <text content="テンポ変化を編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit tempo change" />
+            <zh-CN content="编辑速度变化" />
+            <zh-TW content="編輯速度變化" />
+            <ko-KR content="편집 tempo 변경" />
+        </translate>
+    </item>
+
+    <item id="#0537">
+        <match type="contains">
+            <text content="テンポ：" />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Tempo: {0}" />
+            <zh-CN content="速度：{0}" />
+            <zh-TW content="速度：{0}" />
+            <ko-KR content="템포: {0}" />
+        </translate>
+    </item>
+
+    <item id="#0538">
+        <match type="equals">
+            <text content="拍子変化を削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete time-signature change" />
+            <zh-CN content="删除拍号变化" />
+            <zh-TW content="刪除拍号變化" />
+            <ko-KR content="삭제 시간-signature 변경" />
+        </translate>
+    </item>
+
+    <item id="#0539">
+        <match type="equals">
+            <text content="拍子変化を挿入" />
+        </match>
+
+        <translate>
+            <en-US content="Insert time-signature change" />
+            <zh-CN content="插入拍号变化" />
+            <zh-TW content="插入拍号變化" />
+            <ko-KR content="Insert 시간-signature 변경" />
+        </translate>
+    </item>
+
+    <item id="#0540">
+        <match type="equals">
+            <text content="拍子変化を編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit time-signature change" />
+            <zh-CN content="编辑拍号变化" />
+            <zh-TW content="編輯拍号變化" />
+            <ko-KR content="편집 시간-signature 변경" />
+        </translate>
+    </item>
+
+    <item id="#0541">
+        <match type="contains">
+            <text content="拍子：" />
+            <param name="0" />
+            <text content="/" />
+            <param name="1" />
+        </match>
+
+        <translate>
+            <en-US content="Time signature: {0}/{1}" />
+            <zh-CN content="拍号：{0}/{1}" />
+            <zh-TW content="拍号：{0}/{1}" />
+            <ko-KR content="박자표: {0}/{1}" />
+        </translate>
+    </item>
+
+    <item id="#0542">
+        <match type="equals">
+            <text content="スクロール" />
+        </match>
+
+        <translate>
+            <en-US content="Scroll" />
+            <zh-CN content="滚动" />
+            <zh-TW content="滚動" />
+            <ko-KR content="스크롤" />
+        </translate>
+    </item>
+
+    <item id="#0543">
+        <match type="equals">
+            <text content="テンポ変化" />
+        </match>
+
+        <translate>
+            <en-US content="Tempo change" />
+            <zh-CN content="速度变化" />
+            <zh-TW content="速度變化" />
+            <ko-KR content="템포 변경" />
+        </translate>
+    </item>
+
+    <item id="#0544">
+        <match type="equals">
+            <text content="再生位置を移動" />
+        </match>
+
+        <translate>
+            <en-US content="Move playhead position" />
+            <zh-CN content="移动播放位置" />
+            <zh-TW content="移動播放位置" />
+            <ko-KR content="이동 playhead position" />
+        </translate>
+    </item>
+
+    <item id="#0545">
+        <match type="equals">
+            <text content="密集表示" />
+        </match>
+
+        <translate>
+            <en-US content="Dense display" />
+            <zh-CN content="密集显示" />
+            <zh-TW content="密集顯示" />
+            <ko-KR content="Dense display" />
+        </translate>
+    </item>
+
+    <item id="#0546">
+        <match type="equals">
+            <text content="ボリューム削除ツール" />
+        </match>
+
+        <translate>
+            <en-US content="Volume eraser tool" />
+            <zh-CN content="音量删除工具" />
+            <zh-TW content="音量刪除工具" />
+            <ko-KR content="볼륨 지우개 도구" />
+        </translate>
+    </item>
+
+    <item id="#0547">
+        <match type="equals">
+            <text content="ボリューム描画ツール" />
+        </match>
+
+        <translate>
+            <en-US content="Volume drawing tool" />
+            <zh-CN content="音量绘制工具" />
+            <zh-TW content="音量绘制工具" />
+            <ko-KR content="볼륨 그리기 도구" />
+        </translate>
+    </item>
+
+    <item id="#0548">
+        <match type="equals">
+            <text content="すべてのソロを解除" />
+        </match>
+
+        <translate>
+            <en-US content="Clear all solos" />
+            <zh-CN content="取消所有独奏" />
+            <zh-TW content="取消所有独奏" />
+            <ko-KR content="모든 솔로 해제" />
+        </translate>
+    </item>
+
+    <item id="#0549">
+        <match type="equals">
+            <text content="トラックを削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete track" />
+            <zh-CN content="删除轨道" />
+            <zh-TW content="刪除轨道" />
+            <ko-KR content="삭제 트랙" />
+        </translate>
+    </item>
+
+    <item id="#0550">
+        <match type="equals">
+            <text content="トラックを追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add track" />
+            <zh-CN content="添加轨道" />
+            <zh-TW content="添加轨道" />
+            <ko-KR content="추가 트랙" />
+        </translate>
+    </item>
+
+    <item id="#0551">
+        <match type="equals">
+            <text content="トラック一覧" />
+        </match>
+
+        <translate>
+            <en-US content="Track list" />
+            <zh-CN content="轨道列表" />
+            <zh-TW content="轨道清單" />
+            <ko-KR content="트랙 목록" />
+        </translate>
+    </item>
+
+    <item id="#0552">
+        <match type="equals">
+            <text content="ソロ" />
+        </match>
+
+        <translate>
+            <en-US content="Solo" />
+            <zh-CN content="独奏" />
+            <zh-TW content="独奏" />
+            <ko-KR content="솔로" />
+        </translate>
+    </item>
+
+    <item id="#0553">
+        <match type="equals">
+            <text content="ミュート" />
+        </match>
+
+        <translate>
+            <en-US content="Mute" />
+            <zh-CN content="静音" />
+            <zh-TW content="静音" />
+            <ko-KR content="음소거" />
+        </translate>
+    </item>
+
+    <item id="#0554">
+        <match type="equals">
+            <text content="（不明なキャラクター）" />
+        </match>
+
+        <translate>
+            <en-US content="(Unknown character)" />
+            <zh-CN content="（未知角色）" />
+            <zh-TW content="（未知角色）" />
+            <ko-KR content="(알 수 없는 캐릭터)" />
+        </translate>
+    </item>
+
+    <item id="#0555">
+        <match type="equals">
+            <text content="未設定" />
+        </match>
+
+        <translate>
+            <en-US content="Not set" />
+            <zh-CN content="未设置" />
+            <zh-TW content="未設定" />
+            <ko-KR content="아님 set" />
+        </translate>
+    </item>
+
+    <item id="#0556">
+        <match type="equals">
+            <text content="歌い方" />
+        </match>
+
+        <translate>
+            <en-US content="Singing style" />
+            <zh-CN content="演唱方式" />
+            <zh-TW content="演唱方式" />
+            <ko-KR content="노래 스타일" />
+        </translate>
+    </item>
+
+    <item id="#0557">
+        <match type="equals">
+            <text content="声量" />
+        </match>
+
+        <translate>
+            <en-US content="Volume" />
+            <zh-CN content="音量" />
+            <zh-TW content="音量" />
+            <ko-KR content="볼륨" />
+        </translate>
+    </item>
+
+    <item id="#0558">
+        <match type="equals">
+            <text content="音域" />
+        </match>
+
+        <translate>
+            <en-US content="Range" />
+            <zh-CN content="音域" />
+            <zh-TW content="音域" />
+            <ko-KR content="음역" />
+        </translate>
+    </item>
+
+    <item id="#0559">
+        <match type="equals">
+            <text content="ノート編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit note" />
+            <zh-CN content="编辑音符" />
+            <zh-TW content="編輯音符" />
+            <ko-KR content="편집 노트" />
+        </translate>
+    </item>
+
+    <item id="#0560">
+        <match type="equals">
+            <text content="ピッチ編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit pitch" />
+            <zh-CN content="编辑音高" />
+            <zh-TW content="編輯音高" />
+            <ko-KR content="음높이 편집" />
+        </translate>
+    </item>
+
+    <item id="#0561">
         <match type="contains">
             <param name="0" />
-            <text content="はCPU版のためGPUモードを利用できません。" />
+            <text content="+クリックで消去" />
         </match>
 
         <translate>
-            <en-US content="{0} is not available in GPU mode." />
-            <zh-CN content="{0} 为 CPU 版本，无法使用 GPU 模式。" />
-            <zh-TW content="{0} 為 CPU 版本，無法使用 GPU 模式。" />
-            <ko-KR content="{0}은(는) CPU 버전이므로 GPU 모드를 사용할 수 없습니다." />
+            <en-US content="{0}+Click to Clear" />
+            <zh-CN content="{0}+点击清除" />
+            <zh-TW content="{0}+點擊清除" />
+            <ko-KR content="{0}+클릭으로 지우기" />
         </translate>
     </item>
 
-    <item id="#1049">
+    <item id="#0562">
         <match type="equals">
-            <text content="OS標準" />
+            <text content="拍子" />
         </match>
 
         <translate>
-            <en-US content="Follow OS" />
-            <zh-CN content="跟随OS" />
-            <zh-TW content="跟隨OS" />
-            <ko-KR content="OS 설정 따르기" />
+            <en-US content="Time signature" />
+            <zh-CN content="拍号" />
+            <zh-TW content="拍号" />
+            <ko-KR content="박자표" />
         </translate>
     </item>
+
+    <item id="#0563">
+        <match type="equals">
+            <text content="スナップ" />
+        </match>
+
+        <translate>
+            <en-US content="Snap" />
+            <zh-CN content="吸附" />
+            <zh-TW content="吸附" />
+            <ko-KR content="스냅" />
+        </translate>
+    </item>
+
+    <item id="#0564">
+        <match type="equals">
+            <text content="読み込み中" />
+        </match>
+
+        <translate>
+            <en-US content="Loading" />
+            <zh-CN content="加载中" />
+            <zh-TW content="載入中" />
+            <ko-KR content="불러오는 중" />
+        </translate>
+    </item>
+
+    <item id="#0565">
+        <match type="equals">
+            <text content="ボリューム編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit volume" />
+            <zh-CN content="编辑音量" />
+            <zh-TW content="編輯音量" />
+            <ko-KR content="볼륨 편집" />
+        </translate>
+    </item>
+
+    <item id="#0566">
+        <match type="equals">
+            <text content="音素タイミング編集" />
+        </match>
+
+        <translate>
+            <en-US content="Edit phoneme timing" />
+            <zh-CN content="编辑音素时序" />
+            <zh-TW content="編輯音素時序" />
+            <ko-KR content="음소 길이 편집" />
+        </translate>
+    </item>
+
+    <item id="#0567">
+        <match type="equals">
+            <text content="分:秒" />
+        </match>
+
+        <translate>
+            <en-US content="Minutes:Seconds" />
+            <zh-CN content="分:秒" />
+            <zh-TW content="分:秒" />
+            <ko-KR content="Minutes:Seconds" />
+        </translate>
+    </item>
+
+    <item id="#0568">
+        <match type="equals">
+            <text content="小節.拍" />
+        </match>
+
+        <translate>
+            <en-US content="Measure.Beat" />
+            <zh-CN content="小节.拍" />
+            <zh-TW content="小节.拍" />
+            <ko-KR content="Measure.Beat" />
+        </translate>
+    </item>
+
+    <item id="#0569">
+        <match type="equals">
+            <text content="クオンタイズ" />
+        </match>
+
+        <translate>
+            <en-US content="Quantize" />
+            <zh-CN content="量化" />
+            <zh-TW content="量化" />
+            <ko-KR content="퀀타이즈" />
+        </translate>
+    </item>
+
+    <item id="#0570">
+        <match type="equals">
+            <text content="シーケンサ" />
+        </match>
+
+        <translate>
+            <en-US content="Sequencer" />
+            <zh-CN content="音序器" />
+            <zh-TW content="音序器" />
+            <ko-KR content="시퀀서" />
+        </translate>
+    </item>
+
+    <item id="#0571">
+        <match type="equals">
+            <text content="ピッチ削除ツール" />
+        </match>
+
+        <translate>
+            <en-US content="Pitch eraser tool" />
+            <zh-CN content="音高删除工具" />
+            <zh-TW content="音高刪除工具" />
+            <ko-KR content="음높이 지우개 도구" />
+        </translate>
+    </item>
+
+    <item id="#0572">
+        <match type="equals">
+            <text content="ピッチ描画ツール" />
+        </match>
+
+        <translate>
+            <en-US content="Pitch drawing tool" />
+            <zh-CN content="音高绘制工具" />
+            <zh-TW content="音高绘制工具" />
+            <ko-KR content="음높이 그리기 도구" />
+        </translate>
+    </item>
+
+    <item id="#0573">
+        <match type="equals">
+            <text content="編集優先ツール" />
+        </match>
+
+        <translate>
+            <en-US content="Edit-priority tool" />
+            <zh-CN content="编辑优先工具" />
+            <zh-TW content="編輯優先工具" />
+            <ko-KR content="편집-priority tool" />
+        </translate>
+    </item>
+
+    <item id="#0574">
+        <match type="equals">
+            <text content="選択優先ツール" />
+        </match>
+
+        <translate>
+            <en-US content="Selection-priority tool" />
+            <zh-CN content="选择优先工具" />
+            <zh-TW content="選擇優先工具" />
+            <ko-KR content="선택ion-priority tool" />
+        </translate>
+    </item>
+
+    <item id="#0575">
+        <match type="equals">
+            <text content="フレーズが生成できません。歌詞は日本語1文字までです。" />
+        </match>
+
+        <translate>
+            <en-US content="Unable to generate the phrase. Lyrics must be at most one Japanese character." />
+            <zh-CN content="无法生成乐句。歌词最多只能包含一个日文字符。" />
+            <zh-TW content="無法生成乐句。歌詞最多只能包含一個日文字元。" />
+            <ko-KR content="구를 생성할 수 없습니다. 가사는 일본어 한 글자까지 입력할 수 있습니다." />
+        </translate>
+    </item>
+
+    <item id="#0576">
+        <match type="equals">
+            <text content="パラメータ" />
+        </match>
+
+        <translate>
+            <en-US content="Parameters" />
+            <zh-CN content="参数" />
+            <zh-TW content="參數" />
+            <ko-KR content="매개변수" />
+        </translate>
+    </item>
+
 </translates>

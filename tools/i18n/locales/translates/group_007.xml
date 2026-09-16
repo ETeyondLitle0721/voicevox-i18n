@@ -1,1211 +1,257 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
 
-    <item id="#0774">
+    <item id="#0385">
         <match type="equals">
-            <text content="削除" />
+            <text content="音声ライブラリのインストール・アンインストール" />
         </match>
 
         <translate>
-            <en-US content="Delete" />
-            <zh-CN content="删除" />
-            <zh-TW content="刪除" />
-            <ko-KR content="삭제" />
+            <en-US content="Install / uninstall voice libraries" />
+            <zh-CN content="安装 / 卸载声音库" />
+            <zh-TW content="安裝 / 卸載語音庫" />
+            <ko-KR content="Install / uninstall 음성 libraries" />
         </translate>
     </item>
 
-    <item id="#0775">
+    <item id="#0386">
         <match type="equals">
-            <text content="イ段とウ段以外の音は無声化できません" />
+            <text content="音素ごとの長さの調整" />
         </match>
 
         <translate>
-            <en-US content="Only sounds in the i and u rows can be devoiced" />
-            <zh-CN content="只有 i 段和 u 段的音可以清化" />
-            <zh-TW content="只有 i 段和 u 段的音可以清音化" />
-            <ko-KR content="이단과 우단 이외의 음은 무성화할 수 없습니다." />
+            <en-US content="Adjust duration per phoneme" />
+            <zh-CN content="调整每个音素的时长" />
+            <zh-TW content="調整每個音素的時長" />
+            <ko-KR content="Adjust duration per 음소" />
         </translate>
     </item>
 
-    <item id="#0776">
+    <item id="#0387">
         <match type="equals">
-            <text content="読みの変更はアクセント項目でのみ、" />
+            <text content="（組み込み）" />
         </match>
 
         <translate>
-            <en-US content="Reading can only be changed in the Accent section," />
-            <zh-CN content="只能在重音项目中修改读法，" />
-            <zh-TW content="只能在重音項目中修改讀法，" />
-            <ko-KR content="읽기는 악센트 항목에서만 변경할 수 있습니다." />
+            <en-US content="(Built-in)" />
+            <zh-CN content="(内置）" />
+            <zh-TW content="(內建）" />
+            <ko-KR content="(내장)" />
         </translate>
     </item>
 
-    <item id="#0777">
+    <item id="#0388">
         <match type="equals">
-            <text content="無声化はイントネーション項目でのみ操作できます" />
+            <text content="エンジンの追加" />
         </match>
 
         <translate>
-            <en-US content="Devoicing can only be adjusted in the Intonation section" />
-            <zh-CN content="只能在语调项目中调整清化" />
-            <zh-TW content="只能在語調項目中調整清音化" />
-            <ko-KR content="무성화는 억양 항목에서만 조정할 수 있습니다." />
+            <en-US content="Add Engine" />
+            <zh-CN content="添加引擎" />
+            <zh-TW content="添加引擎" />
+            <ko-KR content="엔진 추가" />
         </translate>
     </item>
 
-    <item id="#0778">
+    <item id="#0389">
         <match type="equals">
-            <text content="コピー" />
+            <text content="VVPPファイル" />
         </match>
 
         <translate>
-            <en-US content="Copy" />
-            <zh-CN content="复制" />
-            <zh-TW content="複製" />
-            <ko-KR content="복사" />
+            <en-US content="VVPP File" />
+            <zh-CN content="VVPP 文件" />
+            <zh-TW content="VVPP 檔案" />
+            <ko-KR content="VVPP 파일" />
         </translate>
     </item>
 
-    <item id="#0779">
+    <item id="#0390">
         <match type="equals">
-            <text content="コンテキストメニューアイテムの取得に失敗しました。" />
+            <text content="既存エンジン" />
         </match>
 
         <translate>
-            <en-US content="Failed to get context menu items." />
-            <zh-CN content="获取上下文菜单项失败。" />
-            <zh-TW content="取得上下文菜單項失敗。" />
-            <ko-KR content="컨텍스트 메뉴 항목을 가져오지 못했습니다." />
+            <en-US content="Existing Engine" />
+            <zh-CN content="现有引擎" />
+            <zh-TW content="現有引擎" />
+            <ko-KR content="기존 엔진" />
         </translate>
     </item>
 
-    <item id="#0780">
+    <item id="#0391">
         <match type="equals">
-            <text content="予期せぬタイプエラーです。" />
+            <text content="VVPPファイルでエンジンをインストールします。" />
         </match>
 
         <translate>
-            <en-US content="Unexpected type error." />
-            <zh-CN content="发生了意外的类型错误。" />
-            <zh-TW content="發生了意外的類型錯誤。" />
-            <ko-KR content="예상치 못한 타입 오류입니다." />
+            <en-US content="Install an engine from a VVPP file." />
+            <zh-CN content="使用 VVPP 文件安装引擎。" />
+            <zh-TW content="使用 VVPP 檔案安裝引擎。" />
+            <ko-KR content="VVPP 파일로 엔진을 설치합니다." />
         </translate>
     </item>
 
-    <item id="#0781">
+    <item id="#0392">
         <match type="equals">
-            <text content="全選択" />
+            <text content="VVPPファイルの場所" />
         </match>
 
         <translate>
-            <en-US content="Select all" />
-            <zh-CN content="全选" />
-            <zh-TW content="全選" />
-            <ko-KR content="선택 all" />
+            <en-US content="VVPP File Location" />
+            <zh-CN content="VVPP 文件位置" />
+            <zh-TW content="VVPP 檔案位置" />
+            <ko-KR content="VVPP 파일 위치" />
         </translate>
     </item>
 
-    <item id="#0782">
+    <item id="#0393">
         <match type="equals">
-            <text content="切り取り" />
+            <text content="ファイル選択" />
         </match>
 
         <translate>
-            <en-US content="Cut" />
-            <zh-CN content="剪切" />
-            <zh-TW content="剪切" />
-            <ko-KR content="잘라내기" />
+            <en-US content="Choose File" />
+            <zh-CN content="选择文件" />
+            <zh-TW content="選择檔案" />
+            <ko-KR content="파일 선택" />
         </translate>
     </item>
 
-    <item id="#0783">
+    <item id="#0394">
         <match type="equals">
-            <text content="文章が長いと正常に動作しない可能性があります。 句読点の位置で文章を分割してください。" />
+            <text content="PC内にあるエンジンを追加します。" />
         </match>
 
         <translate>
-            <en-US content="Long text may not work correctly. Please split the text at punctuation." />
-            <zh-CN content="文本过长可能无法正常运行。请在标点符号处拆分文本。" />
-            <zh-TW content="文字過長可能無法正常執行。請在標點符号處拆分文字。" />
-            <ko-KR content="텍스트가 너무 길면 정상적으로 작동하지 않을 수 있습니다. 문장 부호를 기준으로 나눠 주세요." />
+            <en-US content="Add an engine located on this PC." />
+            <zh-CN content="添加电脑中的引擎。" />
+            <zh-TW content="添加电脑中的引擎。" />
+            <ko-KR content="이 PC에 있는 엔진을 추가합니다." />
         </translate>
     </item>
 
-    <item id="#0784">
+    <item id="#0395">
         <match type="equals">
-            <text content="次に選択するaudioKeyが見付かりませんでした（unreachable）" />
+            <text content="エンジンフォルダの場所" />
         </match>
 
         <translate>
-            <en-US content="The next audioKey to select was not found (unreachable)" />
-            <zh-CN content="找不到下一个要选择的 audioKey（不可达）" />
-            <zh-TW content="找不到下一個要選擇的 audioKey（不可达）" />
-            <ko-KR content="선택할 다음 audioKey를 찾을 수 없습니다(도달 불가)." />
+            <en-US content="Engine Folder Location" />
+            <zh-CN content="引擎文件夹位置" />
+            <zh-TW content="引擎資料夾位置" />
+            <ko-KR content="엔진 폴더 위치" />
         </translate>
     </item>
 
-    <item id="#0785">
-        <match type="equals">
-            <text content="読みを変えずに適用" />
-        </match>
-
-        <translate>
-            <en-US content="Apply without changing the reading" />
-            <zh-CN content="保持读法不变并应用" />
-            <zh-TW content="保持讀法不變並應用" />
-            <ko-KR content="읽기를 변경하지 않고 적용" />
-        </translate>
-    </item>
-
-    <item id="#0786">
-        <match type="equals">
-            <text content="貼り付け" />
-        </match>
-
-        <translate>
-            <en-US content="Paste" />
-            <zh-CN content="粘贴" />
-            <zh-TW content="粘贴" />
-            <ko-KR content="붙여넣기" />
-        </translate>
-    </item>
-
-    <item id="#0787">
-        <match type="equals">
-            <text content="+ ホイール: ±0.01" />
-        </match>
-
-        <translate>
-            <en-US content="+ Wheel: ±0.01" />
-            <zh-CN content="+ 滚轮：±0.01" />
-            <zh-TW content="+ 滚轮：±0.01" />
-            <ko-KR content="+ Wheel: ±0.01" />
-        </translate>
-    </item>
-
-    <item id="#0788">
-        <match type="equals">
-            <text content="+ ホイール: 一括調整" />
-        </match>
-
-        <translate>
-            <en-US content="+ Wheel: Batch adjustment" />
-            <zh-CN content="+ 滚轮：批量调整" />
-            <zh-TW content="+ 滚轮：批量調整" />
-            <ko-KR content="+ Wheel: Batch adjustment" />
-        </translate>
-    </item>
-
-    <item id="#0789">
-        <match type="equals">
-            <text content="エンジンの再起動をお試しください。" />
-        </match>
-
-        <translate>
-            <en-US content="Please try restarting the engine." />
-            <zh-CN content="请尝试重新启动引擎。" />
-            <zh-TW content="請嘗試重新啟動引擎。" />
-            <ko-KR content="엔진을 다시 시작해 주세요." />
-        </translate>
-    </item>
-
-    <item id="#0790">
-        <match type="equals">
-            <text content="スライダーを微調整できます。" />
-        </match>
-
-        <translate>
-            <en-US content="Fine-tune the slider." />
-            <zh-CN content="可以微调滑块。" />
-            <zh-TW content="可以微調滑块。" />
-            <ko-KR content="슬라이더를 미세 조정할 수 있습니다." />
-        </translate>
-    </item>
-
-    <item id="#0791">
-        <match type="equals">
-            <text content="ホイール: ±0.1" />
-        </match>
-
-        <translate>
-            <en-US content="Wheel: ±0.1" />
-            <zh-CN content="滚轮：±0.1" />
-            <zh-TW content="滚轮：±0.1" />
-            <ko-KR content="Wheel: ±0.1" />
-        </translate>
-    </item>
-
-    <item id="#0792">
-        <match type="equals">
-            <text content="マウスホイールを使って" />
-        </match>
-
-        <translate>
-            <en-US content="Use the mouse wheel" />
-            <zh-CN content="使用鼠标滚轮" />
-            <zh-TW content="使用鼠標滚轮" />
-            <ko-KR content="마우스 휠 사용" />
-        </translate>
-    </item>
-
-    <item id="#0793">
-        <match type="equals">
-            <text content="全体のイントネーションをリセット" />
-        </match>
-
-        <translate>
-            <en-US content="Reset overall intonation" />
-            <zh-CN content="重置整体语调" />
-            <zh-TW content="重設整體語調" />
-            <ko-KR content="초기화 overall 억양" />
-        </translate>
-    </item>
-
-    <item id="#0794">
-        <match type="equals">
-            <text content="再生/停止" />
-        </match>
-
-        <translate>
-            <en-US content="Play / Stop" />
-            <zh-CN content="播放 / 停止" />
-            <zh-TW content="播放 / 停止" />
-            <ko-KR content="재생 / 정지" />
-        </translate>
-    </item>
-
-    <item id="#0795">
-        <match type="equals">
-            <text content="再生に失敗しました" />
-        </match>
-
-        <translate>
-            <en-US content="Failed to play." />
-            <zh-CN content="播放失败。" />
-            <zh-TW content="播放失敗。" />
-            <ko-KR content="play에 실패했습니다." />
-        </translate>
-    </item>
-
-    <item id="#0796">
-        <match type="equals">
-            <text content="選択中のアクセント句のイントネーションをリセット" />
-        </match>
-
-        <translate>
-            <en-US content="Reset the intonation of the selected accent phrase" />
-            <zh-CN content="重置所选重音短语的语调" />
-            <zh-TW content="重設所選重音短語的語調" />
-            <ko-KR content="선택한 악센트 구의 억양 초기화" />
-        </translate>
-    </item>
-
-    <item id="#0797">
-        <match type="equals">
-            <text content="長さ" />
-        </match>
-
-        <translate>
-            <en-US content="Length" />
-            <zh-CN content="长度" />
-            <zh-TW content="長度" />
-            <ko-KR content="길이" />
-        </translate>
-    </item>
-
-    <item id="#0798">
-        <match type="equals">
-            <text content="長さ欄を表示" />
-        </match>
-
-        <translate>
-            <en-US content="Show length field" />
-            <zh-CN content="显示长度栏" />
-            <zh-TW content="顯示長度欄" />
-            <ko-KR content="길이 입력란 표시" />
-        </translate>
-    </item>
-
-    <item id="#0799">
-        <match type="equals">
-            <text content="ｱｸｾﾝﾄ" />
-        </match>
-
-        <translate>
-            <en-US content="Accent" />
-            <zh-CN content="重音" />
-            <zh-TW content="重音" />
-            <ko-KR content="Accent" />
-        </translate>
-    </item>
-
-    <item id="#0800">
-        <match type="equals">
-            <text content="ｱｸｾﾝﾄ欄を表示" />
-        </match>
-
-        <translate>
-            <en-US content="Show accent field" />
-            <zh-CN content="显示重音栏" />
-            <zh-TW content="顯示重音欄" />
-            <ko-KR content="악센트 입력란 표시" />
-        </translate>
-    </item>
-
-    <item id="#0801">
-        <match type="equals">
-            <text content="ｲﾝﾄﾈｰｼｮﾝ" />
-        </match>
-
-        <translate>
-            <en-US content="Intonation" />
-            <zh-CN content="语调" />
-            <zh-TW content="語調" />
-            <ko-KR content="억양" />
-        </translate>
-    </item>
-
-    <item id="#0802">
-        <match type="equals">
-            <text content="ｲﾝﾄﾈｰｼｮﾝ欄を表示" />
-        </match>
-
-        <translate>
-            <en-US content="Show intonation field" />
-            <zh-CN content="显示语调栏" />
-            <zh-TW content="顯示語調欄" />
-            <ko-KR content="억양 입력란 표시" />
-        </translate>
-    </item>
-
-    <item id="#0803">
-        <match type="equals">
-            <text content="プリセット" />
-        </match>
-
-        <translate>
-            <en-US content="Preset" />
-            <zh-CN content="预设" />
-            <zh-TW content="预設" />
-            <ko-KR content="프리셋" />
-        </translate>
-    </item>
-
-    <item id="#0804">
-        <match type="equals">
-            <text content="プリセット新規登録" />
-        </match>
-
-        <translate>
-            <en-US content="Create new preset" />
-            <zh-CN content="新建预设" />
-            <zh-TW content="新建预設" />
-            <ko-KR content="새 프리셋 만들기" />
-        </translate>
-    </item>
-
-    <item id="#0805">
-        <match type="equals">
-            <text content="プリセット管理" />
-        </match>
-
-        <translate>
-            <en-US content="Manage presets" />
-            <zh-CN content="预设管理" />
-            <zh-TW content="预設管理" />
-            <ko-KR content="프리셋 관리" />
-        </translate>
-    </item>
-
-    <item id="#0806">
-        <match type="equals">
-            <text content="プリセット解除" />
-        </match>
-
-        <translate>
-            <en-US content="Clear preset" />
-            <zh-CN content="清除预设" />
-            <zh-TW content="清除预設" />
-            <ko-KR content="프리셋 해제" />
-        </translate>
-    </item>
-
-    <item id="#0807">
-        <match type="equals">
-            <text content="プリセット選択" />
-        </match>
-
-        <translate>
-            <en-US content="Select preset" />
-            <zh-CN content="选择预设" />
-            <zh-TW content="選擇预設" />
-            <ko-KR content="프리셋 선택" />
-        </translate>
-    </item>
-
-    <item id="#0808">
-        <match type="equals">
-            <text content="入力" />
-        </match>
-
-        <translate>
-            <en-US content="Input" />
-            <zh-CN content="输入" />
-            <zh-TW content="輸入" />
-            <ko-KR content="Input" />
-        </translate>
-    </item>
-
-    <item id="#0809">
-        <match type="equals">
-            <text content="抑揚" />
-        </match>
-
-        <translate>
-            <en-US content="Intonation" />
-            <zh-CN content="抑扬" />
-            <zh-TW content="抑扬" />
-            <ko-KR content="억양" />
-        </translate>
-    </item>
-
-    <item id="#0810">
-        <match type="equals">
-            <text content="終了無音" />
-        </match>
-
-        <translate>
-            <en-US content="End silence" />
-            <zh-CN content="结束静音" />
-            <zh-TW content="結束静音" />
-            <ko-KR content="끝 묵음" />
-        </translate>
-    </item>
-
-    <item id="#0811">
-        <match type="equals">
-            <text content="話速" />
-        </match>
-
-        <translate>
-            <en-US content="Speech speed" />
-            <zh-CN content="语速" />
-            <zh-TW content="語速" />
-            <ko-KR content="말하기 속도" />
-        </translate>
-    </item>
-
-    <item id="#0812">
-        <match type="equals">
-            <text content="開始無音" />
-        </match>
-
-        <translate>
-            <en-US content="Start silence" />
-            <zh-CN content="开始静音" />
-            <zh-TW content="開始静音" />
-            <ko-KR content="시작 묵음" />
-        </translate>
-    </item>
-
-    <item id="#0813">
-        <match type="equals">
-            <text content="間の長さ" />
-        </match>
-
-        <translate>
-            <en-US content="Pause length" />
-            <zh-CN content="停顿时长" />
-            <zh-TW content="停顿時長" />
-            <ko-KR content="쉼 길이" />
-        </translate>
-    </item>
-
-    <item id="#0814">
-        <match type="equals">
-            <text content="音量" />
-        </match>
-
-        <translate>
-            <en-US content="Volume" />
-            <zh-CN content="音量" />
-            <zh-TW content="音量" />
-            <ko-KR content="볼륨" />
-        </translate>
-    </item>
-
-    <item id="#0815">
-        <match type="equals">
-            <text content="音高" />
-        </match>
-
-        <translate>
-            <en-US content="Pitch" />
-            <zh-CN content="音高" />
-            <zh-TW content="音高" />
-            <ko-KR content="음높이" />
-        </translate>
-    </item>
-
-    <item id="#0816">
-        <match type="equals">
-            <text content="プリセットはありません" />
-        </match>
-
-        <translate>
-            <en-US content="No presets" />
-            <zh-CN content="没有预设" />
-            <zh-TW content="没有预設" />
-            <ko-KR content="프리셋이 없습니다." />
-        </translate>
-    </item>
-
-    <item id="#0817">
-        <match type="equals">
-            <text content="プリセット登録" />
-        </match>
-
-        <translate>
-            <en-US content="Register Preset" />
-            <zh-CN content="注册预设" />
-            <zh-TW content="注册预設" />
-            <ko-KR content="프리셋 등록" />
-        </translate>
-    </item>
-
-    <item id="#0818">
-        <match type="equals">
-            <text content="タイトル" />
-        </match>
-
-        <translate>
-            <en-US content="Title" />
-            <zh-CN content="标题" />
-            <zh-TW content="標題" />
-            <ko-KR content="Title" />
-        </translate>
-    </item>
-
-    <item id="#0819">
-        <match type="equals">
-            <text content="キャンセル" />
-        </match>
-
-        <translate>
-            <en-US content="Cancel" />
-            <zh-CN content="取消" />
-            <zh-TW content="取消" />
-            <ko-KR content="취소" />
-        </translate>
-    </item>
-
-    <item id="#0820">
-        <match type="equals">
-            <text content="確定" />
-        </match>
-
-        <translate>
-            <en-US content="Confirm" />
-            <zh-CN content="确定" />
-            <zh-TW content="確定" />
-            <ko-KR content="Confirm" />
-        </translate>
-    </item>
-
-    <item id="#0821">
-        <match type="equals">
-            <text content="プリセットの再登録" />
-        </match>
-
-        <translate>
-            <en-US content="Re-register Preset" />
-            <zh-CN content="重新注册预设" />
-            <zh-TW content="重新注册预設" />
-            <ko-KR content="프리셋 다시 등록" />
-        </translate>
-    </item>
-
-    <item id="#0822">
-        <match type="equals">
-            <text content="プリセットを再登録し、このプリセットが設定されたテキスト欄全てに再適用する" />
-        </match>
-
-        <translate>
-            <en-US
-                content="Re-register the preset and reapply it to all text fields using this preset" />
-            <zh-CN content="重新注册预设并重新应用到所有使用该预设的文本框" />
-            <zh-TW content="重新注册预設並重新應用到所有使用该预設的文字框" />
-            <ko-KR content="프리셋을 다시 등록하고 이 프리셋이 설정된 모든 텍스트 입력란에 다시 적용" />
-        </translate>
-    </item>
-
-    <item id="#0823">
-        <match type="equals">
-            <text content="プリセットの再登録のみ行う" />
-        </match>
-
-        <translate>
-            <en-US content="Only re-register the preset" />
-            <zh-CN content="仅重新注册预设" />
-            <zh-TW content="仅重新注册预設" />
-            <ko-KR content="프리셋만 다시 등록" />
-        </translate>
-    </item>
-
-    <item id="#0824">
-        <match type="equals">
-            <text content="モーフィング" />
-        </match>
-
-        <translate>
-            <en-US content="Morphing" />
-            <zh-CN content="变声混合" />
-            <zh-TW content="變聲混合" />
-            <ko-KR content="Morphing" />
-        </translate>
-    </item>
-
-    <item id="#0825">
-        <match type="equals">
-            <text content="非対応エンジンです" />
-        </match>
-
-        <translate>
-            <en-US content="This engine is not supported" />
-            <zh-CN content="不支持此引擎" />
-            <zh-TW content="不支持此引擎" />
-            <ko-KR content="지원되지 않는 엔진입니다." />
-        </translate>
-    </item>
-
-    <item id="#0826">
-        <match type="equals">
-            <text content="無効な設定です" />
-        </match>
-
-        <translate>
-            <en-US content="Invalid settings" />
-            <zh-CN content="设置无效" />
-            <zh-TW content="設定無效" />
-            <ko-KR content="잘못된 설정" />
-        </translate>
-    </item>
-
-    <item id="#0827">
+    <item id="#0396">
         <match type="contains">
-            <text content="割合 " />
+            <text content="バージョン：" />
             <param name="0" />
         </match>
 
         <translate>
-            <en-US content="Ratio {0}" />
-            <zh-CN content="比例 {0}" />
-            <zh-TW content="比例 {0}" />
-            <ko-KR content="비율 {0}" />
+            <en-US content="Version: {0}" />
+            <zh-CN content="版本：{0}" />
+            <zh-TW content="版本：{0}" />
+            <ko-KR content="버전: {0}" />
         </translate>
     </item>
 
-    <item id="#0828">
+    <item id="#0397">
         <match type="equals">
-            <text content="テキストをクリックすることで無声化を解けます。" />
+            <text content="（取得に失敗しました）" />
         </match>
 
         <translate>
-            <en-US content="Click the text to undo devoicing." />
-            <zh-CN content="点击文本可取消清音化。" />
-            <zh-TW content="點击文字可取消清音化。" />
-            <ko-KR content="텍스트를 클릭하면 무성화를 해제할 수 있습니다." />
+            <en-US content="(Failed to retrieve)" />
+            <zh-CN content="（获取失败）" />
+            <zh-TW content="（取得失敗）" />
+            <ko-KR content="(가져오지 못했습니다)" />
         </translate>
     </item>
 
-    <item id="#0829">
+    <item id="#0398">
         <match type="equals">
-            <text content="無声化した音にイントネーションは存在しません。" />
+            <text content="機能" />
         </match>
 
         <translate>
-            <en-US content="Voiceless sounds have no intonation." />
-            <zh-CN content="清音化的声音不存在语调。" />
-            <zh-TW content="清音化的聲音不存在語調。" />
-            <ko-KR content="Voiceless sounds have no 억양." />
+            <en-US content="Features" />
+            <zh-CN content="功能" />
+            <zh-TW content="功能" />
+            <ko-KR content="기능" />
         </translate>
     </item>
 
-    <item id="#0830">
+    <item id="#0399">
         <match type="equals">
-            <text content="（表示エラー）" />
+            <text content="場所" />
         </match>
 
         <translate>
-            <en-US content="(Display error)" />
-            <zh-CN content="(显示错误）" />
-            <zh-TW content="(顯示錯誤）" />
-            <ko-KR content="(표시 오류)" />
+            <en-US content="Location" />
+            <zh-CN content="位置" />
+            <zh-TW content="位置" />
+            <ko-KR content="위치" />
         </translate>
     </item>
 
-    <item id="#0831">
-        <match type="contains">
-            <param name="0" />
-            <text content="番ポートが使用中であるため " />
-            <param name="1" />
-            <text content=" は、" />
-            <param name="2" />
-            <text content="番ポートで起動しました" />
-        </match>
-
-        <translate>
-            <en-US content="Because port {0} was already in use, {1} started on port {2}." />
-            <zh-CN content="由于端口 {0} 已被占用，{1} 已在端口 {2} 上启动。" />
-            <zh-TW content="由於端口 {0} 已被占用，{1} 已在端口 {2} 上啟動。" />
-            <ko-KR content="포트 {0}이(가) 사용 중이어서 {1}이(가) 포트 {2}에서 시작되었습니다." />
-        </translate>
-    </item>
-
-    <item id="#0832">
+    <item id="#0400">
         <match type="equals">
-            <text content="すべて選択" />
+            <text content="ショートカットキーを入力してください" />
         </match>
 
         <translate>
-            <en-US content="Select All" />
-            <zh-CN content="全选" />
-            <zh-TW content="全選" />
-            <ko-KR content="선택 All" />
+            <en-US content="Enter a shortcut key" />
+            <zh-CN content="请输入快捷键" />
+            <zh-TW content="請輸入快速鍵" />
+            <ko-KR content="단축키를 입력하세요." />
         </translate>
     </item>
 
-    <item id="#0833">
+    <item id="#0401">
         <match type="equals">
-            <text content="テキストを繋げて書き出す" />
+            <text content="ショートカットキーが次の操作と重複しています" />
         </match>
 
         <translate>
-            <en-US content="Export concatenated text" />
-            <zh-CN content="导出合并后的文本" />
-            <zh-TW content="匯出合併後的文字" />
-            <ko-KR content="이어 붙인 텍스트 내보내기" />
+            <en-US content="This shortcut key conflicts with the following action" />
+            <zh-CN content="快捷键与以下操作冲突" />
+            <zh-TW content="快捷键與以下操作冲突" />
+            <ko-KR content="이 단축키는 다음 작업과 충돌합니다." />
         </translate>
     </item>
 
-    <item id="#0834">
+    <item id="#0402">
         <match type="equals">
-            <text content="テキストを読み込む" />
+            <text content="ショートカットキーを未割り当てにする" />
         </match>
 
         <translate>
-            <en-US content="Import text" />
-            <zh-CN content="导入文本" />
-            <zh-TW content="匯入文字" />
-            <ko-KR content="가져오기 텍스트" />
+            <en-US content="Unassign Shortcut Key" />
+            <zh-CN content="取消快捷键分配" />
+            <zh-TW content="取消快捷键分配" />
+            <ko-KR content="단축키 할당 해제" />
         </translate>
     </item>
 
-    <item id="#0835">
+    <item id="#0403">
         <match type="equals">
-            <text content="テキストファイル (.txt) とVOICEVOXプロジェクトファイル (.vvproj) に対応しています。" />
+            <text content="上書きする" />
         </match>
 
         <translate>
-            <en-US content="Supports text files (.txt) and VOICEVOX project files (.vvproj)." />
-            <zh-CN content="支持文本文件（.txt）和 VOICEVOX 项目文件（.vvproj）。" />
-            <zh-TW content="支持文字檔案（.txt）和 VOICEVOX 專案檔案（.vvproj）。" />
-            <ko-KR content="텍스트 파일(.txt)과 VOICEVOX 프로젝트 파일(.vvproj)을 지원합니다." />
+            <en-US content="Overwrite" />
+            <zh-CN content="覆盖" />
+            <zh-TW content="覆寫" />
+            <ko-KR content="덮어쓰기" />
         </translate>
     </item>
 
-    <item id="#0836">
-        <match type="equals">
-            <text content="テキスト欄からフォーカスを外す" />
-        </match>
-
-        <translate>
-            <en-US content="Remove focus from the text field" />
-            <zh-CN content="移除文本框焦点" />
-            <zh-TW content="移除文字欄焦點" />
-            <ko-KR content="텍스트 입력란에서 포커스를 해제" />
-        </translate>
-    </item>
-
-    <item id="#0837">
-        <match type="equals">
-            <text content="テキスト欄にフォーカスを戻す" />
-        </match>
-
-        <translate>
-            <en-US content="Return focus to the text field" />
-            <zh-CN content="将焦点返回文本框" />
-            <zh-TW content="將焦點返回文字欄" />
-            <ko-KR content="텍스트 입력란으로 포커스를 되돌리기" />
-        </translate>
-    </item>
-
-    <item id="#0838">
-        <match type="equals">
-            <text content="テキスト欄を削除" />
-        </match>
-
-        <translate>
-            <en-US content="Delete the text field" />
-            <zh-CN content="删除文本框" />
-            <zh-TW content="刪除文字欄" />
-            <ko-KR content="텍스트 입력란 삭제" />
-        </translate>
-    </item>
-
-    <item id="#0839">
-        <match type="equals">
-            <text content="テキスト欄を複製" />
-        </match>
-
-        <translate>
-            <en-US content="Duplicate the text field" />
-            <zh-CN content="复制文本框" />
-            <zh-TW content="複製文字欄" />
-            <ko-KR content="텍스트 입력란 복제" />
-        </translate>
-    </item>
-
-    <item id="#0840">
-        <match type="equals">
-            <text content="テキスト欄を追加" />
-        </match>
-
-        <translate>
-            <en-US content="Add a text field" />
-            <zh-CN content="添加文本框" />
-            <zh-TW content="添加文字欄" />
-            <ko-KR content="텍스트 입력란 추가" />
-        </translate>
-    </item>
-
-    <item id="#0841">
-        <match type="equals">
-            <text content="対応していないファイルです" />
-        </match>
-
-        <translate>
-            <en-US content="Unsupported file." />
-            <zh-CN content="不支持的文件。" />
-            <zh-TW content="不支持的檔案。" />
-            <ko-KR content="지원되지 않는 파일." />
-        </translate>
-    </item>
-
-    <item id="#0842">
-        <match type="equals">
-            <text content="選択音声を書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export selected audio" />
-            <zh-CN content="导出所选音频" />
-            <zh-TW content="匯出所選音訊" />
-            <ko-KR content="선택한 음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0843">
-        <match type="equals">
-            <text content="音声を繋げて書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export concatenated audio" />
-            <zh-CN content="导出合并后的音频" />
-            <zh-TW content="匯出合併後的音訊" />
-            <ko-KR content="이어 붙인 음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0844">
-        <match type="equals">
-            <text content="音声書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Audio Export" />
-            <zh-CN content="音频导出" />
-            <zh-TW content="音訊匯出" />
-            <ko-KR content="음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0845">
-        <match type="equals">
-            <text content="テキストを追加" />
-        </match>
-
-        <translate>
-            <en-US content="Add Text" />
-            <zh-CN content="添加文本" />
-            <zh-TW content="新增文字" />
-            <ko-KR content="텍스트 추가" />
-        </translate>
-    </item>
-
-    <item id="#0846">
-        <match type="equals">
-            <text content="やり直す" />
-        </match>
-
-        <translate>
-            <en-US content="Redo" />
-            <zh-CN content="重做" />
-            <zh-TW content="重做" />
-            <ko-KR content="다시 실행" />
-        </translate>
-    </item>
-
-    <item id="#0847">
-        <match type="equals">
-            <text content="エンジンの再起動をお試しください。" />
-        </match>
-
-        <translate>
-            <en-US content="Please try restarting the engine." />
-            <zh-CN content="请尝试重新启动引擎。" />
-            <zh-TW content="請嘗試重新啟動引擎。" />
-            <ko-KR content="엔진을 다시 시작해 주세요." />
-        </translate>
-    </item>
-
-    <item id="#0848">
-        <match type="equals">
-            <text content="テキスト読み込み" />
-        </match>
-
-        <translate>
-            <en-US content="Import Text" />
-            <zh-CN content="导入文本" />
-            <zh-TW content="匯入文字" />
-            <ko-KR content="텍스트 가져오기" />
-        </translate>
-    </item>
-
-    <item id="#0849">
-        <match type="equals">
-            <text content="プロジェクト保存" />
-        </match>
-
-        <translate>
-            <en-US content="Save Project" />
-            <zh-CN content="保存项目" />
-            <zh-TW content="儲存專案" />
-            <ko-KR content="프로젝트 저장" />
-        </translate>
-    </item>
-
-    <item id="#0850">
-        <match type="equals">
-            <text content="元に戻す" />
-        </match>
-
-        <translate>
-            <en-US content="Undo" />
-            <zh-CN content="撤销" />
-            <zh-TW content="復原" />
-            <ko-KR content="실행 취소" />
-        </translate>
-    </item>
-
-    <item id="#0851">
-        <match type="equals">
-            <text content="全部書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export All Audio" />
-            <zh-CN content="导出全部音频" />
-            <zh-TW content="匯出全部音訊" />
-            <ko-KR content="모든 음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0852">
-        <match type="equals">
-            <text content="再生に失敗しました" />
-        </match>
-
-        <translate>
-            <en-US content="Failed to play." />
-            <zh-CN content="播放失败。" />
-            <zh-TW content="播放失敗。" />
-            <ko-KR content="play에 실패했습니다." />
-        </translate>
-    </item>
-
-    <item id="#0853">
-        <match type="equals">
-            <text content="連続再生/停止" />
-        </match>
-
-        <translate>
-            <en-US content="Play continuously / Stop" />
-            <zh-CN content="连续播放 / 停止" />
-            <zh-TW content="連續播放 / 停止" />
-            <ko-KR content="연속 재생 / 정지" />
-        </translate>
-    </item>
-
-    <item id="#0854">
-        <match type="equals">
-            <text content="選択音声を書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export Selected Audio" />
-            <zh-CN content="导出所选音频" />
-            <zh-TW content="匯出選取的音訊" />
-            <ko-KR content="내보내기 선택ed 음성" />
-        </translate>
-    </item>
-
-    <item id="#0855">
-        <match type="equals">
-            <text content="音声を繋げて書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export Connected Audio" />
-            <zh-CN content="导出合并后的音频" />
-            <zh-TW content="匯出合併後的音訊" />
-            <ko-KR content="내보내기 Connected 음성" />
-        </translate>
-    </item>
-
-    <item id="#0856">
-        <match type="equals">
-            <text content="テキストを繋げて書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export concatenated text" />
-            <zh-CN content="导出合并后的文本" />
-            <zh-TW content="匯出合併後的文字" />
-            <ko-KR content="이어 붙인 텍스트 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0857">
-        <match type="equals">
-            <text content="テキスト読み込み" />
-        </match>
-
-        <translate>
-            <en-US content="Import text" />
-            <zh-CN content="导入文本" />
-            <zh-TW content="匯入文字" />
-            <ko-KR content="가져오기 텍스트" />
-        </translate>
-    </item>
-
-    <item id="#0858">
-        <match type="equals">
-            <text content="行番号を表示" />
-        </match>
-
-        <translate>
-            <en-US content="Show line numbers" />
-            <zh-CN content="显示行号" />
-            <zh-TW content="顯示行號" />
-            <ko-KR content="줄 번호 표시" />
-        </translate>
-    </item>
-
-    <item id="#0859">
-        <match type="equals">
-            <text content="行番号を非表示" />
-        </match>
-
-        <translate>
-            <en-US content="Hide line numbers" />
-            <zh-CN content="隐藏行号" />
-            <zh-TW content="隱藏行號" />
-            <ko-KR content="줄 번호 숨기기" />
-        </translate>
-    </item>
-
-    <item id="#0860">
-        <match type="equals">
-            <text content="選択音声を書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export selected audio" />
-            <zh-CN content="导出所选音频" />
-            <zh-TW content="匯出所選音訊" />
-            <ko-KR content="선택한 음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0861">
-        <match type="equals">
-            <text content="音声を繋げて書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Export concatenated audio" />
-            <zh-CN content="导出合并后的音频" />
-            <zh-TW content="匯出合併後的音訊" />
-            <ko-KR content="이어 붙인 음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0862">
-        <match type="equals">
-            <text content="音声書き出し" />
-        </match>
-
-        <translate>
-            <en-US content="Audio Export" />
-            <zh-CN content="音频导出" />
-            <zh-TW content="音訊匯出" />
-            <ko-KR content="음성 내보내기" />
-        </translate>
-    </item>
-
-    <item id="#0863">
-        <match type="equals">
-            <text content="キャラクター未選択" />
-        </match>
-
-        <translate>
-            <en-US content="No character selected" />
-            <zh-CN content="未选择角色" />
-            <zh-TW content="未選擇角色" />
-            <ko-KR content="캐릭터가 선택되지 않았습니다" />
-        </translate>
-    </item>
-
-    <item id="#0864">
-        <match type="equals">
-            <text content="有効なスタイルが選択されていません" />
-        </match>
-
-        <translate>
-            <en-US content="No valid style is selected" />
-            <zh-CN content="未选择有效风格" />
-            <zh-TW content="未選擇有效風格" />
-            <ko-KR content="유효한 스타일이 선택되지 않았습니다" />
-        </translate>
-    </item>
-
-    <item id="#0865">
-        <match type="equals">
-            <text content="選択可能なスタイルがありません" />
-        </match>
-
-        <translate>
-            <en-US content="No selectable styles" />
-            <zh-CN content="没有可选择的风格" />
-            <zh-TW content="没有可選擇的風格" />
-            <ko-KR content="선택할 수 있는 스타일이 없습니다" />
-        </translate>
-    </item>
-
-    <item id="#0866">
+    <item id="#0404">
         <match type="equals">
             <text content="選択解除" />
         </match>
@@ -1218,176 +264,7 @@
         </translate>
     </item>
 
-    <item id="#0867">
-        <match type="equals">
-            <text content="Q&amp;Aを見る" />
-        </match>
-
-        <translate>
-            <en-US content="View Q&amp;A" />
-            <zh-CN content="查看问答" />
-            <zh-TW content="查看問答" />
-            <ko-KR content="Q&amp;A 보기" />
-        </translate>
-    </item>
-
-    <item id="#0868">
-        <match type="equals">
-            <text content="エンジンの起動に失敗しました。エンジンの再起動をお試しください。" />
-        </match>
-
-        <translate>
-            <en-US content="Failed to start the engine. Please try restarting the engine." />
-            <zh-CN content="引擎启动失败。请尝试重新启动引擎。" />
-            <zh-TW content="引擎啟動失敗。請嘗試重新啟動引擎。" />
-            <ko-KR content="엔진을 시작하지 못했습니다. 엔진을 다시 시작해 주세요." />
-        </translate>
-    </item>
-
-    <item id="#0869">
-        <match type="equals">
-            <text content="エンジン起動に時間がかかっています。" />
-        </match>
-
-        <translate>
-            <en-US content="The engine is taking a while to start." />
-            <zh-CN content="引擎启动需要较长时间。" />
-            <zh-TW content="引擎啟動需要較長時間。" />
-            <ko-KR content="엔진을 시작하는 데 시간이 걸리고 있습니다." />
-        </translate>
-    </item>
-
-    <item id="#0870">
-        <match type="equals">
-            <text content="マルチエンジンをオフにして再読み込みする" />
-        </match>
-
-        <translate>
-            <en-US content="Turn off multi-engine and reload" />
-            <zh-CN content="关闭多引擎并重新加载" />
-            <zh-TW content="關閉多引擎並重新載入" />
-            <ko-KR content="멀티 엔진을 끄고 다시 불러오기" />
-        </translate>
-    </item>
-
-    <item id="#0871">
-        <match type="equals">
-            <text content="生成中です..." />
-        </match>
-
-        <translate>
-            <en-US content="Generating..." />
-            <zh-CN content="生成中……" />
-            <zh-TW content="產生中……" />
-            <ko-KR content="생성 중..." />
-        </translate>
-    </item>
-
-    <item id="#0872">
-        <match type="equals">
-            <text content="コピー" />
-        </match>
-
-        <translate>
-            <en-US content="Copy" />
-            <zh-CN content="复制" />
-            <zh-TW content="複製" />
-            <ko-KR content="복사" />
-        </translate>
-    </item>
-
-    <item id="#0873">
-        <match type="equals">
-            <text content="コンテキストメニューアイテムの取得に失敗しました。" />
-        </match>
-
-        <translate>
-            <en-US content="Failed to get the context menu item." />
-            <zh-CN content="获取上下文菜单项失败。" />
-            <zh-TW content="獲取上下文菜單項失敗。" />
-            <ko-KR content="컨텍스트 메뉴 항목을 가져오지 못했습니다." />
-        </translate>
-    </item>
-
-    <item id="#0874">
-        <match type="equals">
-            <text content="全選択" />
-        </match>
-
-        <translate>
-            <en-US content="Select all" />
-            <zh-CN content="全选" />
-            <zh-TW content="全選" />
-            <ko-KR content="선택 all" />
-        </translate>
-    </item>
-
-    <item id="#0875">
-        <match type="equals">
-            <text content="切り取り" />
-        </match>
-
-        <translate>
-            <en-US content="Cut" />
-            <zh-CN content="剪切" />
-            <zh-TW content="剪切" />
-            <ko-KR content="잘라내기" />
-        </translate>
-    </item>
-
-    <item id="#0876">
-        <match type="equals">
-            <text content="貼り付け" />
-        </match>
-
-        <translate>
-            <en-US content="Paste" />
-            <zh-CN content="粘贴" />
-            <zh-TW content="黏貼" />
-            <ko-KR content="붙여넣기" />
-        </translate>
-    </item>
-
-    <item id="#0877">
-        <match type="equals">
-            <text content="ダーク" />
-        </match>
-
-        <translate>
-            <en-US content="Dark" />
-            <zh-CN content="深色" />
-            <zh-TW content="深色" />
-            <ko-KR content="어둡게" />
-        </translate>
-    </item>
-
-    <item id="#0878">
-        <match type="equals">
-            <text content="デフォルト" />
-        </match>
-
-        <translate>
-            <en-US content="Default" />
-            <zh-CN content="默认" />
-            <zh-TW content="預設" />
-            <ko-KR content="기본값" />
-        </translate>
-    </item>
-
-    <item id="#0879">
-        <match type="equals">
-            <text content="すべて選択" />
-        </match>
-
-        <translate>
-            <en-US content="Select all" />
-            <zh-CN content="全选" />
-            <zh-TW content="全選" />
-            <ko-KR content="선택 all" />
-        </translate>
-    </item>
-
-    <item id="#0880">
+    <item id="#0405">
         <match type="equals">
             <text content="やり直す" />
         </match>
@@ -1400,163 +277,7 @@
         </translate>
     </item>
 
-    <item id="#0881">
-        <match type="equals">
-            <text content="コピー" />
-        </match>
-
-        <translate>
-            <en-US content="Copy" />
-            <zh-CN content="复制" />
-            <zh-TW content="複製" />
-            <ko-KR content="복사" />
-        </translate>
-    </item>
-
-    <item id="#0882">
-        <match type="equals">
-            <text content="テキストを繋げて書き出す" />
-        </match>
-
-        <translate>
-            <en-US content="Export text after concatenating it" />
-            <zh-CN content="合并文本后导出" />
-            <zh-TW content="合並文字後匯出" />
-            <ko-KR content="내보내기 텍스트 after concatenating it" />
-        </translate>
-    </item>
-
-    <item id="#0883">
-        <match type="equals">
-            <text content="テキストを読み込む" />
-        </match>
-
-        <translate>
-            <en-US content="Load text" />
-            <zh-CN content="加载文本" />
-            <zh-TW content="載入文字" />
-            <ko-KR content="불러오기 텍스트" />
-        </translate>
-    </item>
-
-    <item id="#0884">
-        <match type="equals">
-            <text content="テキスト欄からフォーカスを外す" />
-        </match>
-
-        <translate>
-            <en-US content="Remove focus from the text field" />
-            <zh-CN content="移除文本栏焦点" />
-            <zh-TW content="移除文字欄焦點" />
-            <ko-KR content="텍스트 입력란에서 포커스를 해제" />
-        </translate>
-    </item>
-
-    <item id="#0885">
-        <match type="equals">
-            <text content="テキスト欄にフォーカスを戻す" />
-        </match>
-
-        <translate>
-            <en-US content="Restore focus to the text field" />
-            <zh-CN content="恢复文本栏焦点" />
-            <zh-TW content="恢複文字欄焦點" />
-            <ko-KR content="텍스트 입력란으로 포커스를 되돌리기" />
-        </translate>
-    </item>
-
-    <item id="#0886">
-        <match type="equals">
-            <text content="テキスト欄を削除" />
-        </match>
-
-        <translate>
-            <en-US content="Delete text field" />
-            <zh-CN content="删除文本栏" />
-            <zh-TW content="刪除文字欄" />
-            <ko-KR content="삭제 텍스트 입력란" />
-        </translate>
-    </item>
-
-    <item id="#0887">
-        <match type="equals">
-            <text content="テキスト欄を複製" />
-        </match>
-
-        <translate>
-            <en-US content="Duplicate text field" />
-            <zh-CN content="复制文本栏" />
-            <zh-TW content="複製文字欄" />
-            <ko-KR content="Duplicate 텍스트 입력란" />
-        </translate>
-    </item>
-
-    <item id="#0888">
-        <match type="equals">
-            <text content="テキスト欄を追加" />
-        </match>
-
-        <translate>
-            <en-US content="Add text field" />
-            <zh-CN content="添加文本栏" />
-            <zh-TW content="新增文字欄" />
-            <ko-KR content="추가 텍스트 입력란" />
-        </translate>
-    </item>
-
-    <item id="#0889">
-        <match type="equals">
-            <text content="プロジェクトの複製を保存" />
-        </match>
-
-        <translate>
-            <en-US content="Save a copy of the project" />
-            <zh-CN content="保存项目副本" />
-            <zh-TW content="儲存專案副本" />
-            <ko-KR content="프로젝트 사본 저장" />
-        </translate>
-    </item>
-
-    <item id="#0890">
-        <match type="equals">
-            <text content="プロジェクトを上書き保存" />
-        </match>
-
-        <translate>
-            <en-US content="Save project and overwrite" />
-            <zh-CN content="覆盖保存项目" />
-            <zh-TW content="覆寫儲存專案" />
-            <ko-KR content="저장 프로젝트 및 overwrite" />
-        </translate>
-    </item>
-
-    <item id="#0891">
-        <match type="equals">
-            <text content="プロジェクトを名前を付けて保存" />
-        </match>
-
-        <translate>
-            <en-US content="Save project as" />
-            <zh-CN content="将项目另存为" />
-            <zh-TW content="將專案另存為" />
-            <ko-KR content="저장 프로젝트 as" />
-        </translate>
-    </item>
-
-    <item id="#0892">
-        <match type="equals">
-            <text content="プロジェクトを読み込む" />
-        </match>
-
-        <translate>
-            <en-US content="Load project" />
-            <zh-CN content="加载项目" />
-            <zh-TW content="載入專案" />
-            <ko-KR content="불러오기 프로젝트" />
-        </translate>
-    </item>
-
-    <item id="#0893">
+    <item id="#0406">
         <match type="equals">
             <text content="元に戻す" />
         </match>
@@ -1564,99 +285,556 @@
         <translate>
             <en-US content="Undo" />
             <zh-CN content="撤销" />
-            <zh-TW content="撤销" />
+            <zh-TW content="復原" />
             <ko-KR content="실행 취소" />
         </translate>
     </item>
 
-    <item id="#0894">
-        <match type="equals">
-            <text content="全体のイントネーションをリセット" />
-        </match>
-
-        <translate>
-            <en-US content="Reset overall intonation" />
-            <zh-CN content="重置全部语调" />
-            <zh-TW content="重設全部語調" />
-            <ko-KR content="초기화 overall 억양" />
-        </translate>
-    </item>
-
-    <item id="#0895">
-        <match type="equals">
-            <text content="全画面表示を切り替え" />
-        </match>
-
-        <translate>
-            <en-US content="Toggle fullscreen" />
-            <zh-CN content="切换全屏显示" />
-            <zh-TW content="切換全屏顯示" />
-            <ko-KR content="Toggle fullscreen" />
-        </translate>
-    </item>
-
-    <item id="#0896">
+    <item id="#0407">
         <match type="equals">
             <text content="再生/停止" />
         </match>
 
         <translate>
-            <en-US content="Play/Stop" />
-            <zh-CN content="播放/停止" />
-            <zh-TW content="播放/停止" />
-            <ko-KR content="재생/정지" />
+            <en-US content="Play / Stop" />
+            <zh-CN content="播放 / 停止" />
+            <zh-TW content="播放 / 停止" />
+            <ko-KR content="재생 / 정지" />
         </translate>
     </item>
 
-    <item id="#0897">
+    <item id="#0408">
         <match type="equals">
-            <text content="切り取り" />
+            <text content="プロジェクトの複製を保存" />
         </match>
 
         <translate>
-            <en-US content="Cut" />
-            <zh-CN content="剪切" />
-            <zh-TW content="剪切" />
-            <ko-KR content="잘라내기" />
+            <en-US content="Save Project Copy" />
+            <zh-CN content="保存项目副本" />
+            <zh-TW content="儲存專案副本" />
+            <ko-KR content="프로젝트 사본 저장" />
         </translate>
     </item>
 
-    <item id="#0898">
+    <item id="#0409">
+        <match type="equals">
+            <text content="プロジェクトを上書き保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project" />
+            <zh-CN content="覆盖保存项目" />
+            <zh-TW content="覆寫儲存專案" />
+            <ko-KR content="프로젝트 저장" />
+        </translate>
+    </item>
+
+    <item id="#0410">
+        <match type="equals">
+            <text content="プロジェクトを名前を付けて保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project As" />
+            <zh-CN content="将项目另存为" />
+            <zh-TW content="將專案另存為" />
+            <ko-KR content="프로젝트를 다른 이름으로 저장" />
+        </translate>
+    </item>
+
+    <item id="#0411">
+        <match type="equals">
+            <text content="全画面表示を切り替え" />
+        </match>
+
+        <translate>
+            <en-US content="Toggle Fullscreen" />
+            <zh-CN content="切换全屏" />
+            <zh-TW content="切換全螢幕" />
+            <ko-KR content="Toggle Fullscreen" />
+        </translate>
+    </item>
+
+    <item id="#0412">
         <match type="equals">
             <text content="拡大" />
         </match>
 
         <translate>
-            <en-US content="Zoom in" />
+            <en-US content="Zoom In" />
             <zh-CN content="放大" />
             <zh-TW content="放大" />
             <ko-KR content="확대" />
         </translate>
     </item>
 
-    <item id="#0899">
+    <item id="#0413">
         <match type="equals">
             <text content="拡大率のリセット" />
         </match>
 
         <translate>
-            <en-US content="Reset zoom level" />
-            <zh-CN content="重置缩放比例" />
-            <zh-TW content="重設縮放比例" />
-            <ko-KR content="초기화 zoom level" />
+            <en-US content="Reset Zoom" />
+            <zh-CN content="重置缩放" />
+            <zh-TW content="重設縮放" />
+            <ko-KR content="초기화 Zoom" />
         </translate>
     </item>
 
-    <item id="#0900">
+    <item id="#0414">
         <match type="equals">
             <text content="新規プロジェクト" />
         </match>
 
         <translate>
-            <en-US content="New project" />
+            <en-US content="New Project" />
             <zh-CN content="新建项目" />
             <zh-TW content="新建專案" />
             <ko-KR content="새 프로젝트" />
         </translate>
     </item>
+
+    <item id="#0415">
+        <match type="equals">
+            <text content="縮小" />
+        </match>
+
+        <translate>
+            <en-US content="Zoom Out" />
+            <zh-CN content="缩小" />
+            <zh-TW content="縮小" />
+            <ko-KR content="Zoom Out" />
+        </translate>
+    </item>
+
+    <item id="#0416">
+        <match type="equals">
+            <text content="連続再生/停止" />
+        </match>
+
+        <translate>
+            <en-US content="Play continuously / Stop" />
+            <zh-CN content="连续播放 / 停止" />
+            <zh-TW content="連續播放 / 停止" />
+            <ko-KR content="연속 재생 / 정지" />
+        </translate>
+    </item>
+
+    <item id="#0417">
+        <match type="equals">
+            <text content="テキスト欄からフォーカスを外す" />
+        </match>
+
+        <translate>
+            <en-US content="Remove focus from the text field" />
+            <zh-CN content="移除文本框焦点" />
+            <zh-TW content="移除文字欄焦點" />
+            <ko-KR content="텍스트 입력란에서 포커스를 해제" />
+        </translate>
+    </item>
+
+    <item id="#0418">
+        <match type="equals">
+            <text content="テキスト欄にフォーカスを戻す" />
+        </match>
+
+        <translate>
+            <en-US content="Return focus to the text field" />
+            <zh-CN content="将焦点返回文本框" />
+            <zh-TW content="將焦點返回文字欄" />
+            <ko-KR content="텍스트 입력란으로 포커스를 되돌리기" />
+        </translate>
+    </item>
+
+    <item id="#0419">
+        <match type="equals">
+            <text content="テキスト欄を削除" />
+        </match>
+
+        <translate>
+            <en-US content="Delete the text field" />
+            <zh-CN content="删除文本框" />
+            <zh-TW content="刪除文字欄" />
+            <ko-KR content="텍스트 입력란 삭제" />
+        </translate>
+    </item>
+
+    <item id="#0420">
+        <match type="equals">
+            <text content="テキスト欄を複製" />
+        </match>
+
+        <translate>
+            <en-US content="Duplicate the text field" />
+            <zh-CN content="复制文本框" />
+            <zh-TW content="複製文字欄" />
+            <ko-KR content="텍스트 입력란 복제" />
+        </translate>
+    </item>
+
+    <item id="#0421">
+        <match type="equals">
+            <text content="テキスト欄を追加" />
+        </match>
+
+        <translate>
+            <en-US content="Add a text field" />
+            <zh-CN content="添加文本框" />
+            <zh-TW content="添加文字欄" />
+            <ko-KR content="텍스트 입력란 추가" />
+        </translate>
+    </item>
+
+    <item id="#0422">
+        <match type="equals">
+            <text content="音声を繋げて書き出し" />
+        </match>
+
+        <translate>
+            <en-US content="Export concatenated audio" />
+            <zh-CN content="导出合并后的音频" />
+            <zh-TW content="匯出合併後的音訊" />
+            <ko-KR content="이어 붙인 음성 내보내기" />
+        </translate>
+    </item>
+
+    <item id="#0423">
+        <match type="equals">
+            <text content="全体のイントネーションをリセット" />
+        </match>
+
+        <translate>
+            <en-US content="Reset overall intonation" />
+            <zh-CN content="重置整体语调" />
+            <zh-TW content="重設整體語調" />
+            <ko-KR content="초기화 overall 억양" />
+        </translate>
+    </item>
+
+    <item id="#0424">
+        <match type="equals">
+            <text content="選択中のアクセント句のイントネーションをリセット" />
+        </match>
+
+        <translate>
+            <en-US content="Reset the intonation of the selected accent phrase" />
+            <zh-CN content="重置所选重音短语的语调" />
+            <zh-TW content="重設所選重音短語的語調" />
+            <ko-KR content="선택한 악센트 구의 억양 초기화" />
+        </translate>
+    </item>
+
+    <item id="#0425">
+        <match type="equals">
+            <text content="長さ欄を表示" />
+        </match>
+
+        <translate>
+            <en-US content="Show length field" />
+            <zh-CN content="显示长度栏" />
+            <zh-TW content="顯示長度欄" />
+            <ko-KR content="길이 입력란 표시" />
+        </translate>
+    </item>
+
+    <item id="#0426">
+        <match type="equals">
+            <text content="ｱｸｾﾝﾄ欄を表示" />
+        </match>
+
+        <translate>
+            <en-US content="Show accent field" />
+            <zh-CN content="显示重音栏" />
+            <zh-TW content="顯示重音欄" />
+            <ko-KR content="악센트 입력란 표시" />
+        </translate>
+    </item>
+
+    <item id="#0427">
+        <match type="equals">
+            <text content="ｲﾝﾄﾈｰｼｮﾝ欄を表示" />
+        </match>
+
+        <translate>
+            <en-US content="Show intonation field" />
+            <zh-CN content="显示语调栏" />
+            <zh-TW content="顯示語調欄" />
+            <ko-KR content="억양 입력란 표시" />
+        </translate>
+    </item>
+
+    <item id="#0428">
+        <match type="equals">
+            <text content="1番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 1st character" />
+            <zh-CN content="选择第 1 个角色" />
+            <zh-TW content="選擇第 1 個角色" />
+            <ko-KR content="1번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0429">
+        <match type="equals">
+            <text content="2番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 2nd character" />
+            <zh-CN content="选择第 2 个角色" />
+            <zh-TW content="選擇第 2 個角色" />
+            <ko-KR content="2번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0430">
+        <match type="equals">
+            <text content="3番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 3rd character" />
+            <zh-CN content="选择第 3 个角色" />
+            <zh-TW content="選擇第 3 個角色" />
+            <ko-KR content="3번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0431">
+        <match type="equals">
+            <text content="4番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 4th character" />
+            <zh-CN content="选择第 4 个角色" />
+            <zh-TW content="選擇第 4 個角色" />
+            <ko-KR content="4번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0432">
+        <match type="equals">
+            <text content="5番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 5th character" />
+            <zh-CN content="选择第 5 个角色" />
+            <zh-TW content="選擇第 5 個角色" />
+            <ko-KR content="5번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0433">
+        <match type="equals">
+            <text content="6番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 6th character" />
+            <zh-CN content="选择第 6 个角色" />
+            <zh-TW content="選擇第 6 個角色" />
+            <ko-KR content="6번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0434">
+        <match type="equals">
+            <text content="7番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 7th character" />
+            <zh-CN content="选择第 7 个角色" />
+            <zh-TW content="選擇第 7 個角色" />
+            <ko-KR content="7번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0435">
+        <match type="equals">
+            <text content="8番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 8th character" />
+            <zh-CN content="选择第 8 个角色" />
+            <zh-TW content="選擇第 8 個角色" />
+            <ko-KR content="8번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0436">
+        <match type="equals">
+            <text content="9番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 9th character" />
+            <zh-CN content="选择第 9 个角色" />
+            <zh-TW content="選擇第 9 個角色" />
+            <ko-KR content="9번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0437">
+        <match type="equals">
+            <text content="10番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select the 10th character" />
+            <zh-CN content="选择第 10 个角色" />
+            <zh-TW content="選擇第 10 個角色" />
+            <ko-KR content="10번째 캐릭터 선택" />
+        </translate>
+    </item>
+
+    <item id="#0438">
+        <match type="contains">
+            <param name="0" />
+            <text content="のショートカットキーをデフォルトに戻します。" />
+        </match>
+
+        <translate>
+            <en-US content="Restore the shortcut key for {0} to its default." />
+            <zh-CN content="将 {0} 的快捷键恢复为默认值。" />
+            <zh-TW content="將 {0} 的快捷键復原為預設值。" />
+            <ko-KR content="{0}의 단축키를 기본값으로 복원합니다." />
+        </translate>
+    </item>
+
+    <item id="#0439">
+        <match type="equals">
+            <text content="デフォルトに戻しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Restore defaults?" />
+            <zh-CN content="恢复默认设置吗？" />
+            <zh-TW content="復原預設設定吗？" />
+            <ko-KR content="기본값을 복원하시겠습니까?" />
+        </translate>
+    </item>
+
+    <item id="#0440">
+        <match type="equals">
+            <text content="デフォルトに戻す" />
+        </match>
+
+        <translate>
+            <en-US content="Restore Defaults" />
+            <zh-CN content="恢复默认值" />
+            <zh-TW content="還原預設值" />
+            <ko-KR content="기본값 복원" />
+        </translate>
+    </item>
+
+    <item id="#0441">
+        <match type="equals">
+            <text content="未割り当て" />
+        </match>
+
+        <translate>
+            <en-US content="Unassigned" />
+            <zh-CN content="未分配" />
+            <zh-TW content="未分配" />
+            <ko-KR content="할당되지 않음" />
+        </translate>
+    </item>
+
+    <item id="#0442">
+        <match type="equals">
+            <text content="検索" />
+        </match>
+
+        <translate>
+            <en-US content="Search" />
+            <zh-CN content="搜索" />
+            <zh-TW content="搜尋" />
+            <ko-KR content="검색" />
+        </translate>
+    </item>
+
+    <item id="#0443">
+        <match type="equals">
+            <text content="設定 / キー割り当て" />
+        </match>
+
+        <translate>
+            <en-US content="Settings / Key Bindings" />
+            <zh-CN content="设置 / 快捷键绑定" />
+            <zh-TW content="設定 / 快速鍵指派" />
+            <ko-KR content="설정 / 키 배정" />
+        </translate>
+    </item>
+
+    <item id="#0444">
+        <match type="equals">
+            <text content="（読み取り専用）" />
+        </match>
+
+        <translate>
+            <en-US content="(Read-only)" />
+            <zh-CN content="(只读）" />
+            <zh-TW content="(唯讀）" />
+            <ko-KR content="(읽기 전용)" />
+        </translate>
+    </item>
+
+    <item id="#0445">
+        <match type="equals">
+            <text content="ショートカットキー" />
+        </match>
+
+        <translate>
+            <en-US content="Shortcut Key" />
+            <zh-CN content="快捷键" />
+            <zh-TW content="快捷键" />
+            <ko-KR content="단축키" />
+        </translate>
+    </item>
+
+    <item id="#0446">
+        <match type="equals">
+            <text content="インポート" />
+        </match>
+
+        <translate>
+            <en-US content="Import" />
+            <zh-CN content="导入" />
+            <zh-TW content="匯入" />
+            <ko-KR content="가져오기" />
+        </translate>
+    </item>
+
+    <item id="#0447">
+        <match type="equals">
+            <text content="インポートするファイル" />
+        </match>
+
+        <translate>
+            <en-US content="File to Import" />
+            <zh-CN content="要导入的文件" />
+            <zh-TW content="要匯入的檔案" />
+            <ko-KR content="가져올 파일" />
+        </translate>
+    </item>
+
+    <item id="#0448">
+        <match type="equals">
+            <text content="トラックがありません" />
+        </match>
+
+        <translate>
+            <en-US content="No tracks" />
+            <zh-CN content="没有轨道" />
+            <zh-TW content="没有轨道" />
+            <ko-KR content="트랙이 없습니다" />
+        </translate>
+    </item>
+
 </translates>

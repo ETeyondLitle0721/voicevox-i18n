@@ -1,5 +1,9 @@
 import type { App } from "vue";
-import type { Locale, TranslationRule, TranslationRules } from "./voicevoxI18nPlugin";
+import type {
+  Locale,
+  TranslationRule,
+  TranslationRules,
+} from "./voicevoxI18nPlugin";
 
 const SUPPORTED_LOCALES: readonly Locale[] = [
   "ja-JP",
@@ -48,13 +52,13 @@ const interpolate = (
 ): string =>
   template.replace(/\{([^{}]+)\}/gu, (match, name: string) => {
     const byName = groups[name];
-    if (byName !== undefined) return byName;
+    if (byName != undefined) return byName;
 
     const numericIndex = Number(name);
     if (Number.isInteger(numericIndex)) {
       const parameterName = fallbackParameters[numericIndex];
       const byIndex = parameterName ? groups[parameterName] : undefined;
-      if (byIndex !== undefined) return byIndex;
+      if (byIndex != undefined) return byIndex;
     }
 
     return match;
@@ -157,7 +161,9 @@ const getRuleGroups = (
   match: RegExpExecArray,
   rule: TranslationRule,
 ): Record<string, string | undefined> => {
-  const groups: Record<string, string | undefined> = { ...(match.groups ?? {}) };
+  const groups: Record<string, string | undefined> = {
+    ...(match.groups ?? {}),
+  };
   for (let index = 0; index < rule.parameters.length; index += 1) {
     const parameterName = rule.parameters[index];
     groups[parameterName] = groups[`p${index}`];
@@ -169,7 +175,9 @@ type CompiledTranslationRule = TranslationRule & {
   regex: RegExp;
 };
 
-const compileRules = (rules: readonly TranslationRule[]): CompiledTranslationRule[] =>
+const compileRules = (
+  rules: readonly TranslationRule[],
+): CompiledTranslationRule[] =>
   rules.map((rule) => ({
     ...rule,
     regex: new RegExp(rule.pattern, rule.flags),
@@ -218,7 +226,11 @@ const translateValue = (
   let result = value;
 
   for (const rule of rules) {
+    const last = result;
+
     result = applyRule(result, rule);
+
+    if (last !== result) break;
   }
 
   return result;
@@ -250,7 +262,7 @@ export function createRuntime(rules: TranslationRules) {
     stop(): void {
       console.log("call i18n:stop");
       runtime.running = false;
-      if (runtime.frameId !== undefined) {
+      if (runtime.frameId != undefined) {
         window.cancelAnimationFrame(runtime.frameId);
         runtime.frameId = undefined;
       }
@@ -287,25 +299,32 @@ export function createRuntime(rules: TranslationRules) {
       for (let node = walker.nextNode(); node; node = walker.nextNode()) {
         if (node.nodeType === Node.ELEMENT_NODE) {
           const element = node as Element;
-          if (!hasIgnoredAttributeOwner(element)) pendingAttributes.add(element);
+          if (!hasIgnoredAttributeOwner(element)) {
+            pendingAttributes.add(element);
+          }
           continue;
         }
 
-        const textNode = node as Text;
+        const textNode = node as Text & { ok?: boolean };
         const parent = textNode.parentElement;
         if (!parent || hasIgnoredTextAncestor(parent)) continue;
 
+        if (textNode.ok) continue;
+
         const translated = translateValue(textNode.data, activeRules);
+
         if (translated !== textNode.data) {
           textNode.data = translated;
         }
+
+        textNode.ok = true;
       }
 
       for (const element of pendingAttributes) {
         for (const name of SOURCE_ATTRIBUTE_NAMES) {
           if (!element.hasAttribute(name)) continue;
           const current = element.getAttribute(name);
-          if (current === null) continue;
+          if (current == null) continue;
 
           const translated = translateValue(current, activeRules);
           if (translated !== current) {
@@ -354,7 +373,7 @@ export function createRuntime(rules: TranslationRules) {
       const translated = runtime.text("", source);
       return translated.replace(/\{(\d+)\}/gu, (match, index: string) => {
         const value = values[Number(index)];
-        return value === undefined ? match : String(value);
+        return value == undefined ? match : String(value);
       });
     },
   };
@@ -390,17 +409,18 @@ export function installVoicevoxI18nRuntime(
   if (typeof document === "undefined") return;
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => runtime.installObserver(), {
-      once: true,
-    });
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => runtime.installObserver(),
+      {
+        once: true,
+      },
+    );
   } else {
     runtime.installObserver();
   }
 }
 
-export function installVoicevoxI18n(
-  app: App,
-  rules: TranslationRules,
-): void {
+export function installVoicevoxI18n(app: App, rules: TranslationRules): void {
   installVoicevoxI18nRuntime(app, createRuntime(rules));
 }

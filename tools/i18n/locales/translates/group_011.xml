@@ -1,0 +1,858 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<translates xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../schemas/translates.xsd">
+
+    <item id="#0641">
+        <match type="equals">
+            <text content="番目のキャラクターを選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select character" />
+            <zh-CN content="选择角色" />
+            <zh-TW content="選擇角色" />
+            <ko-KR content="선택 캐릭터" />
+        </translate>
+    </item>
+
+    <item id="#0642">
+        <match type="equals">
+            <text content="nativeElの取得に失敗しました。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to get nativeEl." />
+            <zh-CN content="获取 nativeEl 失败。" />
+            <zh-TW content="取得 nativeEl 失敗。" />
+            <ko-KR content="nativeEl을 가져오지 못했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0643">
+        <match type="equals">
+            <text content="（内部エラーメッセージ）" />
+        </match>
+
+        <translate>
+            <en-US content="(Internal error message)" />
+            <zh-CN content="（内部错误消息）" />
+            <zh-TW content="（內部錯誤消息）" />
+            <ko-KR content="(내부 오류 메시지)" />
+        </translate>
+    </item>
+
+    <item id="#0644">
+        <match type="equals">
+            <text content="ファイルが開かれています。" />
+        </match>
+
+        <translate>
+            <en-US content="The file is open." />
+            <zh-CN content="文件当前已打开。" />
+            <zh-TW content="檔案当前已打開。" />
+            <ko-KR content="파일이 열려 있습니다." />
+        </translate>
+    </item>
+
+    <item id="#0645">
+        <match type="equals">
+            <text content="ファイルにアクセスする許可がありません。" />
+        </match>
+
+        <translate>
+            <en-US content="You do not have permission to access the file." />
+            <zh-CN content="没有访问文件的权限。" />
+            <zh-TW content="沒有访問檔案的權限。" />
+            <ko-KR content="파일에 접근할 권한이 없습니다." />
+        </translate>
+    </item>
+
+    <item id="#0646">
+        <match type="contains">
+            <text content="何らかの理由で失敗しました。" />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="The operation failed. {0}" />
+            <zh-CN content="因某种原因操作失败。{0}" />
+            <zh-TW content="操作因某種原因失敗。{0}" />
+            <ko-KR content="작업에 실패했습니다. {0}" />
+        </translate>
+    </item>
+
+    <item id="#0647">
+        <match type="equals">
+            <text content="指定されたファイルまたはフォルダが見つかりません。" />
+        </match>
+
+        <translate>
+            <en-US content="The specified file or folder was not found." />
+            <zh-CN content="找不到指定的文件或文件夹。" />
+            <zh-TW content="找不到指定的檔案或資料夾。" />
+            <ko-KR content="지정한 파일 또는 폴더를 찾을 수 없습니다." />
+        </translate>
+    </item>
+
+    <item id="#0648">
+        <match type="equals">
+            <text content="空き容量が足りません。" />
+        </match>
+
+        <translate>
+            <en-US content="Not enough free space." />
+            <zh-CN content="可用空间不足。" />
+            <zh-TW content="可用空間不足。" />
+            <ko-KR content="여유 공간이 부족합니다." />
+        </translate>
+    </item>
+
+    <item id="#0649">
+        <match type="contains">
+            <text content="1つのアクセント句に二つ以上のアクセントは置けません: " />
+            <param name="text" />
+        </match>
+
+        <translate>
+            <en-US content="You cannot place more than two accents in one accent phrase: {text}" />
+            <zh-CN content="一个重音短语中不能设置两个以上的重音：{text}" />
+            <zh-TW content="一個重音短語中不能設定兩個以上的重音：{text}" />
+            <ko-KR content="하나의 악센트 구에는 악센트를 두 개 이상 지정할 수 없습니다: {text}" />
+        </translate>
+    </item>
+
+    <item id="#0650">
+        <match type="contains">
+            <param name="position" />
+            <text content="番目のアクセント句が空白です" />
+        </match>
+
+        <translate>
+            <en-US content="The {position}th accent phrase is blank" />
+            <zh-CN content="第 {position} 个重音短语为空白" />
+            <zh-TW content="第 {position} 個重音短語為空白" />
+            <ko-KR content="{position}번째 악센트 구가 비어 있습니다" />
+        </translate>
+    </item>
+
+    <item id="#0651">
+        <match type="contains">
+            <text content="アクセントを指定していないアクセント句があります: " />
+            <param name="text" />
+        </match>
+
+        <translate>
+            <en-US content="There is an accent phrase without a specified accent: {text}" />
+            <zh-CN content="存在未指定重音的重音短语：{text}" />
+            <zh-TW content="存在未指定重音的重音短語：{text}" />
+            <ko-KR content="악센트가 지정되지 않은 악센트 구가 있습니다: {text}" />
+        </translate>
+    </item>
+
+    <item id="#0652">
+        <match type="contains">
+            <text content="アクセント句末以外に「？」は置けません: " />
+            <param name="text" />
+        </match>
+
+        <translate>
+            <en-US content="&quot;?&quot; can only be placed at the end of an accent phrase: {text}" />
+            <zh-CN content="“？”只能放在重音短语末尾：{text}" />
+            <zh-TW content="“？”只能放在重音短語末尾：{text}" />
+            <ko-KR content="악센트 구의 끝 이외의 위치에는 &quot;?&quot;를 넣을 수 없습니다: {text}" />
+        </translate>
+    </item>
+
+    <item id="#0653">
+        <match type="equals">
+            <text content="処理時に無限ループになってしまいました...バグ報告をお願いします。" />
+        </match>
+
+        <translate>
+            <en-US content="An infinite loop occurred during processing... Please report this bug." />
+            <zh-CN content="处理时进入了无限循环……请报告此错误。" />
+            <zh-TW content="處理時進入了無限循环……請報告此錯誤。" />
+            <ko-KR content="처리 중 무한 루프가 발생했습니다... 이 버그를 신고해 주세요." />
+        </translate>
+    </item>
+
+    <item id="#0654">
+        <match type="contains">
+            <text content="判別できない読み仮名があります: " />
+            <param name="text" />
+        </match>
+
+        <translate>
+            <en-US content="There is an unrecognized kana reading: {text}" />
+            <zh-CN content="存在无法识别的假名读法：{text}" />
+            <zh-TW content="存在無法識別的假名讀法：{text}" />
+            <ko-KR content="인식할 수 없는 읽기가 있습니다: {text}" />
+        </translate>
+    </item>
+
+    <item id="#0655">
+        <match type="contains">
+            <text content="句頭にアクセントは置けません: " />
+            <param name="text" />
+        </match>
+
+        <translate>
+            <en-US content="An accent cannot be placed at the beginning of a phrase: {text}" />
+            <zh-CN content="句首不能设置重音：{text}" />
+            <zh-TW content="句首不能設定重音：{text}" />
+            <ko-KR content="구의 시작 부분에는 악센트를 지정할 수 없습니다: {text}" />
+        </translate>
+    </item>
+
+    <item id="#0656">
+        <match type="equals">
+            <text content="一般" />
+        </match>
+
+        <translate>
+            <en-US content="General" />
+            <zh-CN content="一般" />
+            <zh-TW content="一般" />
+            <ko-KR content="일반" />
+        </translate>
+    </item>
+
+    <item id="#0657">
+        <match type="equals">
+            <text content="名詞" />
+        </match>
+
+        <translate>
+            <en-US content="Noun" />
+            <zh-CN content="名词" />
+            <zh-TW content="名詞" />
+            <ko-KR content="명사" />
+        </translate>
+    </item>
+
+    <item id="#0658">
+        <match type="contains">
+            <text content="ノートが見つかりません: index=" />
+            <param name="0" />
+            <text content=" phoneme=" />
+            <param name="1" />
+        </match>
+
+        <translate>
+            <en-US content="Note not found: index={0} phoneme={1}" />
+            <zh-CN content="找不到音符：index={0} phoneme={1}" />
+            <zh-TW content="找不到音符：index={0} phoneme={1}" />
+            <ko-KR content="노트를 찾을 수 없습니다: index={0} phoneme={1}" />
+        </translate>
+    </item>
+
+    <item id="#0659">
+        <match type="contains">
+            <text content="音素に変換できません: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Cannot convert to phoneme: {0}" />
+            <zh-CN content="无法转换为音素：{0}" />
+            <zh-TW content="無法轉換為音素：{0}" />
+            <ko-KR content="음소로 변환할 수 없습니다: {0}" />
+        </translate>
+    </item>
+
+    <item id="#0660">
+        <match type="contains">
+            <text content="未対応の音素: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Unsupported phoneme: {0}" />
+            <zh-CN content="不支持的音素：{0}" />
+            <zh-TW content="不支持的音素：{0}" />
+            <ko-KR content="지원되지 않는 음소: {0}" />
+        </translate>
+    </item>
+
+    <item id="#0661">
+        <match type="contains">
+            <text content="モーラに変換できません: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Cannot convert to mora: {0}" />
+            <zh-CN content="无法转换为拍：{0}" />
+            <zh-TW content="無法轉換為拍：{0}" />
+            <ko-KR content="모라로 변환할 수 없습니다: {0}" />
+        </translate>
+    </item>
+
+    <item id="#0662">
+        <match type="equals">
+            <text content="助詞" />
+        </match>
+
+        <translate>
+            <en-US content="Particle" />
+            <zh-CN content="助词" />
+            <zh-TW content="助詞" />
+            <ko-KR content="조사" />
+        </translate>
+    </item>
+
+    <item id="#0663">
+        <match type="contains">
+            <text content="発音がないトークン: " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Token without pronunciation: {0}" />
+            <zh-CN content="没有发音的令牌：{0}" />
+            <zh-TW content="沒有發音的令牌：{0}" />
+            <ko-KR content="Token 없이 pronunciation: {0}" />
+        </translate>
+    </item>
+
+    <item id="#0664">
+        <match type="equals">
+            <text content="記号" />
+        </match>
+
+        <translate>
+            <en-US content="Symbol" />
+            <zh-CN content="符号" />
+            <zh-TW content="符号" />
+            <ko-KR content="기호" />
+        </translate>
+    </item>
+
+    <item id="#0665">
+        <match type="equals">
+            <text content="無名トラック" />
+        </match>
+
+        <translate>
+            <en-US content="Unnamed track" />
+            <zh-CN content="未命名音轨" />
+            <zh-TW content="未命名音轨" />
+            <ko-KR content="Unnamed 트랙" />
+        </translate>
+    </item>
+
+    <item id="#0666">
+        <match type="equals">
+            <text content="ハミング" />
+        </match>
+
+        <translate>
+            <en-US content="Humming" />
+            <zh-CN content="哼唱" />
+            <zh-TW content="哼唱" />
+            <ko-KR content="허밍" />
+        </translate>
+    </item>
+
+    <item id="#0667">
+        <match type="equals">
+            <text content="プロジェクトファイルが新しいバージョンのVOICEVOXで作成されています" />
+        </match>
+
+        <translate>
+            <en-US content="The project file was created with a newer version of VOICEVOX." />
+            <zh-CN content="该项目文件由更新版本的 VOICEVOX 创建。" />
+            <zh-TW content="此專案檔案是由較新版本的 VOICEVOX 建立的。" />
+            <ko-KR content="프로젝트 파일이 더 최신 버전의 VOICEVOX에서 생성되었습니다." />
+        </translate>
+    </item>
+
+    <item id="#0668">
+        <match type="equals">
+            <text content="このプロジェクトファイルは新しいバージョンのVOICEVOXで作成されたため、一部の機能が正しく動作しない可能性があります。読み込みを続行しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="This project file was created with a newer version of VOICEVOX, so some features may not work correctly. Continue loading?" />
+            <zh-CN content="此项目文件由更新版本的 VOICEVOX 创建，因此部分功能可能无法正常工作。要继续加载吗？" />
+            <zh-TW content="此專案檔案是由較新版本的 VOICEVOX 建立的，因此部分功能可能無法正常運作。要繼續載入嗎？" />
+            <ko-KR content="이 프로젝트 파일은 더 최신 버전의 VOICEVOX에서 생성되었기 때문에 일부 기능이 정상적으로 작동하지 않을 수 있습니다. 계속 불러오시겠습니까?" />
+        </translate>
+    </item>
+
+    <item id="#0669">
+        <match type="equals">
+            <text content="プロジェクトファイルの選択" />
+        </match>
+
+        <translate>
+            <en-US content="Select Project File" />
+            <zh-CN content="选择项目文件" />
+            <zh-TW content="選擇專案檔案" />
+            <ko-KR content="선택 프로젝트 파일" />
+        </translate>
+    </item>
+
+    <item id="#0670">
+        <match type="equals">
+            <text content="プロジェクトをロードすると現在のプロジェクトは破棄されます。" />
+        </match>
+
+        <translate>
+            <en-US content="Loading a project will discard the current project." />
+            <zh-CN content="加载项目后，当前项目将被丢弃。" />
+            <zh-TW content="載入專案後，當前專案將被捨棄。" />
+            <ko-KR content="프로젝트를 불러오면 현재 프로젝트가 삭제됩니다." />
+        </translate>
+    </item>
+
+    <item id="#0671">
+        <match type="equals">
+            <text content="エラーが発生しました。" />
+        </match>
+
+        <translate>
+            <en-US content="An error occurred." />
+            <zh-CN content="发生错误。" />
+            <zh-TW content="發生錯誤。" />
+            <ko-KR content="오류가 발생했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0672">
+        <match type="equals">
+            <text content="プロジェクトファイルが見つかりませんでした。ファイルが移動、または削除された可能性があります。" />
+        </match>
+
+        <translate>
+            <en-US content="The project file could not be found. It may have been moved or deleted." />
+            <zh-CN content="找不到项目文件。该文件可能已被移动或删除。" />
+            <zh-TW content="找不到專案檔案。該檔案可能已被移動或刪除。" />
+            <ko-KR content="프로젝트 파일을 찾을 수 없습니다. 파일이 이동되었거나 삭제되었을 수 있습니다." />
+        </translate>
+    </item>
+
+    <item id="#0673">
+        <match type="equals">
+            <text content="ファイルフォーマットが正しくありません。" />
+        </match>
+
+        <translate>
+            <en-US content="The file format is invalid." />
+            <zh-CN content="文件格式不正确。" />
+            <zh-TW content="檔案格式不正確。" />
+            <ko-KR content="파일 형식이 올바르지 않습니다." />
+        </translate>
+    </item>
+
+    <item id="#0674">
+        <match type="contains">
+            <text content="プロジェクトファイルの読み込みに失敗しました。 " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to load the project file. {0}" />
+            <zh-CN content="加载项目文件失败。{0}" />
+            <zh-TW content="載入專案檔案失敗。{0}" />
+            <ko-KR content="프로젝트 파일을 불러오지 못했습니다. {0}" />
+        </translate>
+    </item>
+
+    <item id="#0675">
+        <match type="contains">
+            <text content="編集中のプロジェクトが " />
+            <param name="0" />
+            <text content=" に切り替わりました。" />
+        </match>
+
+        <translate>
+            <en-US content="The project being edited has been switched to {0}." />
+            <zh-CN content="正在编辑的项目已切换为 {0}。" />
+            <zh-TW content="正在編輯的專案已切換為 {0}。" />
+            <ko-KR content="편집 중인 프로젝트가 {0}(으)로 변경되었습니다." />
+        </translate>
+    </item>
+
+    <item id="#0676">
+        <match type="equals">
+            <text content="プロジェクトの変更が保存されていません。" />
+        </match>
+
+        <translate>
+            <en-US content="Project changes have not been saved." />
+            <zh-CN content="项目更改尚未保存。" />
+            <zh-TW content="專案變更尚未儲存。" />
+            <ko-KR content="프로젝트 changes have 아님 been saved." />
+        </translate>
+    </item>
+
+    <item id="#0677">
+        <match type="equals">
+            <text content="プロジェクトを保存しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Save the project?" />
+            <zh-CN content="要保存项目吗？" />
+            <zh-TW content="要儲存專案嗎？" />
+            <ko-KR content="프로젝트를 저장하시겠습니까?" />
+        </translate>
+    </item>
+
+    <item id="#0678">
+        <match type="equals">
+            <text content="保存する" />
+        </match>
+
+        <translate>
+            <en-US content="Save" />
+            <zh-CN content="保存" />
+            <zh-TW content="儲存" />
+            <ko-KR content="저장" />
+        </translate>
+    </item>
+
+    <item id="#0679">
+        <match type="equals">
+            <text content="プロジェクトファイルの保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save Project File" />
+            <zh-CN content="保存项目文件" />
+            <zh-TW content="儲存專案檔案" />
+            <ko-KR content="프로젝트 파일 저장" />
+        </translate>
+    </item>
+
+    <item id="#0680">
+        <match type="equals">
+            <text content="ファイルの保存に失敗しました。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to save the file." />
+            <zh-CN content="文件保存失败。" />
+            <zh-TW content="檔案儲存失敗。" />
+            <ko-KR content="파일을 저장하지 못했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0681">
+        <match type="equals">
+            <text content="プロジェクトファイルの保存に失敗しました" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to save the project file." />
+            <zh-CN content="项目文件保存失败" />
+            <zh-TW content="專案檔案儲存失敗" />
+            <ko-KR content="프로젝트 파일을 저장하지 못했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0682">
+        <match type="equals">
+            <text content="WAV ファイル" />
+        </match>
+
+        <translate>
+            <en-US content="WAV file" />
+            <zh-CN content="WAV 文件" />
+            <zh-TW content="WAV 檔案" />
+            <ko-KR content="WAV 파일" />
+        </translate>
+    </item>
+
+    <item id="#0683">
+        <match type="equals">
+            <text content="labの生成に失敗しました。" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to generate lab." />
+            <zh-CN content="生成 lab 失败。" />
+            <zh-TW content="生成 lab 失敗。" />
+            <ko-KR content="생성 lab에 실패했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0684">
+        <match type="equals">
+            <text content="セリフ読み込み" />
+        </match>
+
+        <translate>
+            <en-US content="Load dialogue" />
+            <zh-CN content="加载台词" />
+            <zh-TW content="載入臺詞" />
+            <ko-KR content="불러오기 dialogue" />
+        </translate>
+    </item>
+
+    <item id="#0685">
+        <match type="equals">
+            <text content="テキストファイル" />
+        </match>
+
+        <translate>
+            <en-US content="Text file" />
+            <zh-CN content="文本文件" />
+            <zh-TW content="文字檔案" />
+            <ko-KR content="텍스트 파일" />
+        </translate>
+    </item>
+
+    <item id="#0686">
+        <match type="equals">
+            <text content="不明なエラーが発生しました。" />
+        </match>
+
+        <translate>
+            <en-US content="An unknown error occurred." />
+            <zh-CN content="发生未知错误。" />
+            <zh-TW content="發生未知錯誤。" />
+            <ko-KR content="알 수 없는 오류가 발생했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0687">
+        <match type="equals">
+            <text content="文章を全て繋げてテキストファイルに保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save all text concatenated into a text file" />
+            <zh-CN content="合并所有文本后保存为文本文件" />
+            <zh-TW content="合並所有文字後儲存為文字檔案" />
+            <ko-KR content="모든 문장을 이어 붙여 텍스트 파일로 저장" />
+        </translate>
+    </item>
+
+    <item id="#0688">
+        <match type="contains">
+            <text content="話者の変更に失敗しました： " />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Failed to change speaker: {0}" />
+            <zh-CN content="更改说话人失败：{0}" />
+            <zh-TW content="更改說話人失敗：{0}" />
+            <ko-KR content="변경 speaker: {0}에 실패했습니다." />
+        </translate>
+    </item>
+
+    <item id="#0689">
+        <match type="equals">
+            <text content="音声を保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save audio" />
+            <zh-CN content="保存音频" />
+            <zh-TW content="儲存音頻" />
+            <ko-KR content="음성 저장" />
+        </translate>
+    </item>
+
+    <item id="#0690">
+        <match type="equals">
+            <text content="音声を全て繋げて保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save all audio concatenated" />
+            <zh-CN content="合并所有音频后保存" />
+            <zh-TW content="合並所有音頻後儲存" />
+            <ko-KR content="모든 음성을 이어 붙여 저장" />
+        </translate>
+    </item>
+
+    <item id="#0691">
+        <match type="equals">
+            <text content="モーフィングの設定が無効です。" />
+        </match>
+
+        <translate>
+            <en-US content="Morphing settings are invalid." />
+            <zh-CN content="变形设置无效。" />
+            <zh-TW content="變形設定無效。" />
+            <ko-KR content="Morphing 설정 are 잘못된." />
+        </translate>
+    </item>
+
+    <item id="#0692">
+        <match type="equals">
+            <text content="再生デバイスが見つかりません" />
+        </match>
+
+        <translate>
+            <en-US content="Playback device not found" />
+            <zh-CN content="找不到播放设备" />
+            <zh-TW content="找不到播放設备" />
+            <ko-KR content="재생 장치를 찾을 수 없습니다" />
+        </translate>
+    </item>
+
+    <item id="#0693">
+        <match type="contains">
+            <text content="デフォルト：" />
+            <param name="0" />
+        </match>
+
+        <translate>
+            <en-US content="Default: {0}" />
+            <zh-CN content="默认：{0}" />
+            <zh-TW content="預設：{0}" />
+            <ko-KR content="기본값: {0}" />
+        </translate>
+    </item>
+
+    <item id="#0694">
+        <match type="equals">
+            <text content="GPUデバイスを確認中です" />
+        </match>
+
+        <translate>
+            <en-US content="Checking GPU devices" />
+            <zh-CN content="正在检查 GPU 设备" />
+            <zh-TW content="正在檢查 GPU 裝置" />
+            <ko-KR content="GPU 장치를 확인하는 중입니다" />
+        </translate>
+    </item>
+
+    <item id="#0695">
+        <match type="equals">
+            <text content="対応するGPUデバイスが見つかりません" />
+        </match>
+
+        <translate>
+            <en-US content="No supported GPU device found" />
+            <zh-CN content="未找到受支持的 GPU 设备" />
+            <zh-TW content="找不到支援的 GPU 裝置" />
+            <ko-KR content="지원되는 GPU 장치를 찾을 수 없습니다" />
+        </translate>
+    </item>
+
+    <item id="#0696">
+        <match type="equals">
+            <text content="GPUモードの利用には対応するGPUデバイスが必要です。" />
+        </match>
+
+        <translate>
+            <en-US content="A supported GPU device is required to use GPU mode." />
+            <zh-CN content="使用 GPU 模式需要支持的 GPU 设备。" />
+            <zh-TW content="使用 GPU 模式需要支援的 GPU 裝置。" />
+            <ko-KR content="GPU 모드를 사용하려면 지원되는 GPU 장치가 필요합니다." />
+        </translate>
+    </item>
+
+    <item id="#0697">
+        <match type="equals">
+            <text content="このままGPUモードに変更するとエンジンエラーが発生する可能性があります。本当に変更しますか？" />
+        </match>
+
+        <translate>
+            <en-US content="Switching to GPU mode may cause an engine error. Are you sure you want to switch?" />
+            <zh-CN content="直接切换到 GPU 模式可能会导致引擎错误。确定要切换吗？" />
+            <zh-TW content="直接切換至 GPU 模式可能會導致引擎錯誤。確定要切換嗎？" />
+            <ko-KR content="GPU 모드로 전환하면 엔진 오류가 발생할 수 있습니다. 그래도 전환하시겠습니까?" />
+        </translate>
+    </item>
+
+    <item id="#0698">
+        <match type="equals">
+            <text content="変更しない" />
+        </match>
+
+        <translate>
+            <en-US content="Do not change" />
+            <zh-CN content="不更改" />
+            <zh-TW content="不變更" />
+            <ko-KR content="변경하지 않음" />
+        </translate>
+    </item>
+
+    <item id="#0699">
+        <match type="equals">
+            <text content="起動モードを変更中です" />
+        </match>
+
+        <translate>
+            <en-US content="Changing startup mode" />
+            <zh-CN content="正在更改启动模式" />
+            <zh-TW content="正在變更啟動模式" />
+            <ko-KR content="시작 모드를 변경하는 중입니다" />
+        </translate>
+    </item>
+
+    <item id="#0700">
+        <match type="equals">
+            <text content="GPUモードに変更できませんでした" />
+        </match>
+
+        <translate>
+            <en-US content="Could not switch to GPU mode" />
+            <zh-CN content="无法切换到 GPU 模式" />
+            <zh-TW content="無法切換至 GPU 模式" />
+            <ko-KR content="GPU 모드로 전환할 수 없습니다" />
+        </translate>
+    </item>
+
+    <item id="#0701">
+        <match type="equals">
+            <text content="GPUモードでエンジンを起動できなかったためCPUモードに戻します" />
+        </match>
+
+        <translate>
+            <en-US content="The engine could not start in GPU mode, so it will return to CPU mode." />
+            <zh-CN content="无法在 GPU 模式下启动引擎，因此将恢复为 CPU 模式。" />
+            <zh-TW content="無法在 GPU 模式下啟動引擎，因此將恢復為 CPU 模式。" />
+            <ko-KR content="GPU 모드에서 엔진을 시작하지 못해 CPU 모드로 돌아갑니다." />
+        </translate>
+    </item>
+
+    <item id="#0702">
+        <match type="equals">
+            <text content="labファイルを保存" />
+        </match>
+
+        <translate>
+            <en-US content="Save LAB file" />
+            <zh-CN content="保存 LAB 文件" />
+            <zh-TW content="儲存 LAB 檔案" />
+            <ko-KR content="저장 LAB 파일" />
+        </translate>
+    </item>
+
+    <item id="#0703">
+        <match type="equals">
+            <text content="プロジェクトを書き出し" />
+        </match>
+
+        <translate>
+            <en-US content="Export Project" />
+            <zh-CN content="导出项目" />
+            <zh-TW content="匯出專案" />
+            <ko-KR content="프로젝트 내보내기" />
+        </translate>
+    </item>
+
+    <item id="#0704">
+        <match type="contains">
+            <param name="0" />
+            <text content=" - コピー" />
+        </match>
+
+        <translate>
+            <en-US content="{0} - Copy" />
+            <zh-CN content="{0} - 副本" />
+            <zh-TW content="{0} - 副本" />
+            <ko-KR content="{0} - 복사" />
+        </translate>
+    </item>
+
+</translates>
