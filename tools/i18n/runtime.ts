@@ -69,19 +69,19 @@ const interpolate = (
   translatedGroups: Record<string, string | undefined>,
 ): string =>
   template.replace(
-    /\{([^{}]+)\}|\[([^\[\]]+)\]/gu,
+    /\{([^{}]+)\}|\[([^[\]]+)\]/gu,
     (
       match,
       originalName: string | undefined,
       translatedName: string | undefined,
     ) => {
-      if (translatedName == undefined) return match;
-
       if (originalName != undefined) {
         return (
           resolveGroupValue(originalGroups, originalName, parameters) ?? match
         );
       }
+
+      if (translatedName == undefined) return match;
 
       const translated = resolveGroupValue(
         translatedGroups,
@@ -263,7 +263,10 @@ const applyRule = (
   return value.replace(regex, (...args: unknown[]) => {
     const match = args[0];
     const groups = args.at(-1);
+
     if (typeof match !== "string" || !groups || typeof groups !== "object") {
+      console.error("Invalid match or groups", match, groups);
+
       return String(match ?? "");
     }
 

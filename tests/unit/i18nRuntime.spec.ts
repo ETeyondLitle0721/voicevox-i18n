@@ -59,6 +59,16 @@ describe("VOICEVOX runtime i18n", () => {
     expect(document.body.textContent).toContain("Engine: VOICEVOX!");
   });
 
+  it("replaces original capture placeholders such as {0}", () => {
+    const runtime = createRuntime(rules);
+
+    document.body.innerHTML = "<p>ファイルが見つかりません：/tmp/config.json</p>";
+
+    runtime.scan();
+
+    expect(document.body.textContent).toBe("File not found: /tmp/config.json");
+  });
+
   it("translates user-facing DOM attributes", () => {
     const runtime = createRuntime(rules);
     const button = document.createElement("button");

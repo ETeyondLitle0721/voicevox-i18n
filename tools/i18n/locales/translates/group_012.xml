@@ -1102,4 +1102,18 @@
         </translate>
     </item>
 
+    <item id="#0790">
+        <match type="contains">
+            <param name="0" />
+            <text content=" - 多言語" />
+        </match>
+
+        <translate>
+            <en-US content="{0} - i18n" />
+            <zh-CN content="{0} - 多语言" />
+            <zh-TW content="{0} - 多語言" />
+            <ko-KR content="{0} - 다언어" />
+        </translate>
+    </item>
+
 </translates>
