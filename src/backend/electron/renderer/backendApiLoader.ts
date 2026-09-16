@@ -7,6 +7,7 @@ import {
   getOrThrowTransferableResult,
 } from "../transferableResultHelper";
 import { SandboxKey, type Sandbox } from "@/type/preload";
+import { translateSystemDialogArgumentsWithRuntime } from "./systemDialogI18n";
 
 export const BridgeKey = "electronBridge";
 
@@ -18,6 +19,8 @@ export type SandboxWithTransferableResult = {
     : TransferableResult<ReturnType<Sandbox[K]>>;
 };
 
+// Apply system-UI translation at the renderer boundary so existing business
+// code can keep calling the Electron-backed Sandbox API unchanged.
 const unwrapApi = (baseApi: SandboxWithTransferableResult): Sandbox =>
   new Proxy<Sandbox>({} as Sandbox, {
     get(_target, prop: keyof SandboxWithTransferableResult) {
@@ -31,9 +34,13 @@ const unwrapApi = (baseApi: SandboxWithTransferableResult): Sandbox =>
       return (
         ...args: Parameters<SandboxWithTransferableResult[typeof prop]>
       ) => {
+        const translatedArgs = translateSystemDialogArgumentsWithRuntime(
+          prop,
+          args,
+        );
         const result: ReturnType<SandboxWithTransferableResult[typeof prop]> =
           // @ts-expect-error 動いているので無視
-          value(...args);
+          value(...translatedArgs);
 
         if (result instanceof Promise) {
           // @ts-expect-error 動いているので無視

@@ -513,6 +513,88 @@ DOM
 
 という経路で行われます。
 
+## 13. Electron システム API のユーザー向け文字列も Proxy で翻訳
+
+DOM 上に存在しない Electron のネイティブ UI についても、既存の翻訳ランタイムをそのまま再利用します。
+
+例えばファイル選択ダイアログの場合、Vue / DOM の翻訳ではなく Electron API に渡される引数のうち、**実際にユーザーへ表示される文字列だけ**を renderer 側の Proxy 境界で翻訳します。
+
+```text
+既存のアプリケーションコード
+        │
+        ▼
+window.backend.showOpenFileDialog(...)
+        │
+        ▼
+Electron backend API Proxy
+        │
+        ├─ title ────────→ i18n runtime で翻訳
+        ├─ name ─────────→ i18n runtime で翻訳
+        ├─ extensions ───→ そのまま
+        └─ defaultPath ──→ そのまま
+        │
+        ▼
+IPC / Electron
+        │
+        ▼
+Native file dialog
+```
+
+### 翻訳対象
+
+現在は、以下の Electron システムダイアログ API のユーザー向け文字列を対象にしています。
+
+| API | 翻訳対象 | そのまま渡す値 |
+|---|---|---|
+| `showSaveDirectoryDialog` | `title` | その他の引数 |
+| `showOpenDirectoryDialog` | `title` | その他の引数 |
+| `showOpenFileDialog` | `title`, `name` | `extensions`, `defaultPath` など |
+| `showSaveFileDialog` | `title`, `name` | `extensions`, `defaultPath` など |
+
+ここでいう `name` はファイルタイプとしてダイアログに表示される人間向けの名称です。一方、`extensions` は `wav` / `mp3` などの機械可読な拡張子なので翻訳しません。`defaultPath` も実ファイルパスであるため翻訳対象外です。
+
+### 実装場所
+
+Electron renderer 側の API bridge に翻訳処理を追加しています。主なファイルは以下です。
+
+```text
+src/backend/electron/renderer/
+├── backendApiLoader.ts
+├── preload.ts
+└── systemDialogI18n.ts
+```
+
+`backendApiLoader.ts` の `unwrapApi()` は既存 API を `Proxy` で公開しているため、ここで対象 API の引数を検査し、翻訳対象として明示したフィールドだけを置換します。これにより、**既存の業務コード側で個別に翻訳処理を呼び出す必要はありません。**
+
+翻訳は既存の runtime API、すなわち、概念的には次の処理を通ります。
+
+```ts
+globalThis.__VOICEVOX_I18N__?.text(scope, source)
+```
+
+そのため、DOM テキストと Electron ネイティブ UI の翻訳で、翻訳ルール・locale・フォールバックの仕組みを別々に持つ必要がありません。
+
+### スコープ
+
+Electron システム UI 用の翻訳では、例えば次のようなスコープを使用します。
+
+```text
+electron.showOpenFileDialog.title
+electron.showOpenFileDialog.name
+electron.showSaveFileDialog.title
+electron.showSaveFileDialog.name
+```
+
+ただし翻訳ルール自体は既存の `text()` runtime を利用するため、特別な message-key ベースの翻訳システムを新設するものではありません。
+
+### テスト
+
+対象フィールドだけが翻訳され、パスや拡張子などが変更されないことを `tests/unit/i18nSystemDialogProxy.spec.ts` で検証しています。
+
+```bash
+pnpm exec vitest run tests/unit/i18nSystemDialogProxy.spec.ts
+```
+
 ---
 
 ## 🔄 全体の処理フロー
@@ -565,7 +647,28 @@ tools/i18n/locales/translates/group_*.xml
                    Translation
                          │
                          ▼
-                 Localized UI
+                 Localized DOM UI
+
+Application code
+      │
+      ▼
+window.backend.*
+      │
+      ▼
+Electron API Proxy
+      │
+      ├── visible text fields ──→ existing i18n runtime
+      │                            │
+      │                            ▼
+      │                     translated arguments
+      │
+      └── paths / extensions / IDs ─→ unchanged
+      │
+      ▼
+IPC / Electron
+      │
+      ▼
+Native system UI
 ```
 
 ---
@@ -601,6 +704,8 @@ Settings
 というランタイム処理によってローカライズします。
 
 そのため、i18n の実装をアプリケーションのコンポーネント構造から分離し、**既存 UI コードへの侵入を最小限に抑える**ことができます。
+
+Electron のネイティブ UI についても同じ考え方を適用し、UI として表示される引数だけを API 境界で翻訳します。これにより、DOM 外の文字列でも既存の翻訳ルールを再利用できます。
 
 ---
 
@@ -668,6 +773,15 @@ tools/i18n/
 └── IMPLEMENTATION.md
 ```
 
+Electron renderer 側の system API bridge は以下に配置されています。
+
+```text
+src/backend/electron/renderer/
+├── backendApiLoader.ts
+├── preload.ts
+└── systemDialogI18n.ts
+```
+
 主な役割は以下のとおりです。
 
 | ファイル | 役割 |
@@ -679,6 +793,8 @@ tools/i18n/
 | `extract.ts` | 翻訳対象文字列の抽出 |
 | `audit.ts` | 翻訳状況の監査 |
 | `packAsar.ts` | Electron 配布用 ASAR 関連処理 |
+| `src/backend/electron/renderer/backendApiLoader.ts` | Electron backend API の Proxy。システム UI の表示文字列を翻訳してから既存 API を呼び出す |
+| `src/backend/electron/renderer/systemDialogI18n.ts` | システムダイアログの翻訳対象フィールドを定義し、既存 i18n runtime を適用する |
 
 ---
 
