@@ -33,7 +33,7 @@
 
 > OPTIONS 画面に言語を選択する項目を追加しています。
 
-<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/39cb5274-a497-44cb-a434-a72af8b96683" />
+<img width="2056" height="1268" alt="image" src="https://github.com/user-attachments/assets/da09cd0e-b421-4309-8de4-e72152105c5a" />
 
 ---
 
