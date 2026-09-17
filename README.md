@@ -33,7 +33,7 @@
 
 > OPTIONS 画面に言語を選択する項目を追加しています。
 
-<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/8b247803-0a75-45d8-9914-7e08960dc5c9" />
+<img width="2056" height="1268" alt="image" src="https://github.com/user-attachments/assets/da09cd0e-b421-4309-8de4-e72152105c5a" />
 
 ---
 
@@ -41,7 +41,7 @@
 
 > メニュー、ボタン、ラベルなどの UI テキストが選択した言語へローカライズされます。
 
-<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/6f1556b2-2e65-44c7-9918-3ecc4c17be04" />
+<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/424d18ec-d0fe-4104-887e-5617100cf231" />
 
 ---
 
@@ -49,7 +49,7 @@
 
 > ソング機能の UI 要素も同じランタイム翻訳機構によってローカライズされます。
 
-<img width="2060" height="1320" alt="image" src="https://github.com/user-attachments/assets/9c8fc1d8-4c3a-4405-8622-dcf70f0c0326" />
+<img width="2056" height="1267" alt="image" src="https://github.com/user-attachments/assets/abfc50b3-439a-431e-8ae4-a0b182cb6a3b" />
 
 ---
 
