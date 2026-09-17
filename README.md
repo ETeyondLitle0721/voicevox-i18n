@@ -98,6 +98,29 @@ tools/i18n/locales/translates/
 </item>
 ```
 
+1つの `item` には複数の `<match>` を定義できます。複数の `match` は OR 条件として扱われ、いずれかのマッチ条件に一致した場合に、同じ `<translate>` の翻訳が使用されます。異なる表記の原文を 1 つの翻訳ルールにまとめる用途に使用できます。
+
+例えば、次のように定義できます。
+
+```xml
+<item id="#0793">
+    <match type="equals">
+        <text content="囁き" />
+    </match>
+
+    <match type="equals">
+        <text content="ささやき" />
+    </match>
+
+    <translate>
+        <en-US content="Whisper" />
+        <zh-CN content="耳语" />
+        <zh-TW content="耳語" />
+        <ko-KR content="속삭임" />
+    </translate>
+</item>
+```
+
 翻訳キーとして UUID などを使用するのではなく、**実際に UI に表示される日本語テキストをマッチ対象として使用する**のが特徴です。
 
 ---
@@ -124,13 +147,14 @@ tools/i18n/locales/translates/group_*.xml
 
 XML 内の、
 
+- `item` ごとの 1 つ以上の `match`（複数の場合は OR 条件）
 - `equals`
 - `contains`
 - `text`
 - `param`
 - 各 locale の `content`
 
-を解析し、実行時に利用する `TranslationRule` へ変換します。
+を解析し、実行時に利用する `TranslationRule` へ変換します。1 つの `match` は 1 つの `TranslationRule` に変換され、同じ `item` の複数 `match` は同じ翻訳文字列を共有する複数のルールになります。
 
 例えば概念的には、
 

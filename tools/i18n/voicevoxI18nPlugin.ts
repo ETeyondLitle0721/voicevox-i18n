@@ -41,7 +41,7 @@ const VIRTUAL_RUNTIME_ID = `\0${VIRTUAL_RUNTIME_PUBLIC_ID}`;
 
 const XML_ITEM_RE = /<item\b[^>]*>([\s\S]*?)<\/item>/gu;
 const XML_MATCH_RE =
-  /<match\b[^>]*\btype="(equals|contains)"[^>]*>([\s\S]*?)<\/match>/u;
+  /<match\b[^>]*\btype="(equals|contains)"[^>]*>([\s\S]*?)<\/match>/gu;
 const XML_TRANSLATE_RE = /<translate\b[^>]*>([\s\S]*?)<\/translate>/u;
 const XML_PART_RE = /<(text|param)\b([^>]*)\/>/gu;
 const XML_ATTR_RE = /([:\w-]+)="([\s\S]*?)"/gu;
@@ -131,7 +131,7 @@ function buildRule(
   };
 }
 
-function parseTranslationRules(xml: string): TranslationRules {
+export function parseTranslationRules(xml: string): TranslationRules {
   const rules: TranslationRules = {
     "en-US": [],
     "zh-CN": [],
@@ -144,35 +144,50 @@ function parseTranslationRules(xml: string): TranslationRules {
 
   for (const itemMatch of xml.matchAll(XML_ITEM_RE)) {
     const body = itemMatch[1];
-    const matchSection = body.match(XML_MATCH_RE);
+    const matchSections = [...body.matchAll(XML_MATCH_RE)];
     const translateSection = body.match(XML_TRANSLATE_RE);
 
-    if (!matchSection || !translateSection) {
+    if (matchSections.length === 0 || !translateSection) {
       continue;
     }
 
-    const type = matchSection[1] as "equals" | "contains";
-    const parts: Array<{
-      kind: "text" | "param";
-      value: string;
-      translate?: boolean;
+    const matches: Array<{
+      type: "equals" | "contains";
+      parts: Array<{
+        kind: "text" | "param";
+        value: string;
+        translate?: boolean;
+      }>;
     }> = [];
 
-    for (const partMatch of matchSection[2].matchAll(XML_PART_RE)) {
-      const kind = partMatch[1] as "text" | "param";
-      const content = getXmlAttribute(
-        partMatch[2],
-        kind === "text" ? "content" : "name",
-      );
-      if (content == undefined) continue;
+    for (const matchSection of matchSections) {
+      const type = matchSection[1] as "equals" | "contains";
+      const parts: Array<{
+        kind: "text" | "param";
+        value: string;
+        translate?: boolean;
+      }> = [];
 
-      const translate =
-        kind === "param" &&
-        getXmlAttribute(partMatch[2], "translate") === "allow";
-      parts.push({ kind, value: content, translate });
+      for (const partMatch of matchSection[2].matchAll(XML_PART_RE)) {
+        const kind = partMatch[1] as "text" | "param";
+        const content = getXmlAttribute(
+          partMatch[2],
+          kind === "text" ? "content" : "name",
+        );
+        if (content == undefined) continue;
+
+        const translate =
+          kind === "param" &&
+          getXmlAttribute(partMatch[2], "translate") === "allow";
+        parts.push({ kind, value: content, translate });
+      }
+
+      if (parts.length > 0) {
+        matches.push({ type, parts });
+      }
     }
 
-    if (parts.length === 0) {
+    if (matches.length === 0) {
       continue;
     }
 
@@ -181,7 +196,12 @@ function parseTranslationRules(xml: string): TranslationRules {
     )) {
       const locale = translationMatch[1] as Exclude<Locale, "ja-JP">;
       const translation = normalizeXmlEntity(translationMatch[2]);
-      rules[locale] = [...rules[locale], buildRule(type, parts, translation)];
+      for (const match of matches) {
+        rules[locale] = [
+          ...rules[locale],
+          buildRule(match.type, match.parts, translation),
+        ];
+      }
     }
   }
 

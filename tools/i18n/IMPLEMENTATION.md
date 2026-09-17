@@ -11,6 +11,7 @@ The localization system translates rendered UI at runtime for Japanese (`ja-JP`)
 - A `MutationObserver` marks the DOM dirty; translation work is then performed in the next animation frame.
 - The runtime scans rendered text nodes and user-facing attributes (`title`, `aria-label`, `placeholder`, `alt`, `label`, `description`).
 - `equals` rules preserve leading/trailing whitespace; `contains` rules replace matching substrings.
+- An `<item>` may contain multiple `<match>` elements. Each match is compiled independently as an OR condition, while all matches reuse the same locale-specific translation string.
 - `<param>` entries become regex capture groups. `{0}`, `{1}`, ... always substitute the original capture; when a `<param>` has `translate="allow"`, `[0]`, `[1]`, ... substitute the capture after a second pass through the active locale rules, falling back to the original capture when that second pass has no translation. Named placeholders such as `{name}` / `[name]` are also supported by matching the `<param name="name">` entry.
 - Editable content (`textarea`, `contenteditable`) and code-oriented elements are excluded to avoid translating user data or source text.
 - Missing translations leave the original text unchanged.

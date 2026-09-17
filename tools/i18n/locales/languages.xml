@@ -6,15 +6,13 @@
         <version>0.0.0</version>
 
         <contributors>
-            <person name="OpenAI ChatGPT" type="ai" />
-            <person name="Google Gemini" type="ai" />
-            <person name="ETeyondLitle0721" email="eteyondlitle@gmail.com" />
+            <person name="Developer" />
         </contributors>
     </ja-JP>
 
     <en-US source="ja-JP">
         <name>English</name>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />
@@ -25,7 +23,7 @@
 
     <zh-CN source="ja-JP">
         <name>简体中文</name>
-        <version>1.1.1</version>
+        <version>1.1.2</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />
@@ -36,7 +34,7 @@
 
     <zh-TW source="ja-JP">
         <name>台灣正體</name>
-        <version>1.2.0</version>
+        <version>1.2.1</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />
@@ -47,7 +45,7 @@
 
     <ko-KR source="ja-JP">
         <name>한국어</name>
-        <version>1.0.0</version>
+        <version>1.0.1</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />

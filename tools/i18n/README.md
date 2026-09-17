@@ -14,4 +14,25 @@ The extraction/audit tools remain separate build tooling for finding translation
 in runtime translation.
 
 
+An `<item>` may contain multiple `<match>` elements. They are treated as OR conditions: each `<match>` is compiled into its own runtime rule, and all of those rules reuse the same `<translate>` values. This is useful when different source spellings should produce the same localized string.
+
+```xml
+<item id="#0793">
+    <match type="equals">
+        <text content="囁き" />
+    </match>
+
+    <match type="equals">
+        <text content="ささやき" />
+    </match>
+
+    <translate>
+        <en-US content="Whisper" />
+        <zh-CN content="耳语" />
+        <zh-TW content="耳語" />
+        <ko-KR content="속삭임" />
+    </translate>
+</item>
+```
+
 `<param translate="allow">` enables second-pass translation of that capture. Use `{0}` for the original captured text and `[0]` for the translated capture; `[0]` falls back to the original when no second-pass rule matches.

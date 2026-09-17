@@ -513,19 +513,6 @@
         </translate>
     </item>
 
-    <item id="#0745">
-        <match type="equals">
-            <text content="ヒソヒソ" />
-        </match>
-
-        <translate>
-            <en-US content="Whisper" />
-            <zh-CN content="耳语" />
-            <zh-TW content="耳語" />
-            <ko-KR content="속닥속닥" />
-        </translate>
-    </item>
-
     <item id="#0746">
         <match type="equals">
             <text content="ヘロヘロ" />
@@ -981,19 +968,6 @@
         </translate>
     </item>
 
-    <item id="#0781">
-        <match type="equals">
-            <text content="ささやき" />
-        </match>
-
-        <translate>
-            <en-US content="Whisper" />
-            <zh-CN content="轻语" />
-            <zh-TW content="輕語" />
-            <ko-KR content="속삭임" />
-        </translate>
-    </item>
-
     <item id="#0782">
         <match type="equals">
             <text content="ぶりっ子" />
@@ -1113,6 +1087,74 @@
             <zh-CN content="{0} - 多语言" />
             <zh-TW content="{0} - 多語言" />
             <ko-KR content="{0} - 다언어" />
+        </translate>
+    </item>
+
+    <item id="#0791">
+        <match type="contains">
+            <param name="0" />
+            <text content="（" />
+            <param name="1" translate="allow"/>
+            <text content="）" />
+        </match>
+
+        <match type="contains">
+            <param name="0" />
+            <text content=" (" />
+            <param name="1" translate="allow"/>
+            <text content=")" />
+        </match>
+
+        <translate>
+            <en-US content="{0} ([1])" />
+            <zh-CN content="{0}（[1]）" />
+            <zh-TW content="{0}（[1]）" />
+            <ko-KR content="{0} ([1])" />
+        </translate>
+    </item>
+
+    <item id="#0792">
+        <match type="contains">
+            <param name="0" translate="allow"/>
+            <text content="・" />
+            <param name="1" translate="allow"/>
+        </match>
+
+        <translate>
+            <en-US content="[0] · [1]" />
+            <zh-CN content="[0]・[1]" />
+            <zh-TW content="[0]・[1]" />
+            <ko-KR content="[0] · [1]" />
+        </translate>
+    </item>
+
+    <item id="#0793">
+        <match type="equals">
+            <text content="囁き" />
+        </match>
+
+        <match type="equals">
+            <text content="ささやき" />
+        </match>
+
+        <translate>
+            <en-US content="Whisper" />
+            <zh-CN content="耳语" />
+            <zh-TW content="耳語" />
+            <ko-KR content="속삭임" />
+        </translate>
+    </item>
+
+    <item id="#0794">
+        <match type="equals">
+            <text content="ヒソヒソ" />
+        </match>
+
+        <translate>
+            <en-US content="Whispering" />
+            <zh-CN content="轻语" />
+            <zh-TW content="輕語" />
+            <ko-KR content="소곤거림" />
         </translate>
     </item>
 
