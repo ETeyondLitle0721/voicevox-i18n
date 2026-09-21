@@ -31,8 +31,6 @@ CONTRIBUTING.md
 eslint.config.ts
 LGPL_LICENSE
 LICENSE
-openapi.json
-openapitools.json
 pack.js
 playwright.config.ts
 pnpm-lock.yaml

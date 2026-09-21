@@ -12,7 +12,7 @@
 
     <en-US source="ja-JP">
         <name>English</name>
-        <version>1.2.1</version>
+        <version>1.2.2</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />
@@ -23,7 +23,7 @@
 
     <zh-CN source="ja-JP">
         <name>简体中文</name>
-        <version>1.1.2</version>
+        <version>1.1.3</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />
@@ -34,7 +34,7 @@
 
     <zh-TW source="ja-JP">
         <name>台灣正體</name>
-        <version>1.2.1</version>
+        <version>1.2.2</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />
@@ -45,7 +45,7 @@
 
     <ko-KR source="ja-JP">
         <name>한국어</name>
-        <version>1.0.1</version>
+        <version>1.0.2</version>
 
         <contributors>
             <person name="OpenAI ChatGPT" type="ai" />

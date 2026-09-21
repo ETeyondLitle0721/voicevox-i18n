@@ -1092,24 +1092,24 @@
 
     <item id="#0791">
         <match type="contains">
-            <param name="0" />
+            <param name="0" translate="allow"/>
             <text content="（" />
             <param name="1" translate="allow"/>
             <text content="）" />
         </match>
 
         <match type="contains">
-            <param name="0" />
+            <param name="0" translate="allow"/>
             <text content=" (" />
             <param name="1" translate="allow"/>
             <text content=")" />
         </match>
 
         <translate>
-            <en-US content="{0} ([1])" />
-            <zh-CN content="{0}（[1]）" />
-            <zh-TW content="{0}（[1]）" />
-            <ko-KR content="{0} ([1])" />
+            <en-US content="[0] ([1])" />
+            <zh-CN content="[0]（[1]）" />
+            <zh-TW content="[0]（[1]）" />
+            <ko-KR content="[0]([1])" />
         </translate>
     </item>
 
@@ -1151,10 +1151,23 @@
         </match>
 
         <translate>
-            <en-US content="Whispering" />
+            <en-US content="Soft Voice" />
             <zh-CN content="轻语" />
             <zh-TW content="輕語" />
             <ko-KR content="소곤거림" />
+        </translate>
+    </item>
+
+    <item id="#0795">
+        <match type="equals">
+            <text content="内緒話" />
+        </match>
+
+        <translate>
+            <en-US content="Secret Talk" />
+            <zh-CN content="悄悄话" />
+            <zh-TW content="悄悄話" />
+            <ko-KR content="귓속말" />
         </translate>
     </item>
 
