@@ -159,19 +159,6 @@
         </translate>
     </item>
 
-    <item id="#0718">
-        <match type="equals">
-            <text content="四国めたん" />
-        </match>
-
-        <translate>
-            <en-US content="Shikoku Metan" />
-            <zh-CN content="四国めたん" />
-            <zh-TW content="四國めたん" />
-            <ko-KR content="Shikoku Metan" />
-        </translate>
-    </item>
-
     <item id="#0719">
         <match type="equals">
             <text content="日付" />
@@ -1168,6 +1155,239 @@
             <zh-CN content="悄悄话" />
             <zh-TW content="悄悄話" />
             <ko-KR content="귓속말" />
+        </translate>
+    </item>
+
+    <item id="#0796">
+        <match type="equals">
+            <text content="再生" />
+        </match>
+
+        <translate>
+            <en-US content="Play" />
+            <zh-CN content="播放" />
+            <zh-TW content="播放" />
+            <ko-KR content="play" />
+        </translate>
+    </item>
+
+    <item id="#0797">
+        <match type="equals">
+            <text content="人間（愤怒）ver." />
+        </match>
+
+        <translate>
+            <en-US content="Human (Anger) Ver." />
+            <zh-CN content="人类（愤怒）版" />
+            <zh-TW content="人類（憤怒）版" />
+            <ko-KR content="사람（남물）버전" />
+        </translate>
+    </item>
+<item id="#0798">
+        <match type="equals">
+            <text content="鬼ver." />
+        </match>
+
+        <translate>
+            <en-US content="Ogre Ver." />
+            <zh-CN content="鬼族版" />
+            <zh-TW content="鬼族版" />
+            <ko-KR content="도깨비Ver." />
+        </translate>
+    </item>
+
+    <item id="#0799">
+        <match type="equals">
+            <text content="つよつよ" />
+        </match>
+
+        <translate>
+            <en-US content="Super Strong" />
+            <zh-CN content="超强" />
+            <zh-TW content="超強" />
+            <ko-KR content="막강" />
+        </translate>
+    </item>
+
+    <item id="#0800">
+        <match type="equals">
+            <text content="人見知り" />
+        </match>
+
+        <translate>
+            <en-US content="Shy" />
+            <zh-CN content="害羞" />
+            <zh-TW content="害羞" />
+            <ko-KR content="낯가림" />
+        </translate>
+    </item>
+
+    <item id="#0801">
+        <match type="equals">
+            <text content="おどおど" />
+        </match>
+
+        <translate>
+            <en-US content="Timid" />
+            <zh-CN content="战战兢兢" />
+            <zh-TW content="戰戰兢兢" />
+            <ko-KR content="어머어머" />
+        </translate>
+    </item>
+
+    <item id="#0802">
+        <match type="equals">
+            <text content="絶望と敗北" />
+        </match>
+
+        <translate>
+            <en-US content="Despair and Defeat" />
+            <zh-CN content="绝望与败北" />
+            <zh-TW content="絕望與敗北" />
+            <ko-KR content="절망과 패배" />
+        </translate>
+    </item>
+
+    <item id="#0803">
+        <match type="equals">
+            <text content="シリアス" />
+        </match>
+
+        <translate>
+            <en-US content="Serious" />
+            <zh-CN content="严肃" />
+            <zh-TW content="嚴肅" />
+            <ko-KR content="시리어스" />
+        </translate>
+    </item>
+
+    <item id="#0804">
+        <match type="equals">
+            <text content="甘々" />
+        </match>
+
+        <translate>
+            <en-US content="Super Sweet" />
+            <zh-CN content="超甜" />
+            <zh-TW content="超甜" />
+            <ko-KR content="달달" />
+        </translate>
+    </item>
+
+    <item id="#0805">
+        <match type="equals">
+            <text content="哀しみ" />
+        </match>
+
+        <translate>
+            <en-US content="Sorrow" />
+            <zh-CN content="悲伤" />
+            <zh-TW content="悲傷" />
+            <ko-KR content="슬픔" />
+        </translate>
+    </item>
+
+    <item id="#0806">
+        <match type="equals">
+            <text content="ツクモちゃん" />
+        </match>
+
+        <translate>
+            <en-US content="Tsukumo-chan" />
+            <zh-CN content="九十九酱" />
+            <zh-TW content="九十九醬" />
+            <ko-KR content="츠쿠모짱" />
+        </translate>
+    </item>
+
+    <item id="#0807">
+        <match type="equals">
+            <text content="呆れ" />
+        </match>
+
+        <translate>
+            <en-US content="Amaze / Exasperated" />
+            <zh-CN content="无语" />
+            <zh-TW content="無語" />
+            <ko-KR content="어이없음" />
+        </translate>
+    </item>
+
+    <item id="#0808">
+        <match type="equals">
+            <text content="明るい" />
+        </match>
+
+        <translate>
+            <en-US content="Cheerful" />
+            <zh-CN content="开朗" />
+            <zh-TW content="開朗" />
+            <ko-KR content="밝음" />
+        </translate>
+    </item>
+
+    <item id="#0809">
+        <match type="equals">
+            <text content="よわよわ" />
+        </match>
+
+        <translate>
+            <en-US content="Super Weak" />
+            <zh-CN content="弱弱" />
+            <zh-TW content="弱弱" />
+            <ko-KR content="헤롱헤롱" />
+        </translate>
+    </item>
+
+    <item id="#0810">
+        <match type="equals">
+            <text content="けだるげ" />
+        </match>
+
+        <translate>
+            <en-US content="Languid" />
+            <zh-CN content="倦怠" />
+            <zh-TW content="倦怠" />
+            <ko-KR content="나른함" />
+        </translate>
+    </item>
+
+    <item id="#0811">
+        <match type="equals">
+            <text content="実況風" />
+        </match>
+
+        <translate>
+            <en-US content="Commentary Style" />
+            <zh-CN content="实况风格" />
+            <zh-TW content="實況風格" />
+            <ko-KR content="실황 풍" />
+        </translate>
+    </item>
+
+    <item id="#0812">
+        <match type="equals">
+            <text content="低血圧" />
+        </match>
+
+        <translate>
+            <en-US content="Low Blood Pressure" />
+            <zh-CN content="低血压" />
+            <zh-TW content="低血壓" />
+            <ko-KR content="로쉬" />
+        </translate>
+    </item>
+
+    <item id="#0813">
+        <match type="equals">
+            <text content="覚醒" />
+        </match>
+
+        <translate>
+            <en-US content="Awake" />
+            <zh-CN content="觉醒" />
+            <zh-TW content="觉醒" />
+            <ko-KR content="씨씨" />
         </translate>
     </item>
 

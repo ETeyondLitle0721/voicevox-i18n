@@ -246,18 +246,38 @@ const applyRule = (
   const regex = new RegExp(rule.regex.source, rule.regex.flags);
 
   if (rule.type === "equals") {
-    const match = regex.exec(value);
-    if (!match) return value;
+    return value
+      .split(/(\r?\n)/) // 使用捕获组拆分，可以在结果数组中保留原有的 \n 或 \r\n 换行符
+      .map((line) => {
+        // 忽略单纯的换行符本身
+        if (line === "\n" || line === "\r\n") return line;
 
-    const groups = getRuleGroups(match, rule);
-    const translatedGroups = getTranslatedGroups(groups, rule, translateGroup);
-    const translated = interpolate(
-      rule.translation,
-      groups,
-      rule.parameters,
-      translatedGroups,
-    );
-    return `${groups.lead ?? ""}${translated}${groups.trail ?? ""}`;
+        // 如果需要对单行清除前后空格后再匹配（可选，根据业务逻辑决定是否保留 line.trim()）
+        const trimmedLine = line.trim();
+        const match = regex.exec(trimmedLine);
+        if (!match) return line;
+
+        const groups = getRuleGroups(match, rule);
+        const translatedGroups = getTranslatedGroups(
+          groups,
+          rule,
+          translateGroup,
+        );
+        const translated = interpolate(
+          rule.translation,
+          groups,
+          rule.parameters,
+          translatedGroups,
+        );
+
+        const replaced = `${groups.lead ?? ""}${translated}${groups.trail ?? ""}`;
+
+        // 如果之前做了 trim()，这里将原行首尾的空白字符还原回去
+        const leadingWhitespace = line.match(/^\s*/)?.[0] ?? "";
+        const trailingWhitespace = line.match(/\s*$/)?.[0] ?? "";
+        return `${leadingWhitespace}${replaced.trim()}${trailingWhitespace}`;
+      })
+      .join("");
   }
 
   return value.replace(regex, (...args: unknown[]) => {
