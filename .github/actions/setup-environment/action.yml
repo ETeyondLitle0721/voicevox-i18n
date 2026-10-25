@@ -7,9 +7,11 @@ runs:
     - name: Setup variable
       shell: bash
       run: |
-        echo "ELECTRON_CACHE=${{ runner.temp }}/electron-cache" >> $GITHUB_ENV
-        echo "ELECTRON_BUILDER_CACHE=${{ runner.temp }}/electron-builder-cache" >> $GITHUB_ENV
-        echo "cache-version=1" >> $GITHUB_ENV
+        {
+          echo "ELECTRON_CACHE=${{ runner.temp }}/electron-cache"
+          echo "ELECTRON_BUILDER_CACHE=${{ runner.temp }}/electron-builder-cache"
+          echo "cache-version=1"
+        } >> "$GITHUB_ENV"
 
     - name: Setup pnpm
       uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4.3.0
